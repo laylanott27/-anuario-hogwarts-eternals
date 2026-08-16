@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Anuario Hogwarts 2026–2027</title>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Anuario Hogwarts 2026–2027
+  </title>
 
   <style>
+
     :root{
-      --paper:#f5efe6;
-      --paper-2:#fbf8f2;
-      --ink:#171717;
+
+      --paper:#f1e8da;
+      --paper-2:#f8f2e9;
+
+      --ink:#211d19;
       --muted:#6e665c;
+
       --line:#cfc3b3;
       --silver:#b6bac1;
 
@@ -20,7 +32,9 @@
       --hufflepuff:#c89a31;
       --slytherin:#355d46;
 
-      --shadow:0 14px 34px rgba(0,0,0,.08);
+      --shadow:
+        0 14px 34px rgba(0,0,0,.08);
+
     }
 
     *{
@@ -28,17 +42,37 @@
       scroll-behavior:smooth;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
-  margin:0;
-  background:#f1e8da;
-  color:#211d19;
-}
-      font-family:Georgia, "Times New Roman", serif;
+
+      margin:0;
+
+      color:var(--ink);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
       background:
-        radial-gradient(circle at 20% 20%, rgba(0,0,0,.025) 1px, transparent 1px),
-        radial-gradient(circle at 80% 40%, rgba(0,0,0,.02) 1px, transparent 1px),
-        var(--paper:#f1e8da);
-      background-size:22px 22px, 31px 31px;
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(0,0,0,.025) 1px,
+          transparent 1px
+        ),
+        radial-gradient(
+          circle at 80% 40%,
+          rgba(0,0,0,.02) 1px,
+          transparent 1px
+        ),
+        var(--paper);
+
+      background-size:
+        22px 22px,
+        31px 31px;
     }
 
     a{
@@ -56,21 +90,32 @@
     }
 
     .page{
-      width:min(1220px, 96%);
+
+      width:min(1220px,96%);
       margin:20px auto;
+
       background:var(--paper-2);
-      border:1px solid #ad9f8d;
-      box-shadow:0 24px 60px rgba(0,0,0,.12);
+
+      border:
+        1px solid #ad9f8d;
+
+      box-shadow:
+        0 24px 60px rgba(0,0,0,.12);
+
       position:relative;
       overflow:hidden;
     }
 
     .page::before,
     .page::after{
+
       content:"✦";
+
       position:absolute;
       z-index:3;
+
       color:#8f7c5d;
+
       font-size:18px;
       opacity:.75;
     }
@@ -90,66 +135,104 @@
     ========================= */
 
     .nav{
+
       position:sticky;
       top:0;
       z-index:100;
+
       display:flex;
       justify-content:space-between;
       align-items:center;
+
       gap:20px;
-      padding:17px 34px;
-      border-bottom:1px solid var(--line);
-      background:rgba(251,248,242,.95);
-      backdrop-filter:blur(10px);
+
+      padding:
+        17px 34px;
+
+      border-bottom:
+        1px solid var(--line);
+
+      background:
+        rgba(248,242,233,.96);
+
+      backdrop-filter:
+        blur(10px);
     }
 
     .brand{
+
       display:flex;
       align-items:center;
+
       gap:12px;
+
       min-width:max-content;
     }
 
     .brand-mark{
+
       width:42px;
       height:42px;
-      border:1px solid #867a6a;
+
+      border:
+        1px solid #867a6a;
+
       border-radius:50%;
+
       display:grid;
       place-items:center;
+
       font-size:18px;
       font-weight:bold;
+
       letter-spacing:1px;
     }
 
     .brand-text{
+
       font-size:13px;
+
       letter-spacing:2px;
+
       text-transform:uppercase;
     }
 
     .nav-links{
+
       display:flex;
       align-items:center;
+
       gap:24px;
+
       font-size:11px;
+
       text-transform:uppercase;
+
       letter-spacing:1.2px;
     }
 
     .nav-links a{
+
       position:relative;
+
       padding:7px 0;
     }
 
     .nav-links a::after{
+
       content:"";
+
       position:absolute;
+
       left:0;
       bottom:1px;
+
       width:0;
       height:1px;
-      background:var(--ink);
+
+      background:
+        var(--ink);
+
       transition:.25s ease;
     }
 
@@ -158,10 +241,18 @@
     }
 
     .menu-button{
+
       display:none;
-      border:1px solid var(--line);
-      background:transparent;
-      padding:9px 12px;
+
+      border:
+        1px solid var(--line);
+
+      background:
+        transparent;
+
+      padding:
+        9px 12px;
+
       cursor:pointer;
     }
 
@@ -170,115 +261,187 @@
     ========================= */
 
     .hero{
+
       min-height:610px;
+
       display:grid;
-      grid-template-columns:.9fr 1.35fr;
+
+      grid-template-columns:
+        .9fr 1.35fr;
+
       align-items:center;
+
       gap:34px;
-      padding:58px 58px 50px;
-      border-bottom:1px solid var(--line);
+
+      padding:
+        58px 58px 50px;
+
+      border-bottom:
+        1px solid var(--line);
     }
 
     .hero-copy{
+
       position:relative;
+
       z-index:2;
     }
 
     .eyebrow{
+
       font-size:18px;
+
       text-transform:uppercase;
+
       letter-spacing:2.5px;
+
       margin-bottom:8px;
     }
 
     .hero h1{
+
       margin:0;
+
       font-size:76px;
+
       font-weight:400;
+
       line-height:.93;
+
       letter-spacing:-2px;
     }
 
     .year{
-      margin:20px 0 22px;
-      color:var(--gryffindor);
+
+      margin:
+        20px 0 22px;
+
+      color:
+        var(--gryffindor);
+
       font-size:34px;
+
       letter-spacing:2px;
     }
 
     .flourish{
-      margin:22px 0;
+
+      margin:
+        22px 0;
+
       font-size:27px;
+
       letter-spacing:9px;
+
       color:#665b4d;
     }
 
     .hero-quote{
+
       max-width:410px;
+
       font-size:15px;
+
       line-height:1.75;
+
       letter-spacing:1px;
+
       text-transform:uppercase;
     }
 
     .castle{
-  width:100%;
-  min-height:620px;
-  position:relative;
-  overflow:hidden;
-  display:flex;
-  align-items:stretch;
-  justify-content:center;
-  background:#f1e8da;
-}
 
-.castle-image{
-  width:100%;
-  height:100%;
-  min-height:620px;
-  display:block;
-  object-fit:cover;
-  object-position:center;
-}
+      width:100%;
+
+      min-height:620px;
+
+      position:relative;
+
+      overflow:hidden;
+
+      display:flex;
+      align-items:stretch;
+      justify-content:center;
+
+      background:
+        var(--paper);
+    }
+
+    .castle-image{
+
+      width:100%;
+      height:100%;
+
+      min-height:620px;
+
+      display:block;
+
+      object-fit:cover;
+      object-position:center;
+    }
+
     /* =========================
-       SECTIONS
+       GENERAL SECTIONS
     ========================= */
 
     section{
-      padding:54px 48px;
+
+      padding:
+        54px 48px;
     }
 
     .section-title{
+
       display:flex;
       align-items:center;
       justify-content:center;
+
       gap:16px;
+
       margin-bottom:35px;
+
       text-align:center;
     }
 
     .section-title::before,
     .section-title::after{
+
       content:"";
+
       height:1px;
       width:170px;
-      background:var(--line);
+
+      background:
+        var(--line);
     }
 
     .section-title h2{
+
       margin:0;
+
       font-size:27px;
+
       font-weight:400;
+
       text-transform:uppercase;
+
       letter-spacing:1.8px;
     }
 
     .section-subtitle{
+
       max-width:720px;
-      margin:-10px auto 34px;
+
+      margin:
+        -10px auto 34px;
+
       text-align:center;
-      color:var(--muted);
+
+      color:
+        var(--muted);
+
       line-height:1.75;
+
       font-size:14px;
     }
 
@@ -287,30 +450,51 @@
     ========================= */
 
     .houses-grid{
+
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+
+      grid-template-columns:
+        repeat(4,1fr);
+
       gap:24px;
     }
 
     .house-card{
+
       position:relative;
-      padding:24px 18px 22px;
-      border:1px solid var(--line);
+
+      padding:
+        24px 18px 22px;
+
+      border:
+        1px solid var(--line);
+
       text-align:center;
-      background:rgba(255,255,255,.18);
+
+      background:
+        rgba(255,255,255,.18);
+
       transition:.28s ease;
     }
 
     .house-card:hover{
-      transform:translateY(-5px);
-      box-shadow:var(--shadow);
+
+      transform:
+        translateY(-5px);
+
+      box-shadow:
+        var(--shadow);
     }
 
     .house-card::before,
     .house-card::after{
+
       content:"✦";
+
       position:absolute;
+
       font-size:10px;
+
       color:#968873;
     }
 
@@ -325,118 +509,371 @@
     }
 
     .house-card h3{
+
       margin:0;
+
       font-size:21px;
+
       font-weight:400;
+
       letter-spacing:.4px;
     }
 
     .house-symbol{
-  width:150px;
-  height:175px;
-  margin:18px auto;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+      width:150px;
+      height:175px;
 
-.house-symbol img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
+      margin:
+        18px auto;
 
-  filter:
-    saturate(.82)
-    contrast(.95);
-}
+      display:flex;
+
+      align-items:center;
+      justify-content:center;
+    }
+
+    .house-symbol img{
+
+      width:100%;
+      height:100%;
+
+      object-fit:contain;
+
+      filter:
+        saturate(.82)
+        contrast(.95);
+    }
 
     .house-card p{
+
       min-height:42px;
-      margin:0 0 18px;
+
+      margin:
+        0 0 18px;
+
       font-size:11px;
+
       line-height:1.5;
+
       letter-spacing:.8px;
+
       text-transform:uppercase;
     }
 
-    .ravenclaw h3{color:var(--ravenclaw);}
-    .gryffindor h3{color:var(--gryffindor);}
-    .hufflepuff h3{color:var(--hufflepuff);}
-    .slytherin h3{color:var(--slytherin);}
+    .ravenclaw h3{
+      color:var(--ravenclaw);
+    }
+
+    .gryffindor h3{
+      color:var(--gryffindor);
+    }
+
+    .hufflepuff h3{
+      color:var(--hufflepuff);
+    }
+
+    .slytherin h3{
+      color:var(--slytherin);
+    }
 
     .btn{
+
       display:inline-block;
-      padding:9px 20px;
-      border:1px solid #9f927f;
-      background:transparent;
+
+      padding:
+        9px 20px;
+
+      border:
+        1px solid #9f927f;
+
+      background:
+        transparent;
+
       font-size:10px;
+
       text-transform:uppercase;
+
       letter-spacing:1px;
+
       transition:.22s ease;
+
       cursor:pointer;
     }
 
     .btn:hover{
-      background:var(--ink);
+
+      background:
+        var(--ink);
+
       color:#fff;
     }
 
     /* =========================
-       STUDENTS / PROFESSORS
+       DIRECCIÓN
     ========================= */
 
-    .intro-box{
-      max-width:790px;
+    .direction{
+
+      border-top:
+        1px solid var(--line);
+    }
+
+    .direction-grid{
+
+      max-width:720px;
+
       margin:auto;
-      padding:28px;
-      border:1px solid var(--line);
-      text-align:center;
-      line-height:1.8;
-      color:var(--muted);
-      background:rgba(255,255,255,.16);
-    }
 
-    .people-grid{
-      margin-top:34px;
       display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:22px;
+
+      grid-template-columns:
+        repeat(2,1fr);
+
+      gap:36px;
     }
 
-    .person-card{
-      border:1px solid var(--line);
-      padding:10px;
-      background:rgba(255,255,255,.18);
+    .direction-card{
+
       text-align:center;
+
+      border:
+        1px solid var(--line);
+
+      padding:
+        11px 11px 24px;
+
+      background:
+        rgba(255,255,255,.19);
     }
 
-    .person-photo{
+    .direction-photo{
+
+      width:100%;
+
       aspect-ratio:4/5;
-      background:#ddd5c9;
+
       display:grid;
+
       place-items:center;
-      color:#7b736a;
+
       overflow:hidden;
+
+      background:#d9d1c5;
+
+      color:#726b62;
+
+      font-size:11px;
     }
 
-    .person-photo img{
+    .direction-photo img{
+
+      width:100%;
       height:100%;
+
       object-fit:cover;
     }
 
-    .person-card h4{
-      margin:13px 0 4px;
-      font-size:14px;
-      font-weight:400;
+    .direction-role{
+
+      display:block;
+
+      margin-top:16px;
+
+      color:#8a7652;
+
+      font-size:9px;
+
+      letter-spacing:2px;
+
       text-transform:uppercase;
-      letter-spacing:1px;
     }
 
-    .person-card p{
-      margin:0 0 10px;
+    .direction-card h3{
+
+      margin:
+        8px 0 5px;
+
+      font-size:18px;
+
+      font-weight:400;
+
+      letter-spacing:1px;
+
+      text-transform:uppercase;
+    }
+
+    .direction-card p{
+
+      margin:0;
+
+      color:
+        var(--muted);
+
+      font-size:10px;
+
+      letter-spacing:1px;
+
+      text-transform:uppercase;
+    }
+
+    /* =========================
+       HOGWARTS HISTORY
+    ========================= */
+
+    .history-section{
+
+      border-top:
+        1px solid var(--line);
+
+      border-bottom:
+        1px solid var(--line);
+    }
+
+    .history-box{
+
+      max-width:900px;
+
+      margin:auto;
+
+      text-align:center;
+
+      padding:
+        35px 48px;
+
+      border:
+        1px solid var(--line);
+
+      background:
+        rgba(255,255,255,.13);
+    }
+
+    .history-symbol{
+
+      margin-bottom:18px;
+
+      font-size:28px;
+
+      color:#8c795b;
+    }
+
+    .history-box h3{
+
+      margin:
+        0 0 22px;
+
+      font-size:31px;
+
+      font-weight:400;
+
+      letter-spacing:1.5px;
+
+      text-transform:uppercase;
+    }
+
+    .history-box p{
+
+      margin:
+        0 auto 17px;
+
+      max-width:780px;
+
+      color:#524c45;
+
+      font-size:15px;
+
+      line-height:1.9;
+    }
+
+    .founders{
+
+      margin-top:26px;
+
+      color:#746b61;
+
       font-size:11px;
-      color:var(--muted);
+
+      line-height:1.8;
+
+      letter-spacing:1.4px;
+
+      text-transform:uppercase;
+    }
+
+    /* =========================
+       PROFESSORS LINK
+    ========================= */
+
+    .professors-section{
+
+      text-align:center;
+    }
+
+    .professor-entry{
+
+      max-width:580px;
+
+      margin:auto;
+
+      padding:
+        45px 30px;
+
+      border:
+        1px solid var(--line);
+
+      background:
+        rgba(255,255,255,.18);
+
+      transition:.25s ease;
+    }
+
+    .professor-entry:hover{
+
+      transform:
+        translateY(-4px);
+
+      box-shadow:
+        var(--shadow);
+    }
+
+    .professor-icon{
+
+      margin-bottom:16px;
+
+      font-size:35px;
+
+      color:#88775b;
+    }
+
+    .professor-entry h3{
+
+      margin:
+        0 0 12px;
+
+      font-size:28px;
+
+      font-weight:400;
+
+      letter-spacing:2px;
+
+      text-transform:uppercase;
+    }
+
+    .professor-entry p{
+
+      margin:
+        0 0 22px;
+
+      color:
+        var(--muted);
+
+      font-size:12px;
+
+      letter-spacing:1px;
+
+      line-height:1.7;
+
+      text-transform:uppercase;
     }
 
     /* =========================
@@ -444,56 +881,93 @@
     ========================= */
 
     .moments{
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
+
+      border-top:
+        1px solid var(--line);
+
+      border-bottom:
+        1px solid var(--line);
     }
 
     .moments-grid{
+
       display:grid;
-      grid-template-columns:repeat(7,1fr);
+
+      grid-template-columns:
+        repeat(6,1fr);
+
       gap:13px;
     }
 
     .moment-card{
+
       padding:7px;
-      border:1px solid var(--line);
-      background:#f9f5ee;
+
+      border:
+        1px solid var(--line);
+
+      background:
+        #f9f5ee;
+
       transition:.25s ease;
+
       cursor:pointer;
     }
 
     .moment-card:hover{
-      transform:translateY(-5px);
-      box-shadow:0 10px 24px rgba(0,0,0,.08);
+
+      transform:
+        translateY(-5px);
+
+      box-shadow:
+        0 10px 24px rgba(0,0,0,.08);
     }
 
     .moment-photo{
+
       aspect-ratio:4/3;
+
       display:grid;
+
       place-items:center;
+
       background:#d9d2c7;
+
       color:#7a7268;
+
       text-align:center;
+
       font-size:10px;
+
       overflow:hidden;
     }
 
     .moment-photo img{
+
       width:100%;
       height:100%;
+
       object-fit:cover;
     }
 
     .moment-card p{
-      margin:9px 0 3px;
+
+      margin:
+        9px 0 3px;
+
       text-align:center;
+
       text-transform:uppercase;
+
       font-size:9px;
+
       letter-spacing:.8px;
     }
 
     .moments-actions{
+
       margin-top:24px;
+
       text-align:center;
     }
 
@@ -502,15 +976,25 @@
     ========================= */
 
     .lower-grid{
+
       display:grid;
-      grid-template-columns:1fr 1.15fr 1fr;
-      border-bottom:1px solid var(--line);
+
+      grid-template-columns:
+        1fr 1.15fr 1fr;
+
+      border-bottom:
+        1px solid var(--line);
     }
 
     .panel{
+
       min-height:410px;
-      padding:38px 34px;
-      border-right:1px solid var(--line);
+
+      padding:
+        38px 34px;
+
+      border-right:
+        1px solid var(--line);
     }
 
     .panel:last-child{
@@ -518,74 +1002,133 @@
     }
 
     .panel h3{
-      margin:0 0 22px;
+
+      margin:
+        0 0 22px;
+
       text-align:center;
+
       font-size:23px;
+
       font-weight:400;
+
       letter-spacing:1.6px;
+
       text-transform:uppercase;
     }
 
     .superlative{
+
       display:flex;
-      justify-content:space-between;
+
+      justify-content:
+        space-between;
+
       gap:16px;
-      padding:12px 0;
-      border-bottom:1px solid var(--line);
+
+      padding:
+        12px 0;
+
+      border-bottom:
+        1px solid var(--line);
+
       text-transform:uppercase;
+
       font-size:10px;
+
       letter-spacing:.4px;
     }
 
     .quote-card{
+
       height:100%;
+
       min-height:335px;
+
       display:flex;
+
       flex-direction:column;
+
       justify-content:center;
+
       align-items:center;
+
       padding:36px;
-      border:1px solid var(--line);
+
+      border:
+        1px solid var(--line);
+
       text-align:center;
+
       font-size:22px;
+
       line-height:1.5;
+
       font-style:italic;
-      background:rgba(255,255,255,.12);
+
+      background:
+        rgba(255,255,255,.12);
     }
 
     .quote-card span{
+
       margin-top:22px;
+
       font-size:10px;
+
       text-transform:uppercase;
+
       letter-spacing:2px;
+
       font-style:normal;
     }
 
     .gallery-grid{
+
       display:grid;
-      grid-template-columns:repeat(2,1fr);
+
+      grid-template-columns:
+        repeat(2,1fr);
+
       gap:11px;
     }
 
     .gallery-photo{
+
       aspect-ratio:1/1;
-      border:7px solid #fff;
+
+      border:
+        7px solid #fff;
+
       background:#ddd5ca;
-      box-shadow:0 4px 10px rgba(0,0,0,.10);
+
+      box-shadow:
+        0 4px 10px rgba(0,0,0,.10);
+
       display:grid;
+
       place-items:center;
+
       color:#7b736a;
+
       font-size:10px;
-      transform:rotate(-1.5deg);
+
+      transform:
+        rotate(-1.5deg);
+
       overflow:hidden;
     }
 
     .gallery-photo:nth-child(even){
-      transform:rotate(1.5deg);
+
+      transform:
+        rotate(1.5deg);
     }
 
     .gallery-photo img{
+
       height:100%;
+
       object-fit:cover;
     }
 
@@ -594,13 +1137,23 @@
     ========================= */
 
     footer{
-      padding:30px 20px;
+
+      padding:
+        30px 20px;
+
       text-align:center;
+
       background:#171717;
+
       color:#ccb57c;
-      border-top:1px solid #8f794d;
+
+      border-top:
+        1px solid #8f794d;
+
       font-size:11px;
+
       text-transform:uppercase;
+
       letter-spacing:2px;
     }
 
@@ -613,18 +1166,33 @@
     ========================= */
 
     .mobile-menu{
+
       display:none;
-      padding:12px 18px 18px;
-      border-bottom:1px solid var(--line);
-      background:var(--paper-2);
+
+      padding:
+        12px 18px 18px;
+
+      border-bottom:
+        1px solid var(--line);
+
+      background:
+        var(--paper-2);
     }
 
     .mobile-menu a{
+
       display:block;
-      padding:10px 0;
-      border-bottom:1px solid #dfd6ca;
+
+      padding:
+        10px 0;
+
+      border-bottom:
+        1px solid #dfd6ca;
+
       font-size:11px;
+
       text-transform:uppercase;
+
       letter-spacing:1px;
     }
 
@@ -648,15 +1216,13 @@
       }
 
       .moments-grid{
-        grid-template-columns:repeat(4,1fr);
+        grid-template-columns:
+          repeat(3,1fr);
       }
 
       .houses-grid{
-        grid-template-columns:repeat(2,1fr);
-      }
-
-      .people-grid{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:
+          repeat(2,1fr);
       }
 
       .lower-grid{
@@ -665,21 +1231,26 @@
 
       .panel{
         border-right:none;
-        border-bottom:1px solid var(--line);
+        border-bottom:
+          1px solid var(--line);
       }
     }
 
     @media(max-width:780px){
 
       .page{
+
         width:100%;
+
         margin:0;
+
         border-left:none;
         border-right:none;
       }
 
       .nav{
-        padding:14px 18px;
+        padding:
+          14px 18px;
       }
 
       .nav-links{
@@ -691,9 +1262,13 @@
       }
 
       .hero{
+
         grid-template-columns:1fr;
+
         min-height:auto;
-        padding:44px 24px;
+
+        padding:
+          44px 24px 20px;
       }
 
       .hero h1{
@@ -705,20 +1280,48 @@
       }
 
       .castle{
-        min-height:320px;
+
+        min-height:0;
+
+        height:auto;
+      }
+
+      .castle-image{
+
+        height:auto;
+
+        min-height:0;
+
+        object-fit:contain;
       }
 
       section{
-        padding:44px 22px;
+        padding:
+          44px 22px;
+      }
+
+      .direction-grid{
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+        gap:14px;
       }
 
       .moments-grid{
-        grid-template-columns:repeat(2,1fr);
+
+        grid-template-columns:
+          repeat(2,1fr);
       }
 
       .section-title::before,
       .section-title::after{
         width:70px;
+      }
+
+      .history-box{
+        padding:
+          30px 24px;
       }
     }
 
@@ -749,13 +1352,37 @@
         font-size:12px;
       }
 
-      .houses-grid,
-      .people-grid{
+      .houses-grid{
         grid-template-columns:1fr;
       }
 
+      .direction-card{
+
+        padding:
+          7px 7px 17px;
+      }
+
+      .direction-card h3{
+        font-size:13px;
+      }
+
+      .direction-card p{
+        font-size:8px;
+      }
+
+      .history-box h3{
+        font-size:24px;
+      }
+
+      .history-box p{
+        font-size:14px;
+      }
+
       .moments-grid{
-        grid-template-columns:1fr 1fr;
+
+        grid-template-columns:
+          1fr 1fr;
+
         gap:10px;
       }
 
@@ -769,478 +1396,829 @@
       }
 
       .panel{
-        padding:32px 22px;
+        padding:
+          32px 22px;
       }
 
       .quote-card{
         font-size:19px;
       }
     }
+
   </style>
+
 </head>
 
 <body>
 
-  <div class="page">
+<div class="page">
 
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
+  <!-- =========================
+       NAV
+  ========================= -->
 
-    <nav class="nav">
+  <nav class="nav">
 
-      <div class="brand">
-        <div class="brand-mark">H</div>
-        <div class="brand-text">Anuario Hogwarts</div>
+    <div class="brand">
+
+      <div class="brand-mark">
+        H
       </div>
 
-      <div class="nav-links">
-        <a href="#inicio">Inicio</a>
-        <a href="#casas">Casas</a>
-        <a href="#estudiantes">Estudiantes</a>
-        <a href="#profesores">Profesores</a>
-        <a href="#recuerdos">Recuerdos</a>
-        <a href="#superlativos">Superlativos</a>
-        <a href="#galeria">Galería</a>
+      <div class="brand-text">
+        Anuario Hogwarts
       </div>
 
-      <button class="menu-button" onclick="toggleMenu()">
-        Menú
-      </button>
-
-    </nav>
-
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#inicio" onclick="toggleMenu()">Inicio</a>
-      <a href="#casas" onclick="toggleMenu()">Casas</a>
-      <a href="#estudiantes" onclick="toggleMenu()">Estudiantes</a>
-      <a href="#profesores" onclick="toggleMenu()">Profesores</a>
-      <a href="#recuerdos" onclick="toggleMenu()">Recuerdos</a>
-      <a href="#superlativos" onclick="toggleMenu()">Superlativos</a>
-      <a href="#galeria" onclick="toggleMenu()">Galería</a>
     </div>
 
-    <!-- =========================
-         HERO
-    ========================= -->
+    <div class="nav-links">
 
-    <header class="hero" id="inicio">
+      <a href="#inicio">
+        Inicio
+      </a>
 
-      <div class="hero-copy">
+      <a href="#casas">
+        Casas
+      </a>
 
-        <div class="eyebrow">
-          Anuario Escolar
-        </div>
+      <a href="#direccion">
+        Dirección
+      </a>
 
-        <h1>
-          HOGWARTS
-        </h1>
+      <a href="#historia">
+        Hogwarts
+      </a>
 
-        <div class="year">
-          2026 – 2027
-        </div>
+      <a href="profesores.html">
+        Profesores
+      </a>
 
-        <div class="flourish">
-          ✦ ─ ✧ ─ ✦
-        </div>
+      <a href="#recuerdos">
+        Recuerdos
+      </a>
 
-        <div class="hero-quote">
-          Memorias que ni Obliviate podrá borrar.
-        </div>
+      <a href="#superlativos">
+        Superlativos
+      </a>
 
-      </div>
+      <a href="#galeria">
+        Galería
+      </a>
 
-    <div class="castle">
-  <img
-    src="assets/5DD6ACDF-FCD2-4D23-98D8-FF9F03BC04AA.png"
-    alt="Castillo de Hogwarts"
-    class="castle-image"
+    </div>
+
+    <button
+      class="menu-button"
+      onclick="toggleMenu()"
+    >
+      Menú
+    </button>
+
+  </nav>
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
   >
-</div>
 
-    </header>
-
-    <!-- =========================
-         HOUSES
-    ========================= -->
-
-    <section id="casas">
-
-      <div class="section-title">
-        <h2>Las Cuatro Casas</h2>
-      </div>
-
-      <div class="houses-grid">
-
-        <article class="house-card ravenclaw">
-
-          <h3>Ravenclaw</h3>
-
-   <div class="house-symbol">
-  <img src="assets/ravenclaw.png" alt="Ravenclaw">
-</div>
-
-          <p>
-            Ingenio, sabiduría y creatividad
-          </p>
-
-          <a href="ravenclaw.html" class="btn">Explorar</a>
-
-        </article>
-
-        <article class="house-card gryffindor">
-
-          <h3>Gryffindor</h3>
-
-     <div class="house-symbol">
-  <img src="assets/gryffindor.png" alt="Gryffindor">
-</div>
-
-          <p>
-            Valor, determinación y coraje
-          </p>
-
-          <a href="gryffindor.html" class="btn">
-            Explorar
-          </a>
-
-        </article>
-
-        <article class="house-card hufflepuff">
-
-          <h3>Hufflepuff</h3>
-
-     <div class="house-symbol">
-  <img src="assets/hufflepuff.png" alt="Hufflepuff">
-</div>
-
-          <p>
-            Lealtad, paciencia y dedicación
-          </p>
-
-          <a href="hufflepuff.html" class="btn">
-            Explorar
-          </a>
-
-        </article>
-
-        <article class="house-card slytherin">
-
-          <h3>Slytherin</h3>
-
-          <div class="house-symbol">
-  <img src="assets/slytherin.png" alt="Slytherin">
-</div>
-
-          <p>
-            Ambición, astucia y liderazgo
-          </p>
-
-          <a href="slytheri.html" class="btn">
-            Explorar
-          </a>
-
-        </article>
-
-      </div>
-
-    </section>
-
-    <!-- =========================
-         STUDENTS
-    ========================= -->
-
-    <section id="estudiantes">
-
-      <div class="section-title">
-        <h2>Estudiantes</h2>
-      </div>
-
-      <p class="section-subtitle">
-        Los rostros, recuerdos y pequeñas historias que dieron vida
-        a Hogwarts durante el curso 2026–2027.
-      </p>
-
-      <div class="intro-box">
-        Esta sección puede organizarse después por casa y por año.
-        Cada estudiante podrá tener su propia fotografía, nombre,
-        curso, casa, actividades y recuerdos destacados.
-      </div>
-
-      <div class="people-grid">
-
-        <article class="person-card">
-          <div class="person-photo">Foto</div>
-          <h4>Estudiante</h4>
-          <p>Casa · Curso</p>
-        </article>
-
-        <article class="person-card">
-          <div class="person-photo">Foto</div>
-          <h4>Estudiante</h4>
-          <p>Casa · Curso</p>
-        </article>
-
-        <article class="person-card">
-          <div class="person-photo">Foto</div>
-          <h4>Estudiante</h4>
-          <p>Casa · Curso</p>
-        </article>
-
-        <article class="person-card">
-          <div class="person-photo">Foto</div>
-          <h4>Estudiante</h4>
-          <p>Casa · Curso</p>
-        </article>
-
-      </div>
-
-    </section>
-
-    <!-- =========================
-         PROFESSORS
-    ========================= -->
-
-    <section id="profesores">
-
-      <div class="section-title">
-        <h2>Profesores</h2>
-      </div>
-
-      <p class="section-subtitle">
-        Quienes llenaron el año escolar de clases,
-        desafíos y alguna que otra amenaza de detención.
-      </p>
-
-      <div class="people-grid">
-
-        <article class="person-card">
-          <div class="person-photo">Foto</div>
-          <h4>Profesor/a</h4>
-          <p>Asignatura</p>
-        </article>
-
-        <article class="person-card">
-          <div class="person-photo">Foto</div>
-          <h4>Profesor/a</h4>
-          <p>Asignatura</p>
-        </article>
-
-        <article class="person-card">
-          <div class="person-photo">Foto</div>
-          <h4>Profesor/a</h4>
-          <p>Asignatura</p>
-        </article>
-
-        <article class="person-card">
-          <div class="person-photo">Foto</div>
-          <h4>Profesor/a</h4>
-          <p>Asignatura</p>
-        </article>
-
-      </div>
-
-    </section>
-
-    <!-- =========================
-         MOMENTS
-    ========================= -->
-
-    <section class="moments" id="recuerdos">
-
-      <div class="section-title">
-        <h2>Momentos del Año</h2>
-      </div>
-
-      <p class="section-subtitle">
-        Partidos, celebraciones, clases, clubs y todos esos momentos
-        que lograron sobrevivir al caos del calendario escolar.
-      </p>
-
-      <div class="moments-grid">
-
-        <article class="moment-card">
-          <div class="moment-photo">
-            Foto de Quidditch
-          </div>
-          <p>Quidditch</p>
-        </article>
-
-        <article class="moment-card">
-          <div class="moment-photo">
-            Foto de Fiestas
-          </div>
-          <p>Fiestas</p>
-        </article>
-
-        <article class="moment-card">
-          <div class="moment-photo">
-            Foto de Clases
-          </div>
-          <p>Clases</p>
-        </article>
-
-        <article class="moment-card">
-          <div class="moment-photo">
-            Foto de Clubs
-          </div>
-          <p>Clubs</p>
-        </article>
-
-        <article class="moment-card">
-          <div class="moment-photo">
-            Foto de Porristas
-          </div>
-          <p>Porristas</p>
-        </article>
-
-        <article class="moment-card">
-          <div class="moment-photo">
-            Foto de Excursiones
-          </div>
-          <p>Excursiones</p>
-        </article>
-
-        <article class="moment-card">
-          <div class="moment-photo">
-            Foto de Eventos
-          </div>
-          <p>Eventos Especiales</p>
-        </article>
-
-      </div>
-
-      <div class="moments-actions">
-        <a href="#" class="btn">
-          Ver todos los momentos
-        </a>
-      </div>
-
-    </section>
-
-    <!-- =========================
-         SUPERLATIVES / QUOTE / GALLERY
-    ========================= -->
-
-    <div class="lower-grid">
-
-      <div class="panel" id="superlativos">
-
-        <h3>Superlativos</h3>
-
-        <div class="superlative">
-          <span>Más probable que...</span>
-          <span>›</span>
-        </div>
-
-        <div class="superlative">
-          <span>Mejor vestido</span>
-          <span>›</span>
-        </div>
-
-        <div class="superlative">
-          <span>Más divertido</span>
-          <span>›</span>
-        </div>
-
-        <div class="superlative">
-          <span>Dúo inseparable</span>
-          <span>›</span>
-        </div>
-
-        <div class="superlative">
-          <span>Mejor jugador de Quidditch</span>
-          <span>›</span>
-        </div>
-
-        <div class="superlative">
-          <span>Mente más brillante</span>
-          <span>›</span>
-        </div>
-
-        <div style="text-align:center;margin-top:22px;">
-          <a href="#" class="btn">
-            Ver todos
-          </a>
-        </div>
-
-      </div>
-
-      <div class="panel">
-
-        <div class="quote-card">
-
-          “No son nuestros años en Hogwarts los que importan,
-          sino lo que hacemos con ellos.”
-
-          <span>
-            Anuario Hogwarts · 2026–2027
-          </span>
-
-        </div>
-
-      </div>
-
-      <div class="panel" id="galeria">
-
-        <h3>Galería</h3>
-
-        <div class="gallery-grid">
-
-          <div class="gallery-photo">
-            Foto
-          </div>
-
-          <div class="gallery-photo">
-            Foto
-          </div>
-
-          <div class="gallery-photo">
-            Foto
-          </div>
-
-          <div class="gallery-photo">
-            Foto
-          </div>
-
-        </div>
-
-        <div style="text-align:center;margin-top:22px;">
-          <a href="#" class="btn">
-            Ir a la galería
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- =========================
-         FOOTER
-    ========================= -->
-
-    <footer>
-
-      Anuario Escolar de Hogwarts
-
-      <br /><br />
-
-      <span class="silver">
-        Curso 2026 – 2027
-      </span>
-
-    </footer>
+    <a
+      href="#inicio"
+      onclick="toggleMenu()"
+    >
+      Inicio
+    </a>
+
+    <a
+      href="#casas"
+      onclick="toggleMenu()"
+    >
+      Casas
+    </a>
+
+    <a
+      href="#direccion"
+      onclick="toggleMenu()"
+    >
+      Dirección
+    </a>
+
+    <a
+      href="#historia"
+      onclick="toggleMenu()"
+    >
+      Hogwarts
+    </a>
+
+    <a href="profesores.html">
+      Profesores
+    </a>
+
+    <a
+      href="#recuerdos"
+      onclick="toggleMenu()"
+    >
+      Recuerdos
+    </a>
+
+    <a
+      href="#superlativos"
+      onclick="toggleMenu()"
+    >
+      Superlativos
+    </a>
+
+    <a
+      href="#galeria"
+      onclick="toggleMenu()"
+    >
+      Galería
+    </a>
 
   </div>
 
-  <script>
+  <!-- =========================
+       HERO
+  ========================= -->
 
-    function toggleMenu(){
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("open");
-    }
+  <header
+    class="hero"
+    id="inicio"
+  >
 
-  </script>
+    <div class="hero-copy">
+
+      <div class="eyebrow">
+        Anuario Escolar
+      </div>
+
+      <h1>
+        HOGWARTS
+      </h1>
+
+      <div class="year">
+        2026 – 2027
+      </div>
+
+      <div class="flourish">
+        ✦ ─ ✧ ─ ✦
+      </div>
+
+      <div class="hero-quote">
+        Memorias que ni Obliviate podrá borrar.
+      </div>
+
+    </div>
+
+    <div class="castle">
+
+      <img
+        src="assets/5DD6ACDF-FCD2-4D23-98D8-FF9F03BC04AA.png"
+        alt="Castillo de Hogwarts"
+        class="castle-image"
+      >
+
+    </div>
+
+  </header>
+
+  <!-- =========================
+       HOUSES
+  ========================= -->
+
+  <section id="casas">
+
+    <div class="section-title">
+
+      <h2>
+        Las Cuatro Casas
+      </h2>
+
+    </div>
+
+    <div class="houses-grid">
+
+      <article
+        class="house-card ravenclaw"
+      >
+
+        <h3>
+          Ravenclaw
+        </h3>
+
+        <div class="house-symbol">
+
+          <img
+            src="assets/ravenclaw.png"
+            alt="Ravenclaw"
+          >
+
+        </div>
+
+        <p>
+          Ingenio, sabiduría y creatividad
+        </p>
+
+        <a
+          href="ravenclaw.html"
+          class="btn"
+        >
+          Explorar
+        </a>
+
+      </article>
+
+      <article
+        class="house-card gryffindor"
+      >
+
+        <h3>
+          Gryffindor
+        </h3>
+
+        <div class="house-symbol">
+
+          <img
+            src="assets/gryffindor.png"
+            alt="Gryffindor"
+          >
+
+        </div>
+
+        <p>
+          Valor, determinación y coraje
+        </p>
+
+        <a
+          href="gryffindor.html"
+          class="btn"
+        >
+          Explorar
+        </a>
+
+      </article>
+
+      <article
+        class="house-card hufflepuff"
+      >
+
+        <h3>
+          Hufflepuff
+        </h3>
+
+        <div class="house-symbol">
+
+          <img
+            src="assets/hufflepuff.png"
+            alt="Hufflepuff"
+          >
+
+        </div>
+
+        <p>
+          Lealtad, paciencia y dedicación
+        </p>
+
+        <a
+          href="hufflepuff.html"
+          class="btn"
+        >
+          Explorar
+        </a>
+
+      </article>
+
+      <article
+        class="house-card slytherin"
+      >
+
+        <h3>
+          Slytherin
+        </h3>
+
+        <div class="house-symbol">
+
+          <img
+            src="assets/slytherin.png"
+            alt="Slytherin"
+          >
+
+        </div>
+
+        <p>
+          Ambición, astucia y liderazgo
+        </p>
+
+        <a
+          href="slytherin.html"
+          class="btn"
+        >
+          Explorar
+        </a>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       DIRECCIÓN
+  ========================= -->
+
+  <section
+    class="direction"
+    id="direccion"
+  >
+
+    <div class="section-title">
+
+      <h2>
+        Dirección de Hogwarts
+      </h2>
+
+    </div>
+
+    <p class="section-subtitle">
+
+      La dirección responsable de guiar Hogwarts
+      durante el curso 2026–2027.
+
+    </p>
+
+    <div class="direction-grid">
+
+      <article class="direction-card">
+
+        <div class="direction-photo">
+          Foto del Director
+        </div>
+
+        <span class="direction-role">
+          Director
+        </span>
+
+        <h3>
+          Nombre del Director
+        </h3>
+
+        <p>
+          Director de Hogwarts
+        </p>
+
+      </article>
+
+      <article class="direction-card">
+
+        <div class="direction-photo">
+          Foto de la Subdirectora
+        </div>
+
+        <span class="direction-role">
+          Subdirectora
+        </span>
+
+        <h3>
+          Nombre de la Subdirectora
+        </h3>
+
+        <p>
+          Subdirectora de Hogwarts
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       HOGWARTS / HISTORIA
+  ========================= -->
+
+  <section
+    class="history-section"
+    id="historia"
+  >
+
+    <div class="section-title">
+
+      <h2>
+        Hogwarts
+      </h2>
+
+    </div>
+
+    <div class="history-box">
+
+      <div class="history-symbol">
+        ✦
+      </div>
+
+      <h3>
+        Hogwarts y sus Fundadores
+      </h3>
+
+      <p>
+
+        El Colegio Hogwarts de Magia y Hechicería
+        fue fundado hace siglos con el propósito de
+        ofrecer un lugar seguro donde jóvenes brujas
+        y magos pudieran desarrollar sus habilidades,
+        estudiar las artes mágicas y descubrir el lugar
+        que ocuparían dentro del mundo mágico.
+
+      </p>
+
+      <p>
+
+        Desde sus torres, aulas y pasillos hasta sus
+        terrenos y secretos, Hogwarts ha sido el hogar
+        de generaciones de estudiantes cuyas historias
+        han quedado entrelazadas con las del propio castillo.
+
+      </p>
+
+      <div class="founders">
+
+        Godric Gryffindor
+        ·
+        Helga Hufflepuff
+        ·
+        Rowena Ravenclaw
+        ·
+        Salazar Slytherin
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       PROFESSORS
+  ========================= -->
+
+  <section
+    class="professors-section"
+    id="profesores"
+  >
+
+    <div class="section-title">
+
+      <h2>
+        Profesores
+      </h2>
+
+    </div>
+
+    <p class="section-subtitle">
+
+      Conoce al cuerpo docente de Hogwarts,
+      sus asignaturas y a los jefes de cada casa.
+
+    </p>
+
+    <div class="professor-entry">
+
+      <div class="professor-icon">
+        ✦
+      </div>
+
+      <h3>
+        Cuerpo Docente
+      </h3>
+
+      <p>
+        Profesores · Asignaturas · Jefes de Casa
+      </p>
+
+      <a
+        href="profesores.html"
+        class="btn"
+      >
+        Ver Profesores
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       MOMENTOS / RECUERDOS
+  ========================= -->
+
+  <section
+    class="moments"
+    id="recuerdos"
+  >
+
+    <div class="section-title">
+
+      <h2>
+        Momentos Importantes
+      </h2>
+
+    </div>
+
+    <p class="section-subtitle">
+
+      Los partidos, actividades, viajes y recuerdos
+      que marcaron el curso 2026–2027.
+
+    </p>
+
+    <div class="moments-grid">
+
+      <article class="moment-card">
+
+        <div class="moment-photo">
+          Foto de Quidditch
+        </div>
+
+        <p>
+          Quidditch
+        </p>
+
+      </article>
+
+      <article class="moment-card">
+
+        <div class="moment-photo">
+          Foto de Porristas
+        </div>
+
+        <p>
+          Porristas
+        </p>
+
+      </article>
+
+      <article class="moment-card">
+
+        <div class="moment-photo">
+          Foto de Clubs
+        </div>
+
+        <p>
+          Clubs
+        </p>
+
+      </article>
+
+      <article class="moment-card">
+
+        <div class="moment-photo">
+          Foto de Actividades
+        </div>
+
+        <p>
+          Actividades
+        </p>
+
+      </article>
+
+      <article class="moment-card">
+
+        <div class="moment-photo">
+          Foto de Excursiones
+        </div>
+
+        <p>
+          Excursiones
+        </p>
+
+      </article>
+
+      <article class="moment-card">
+
+        <div class="moment-photo">
+          Foto de Eventos
+        </div>
+
+        <p>
+          Eventos Especiales
+        </p>
+
+      </article>
+
+    </div>
+
+    <div class="moments-actions">
+
+      <a
+        href="#"
+        class="btn"
+      >
+        Ver todos los recuerdos
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       SUPERLATIVOS / FRASE / GALERÍA
+  ========================= -->
+
+  <div class="lower-grid">
+
+    <div
+      class="panel"
+      id="superlativos"
+    >
+
+      <h3>
+        Superlativos
+      </h3>
+
+      <div class="superlative">
+
+        <span>
+          Más probable que...
+        </span>
+
+        <span>
+          ›
+        </span>
+
+      </div>
+
+      <div class="superlative">
+
+        <span>
+          Mejor vestido
+        </span>
+
+        <span>
+          ›
+        </span>
+
+      </div>
+
+      <div class="superlative">
+
+        <span>
+          Más divertido
+        </span>
+
+        <span>
+          ›
+        </span>
+
+      </div>
+
+      <div class="superlative">
+
+        <span>
+          Dúo inseparable
+        </span>
+
+        <span>
+          ›
+        </span>
+
+      </div>
+
+      <div class="superlative">
+
+        <span>
+          Mejor jugador de Quidditch
+        </span>
+
+        <span>
+          ›
+        </span>
+
+      </div>
+
+      <div class="superlative">
+
+        <span>
+          Mente más brillante
+        </span>
+
+        <span>
+          ›
+        </span>
+
+      </div>
+
+      <div
+        style="
+          text-align:center;
+          margin-top:22px;
+        "
+      >
+
+        <a
+          href="#"
+          class="btn"
+        >
+          Ver todos
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="panel">
+
+      <div class="quote-card">
+
+        “No son nuestros años en Hogwarts los que importan,
+        sino lo que hacemos con ellos.”
+
+        <span>
+          Anuario Hogwarts · 2026–2027
+        </span>
+
+      </div>
+
+    </div>
+
+    <div
+      class="panel"
+      id="galeria"
+    >
+
+      <h3>
+        Galería
+      </h3>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-photo">
+          Foto
+        </div>
+
+        <div class="gallery-photo">
+          Foto
+        </div>
+
+        <div class="gallery-photo">
+          Foto
+        </div>
+
+        <div class="gallery-photo">
+          Foto
+        </div>
+
+      </div>
+
+      <div
+        style="
+          text-align:center;
+          margin-top:22px;
+        "
+      >
+
+        <a
+          href="#"
+          class="btn"
+        >
+          Ir a la galería
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    Anuario Escolar de Hogwarts
+
+    <br><br>
+
+    <span class="silver">
+      Curso 2026 – 2027
+    </span>
+
+  </footer>
+
+</div>
+
+<script>
+
+  function toggleMenu(){
+
+    const menu =
+      document.getElementById(
+        "mobileMenu"
+      );
+
+    menu.classList.toggle(
+      "open"
+    );
+  }
+
+</script>
 
 </body>
+
 </html>
