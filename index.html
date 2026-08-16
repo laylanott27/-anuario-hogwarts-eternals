@@ -220,45 +220,36 @@
     }
 
     .castle{
-      min-height:470px;
-      border:1px solid var(--line);
-      background:
-        linear-gradient(to bottom, rgba(255,255,255,.15), rgba(216,207,194,.28));
-      display:grid;
-      place-items:center;
-      position:relative;
-      overflow:hidden;
-    }
+  min-height:470px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
 
-    .castle::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:
-        linear-gradient(145deg, transparent 55%, rgba(0,0,0,.025)),
-        radial-gradient(circle at 70% 20%, rgba(255,255,255,.7), transparent 35%);
-    }
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(251,248,242,.08),
+      rgba(251,248,242,.02)
+    );
+}
 
-    .castle-placeholder{
-      width:88%;
-      height:82%;
-      border:1px dashed #b6ab9c;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:20px;
-      color:#857b70;
-      font-style:italic;
-      gap:12px;
-    }
+.castle-image{
+  width:100%;
+  height:100%;
+  min-height:470px;
 
-    .castle-placeholder .big{
-      font-size:44px;
-      font-style:normal;
-    }
+  object-fit:contain;
+  object-position:center bottom;
 
+  filter:
+    grayscale(70%)
+    sepia(12%)
+    contrast(.95);
+
+  mix-blend-mode:multiply;
+}
     /* =========================
        SECTIONS
     ========================= */
@@ -351,15 +342,24 @@
     }
 
     .house-symbol{
-      width:138px;
-      height:165px;
-      margin:18px auto;
-      display:grid;
-      place-items:center;
-      border:1px solid var(--line);
-      font-size:50px;
-      background:rgba(255,255,255,.24);
-    }
+  width:150px;
+  height:175px;
+  margin:18px auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.house-symbol img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+
+  filter:
+    saturate(.82)
+    contrast(.95);
+}
 
     .house-card p{
       min-height:42px;
@@ -860,17 +860,13 @@
 
       </div>
 
-      <div class="castle">
-
-        <div class="castle-placeholder">
-          <div class="big">♜</div>
-          <div>
-            Aquí puedes colocar una ilustración
-            o imagen del castillo de Hogwarts.
-          </div>
-        </div>
-
-      </div>
+    <div class="castle">
+  <img
+    src="assets/castillo-hogwarts.png"
+    alt="Castillo de Hogwarts"
+    class="castle-image"
+  >
+</div>
 
     </header>
 
@@ -890,9 +886,9 @@
 
           <h3>Ravenclaw</h3>
 
-          <div class="house-symbol">
-            🦅
-          </div>
+   <div class="house-symbol">
+  <img src="assets/ravenclaw.png" alt="Ravenclaw">
+</div>
 
           <p>
             Ingenio, sabiduría y creatividad
@@ -908,9 +904,9 @@
 
           <h3>Gryffindor</h3>
 
-          <div class="house-symbol">
-            🦁
-          </div>
+     <div class="house-symbol">
+  <img src="assets/gryffindor.png" alt="Gryffindor">
+</div>
 
           <p>
             Valor, determinación y coraje
@@ -926,9 +922,9 @@
 
           <h3>Hufflepuff</h3>
 
-          <div class="house-symbol">
-            🦡
-          </div>
+     <div class="house-symbol">
+  <img src="assets/hufflepuff.png" alt="Hufflepuff">
+</div>
 
           <p>
             Lealtad, paciencia y dedicación
@@ -945,8 +941,8 @@
           <h3>Slytherin</h3>
 
           <div class="house-symbol">
-            🐍
-          </div>
+  <img src="assets/slytherin.png" alt="Slytherin">
+</div>
 
           <p>
             Ambición, astucia y liderazgo
