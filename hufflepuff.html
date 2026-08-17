@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Hufflepuff | Anuario Hogwarts 2026–2027
+  </title>
+
+  <style>
+
+    :root{
+
+      --paper:#f1e8da;
+      --paper-light:#faf6ee;
+
+      --ink:#211d19;
+      --muted:#6b645c;
+
+      --line:#bcae9d;
+
+      --yellow:#c89a31;
+      --yellow-dark:#9f7622;
+
+      --black:#2b2926;
+      --black-soft:#47433e;
+
+      --white:#fbf8f2;
+
+      --shadow:
+        0 14px 30px rgba(0,0,0,.10);
+
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+
+      margin:0;
+
+      background:
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(0,0,0,.025) 1px,
+          transparent 1px
+        ),
+        radial-gradient(
+          circle at 80% 40%,
+          rgba(0,0,0,.02) 1px,
+          transparent 1px
+        ),
+        var(--paper);
+
+      background-size:
+        22px 22px,
+        31px 31px;
+
+      color:var(--ink);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    img{
+      display:block;
+      width:100%;
+    }
+
+    button{
+      font:inherit;
+    }
+
+    .page{
+
+      width:min(1200px,96%);
+
+      margin:20px auto;
+
+      background:
+        var(--paper-light);
+
+      border:
+        1px solid #ab9e8c;
+
+      box-shadow:
+        0 20px 55px rgba(0,0,0,.12);
+
+      overflow:hidden;
+
+    }
+
+    /* =========================
+       NAV
+    ========================= */
+
+    nav{
+
+      min-height:74px;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:space-between;
+
+      padding:
+        14px 5%;
+
+      border-bottom:
+        1px solid var(--line);
+
+      background:
+        rgba(250,246,238,.96);
+
+      position:sticky;
+
+      top:0;
+
+      z-index:100;
+
+      backdrop-filter:
+        blur(8px);
+
+    }
+
+    .brand{
+
+      font-size:13px;
+
+      text-transform:uppercase;
+
+      letter-spacing:2px;
+
+    }
+
+    .back{
+
+      border:
+        1px solid var(--line);
+
+      padding:
+        9px 15px;
+
+      font-size:10px;
+
+      text-transform:uppercase;
+
+      letter-spacing:1px;
+
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero{
+
+      text-align:center;
+
+      padding:
+        70px 20px 55px;
+
+      border-bottom:
+        1px solid var(--line);
+
+    }
+
+    .hero::before{
+
+      content:"✦";
+
+      display:block;
+
+      margin-bottom:18px;
+
+      color:var(--yellow);
+
+      font-size:22px;
+
+    }
+
+    .house-name{
+
+      margin:0;
+
+      color:
+        var(--yellow-dark);
+
+      font-size:
+        clamp(48px,10vw,92px);
+
+      font-weight:normal;
+
+      letter-spacing:5px;
+
+    }
+
+    .years{
+
+      margin:
+        16px 0;
+
+      color:
+        var(--yellow-dark);
+
+      font-size:19px;
+
+      letter-spacing:5px;
+
+    }
+
+    .motto{
+
+      max-width:650px;
+
+      margin:
+        24px auto 0;
+
+      font-size:14px;
+
+      line-height:1.8;
+
+      letter-spacing:2px;
+
+      text-transform:uppercase;
+
+    }
+
+    .ornament{
+
+      margin-top:28px;
+
+      color:
+        var(--black-soft);
+
+      font-size:18px;
+
+      letter-spacing:14px;
+
+    }
+
+    /* =========================
+       TÍTULOS
+    ========================= */
+
+    .section-heading{
+
+      display:flex;
+
+      align-items:center;
+
+      gap:18px;
+
+      margin-bottom:35px;
+
+      text-align:center;
+
+      text-transform:uppercase;
+
+      letter-spacing:3px;
+
+      font-size:13px;
+
+    }
+
+    .section-heading::before,
+    .section-heading::after{
+
+      content:"";
+
+      flex:1;
+
+      height:1px;
+
+      background:
+        var(--line);
+
+    }
+
+    /* =========================
+       FUNDADORA
+    ========================= */
+
+    .founder-section{
+
+      padding:
+        55px 6%;
+
+      border-bottom:
+        1px solid var(--line);
+
+    }
+
+    .founder{
+
+      max-width:1050px;
+
+      margin:auto;
+
+      display:grid;
+
+      grid-template-columns:
+        320px 1fr;
+
+      gap:50px;
+
+      align-items:center;
+
+    }
+
+    .founder-photo img{
+
+      width:100%;
+
+      aspect-ratio:4/5;
+
+      object-fit:cover;
+
+      border:
+        1px solid var(--line);
+
+      padding:8px;
+
+      background:
+        var(--white);
+
+    }
+
+    .founder-label{
+
+      color:
+        var(--yellow-dark);
+
+      font-size:10px;
+
+      letter-spacing:3px;
+
+      text-transform:uppercase;
+
+    }
+
+    .founder-info h2{
+
+      margin:
+        10px 0 12px;
+
+      color:
+        var(--yellow-dark);
+
+      font-size:38px;
+
+      font-weight:normal;
+
+    }
+
+    .founder-line{
+
+      width:65px;
+
+      height:1px;
+
+      margin:
+        18px 0 25px;
+
+      background:
+        var(--yellow);
+
+    }
+
+    .founder-info p{
+
+      font-size:15px;
+
+      line-height:1.9;
+
+      color:#4d4944;
+
+    }
+
+    .founder-quote{
+
+      margin-top:24px;
+
+      padding:
+        18px 22px;
+
+      border-left:
+        2px solid var(--yellow);
+
+      font-size:16px;
+
+      font-style:italic;
+
+    }
+
+    /* =========================
+       JEFA DE CASA
+    ========================= */
+
+    .staff-section{
+
+      padding:
+        55px 6%;
+
+      border-bottom:
+        1px solid var(--line);
+
+    }
+
+    .staff-grid{
+
+      display:flex;
+
+      justify-content:center;
+
+    }
+
+    /* =========================
+       AÑOS
+    ========================= */
+
+    .year-section{
+
+      padding:
+        55px 6%;
+
+      border-bottom:
+        1px solid var(--line);
+
+    }
+
+    .year-title{
+
+      display:flex;
+
+      align-items:center;
+
+      gap:20px;
+
+      margin-bottom:35px;
+
+    }
+
+    .year-title::before,
+    .year-title::after{
+
+      content:"";
+
+      flex:1;
+
+      height:1px;
+
+      background:
+        var(--line);
+
+    }
+
+    .year-title h2{
+
+      margin:0;
+
+      color:
+        var(--yellow-dark);
+
+      font-size:23px;
+
+      font-weight:normal;
+
+      letter-spacing:3px;
+
+      text-transform:uppercase;
+
+      white-space:nowrap;
+
+    }
+
+    .students{
+
+      max-width:1200px;
+
+      margin:auto;
+
+      display:grid;
+
+      grid-template-columns:
+        repeat(auto-fit,minmax(180px,1fr));
+
+      gap:26px;
+
+    }
+
+    /* =========================
+       TARJETAS
+    ========================= */
+
+    .profile-card{
+
+      width:100%;
+
+      max-width:220px;
+
+      margin:auto;
+
+      padding:
+        10px 10px 22px;
+
+      position:relative;
+
+      text-align:center;
+
+      cursor:pointer;
+
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+    }
+
+    .profile-card:hover{
+
+      transform:
+        translateY(-5px);
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+    .profile-card img{
+
+      width:100%;
+
+      height:250px;
+
+      object-fit:cover;
+
+      object-position:center 20%;
+
+      background:#ddd4c8;
+
+    }
+
+    .profile-card h3{
+
+      margin:
+        16px 5px 5px;
+
+      font-size:15px;
+
+      font-weight:normal;
+
+      letter-spacing:1px;
+
+      text-transform:uppercase;
+
+    }
+
+    .profile-card p{
+
+      margin:0;
+
+      color:#655f58;
+
+      font-size:10px;
+
+      letter-spacing:1px;
+
+      text-transform:uppercase;
+
+      line-height:1.5;
+
+    }
+
+    .student-card{
+
+      border:
+        1px solid #d3c7b7;
+
+      background:
+        var(--white);
+
+    }
+
+    .head-card{
+
+      border:
+        3px solid var(--yellow);
+
+      background:
+        #fbf4dd;
+
+    }
+
+    .prefect-card{
+
+      border:
+        3px solid var(--black);
+
+      background:
+        #efede9;
+
+    }
+
+    .profile-badge{
+
+      position:absolute;
+
+      top:20px;
+
+      left:50%;
+
+      transform:
+        translateX(-50%);
+
+      padding:
+        5px 10px;
+
+      font-size:8px;
+
+      letter-spacing:1.4px;
+
+      text-transform:uppercase;
+
+      white-space:nowrap;
+
+      z-index:2;
+
+    }
+
+    .head-card .profile-badge{
+
+      background:
+        var(--yellow-dark);
+
+      color:white;
+
+    }
+
+    .prefect-card .profile-badge{
+
+      background:
+        var(--black);
+
+      color:white;
+
+    }
+
+    /* =========================
+       MODAL
+    ========================= */
+
+    .profile-modal{
+
+      position:fixed;
+
+      inset:0;
+
+      z-index:999;
+
+      display:none;
+
+      align-items:center;
+
+      justify-content:center;
+
+      padding:20px;
+
+    }
+
+    .profile-modal.active{
+      display:flex;
+    }
+
+    .modal-background{
+
+      position:absolute;
+
+      inset:0;
+
+      background:
+        rgba(10,10,10,.68);
+
+      backdrop-filter:
+        blur(4px);
+
+    }
+
+    .modal-card{
+
+      width:
+        min(720px,95%);
+
+      max-height:90vh;
+
+      position:relative;
+
+      z-index:2;
+
+      display:grid;
+
+      grid-template-columns:
+        230px 1fr;
+
+      background:
+        #f5eee3;
+
+      border:
+        1px solid #918675;
+
+      box-shadow:
+        0 25px 70px rgba(0,0,0,.35);
+
+      overflow:auto;
+
+    }
+
+    .modal-card > img{
+
+      width:100%;
+
+      height:100%;
+
+      min-height:380px;
+
+      object-fit:cover;
+
+      object-position:center 20%;
+
+      background:#ddd4c8;
+
+    }
+
+    .modal-content{
+
+      padding:
+        45px 35px;
+
+      display:flex;
+
+      flex-direction:column;
+
+      justify-content:center;
+
+    }
+
+    .modal-small{
+
+      font-size:9px;
+
+      letter-spacing:2px;
+
+      color:#777067;
+
+      text-transform:uppercase;
+
+    }
+
+    .modal-content h2{
+
+      margin:
+        10px 0 4px;
+
+      color:
+        var(--yellow-dark);
+
+      font-size:30px;
+
+      font-weight:normal;
+
+    }
+
+    .modal-role{
+
+      margin:0;
+
+      color:
+        var(--black-soft);
+
+      font-size:11px;
+
+      text-transform:uppercase;
+
+      letter-spacing:1.5px;
+
+    }
+
+    .modal-divider{
+
+      width:55px;
+
+      height:1px;
+
+      margin:
+        22px 0;
+
+      background:
+        var(--line);
+
+    }
+
+    .modal-description{
+
+      margin:0;
+
+      font-size:15px;
+
+      line-height:1.8;
+
+      white-space:pre-line;
+
+    }
+
+    .modal-star{
+
+      margin-top:25px;
+
+      color:
+        var(--yellow);
+
+      font-size:18px;
+
+    }
+
+    .modal-close{
+
+      position:absolute;
+
+      top:12px;
+
+      right:15px;
+
+      width:34px;
+
+      height:34px;
+
+      border:none;
+
+      background:
+        rgba(245,238,227,.92);
+
+      font-size:26px;
+
+      cursor:pointer;
+
+      z-index:4;
+
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer{
+
+      padding:
+        35px 20px;
+
+      text-align:center;
+
+      background:
+        #1c1c1c;
+
+      color:#d6c5a7;
+
+      font-size:11px;
+
+      letter-spacing:2px;
+
+      text-transform:uppercase;
+
+    }
+
+    /* =========================
+       MÓVIL
+    ========================= */
+
+    @media(max-width:600px){
+
+      .page{
+
+        width:100%;
+
+        margin:0;
+
+        border-left:none;
+
+        border-right:none;
+
+      }
+
+      nav{
+
+        padding:
+          14px 18px;
+
+      }
+
+      .brand{
+        font-size:10px;
+      }
+
+      .back{
+
+        padding:
+          8px 11px;
+
+        font-size:9px;
+
+      }
+
+      .hero{
+
+        padding:
+          52px 18px 42px;
+
+      }
+
+      .house-name{
+
+        font-size:42px;
+
+        letter-spacing:3px;
+
+      }
+
+      .years{
+        font-size:16px;
+      }
+
+      .founder{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+      }
+
+      .founder-photo{
+
+        max-width:260px;
+
+        margin:auto;
+
+      }
+
+      .founder-info{
+        text-align:center;
+      }
+
+      .founder-line{
+
+        margin:
+          18px auto 25px;
+
+      }
+
+      .founder-info h2{
+        font-size:30px;
+      }
+
+      .students{
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+        gap:14px;
+
+      }
+
+      .profile-card{
+
+        max-width:none;
+
+        padding:
+          8px 8px 18px;
+
+      }
+
+      .profile-card img{
+        height:190px;
+      }
+
+      .profile-card h3{
+        font-size:12px;
+      }
+
+      .profile-card p{
+        font-size:9px;
+      }
+
+      .year-section{
+
+        padding:
+          45px 18px;
+
+      }
+
+      .year-title h2{
+
+        font-size:16px;
+
+        letter-spacing:2px;
+
+      }
+
+      .modal-card{
+
+        grid-template-columns:1fr;
+
+      }
+
+      .modal-card > img{
+
+        height:280px;
+
+        min-height:0;
+
+      }
+
+      .modal-content{
+
+        padding:
+          28px 24px;
+
+      }
+
+      .modal-content h2{
+        font-size:25px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+  <!-- =========================
+       NAVEGACIÓN
+  ========================== -->
+
+  <nav>
+
+    <div class="brand">
+      Anuario Hogwarts
+    </div>
+
+    <a
+      href="index.html"
+      class="back"
+    >
+      ← Inicio
+    </a>
+
+  </nav>
+
+
+  <!-- =========================
+       HUFFLEPUFF
+  ========================== -->
+
+  <header class="hero">
+
+    <h1 class="house-name">
+      HUFFLEPUFF
+    </h1>
+
+    <div class="years">
+      2026 — 2027
+    </div>
+
+    <p class="motto">
+      Lealtad · Paciencia · Dedicación
+    </p>
+
+    <div class="ornament">
+      ✦ ✧ ✦
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       FUNDADORA
+  ========================== -->
+
+  <section class="founder-section">
+
+    <div class="section-heading">
+      Fundadora de la Casa
+    </div>
+
+    <div class="founder">
+
+      <div class="founder-photo">
+
+        <img
+          src="assets/helga-hufflepuff.jpg"
+          alt="Helga Hufflepuff"
+        >
+
+      </div>
+
+      <div class="founder-info">
+
+        <span class="founder-label">
+          Fundadora
+        </span>
+
+        <h2>
+          Helga Hufflepuff
+        </h2>
+
+        <div class="founder-line"></div>
+
+        <p>
+          Helga Hufflepuff fue una de las cuatro fundadoras
+          del Colegio Hogwarts de Magia y Hechicería.
+          Era conocida por valorar la lealtad, la honestidad,
+          la paciencia, el esfuerzo y el sentido de comunidad.
+        </p>
+
+        <p>
+          Su casa mantiene ese legado reuniendo a estudiantes
+          que comprenden que el talento importa, pero también
+          la constancia, el compañerismo y la voluntad de trabajar
+          por aquello que consideran importante.
+        </p>
+
+        <div class="founder-quote">
+          “La verdadera fortaleza también se encuentra en la lealtad,
+          la paciencia y el trabajo constante.”
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       JEFA DE CASA
+  ========================== -->
+
+  <section class="staff-section">
+
+    <div class="section-heading">
+      Jefatura de Hufflepuff
+    </div>
+
+    <div class="staff-grid">
+
+      <article
+        class="profile-card head-card"
+        onclick="openProfile(
+          'Sephira Dumbledore',
+          'Jefa de Hufflepuff · Subdirectora de Hogwarts',
+          'Mensaje de fin de curso aún pendiente.',
+          'assets/sephira-dumbledore.jpg'
+        )"
+      >
+
+        <div class="profile-badge">
+          Jefa de Casa
+        </div>
+
+        <img
+          src="assets/sephira-dumbledore.jpg"
+          alt="Sephira Dumbledore"
+        >
+
+        <h3>
+          Sephira Dumbledore
+        </h3>
+
+        <p>
+          Subdirectora de Hogwarts
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PRIMER AÑO
+  ========================== -->
+
+  <section class="year-section">
+
+    <div class="year-title">
+      <h2>Primer Año</h2>
+    </div>
+
+    <div class="students"></div>
+
+  </section>
+
+
+  <!-- =========================
+       SEGUNDO AÑO
+  ========================== -->
+
+  <section class="year-section">
+
+    <div class="year-title">
+      <h2>Segundo Año</h2>
+    </div>
+
+    <div class="students"></div>
+
+  </section>
+
+
+  <!-- =========================
+       TERCER AÑO
+  ========================== -->
+
+  <section class="year-section">
+
+    <div class="year-title">
+      <h2>Tercer Año</h2>
+    </div>
+
+    <div class="students"></div>
+
+  </section>
+
+
+  <!-- =========================
+       CUARTO AÑO
+  ========================== -->
+
+  <section class="year-section">
+
+    <div class="year-title">
+      <h2>Cuarto Año</h2>
+    </div>
+
+    <div class="students"></div>
+
+  </section>
+
+
+  <!-- =========================
+       QUINTO AÑO
+  ========================== -->
+
+  <section class="year-section">
+
+    <div class="year-title">
+      <h2>Quinto Año</h2>
+    </div>
+
+    <div class="students">
+
+      <article
+        class="profile-card prefect-card"
+        onclick="openProfile(
+          'Amatis Castairs-Scamander',
+          'Quinto Año · Prefecta de Hufflepuff',
+          'Prefecta de Hufflepuff.',
+          'assets/amatis-castairs-scamander.jpg'
+        )"
+      >
+
+        <div class="profile-badge">
+          Prefecta
+        </div>
+
+        <img
+          src="assets/amatis-castairs-scamander.jpg"
+          alt="Amatis Castairs-Scamander"
+        >
+
+        <h3>
+          Amatis Castairs-Scamander
+        </h3>
+
+        <p>
+          Quinto Año · Prefecta
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SEXTO AÑO
+  ========================== -->
+
+  <section class="year-section">
+
+    <div class="year-title">
+      <h2>Sexto Año</h2>
+    </div>
+
+    <div class="students">
+
+      <article
+        class="profile-card prefect-card"
+        onclick="openProfile(
+          'Alisson Diggory',
+          'Sexto Año · Prefecta de Hufflepuff',
+          'Prefecta de Hufflepuff. Porrista.',
+          'assets/alisson-diggory.jpg'
+        )"
+      >
+
+        <div class="profile-badge">
+          Prefecta
+        </div>
+
+        <img
+          src="assets/alisson-diggory.jpg"
+          alt="Alisson Diggory"
+        >
+
+        <h3>
+          Alisson Diggory
+        </h3>
+
+        <p>
+          Sexto Año · Prefecta · Porrista
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SÉPTIMO AÑO
+  ========================== -->
+
+  <section class="year-section">
+
+    <div class="year-title">
+      <h2>Séptimo Año</h2>
+    </div>
+
+    <div class="students">
+
+
+      <!-- STELIAN LORIÈN -->
+
+      <article
+        class="profile-card prefect-card"
+        onclick="openProfile(
+          'Stelian Lorièn',
+          'Séptimo Año · Prefecto de Hufflepuff',
+          'Prefecto de Hufflepuff.',
+          'assets/stelian-lorien.jpg'
+        )"
+      >
+
+        <div class="profile-badge">
+          Prefecto
+        </div>
+
+        <img
+          src="assets/stelian-lorien.jpg"
+          alt="Stelian Lorièn"
+        >
+
+        <h3>
+          Stelian Lorièn
+        </h3>
+
+        <p>
+          Séptimo Año · Prefecto
+        </p>
+
+      </article>
+
+
+      <!-- CAPELLA SALMAN -->
+
+      <article
+        class="profile-card prefect-card"
+        onclick="openProfile(
+          'Capella Salman',
+          'Séptimo Año · Jefa de Prefectos · Hufflepuff',
+          'Jefa de Prefectos de Hufflepuff. Jugadora de Quidditch.',
+          'assets/capella-salman.jpg'
+        )"
+      >
+
+        <div class="profile-badge">
+          Jefa de Prefectos
+        </div>
+
+        <img
+          src="assets/capella-salman.jpg"
+          alt="Capella Salman"
+        >
+
+        <h3>
+          Capella Salman
+        </h3>
+
+        <p>
+          Séptimo Año · Jefa de Prefectos · Quidditch
+        </p>
+
+      </article>
+
+
+      <!-- ROSE BLACK -->
+
+      <article
+        class="profile-card prefect-card"
+        onclick="openProfile(
+          'Rose Black',
+          'Séptimo Año · Prefecta de Hufflepuff',
+          'Prefecta de Hufflepuff. Jugadora de Quidditch.',
+          'assets/rose-black.jpg'
+        )"
+      >
+
+        <div class="profile-badge">
+          Prefecta
+        </div>
+
+        <img
+          src="assets/rose-black.jpg"
+          alt="Rose Black"
+        >
+
+        <h3>
+          Rose Black
+        </h3>
+
+        <p>
+          Séptimo Año · Prefecta · Quidditch
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    Anuario Escolar de Hogwarts · Hufflepuff · 2026 — 2027
+  </footer>
+
+
+</div>
+
+
+<div
+  class="profile-modal"
+  id="profileModal"
+>
+
+  <div
+    class="modal-background"
+    onclick="closeProfile()"
+  ></div>
+
+  <div class="modal-card">
+
+    <button
+      class="modal-close"
+      onclick="closeProfile()"
+    >
+      ×
+    </button>
+
+    <img
+      id="modalImage"
+      src=""
+      alt=""
+    >
+
+    <div class="modal-content">
+
+      <span class="modal-small">
+        Anuario Hogwarts · Hufflepuff · 2026–2027
+      </span>
+
+      <h2 id="modalName"></h2>
+
+      <p
+        class="modal-role"
+        id="modalRole"
+      ></p>
+
+      <div class="modal-divider"></div>
+
+      <p
+        class="modal-description"
+        id="modalDescription"
+      ></p>
+
+      <div class="modal-star">
+        ✦
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+  function openProfile(
+    name,
+    role,
+    description,
+    image
+  ){
+
+    document
+      .getElementById("modalName")
+      .textContent = name;
+
+    document
+      .getElementById("modalRole")
+      .textContent = role;
+
+    document
+      .getElementById("modalDescription")
+      .textContent = description;
+
+    document
+      .getElementById("modalImage")
+      .src = image;
+
+    document
+      .getElementById("modalImage")
+      .alt = name;
+
+    document
+      .getElementById("profileModal")
+      .classList
+      .add("active");
+
+    document.body.style.overflow =
+      "hidden";
+
+  }
+
+  function closeProfile(){
+
+    document
+      .getElementById("profileModal")
+      .classList
+      .remove("active");
+
+    document.body.style.overflow =
+      "";
+
+  }
+
+</script>
+
+
+</body>
+
+</html>
