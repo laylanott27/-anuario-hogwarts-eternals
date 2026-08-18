@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Ravenclaw · Anuario Hogwarts 2026–2027
+</title>
+
+
+<style>
+
+/* ==========================================
+   COLORES GENERALES
+========================================== */
+
+:root{
+
+  --paper:#f1e8da;
+  --paper-light:#f8f3ea;
+
+  --ink:#211d19;
+  --muted:#746b61;
+
+  --line:#c8baa8;
+
+  --ravenclaw:#2d4d70;
+  --ravenclaw-dark:#1e354f;
+
+  --silver:#aeb4bd;
+  --silver-dark:#737b86;
+
+}
+
+
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+========================================== */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  margin:0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  background:#f1e8da;
+
+  color:var(--ink);
+
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  display:block;
+}
+
+
+/* ==========================================
+   PÁGINA
+========================================== */
+
+.page{
+
+  width:min(1200px,100%);
+
+  margin:auto;
+
+  min-height:100vh;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0,0,0,.018) 1px,
+      transparent 1px
+    ),
+    var(--paper-light);
+
+  background-size:25px 25px;
+
+}
+
+
+/* ==========================================
+   NAVEGACIÓN
+========================================== */
+
+.nav{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:100;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:18px 38px;
+
+  background:rgba(248,243,234,.96);
+
+  border-bottom:1px solid var(--line);
+
+  backdrop-filter:blur(10px);
+
+}
+
+
+.brand{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:13px;
+
+}
+
+
+.brand-mark{
+
+  width:43px;
+
+  height:43px;
+
+  border:1px solid var(--ravenclaw);
+
+  border-radius:50%;
+
+  display:grid;
+
+  place-items:center;
+
+  color:var(--ravenclaw);
+
+  font-size:20px;
+
+}
+
+
+.brand-text{
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.back-button{
+
+  border:1px solid var(--ravenclaw);
+
+  padding:9px 15px;
+
+  font-size:10px;
+
+  letter-spacing:1.4px;
+
+  text-transform:uppercase;
+
+  transition:.2s ease;
+
+}
+
+
+.back-button:hover{
+
+  background:var(--ravenclaw);
+
+  color:white;
+
+}
+
+
+/* ==========================================
+   PORTADA RAVENCLAW
+========================================== */
+
+.house-hero{
+
+  min-height:560px;
+
+  padding:70px 45px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.house-crest{
+
+  width:190px;
+
+  height:210px;
+
+  margin-bottom:25px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+}
+
+
+.house-crest img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:contain;
+
+}
+
+
+.house-eyebrow{
+
+  margin-bottom:12px;
+
+  font-size:13px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+  color:var(--muted);
+
+}
+
+
+.house-hero h1{
+
+  margin:0;
+
+  color:var(--ravenclaw);
+
+  font-size:70px;
+
+  font-weight:400;
+
+  letter-spacing:5px;
+
+}
+
+
+.house-motto{
+
+  margin-top:20px;
+
+  font-size:18px;
+
+  font-style:italic;
+
+}
+
+
+.house-description{
+
+  max-width:700px;
+
+  margin:35px auto 0;
+
+  font-size:17px;
+
+  line-height:1.9;
+
+  color:#554e47;
+
+}
+
+
+.house-quote{
+
+  max-width:720px;
+
+  margin:40px auto 0;
+
+  padding:25px 35px;
+
+  border-left:4px solid var(--ravenclaw);
+
+  font-size:23px;
+
+  line-height:1.5;
+
+  font-style:italic;
+
+}
+
+
+/* ==========================================
+   TÍTULOS
+========================================== */
+
+.section-heading{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:25px;
+
+  margin-bottom:38px;
+
+}
+
+
+.section-heading::before,
+.section-heading::after{
+
+  content:"";
+
+  width:140px;
+
+  height:1px;
+
+  background:var(--line);
+
+}
+
+
+.section-heading h2{
+
+  margin:0;
+
+  font-size:25px;
+
+  font-weight:400;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* ==========================================
+   JEFATURA
+========================================== */
+
+.house-head-section{
+
+  padding:75px 45px;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.house-head-wrapper{
+
+  max-width:620px;
+
+  margin:auto;
+
+}
+
+
+/* ==========================================
+   TARJETAS
+========================================== */
+
+.profile-card{
+
+  position:relative;
+
+  padding:15px;
+
+  background:#f7f2e9;
+
+  border:3px solid white;
+
+  text-align:center;
+
+  cursor:pointer;
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+
+}
+
+
+.profile-card:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+}
+
+
+.profile-card img{
+
+  width:100%;
+
+  height:330px;
+
+  object-fit:cover;
+
+  object-position:center 20%;
+
+  background:#ddd4c8;
+
+}
+
+
+.profile-card h3{
+
+  margin:17px 5px 6px;
+
+  font-size:19px;
+
+  font-weight:400;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.profile-card p{
+
+  margin:0 5px 15px;
+
+  color:var(--muted);
+
+  font-size:11px;
+
+  line-height:1.6;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* ==========================================
+   JEFA DE CASA
+========================================== */
+
+.head-card{
+
+  border:4px solid var(--ravenclaw);
+
+}
+
+
+.head-card img{
+
+  height:390px;
+
+  object-position:center 20%;
+
+}
+
+
+.head-card .profile-badge{
+
+  background:var(--ravenclaw);
+
+  color:white;
+
+}
+
+
+/* ==========================================
+   PREFECTOS
+========================================== */
+
+.prefect-card{
+
+  border:3px solid var(--silver);
+
+}
+
+
+.prefect-card .profile-badge{
+
+  background:var(--silver-dark);
+
+  color:white;
+
+}
+
+
+/* ==========================================
+   ETIQUETA
+========================================== */
+
+.profile-badge{
+
+  position:absolute;
+
+  z-index:5;
+
+  top:22px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  padding:8px 17px;
+
+  font-size:9px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+  white-space:nowrap;
+
+}
+
+
+/* ==========================================
+   AÑOS
+========================================== */
+
+.year-section{
+
+  padding:65px 45px;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.year-title{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:30px;
+
+  margin-bottom:40px;
+
+}
+
+
+.year-title::before,
+.year-title::after{
+
+  content:"";
+
+  height:1px;
+
+  width:180px;
+
+  background:var(--line);
+
+}
+
+
+.year-title h2{
+
+  margin:0;
+
+  color:var(--ravenclaw-dark);
+
+  font-size:27px;
+
+  font-weight:400;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* ==========================================
+   GRID ESTUDIANTES
+========================================== */
+
+.students{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:30px;
+
+  max-width:1000px;
+
+  margin:auto;
+
+}
+
+
+/* ==========================================
+   AÑO VACÍO
+========================================== */
+
+.empty-year{
+
+  grid-column:1/-1;
+
+  padding:25px;
+
+  text-align:center;
+
+  color:#9b9186;
+
+  font-size:12px;
+
+  font-style:italic;
+
+  letter-spacing:1px;
+
+}
+
+
+/* ==========================================
+   MODAL / PESTAÑA FLOTANTE
+========================================== */
+
+.profile-modal{
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:1000;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:25px;
+
+  background:rgba(20,20,20,.72);
+
+  opacity:0;
+
+  visibility:hidden;
+
+  transition:.25s ease;
+
+}
+
+
+.profile-modal.active{
+
+  opacity:1;
+
+  visibility:visible;
+
+}
+
+
+.modal-card{
+
+  position:relative;
+
+  width:min(500px,100%);
+
+  max-height:88vh;
+
+  overflow-y:auto;
+
+  padding:25px;
+
+  background:var(--paper-light);
+
+  border:1px solid var(--line);
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.30);
+
+  text-align:center;
+
+}
+
+
+.modal-card img{
+
+  width:100%;
+
+  max-height:430px;
+
+  object-fit:cover;
+
+  object-position:center 20%;
+
+  margin-bottom:23px;
+
+}
+
+
+.modal-card h2{
+
+  margin:5px 0 8px;
+
+  color:var(--ravenclaw);
+
+  font-size:27px;
+
+  font-weight:400;
+
+  text-transform:uppercase;
+
+  letter-spacing:2px;
+
+}
+
+
+.modal-role{
+
+  margin-bottom:22px;
+
+  color:var(--muted);
+
+  font-size:11px;
+
+  line-height:1.6;
+
+  letter-spacing:1.3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.modal-description{
+
+  padding-top:20px;
+
+  border-top:1px solid var(--line);
+
+  font-size:16px;
+
+  line-height:1.8;
+
+}
+
+
+.modal-close{
+
+  position:absolute;
+
+  z-index:5;
+
+  top:12px;
+
+  right:12px;
+
+  width:38px;
+
+  height:38px;
+
+  border:1px solid var(--line);
+
+  border-radius:50%;
+
+  background:var(--paper-light);
+
+  cursor:pointer;
+
+  font-size:19px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+  padding:35px 20px;
+
+  background:#171717;
+
+  color:#b9bdc5;
+
+  text-align:center;
+
+  font-size:10px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:850px){
+
+  .students{
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+  }
+
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media(max-width:600px){
+
+  .nav{
+
+    padding:14px 17px;
+
+  }
+
+
+  .brand-text{
+
+    font-size:9px;
+
+  }
+
+
+  .back-button{
+
+    padding:8px 10px;
+
+    font-size:8px;
+
+  }
+
+
+  .house-hero{
+
+    min-height:auto;
+
+    padding:55px 25px;
+
+  }
+
+
+  .house-crest{
+
+    width:150px;
+
+    height:170px;
+
+  }
+
+
+  .house-hero h1{
+
+    font-size:43px;
+
+    letter-spacing:2px;
+
+  }
+
+
+  .house-description{
+
+    font-size:15px;
+
+  }
+
+
+  .house-quote{
+
+    font-size:19px;
+
+  }
+
+
+  .house-head-section,
+  .year-section{
+
+    padding:
+      55px 22px;
+
+  }
+
+
+  .section-heading{
+
+    gap:14px;
+
+  }
+
+
+  .section-heading::before,
+  .section-heading::after{
+
+    width:50px;
+
+  }
+
+
+  .section-heading h2{
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+  }
+
+
+  .year-title{
+
+    gap:18px;
+
+  }
+
+
+  .year-title::before,
+  .year-title::after{
+
+    width:60px;
+
+  }
+
+
+  .year-title h2{
+
+    font-size:22px;
+
+  }
+
+
+  .students{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .profile-card img{
+
+    height:360px;
+
+  }
+
+
+  .head-card img{
+
+    height:390px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- ======================================
+     NAVEGACIÓN
+======================================= -->
+
+<nav class="nav">
+
+  <div class="brand">
+
+    <div class="brand-mark">
+      R
+    </div>
+
+    <div class="brand-text">
+      Casa Ravenclaw
+    </div>
+
+  </div>
+
+
+  <a
+    href="index.html"
+    class="back-button"
+  >
+    ← Volver al Anuario
+  </a>
+
+</nav>
+
+
+
+<!-- ======================================
+     PORTADA
+======================================= -->
+
+<header class="house-hero">
+
+
+  <div class="house-crest">
+
+    <img
+      src="assets/ravenclaw.png"
+      alt="Escudo de Ravenclaw"
+    >
+
+  </div>
+
+
+  <div class="house-eyebrow">
+
+    Hogwarts · 2026–2027
+
+  </div>
+
+
+  <h1>
+
+    RAVENCLAW
+
+  </h1>
+
+
+  <div class="house-motto">
+
+    Ingenio · Sabiduría · Creatividad
+
+  </div>
+
+
+  <p class="house-description">
+
+    Fundada por Rowena Ravenclaw,
+    la Casa Ravenclaw ha reunido durante generaciones
+    a estudiantes caracterizados por su curiosidad,
+    creatividad, inteligencia y deseo de aprender.
+
+  </p>
+
+
+  <div class="house-quote">
+
+    “El ingenio sin medida es el mayor tesoro del hombre.”
+
+  </div>
+
+
+</header>
+
+
+
+<!-- ======================================
+     JEFA DE CASA
+======================================= -->
+
+<section class="house-head-section">
+
+
+  <div class="section-heading">
+
+    <h2>
+      Jefatura de Ravenclaw
+    </h2>
+
+  </div>
+
+
+  <div class="house-head-wrapper">
+
+
+    <article
+      class="profile-card head-card"
+
+      onclick="openProfile(
+        'Seraphine Evelisse Nighttide',
+        'Jefa de Casa de Ravenclaw · Profesora de Encantamientos',
+        '“Nunca se limiten y siempre busquen saber más.” — Seraphine Nighttide',
+        'assets/seraphine-nighttide.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Jefa de Casa
+
+      </div>
+
+
+      <img
+        src="assets/seraphine-nighttide.png"
+        alt="Seraphine Evelisse Nighttide"
+      >
+
+
+      <h3>
+
+        Seraphine Evelisse Nighttide
+
+      </h3>
+
+
+      <p>
+
+        Encantamientos · Jefa de Casa de Ravenclaw
+
+      </p>
+
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     PRIMER AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Primer Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+
+      Estudiantes por añadir.
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     SEGUNDO AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Segundo Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+
+      Estudiantes por añadir.
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     TERCER AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Tercer Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+
+      Estudiantes por añadir.
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     CUARTO AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Cuarto Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+
+      Estudiantes por añadir.
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     QUINTO AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Quinto Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+
+    <!-- ======================================
+         MALLORY GRIMSHAW
+    ======================================= -->
+
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Mallory Emery Grimshaw',
+        'Quinto Año · Jefa de Prefectos',
+        'Jefa de Prefectos de Ravenclaw · Jugadora de Quidditch · Comité del Anuario, sección de Deportes.',
+        'assets/mallory-grimshaw.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Jefa de Prefectos
+
+      </div>
+
+
+      <img
+        src="assets/mallory-grimshaw.png"
+        alt="Mallory Emery Grimshaw"
+      >
+
+
+      <h3>
+
+        Mallory Emery Grimshaw
+
+      </h3>
+
+
+      <p>
+
+        Quinto Año · Jefa de Prefectos
+
+      </p>
+
+
+    </article>
+
+
+
+    <!-- ======================================
+         MINHO BLACK
+    ======================================= -->
+
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Minho Black',
+        'Quinto Año · Prefecto',
+        'Prefecto de Ravenclaw · Jugador de Quidditch.',
+        'assets/minho-black.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecto
+
+      </div>
+
+
+      <img
+        src="assets/minho-black.png"
+        alt="Minho Black"
+      >
+
+
+      <h3>
+
+        Minho Black
+
+      </h3>
+
+
+      <p>
+
+        Quinto Año · Prefecto · Quidditch
+
+      </p>
+
+
+    </article>
+
+
+
+    <!-- ======================================
+         ELIZABETH TRÜMPER
+    ======================================= -->
+
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Elizabeth Trümper',
+        'Quinto Año · Prefecta',
+        'Prefecta de Ravenclaw · Porrista · Club de Arte · Clase de Guitarra · Comité del Anuario.',
+        'assets/elizabeth-trumper.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecta
+
+      </div>
+
+
+      <img
+        src="assets/elizabeth-trumper.png"
+        alt="Elizabeth Trümper"
+      >
+
+
+      <h3>
+
+        Elizabeth Trümper
+
+      </h3>
+
+
+      <p>
+
+        Quinto Año · Prefecta
+
+      </p>
+
+
+    </article>
+
+
+
+    <!-- ======================================
+         LUCAS NOTT
+    ======================================= -->
+
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Lucas Nott',
+        'Quinto Año · Prefecto · Capitán de Quidditch',
+        'Capitán del equipo de Quidditch de Ravenclaw. “Los pondré a correr el colegio entero si no ganamos la copa”.',
+        'assets/lucas-nott.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecto
+
+      </div>
+
+
+      <img
+        src="assets/lucas-nott.png"
+        alt="Lucas Nott"
+      >
+
+
+      <h3>
+
+        Lucas Nott
+
+      </h3>
+
+
+      <p>
+
+        Quinto Año · Prefecto · Capitán de Quidditch
+
+      </p>
+
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     SEXTO AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Sexto Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+
+      Estudiantes por añadir.
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     SÉPTIMO AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Séptimo Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+
+    <!-- ======================================
+         AEMMA BLACKWOOD
+    ======================================= -->
+
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Aemma Blackwood',
+        'Séptimo Año · Prefecta Reclutadora',
+        'Prefecta Reclutadora de Ravenclaw.',
+        'assets/aemma-blackwood.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecta Reclutadora
+
+      </div>
+
+
+      <img
+        src="assets/aemma-blackwood.png"
+        alt="Aemma Blackwood"
+      >
+
+
+      <h3>
+
+        Aemma Blackwood
+
+      </h3>
+
+
+      <p>
+
+        Séptimo Año · Prefecta Reclutadora
+
+      </p>
+
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     FOOTER
+======================================= -->
+
+<footer>
+
+  Anuario Escolar de Hogwarts
+  ·
+  Casa Ravenclaw
+  ·
+  2026–2027
+
+</footer>
+
+
+</div>
+
+
+
+<!-- ======================================
+     PESTAÑA FLOTANTE
+======================================= -->
+
+<div
+  class="profile-modal"
+  id="profileModal"
+  onclick="closeModalBackground(event)"
+>
+
+
+  <div class="modal-card">
+
+
+    <button
+      class="modal-close"
+      onclick="closeProfile()"
+      aria-label="Cerrar"
+    >
+
+      ×
+
+    </button>
+
+
+    <img
+      id="modalImage"
+      src=""
+      alt=""
+    >
+
+
+    <h2
+      id="modalName"
+    >
+    </h2>
+
+
+    <div
+      class="modal-role"
+      id="modalRole"
+    >
+    </div>
+
+
+    <div
+      class="modal-description"
+      id="modalDescription"
+    >
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+
+<script>
+
+
+/* ==========================================
+   ABRIR PERFIL
+========================================== */
+
+function openProfile(
+  name,
+  role,
+  description,
+  image
+){
+
+  document
+    .getElementById("modalName")
+    .textContent = name;
+
+
+  document
+    .getElementById("modalRole")
+    .textContent = role;
+
+
+  document
+    .getElementById("modalDescription")
+    .textContent = description;
+
+
+  const modalImage =
+    document.getElementById("modalImage");
+
+
+  modalImage.src = image;
+
+  modalImage.alt = name;
+
+
+  document
+    .getElementById("profileModal")
+    .classList
+    .add("active");
+
+
+  document.body.style.overflow =
+    "hidden";
+
+}
+
+
+
+/* ==========================================
+   CERRAR PERFIL
+========================================== */
+
+function closeProfile(){
+
+  document
+    .getElementById("profileModal")
+    .classList
+    .remove("active");
+
+
+  document.body.style.overflow =
+    "";
+
+}
+
+
+
+/* ==========================================
+   CERRAR AL TOCAR EL FONDO
+========================================== */
+
+function closeModalBackground(event){
+
+  if(
+    event.target.id ===
+    "profileModal"
+  ){
+
+    closeProfile();
+
+  }
+
+}
+
+
+
+/* ==========================================
+   CERRAR CON ESC
+========================================== */
+
+document.addEventListener(
+  "keydown",
+  function(event){
+
+    if(event.key === "Escape"){
+
+      closeProfile();
+
+    }
+
+  }
+);
+
+
+</script>
+
+
+</body>
+
+</html>
