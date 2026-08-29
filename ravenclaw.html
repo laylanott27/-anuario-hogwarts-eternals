@@ -37,6 +37,10 @@ Ravenclaw · Anuario Hogwarts 2026–2027
   --silver:#aeb4bd;
   --silver-dark:#737b86;
 
+  --memorial:#657489;
+  --memorial-light:#d8dde4;
+  --memorial-dark:#435164;
+
 }
 
 
@@ -399,18 +403,20 @@ img{
 
 
 /* ==========================================
-   TARJETAS
+   TARJETAS DE ESTUDIANTES
 ========================================== */
 
 .profile-card{
 
   position:relative;
 
-  padding:15px;
+  display:block;
+
+  padding:12px;
 
   background:#f7f2e9;
 
-  border:3px solid white;
+  border:1px solid #cfc3b3;
 
   text-align:center;
 
@@ -436,7 +442,7 @@ img{
 
   width:100%;
 
-  height:330px;
+  height:250px;
 
   object-fit:cover;
 
@@ -449,13 +455,15 @@ img{
 
 .profile-card h3{
 
-  margin:17px 5px 6px;
+  margin:15px 5px 6px;
 
-  font-size:19px;
+  font-size:17px;
 
   font-weight:400;
 
-  letter-spacing:1.5px;
+  letter-spacing:1.2px;
+
+  line-height:1.3;
 
   text-transform:uppercase;
 
@@ -464,15 +472,15 @@ img{
 
 .profile-card p{
 
-  margin:0 5px 15px;
+  margin:0 5px 12px;
 
   color:var(--muted);
 
-  font-size:11px;
+  font-size:10px;
 
   line-height:1.6;
 
-  letter-spacing:1px;
+  letter-spacing:.9px;
 
   text-transform:uppercase;
 
@@ -485,6 +493,8 @@ img{
 
 .head-card{
 
+  padding:15px;
+
   border:4px solid var(--ravenclaw);
 
 }
@@ -495,6 +505,28 @@ img{
   height:390px;
 
   object-position:center 20%;
+
+}
+
+
+.head-card h3{
+
+  margin:20px 8px 8px;
+
+  font-size:23px;
+
+  letter-spacing:2px;
+
+}
+
+
+.head-card p{
+
+  margin-bottom:18px;
+
+  font-size:12px;
+
+  line-height:1.7;
 
 }
 
@@ -529,6 +561,95 @@ img{
 
 
 /* ==========================================
+   LUCAS · TARJETA MEMORIAL
+========================================== */
+
+.memorial-card{
+
+  position:relative;
+
+  border:3px solid var(--memorial);
+
+  background:
+    linear-gradient(
+      145deg,
+      #f7f2e9,
+      #eef0f2
+    );
+
+  box-shadow:
+    inset 0 0 0 4px rgba(45,77,112,.10);
+
+}
+
+
+.memorial-card::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:6px;
+
+  pointer-events:none;
+
+  border:1px solid rgba(117,129,144,.28);
+
+}
+
+
+.memorial-card .profile-badge{
+
+  background:var(--ravenclaw-dark);
+
+  color:white;
+
+}
+
+
+.memorial-card h3{
+
+  color:var(--ravenclaw-dark);
+
+}
+
+
+.memorial-card p{
+
+  color:#5e6670;
+
+}
+
+
+.memorial-card:hover{
+
+  box-shadow:
+    0 17px 35px rgba(39,52,70,.18);
+
+}
+
+
+.memorial-link{
+
+  display:block;
+
+  margin:
+    -1px 5px 11px;
+
+  color:var(--memorial-dark);
+
+  font-size:8px;
+
+  line-height:1.5;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* ==========================================
    ETIQUETA
 ========================================== */
 
@@ -538,15 +659,15 @@ img{
 
   z-index:5;
 
-  top:22px;
+  top:20px;
 
   left:50%;
 
   transform:translateX(-50%);
 
-  padding:8px 17px;
+  padding:7px 14px;
 
-  font-size:9px;
+  font-size:8px;
 
   letter-spacing:1.5px;
 
@@ -627,7 +748,7 @@ img{
   grid-template-columns:
     repeat(3,1fr);
 
-  gap:30px;
+  gap:28px;
 
   max-width:1000px;
 
@@ -782,6 +903,8 @@ img{
 
   line-height:1.8;
 
+  white-space:pre-line;
+
 }
 
 
@@ -860,6 +983,14 @@ footer{
   .nav{
 
     padding:14px 17px;
+
+  }
+
+
+  .brand-mark{
+
+    width:40px;
+    height:40px;
 
   }
 
@@ -976,16 +1107,96 @@ footer{
   }
 
 
+  /* DOS ESTUDIANTES POR FILA */
+
   .students{
 
-    grid-template-columns:1fr;
+    grid-template-columns:
+      repeat(2, minmax(0,1fr));
+
+    gap:14px;
+
+  }
+
+
+  .profile-card{
+
+    padding:8px;
 
   }
 
 
   .profile-card img{
 
-    height:360px;
+    height:220px;
+
+  }
+
+
+  .profile-card h3{
+
+    margin:
+      12px 3px 5px;
+
+    font-size:13px;
+
+    letter-spacing:.8px;
+
+    line-height:1.25;
+
+  }
+
+
+  .profile-card p{
+
+    margin:
+      0 3px 10px;
+
+    font-size:8px;
+
+    line-height:1.5;
+
+    letter-spacing:.6px;
+
+  }
+
+
+  .profile-badge{
+
+    top:15px;
+
+    padding:
+      6px 9px;
+
+    max-width:88%;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+    font-size:7px;
+
+    letter-spacing:1px;
+
+  }
+
+
+  /*
+    LA JEFA DE CASA SIGUE GRANDE.
+    SERAPHINE NO ADOPTA EL TAMAÑO
+    DE LAS TARJETAS DE ALUMNOS.
+  */
+
+  .house-head-wrapper{
+
+    max-width:620px;
+
+  }
+
+
+  .head-card{
+
+    padding:15px;
 
   }
 
@@ -993,6 +1204,79 @@ footer{
   .head-card img{
 
     height:390px;
+
+  }
+
+
+  .head-card h3{
+
+    margin:
+      20px 8px 8px;
+
+    font-size:23px;
+
+    line-height:1.35;
+
+    letter-spacing:2px;
+
+  }
+
+
+  .head-card p{
+
+    margin:
+      0 8px 18px;
+
+    font-size:12px;
+
+    line-height:1.7;
+
+  }
+
+
+  .head-card .profile-badge{
+
+    top:22px;
+
+    padding:
+      8px 17px;
+
+    max-width:none;
+
+    font-size:9px;
+
+    letter-spacing:1.5px;
+
+  }
+
+
+  .memorial-link{
+
+    font-size:7px;
+
+    letter-spacing:1px;
+
+  }
+
+
+  .modal-card{
+
+    padding:
+      22px 18px;
+
+  }
+
+
+  .modal-card h2{
+
+    font-size:22px;
+
+  }
+
+
+  .modal-description{
+
+    font-size:14px;
 
   }
 
@@ -1277,11 +1561,99 @@ footer{
 
   <div class="students">
 
-    <div class="empty-year">
 
-      Estudiantes por añadir.
+    <!-- ======================================
+         COLETTE LESTRANGE BLACK
+    ======================================= -->
 
-    </div>
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Colette Lestrange Black',
+        'Cuarto Año · Prefecta',
+        'Prefecta de Ravenclaw · Cocapitana de Quidditch.',
+        'assets/colette-lestrange-black.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecta
+
+      </div>
+
+
+      <img
+        src="assets/colette-lestrange-black.png"
+        alt="Colette Lestrange Black"
+      >
+
+
+      <h3>
+
+        Colette Lestrange Black
+
+      </h3>
+
+
+      <p>
+
+        Cuarto Año · Prefecta
+
+      </p>
+
+
+    </article>
+
+
+
+    <!-- ======================================
+         ANNA BERENICE CROUCH SELWYN
+    ======================================= -->
+
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Anna Berenice Crouch Selwyn',
+        'Cuarto Año · Prefecta',
+        'Prefecta de Ravenclaw · Jugadora de Quidditch.',
+        'assets/anna-berenice-crouch-selwyn.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecta
+
+      </div>
+
+
+      <img
+        src="assets/anna-berenice-crouch-selwyn.png"
+        alt="Anna Berenice Crouch Selwyn"
+      >
+
+
+      <h3>
+
+        Anna Berenice Crouch Selwyn
+
+      </h3>
+
+
+      <p>
+
+        Cuarto Año · Prefecta
+
+      </p>
+
+
+    </article>
+
 
   </div>
 
@@ -1310,7 +1682,7 @@ footer{
 
 
     <!-- ======================================
-         MALLORY GRIMSHAW
+         MALLORY EMERY GRIMSHAW
     ======================================= -->
 
     <article
@@ -1452,23 +1824,19 @@ footer{
 
     <!-- ======================================
          LUCAS NOTT
+         TARJETA MEMORIAL ESPECIAL
     ======================================= -->
 
-    <article
-      class="profile-card prefect-card"
-
-      onclick="openProfile(
-        'Lucas Nott',
-        'Quinto Año · Prefecto · Capitán de Quidditch',
-        'Capitán del equipo de Quidditch de Ravenclaw. “Los pondré a correr el colegio entero si no ganamos la copa”.',
-        'assets/8B1DE9FA-A344-4603-A188-47E1204EB62F.png'
-      )"
+    <a
+      class="profile-card memorial-card"
+      href="lucas-nott.html"
+      aria-label="Abrir homenaje a Lucas Nott"
     >
 
 
       <div class="profile-badge">
 
-        Prefecto
+        En memoria
 
       </div>
 
@@ -1488,12 +1856,21 @@ footer{
 
       <p>
 
-        Quinto Año · Prefecto 
+        Quinto Año · Prefecto
+        <br>
+        Capitán de Quidditch
 
       </p>
 
 
-    </article>
+      <span class="memorial-link">
+
+        ✦ Conocer su historia ✦
+
+      </span>
+
+
+    </a>
 
 
   </div>
@@ -1552,52 +1929,11 @@ footer{
 
   <div class="students">
 
+    <div class="empty-year">
 
-    <!-- ======================================
-         AEMMA BLACKWOOD
-    ======================================= -->
+      Estudiantes por añadir.
 
-    <article
-      class="profile-card prefect-card"
-
-      onclick="openProfile(
-        'Aemma Blackwood',
-        'Séptimo Año · Prefecta Reclutadora',
-        'Prefecta Reclutadora de Ravenclaw.',
-        'assets/E5EF5E50-8D47-4DE6-A878-D8BBF5ED1B29.png'
-      )"
-    >
-
-
-      <div class="profile-badge">
-
-        Prefecta Reclutadora
-
-      </div>
-
-
-      <img
-        src="assets/E5EF5E50-8D47-4DE6-A878-D8BBF5ED1B29.png"
-        alt="Aemma Blackwood"
-      >
-
-
-      <h3>
-
-        Aemma Blackwood
-
-      </h3>
-
-
-      <p>
-
-        Séptimo Año · Prefecta Reclutadora
-
-      </p>
-
-
-    </article>
-
+    </div>
 
   </div>
 
@@ -1626,7 +1962,7 @@ footer{
 
 
 <!-- ======================================
-     PESTAÑA FLOTANTE
+     PESTAÑA FLOTANTE DE PERFILES
 ======================================= -->
 
 <div
@@ -1796,4 +2132,4 @@ document.addEventListener(
 
 </body>
 
-</html>
+</html></html>
