@@ -224,32 +224,6 @@ img{
 }
 
 
-.house-crest{
-
-  width:190px;
-  height:210px;
-
-  margin-bottom:25px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-}
-
-
-.house-crest img{
-
-  width:100%;
-  height:100%;
-
-  object-fit:contain;
-
-}
-
-
 .house-eyebrow{
 
   margin-bottom:12px;
@@ -512,7 +486,7 @@ img{
 
 
 /* ==========================================
-   TARJETAS DE ESTUDIANTES
+   TARJETAS
 ========================================== */
 
 .profile-card{
@@ -672,7 +646,7 @@ img{
 
 
 /* ==========================================
-   ETIQUETA
+   ETIQUETAS
 ========================================== */
 
 .profile-badge{
@@ -760,7 +734,7 @@ img{
 
 
 /* ==========================================
-   GRID ESTUDIANTES
+   GRID
 ========================================== */
 
 .students{
@@ -777,10 +751,6 @@ img{
 
 }
 
-
-/* ==========================================
-   AÑO VACÍO
-========================================== */
 
 .empty-year{
 
@@ -1017,12 +987,7 @@ footer{
 
   .house-hero{
     min-height:auto;
-    padding:55px 25px;
-  }
-
-  .house-crest{
-    width:150px;
-    height:170px;
+    padding:75px 25px;
   }
 
   .house-hero h1{
@@ -1097,9 +1062,6 @@ footer{
     font-size:22px;
   }
 
-
-  /* DOS ESTUDIANTES POR FILA */
-
   .students{
 
     grid-template-columns:
@@ -1108,7 +1070,6 @@ footer{
     gap:14px;
 
   }
-
 
   .profile-card{
     padding:8px;
@@ -1159,9 +1120,6 @@ footer{
     letter-spacing:1px;
 
   }
-
-
-  /* JEFE DE CASA CONTINÚA GRANDE */
 
   .house-head-wrapper{
     max-width:620px;
@@ -1268,48 +1226,22 @@ footer{
 
 <!-- ======================================
      PORTADA
+     SIN ESCUDO
 ======================================= -->
 
 <header class="house-hero">
 
-
-  <div class="house-crest">
-
-    <!--
-      IMPORTANTE:
-      REEMPLAZA ESTE ARCHIVO POR EL ESCUDO
-      REAL DE GRYFFINDOR.
-      NO ES LA FOTO DE GODRIC.
-    -->
-
-    <img
-      src="assets/ESCUDO-GRYFFINDOR.png"
-      alt="Escudo de Gryffindor"
-    >
-
-  </div>
-
-
   <div class="house-eyebrow">
-
     Hogwarts · 2026–2027
-
   </div>
-
 
   <h1>
-
     GRYFFINDOR
-
   </h1>
 
-
   <div class="house-motto">
-
     Valor · Determinación · Coraje
-
   </div>
-
 
   <p class="house-description">
 
@@ -1320,14 +1252,12 @@ footer{
 
   </p>
 
-
   <div class="house-quote">
 
     “El valor no es la ausencia de miedo,
     sino la decisión de seguir adelante a pesar de él.”
 
   </div>
-
 
 </header>
 
@@ -1339,7 +1269,6 @@ footer{
 
 <section class="founder-section">
 
-
   <div class="section-heading">
 
     <h2>
@@ -1350,7 +1279,6 @@ footer{
 
 
   <div class="founder">
-
 
     <div class="founder-photo">
 
@@ -1368,14 +1296,11 @@ footer{
         Fundador
       </span>
 
-
       <h2>
         Godric Gryffindor
       </h2>
 
-
       <div class="founder-line"></div>
-
 
       <p>
 
@@ -1387,7 +1312,6 @@ footer{
 
       </p>
 
-
       <p>
 
         Su legado continúa presente en los estudiantes de Gryffindor,
@@ -1396,7 +1320,6 @@ footer{
 
       </p>
 
-
       <div class="founder-quote">
 
         “El valor se demuestra cuando decidimos actuar
@@ -1404,12 +1327,9 @@ footer{
 
       </div>
 
-
     </div>
 
-
   </div>
-
 
 </section>
 
@@ -1420,7 +1340,6 @@ footer{
 ======================================= -->
 
 <section class="house-head-section">
-
 
   <div class="section-heading">
 
@@ -1433,7 +1352,6 @@ footer{
 
   <div class="house-head-wrapper">
 
-
     <article
       class="profile-card head-card"
 
@@ -1445,35 +1363,26 @@ footer{
       )"
     >
 
-
       <div class="profile-badge">
-
         Jefe de Casa
-
       </div>
-
 
       <img
         src="assets/809AA11A-47A0-4241-A269-7E5F8BDEDE70.png"
         alt="Noah O. Gaunt"
       >
 
-
       <h3>
         Noah O. Gaunt
       </h3>
-
 
       <p>
         Profesor de DCAO · Jefe de Gryffindor
       </p>
 
-
     </article>
 
-
   </div>
-
 
 </section>
 
@@ -1489,11 +1398,68 @@ footer{
     <h2>Primer Año</h2>
   </div>
 
+
   <div class="students">
 
-    <div class="empty-year">
-      Estudiantes por añadir.
-    </div>
+
+    <!-- LIAM ARTURO BLACK -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Liam Arturo Black',
+        'Primer Año · Comité de Graduación',
+        'Miembro del Comité de Graduación.',
+        'assets/liam-arturo-black.png'
+      )"
+    >
+
+      <img
+        src="assets/liam-arturo-black.png"
+        alt="Liam Arturo Black"
+      >
+
+      <h3>
+        Liam Arturo Black
+      </h3>
+
+      <p>
+        Primer Año · Comité de Graduación
+      </p>
+
+    </article>
+
+
+
+    <!-- ABADDON -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Abaddon',
+        'Primer Año',
+        '“No confundas mi apariencia con lo que soy.”',
+        'assets/abaddon.png'
+      )"
+    >
+
+      <img
+        src="assets/abaddon.png"
+        alt="Abaddon"
+      >
+
+      <h3>
+        Abaddon
+      </h3>
+
+      <p>
+        Primer Año
+      </p>
+
+    </article>
+
 
   </div>
 
@@ -1511,98 +1477,11 @@ footer{
     <h2>Segundo Año</h2>
   </div>
 
-
   <div class="students">
 
-
-    <!-- HARRY N. GAUNT CROUCH -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Harry N. Gaunt Crouch',
-        'Segundo Año · Buscador de Quidditch',
-        'Buscador del equipo de Quidditch de Gryffindor.',
-        'assets/570CF053-914C-40F6-AC5E-23A59AD96F23.jpeg'
-      )"
-    >
-
-      <img
-        src="assets/570CF053-914C-40F6-AC5E-23A59AD96F23.jpeg"
-        alt="Harry N. Gaunt Crouch"
-      >
-
-      <h3>
-        Harry N. Gaunt Crouch
-      </h3>
-
-      <p>
-        Segundo Año · Buscador de Quidditch
-      </p>
-
-    </article>
-
-
-
-    <!-- ALEXANDER TOBIAS LONGBOTTOM -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Alexander Tobias Longbottom',
-        'Segundo Año',
-        '“A las mujeres en realidad les gusta el pollo 🦐”',
-        'assets/alexander-longbottom.png'
-      )"
-    >
-
-      <img
-        src="assets/alexander-longbottom.png"
-        alt="Alexander Tobias Longbottom"
-      >
-
-      <h3>
-        Alexander Tobias Longbottom
-      </h3>
-
-      <p>
-        Segundo Año
-      </p>
-
-    </article>
-
-
-
-    <!-- ARIES SUMMER -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Aries Summer',
-        'Segundo Año · Jugadora de Quidditch',
-        '“La magia más poderosa es creer en ti misma.”',
-        'assets/aries-summer.png'
-      )"
-    >
-
-      <img
-        src="assets/aries-summer.png"
-        alt="Aries Summer"
-      >
-
-      <h3>
-        Aries Summer
-      </h3>
-
-      <p>
-        Segundo Año · Quidditch
-      </p>
-
-    </article>
-
+    <div class="empty-year">
+      Estudiantes por añadir.
+    </div>
 
   </div>
 
@@ -1624,10 +1503,7 @@ footer{
   <div class="students">
 
 
-    <!-- ======================================
-         LIA EVELYNE WOOD
-         NUEVA PREFECTA
-    ======================================= -->
+    <!-- LIA EVELYNE WOOD -->
 
     <article
       class="profile-card prefect-card"
@@ -1640,27 +1516,22 @@ footer{
       )"
     >
 
-
       <div class="profile-badge">
         Prefecta
       </div>
-
 
       <img
         src="assets/lia-evelyne-wood.png"
         alt="Lia Evelyne Wood"
       >
 
-
       <h3>
         Lia Evelyne Wood
       </h3>
 
-
       <p>
         Tercer Año · Prefecta
       </p>
-
 
     </article>
 
@@ -1726,7 +1597,7 @@ footer{
 
 
 
-    <!-- HERMIONE -->
+    <!-- HERMIONE JEAN NIGHTTIDE GRANGER -->
 
     <article
       class="profile-card"
@@ -1771,38 +1642,11 @@ footer{
     <h2>Cuarto Año</h2>
   </div>
 
-
   <div class="students">
 
-
-    <!-- MO DEIRDRE -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Mo Deirdre',
-        'Cuarto Año · Comité del Anuario',
-        'Comité del Anuario · Corresponsal de Casa · Redactora.\n\n“Algunas almas tienen primavera en los ojos.”',
-        'assets/mo-deirdre.png'
-      )"
-    >
-
-      <img
-        src="assets/mo-deirdre.png"
-        alt="Mo Deirdre"
-      >
-
-      <h3>
-        Mo Deirdre
-      </h3>
-
-      <p>
-        Cuarto Año · Comité del Anuario
-      </p>
-
-    </article>
-
+    <div class="empty-year">
+      Estudiantes por añadir.
+    </div>
 
   </div>
 
@@ -1820,11 +1664,68 @@ footer{
     <h2>Quinto Año</h2>
   </div>
 
+
   <div class="students">
 
-    <div class="empty-year">
-      Estudiantes por añadir.
-    </div>
+
+    <!-- GELISS STERLING -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Geliss Sterling',
+        'Quinto Año · Porrista de Gryffindor',
+        'Porrista de Gryffindor.\n\n“Disfrutar el camino también forma parte de la magia.”',
+        'assets/geliss-sterling.png'
+      )"
+    >
+
+      <img
+        src="assets/geliss-sterling.png"
+        alt="Geliss Sterling"
+      >
+
+      <h3>
+        Geliss Sterling
+      </h3>
+
+      <p>
+        Quinto Año · Porrista
+      </p>
+
+    </article>
+
+
+
+    <!-- HERMIONE JEAN GRANGER -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Hermione Jean Granger',
+        'Quinto Año',
+        '“El conocimiento, la valentía y la determinación pueden cambiarlo todo.”',
+        'assets/hermione-jean-granger.png'
+      )"
+    >
+
+      <img
+        src="assets/hermione-jean-granger.png"
+        alt="Hermione Jean Granger"
+      >
+
+      <h3>
+        Hermione Jean Granger
+      </h3>
+
+      <p>
+        Quinto Año
+      </p>
+
+    </article>
+
 
   </div>
 
@@ -1846,71 +1747,7 @@ footer{
   <div class="students">
 
 
-    <!-- FRED WEASLEY -->
-
-    <article
-      class="profile-card prefect-card"
-
-      onclick="openProfile(
-        'Fred Weasley',
-        'Sexto Año · Prefecto Reclutador',
-        'Prefecto Reclutador de Gryffindor · Quidditch · Club de Arte · Clase de Fotografía.',
-        'assets/AE324995-2E3E-4423-9367-AAB565C25583.png'
-      )"
-    >
-
-      <div class="profile-badge">
-        Prefecto Reclutador
-      </div>
-
-      <img
-        src="assets/AE324995-2E3E-4423-9367-AAB565C25583.png"
-        alt="Fred Weasley"
-      >
-
-      <h3>
-        Fred Weasley
-      </h3>
-
-      <p>
-        Sexto Año · Prefecto Reclutador
-      </p>
-
-    </article>
-
-
-
-    <!-- GALATEA -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Galatea Céline Bell',
-        'Sexto Año · Quidditch',
-        '“A veces aprendemos más de las batallas que perdemos que de las que ganamos, para la próxima llegar con más sabiduría.”',
-        'assets/57C2A810-82DC-418E-A3C8-7819165252A7.jpeg'
-      )"
-    >
-
-      <img
-        src="assets/57C2A810-82DC-418E-A3C8-7819165252A7.jpeg"
-        alt="Galatea Céline Bell"
-      >
-
-      <h3>
-        Galatea Céline Bell
-      </h3>
-
-      <p>
-        Sexto Año · Quidditch
-      </p>
-
-    </article>
-
-
-
-    <!-- ODETTE -->
+    <!-- ODETTE ROSIER GRINDELWALD -->
 
     <article
       class="profile-card"
@@ -1940,37 +1777,7 @@ footer{
 
 
 
-    <!-- OLIVIA -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Olivia Melanie Krum',
-        'Sexto Año',
-        '“Todo pasa, pero algunos momentos se quedan para siempre.”',
-        'assets/olivia-melanie-krum.png'
-      )"
-    >
-
-      <img
-        src="assets/olivia-melanie-krum.png"
-        alt="Olivia Melanie Krum"
-      >
-
-      <h3>
-        Olivia Melanie Krum
-      </h3>
-
-      <p>
-        Sexto Año
-      </p>
-
-    </article>
-
-
-
-    <!-- AMELIA -->
+    <!-- AMELIA POTTER EVANS -->
 
     <article
       class="profile-card"
@@ -2000,44 +1807,14 @@ footer{
 
 
 
-    <!-- AEGAN -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Aegan Thomas M. Wood',
-        'Sexto Año · Jugador de Quidditch',
-        'Jugador del equipo de Quidditch de Gryffindor.',
-        'assets/aegan-thomas-wood.png'
-      )"
-    >
-
-      <img
-        src="assets/aegan-thomas-wood.png"
-        alt="Aegan Thomas M. Wood"
-      >
-
-      <h3>
-        Aegan Thomas M. Wood
-      </h3>
-
-      <p>
-        Sexto Año · Quidditch
-      </p>
-
-    </article>
-
-
-
-    <!-- GARRETH -->
+    <!-- GARRETH WEASLEY -->
 
     <article
       class="profile-card"
 
       onclick="openProfile(
         'Garreth Weasley',
-        'Sexto Año · Jugador de Quidditch',
+        'Sexto Año',
         '“Hacerlo todo de corazón nunca es perder.”',
         'assets/garreth-weasley.png'
       )"
@@ -2053,36 +1830,6 @@ footer{
       </h3>
 
       <p>
-        Sexto Año · Quidditch
-      </p>
-
-    </article>
-
-
-
-    <!-- ZAYN -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Zayn Black',
-        'Sexto Año',
-        '“Tanto faz.”',
-        'assets/zayn-black.png'
-      )"
-    >
-
-      <img
-        src="assets/zayn-black.png"
-        alt="Zayn Black"
-      >
-
-      <h3>
-        Zayn Black
-      </h3>
-
-      <p>
         Sexto Año
       </p>
 
@@ -2090,15 +1837,15 @@ footer{
 
 
 
-    <!-- EMMA -->
+    <!-- EMMA REDFORD -->
 
     <article
       class="profile-card"
 
       onclick="openProfile(
         'Emma Redford',
-        'Sexto Año · Porrista',
-        'Porrista de Gryffindor.\n\n“Life is what happens to you while you’re busy making other plans.”',
+        'Sexto Año',
+        '“Life is what happens to you while you’re busy making other plans.”',
         'assets/emma-redford.png'
       )"
     >
@@ -2113,14 +1860,14 @@ footer{
       </h3>
 
       <p>
-        Sexto Año · Porrista
+        Sexto Año
       </p>
 
     </article>
 
 
 
-    <!-- OSCAR -->
+    <!-- OSCAR GREEN -->
 
     <article
       class="profile-card"
@@ -2140,6 +1887,156 @@ footer{
 
       <h3>
         Oscar Green
+      </h3>
+
+      <p>
+        Sexto Año
+      </p>
+
+    </article>
+
+
+
+    <!-- XIMENA MARVOLO RIDDLE -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Ximena Marvolo Riddle',
+        'Sexto Año',
+        '“Los sueños también son una forma de magia.”',
+        'assets/ximena-marvolo-riddle.png'
+      )"
+    >
+
+      <img
+        src="assets/ximena-marvolo-riddle.png"
+        alt="Ximena Marvolo Riddle"
+      >
+
+      <h3>
+        Ximena Marvolo Riddle
+      </h3>
+
+      <p>
+        Sexto Año
+      </p>
+
+    </article>
+
+
+
+    <!-- LUCAS PRINCE -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Lucas Prince',
+        'Sexto Año',
+        '“Vive feliz que todo pasa.”',
+        'assets/lucas-prince.png'
+      )"
+    >
+
+      <img
+        src="assets/lucas-prince.png"
+        alt="Lucas Prince"
+      >
+
+      <h3>
+        Lucas Prince
+      </h3>
+
+      <p>
+        Sexto Año
+      </p>
+
+    </article>
+
+
+
+    <!-- MAX MAYFIELD -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Max Mayfield',
+        'Sexto Año',
+        '“Si la vida no es eterna, hagamos este momento eterno.”',
+        'assets/max-mayfield.png'
+      )"
+    >
+
+      <img
+        src="assets/max-mayfield.png"
+        alt="Max Mayfield"
+      >
+
+      <h3>
+        Max Mayfield
+      </h3>
+
+      <p>
+        Sexto Año
+      </p>
+
+    </article>
+
+
+
+    <!-- ALEXA VIVIANNE WOOD -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Alexa Vivianne Wood',
+        'Sexto Año · Comité de Graduación',
+        'Miembro del Comité de Graduación.',
+        'assets/alexa-vivianne-wood.png'
+      )"
+    >
+
+      <img
+        src="assets/alexa-vivianne-wood.png"
+        alt="Alexa Vivianne Wood"
+      >
+
+      <h3>
+        Alexa Vivianne Wood
+      </h3>
+
+      <p>
+        Sexto Año · Comité de Graduación
+      </p>
+
+    </article>
+
+
+
+    <!-- DALIA ROSIER -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Dalia Rosier',
+        'Sexto Año',
+        '“Solo se aprende metiendo la pata.”',
+        'assets/dalia-rosier.png'
+      )"
+    >
+
+      <img
+        src="assets/dalia-rosier.png"
+        alt="Dalia Rosier"
+      >
+
+      <h3>
+        Dalia Rosier
       </h3>
 
       <p>
@@ -2169,10 +2066,7 @@ footer{
   <div class="students">
 
 
-    <!-- ======================================
-         LUZMI
-         NUEVA JEFA DE PREFECTOS
-    ======================================= -->
+    <!-- LUZMI -->
 
     <article
       class="profile-card prefect-card"
@@ -2206,7 +2100,7 @@ footer{
 
 
 
-    <!-- CHARLOTTE STARLIGHT -->
+    <!-- CHARLOTTE -->
 
     <article
       class="profile-card prefect-card"
@@ -2308,40 +2202,7 @@ footer{
 
 
 
-    <!-- ======================================
-         AURORA
-         YA NO ES PREFECTA
-    ======================================= -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Aurora Gaunt Crouch',
-        'Séptimo Año',
-        'Organizadora del Club de Arte · Organizadora de Quidditch.\n\n“No es lo que dices, es cómo lo dices.”',
-        'assets/7E1283BF-9DB2-4192-8159-E1A8DAB57F67.png'
-      )"
-    >
-
-      <img
-        src="assets/7E1283BF-9DB2-4192-8159-E1A8DAB57F67.png"
-        alt="Aurora Gaunt Crouch"
-      >
-
-      <h3>
-        Aurora Gaunt Crouch
-      </h3>
-
-      <p>
-        Séptimo Año
-      </p>
-
-    </article>
-
-
-
-    <!-- OLIVER WOOD · CAPITÁN -->
+    <!-- OLIVER WOOD -->
 
     <article
       class="profile-card"
@@ -2365,36 +2226,6 @@ footer{
 
       <p>
         Séptimo Año · Capitán de Quidditch
-      </p>
-
-    </article>
-
-
-
-    <!-- OLIVER WOOD · DEPORTES -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Oliver Wood',
-        'Séptimo Año · Coordinador de Deportes',
-        'Coordinador de Deportes · Organizador del Torneo de Quidditch.\n\n“Soy el boludo de los folletos.”',
-        'assets/oliver-wood-rubio.png'
-      )"
-    >
-
-      <img
-        src="assets/oliver-wood-rubio.png"
-        alt="Oliver Wood"
-      >
-
-      <h3>
-        Oliver Wood
-      </h3>
-
-      <p>
-        Séptimo Año · Coordinador de Deportes
       </p>
 
     </article>
@@ -2431,37 +2262,7 @@ footer{
 
 
 
-    <!-- LUKE -->
-
-    <article
-      class="profile-card"
-
-      onclick="openProfile(
-        'Luke R. Lovegood',
-        'Séptimo Año',
-        'Estudiante de Gryffindor.',
-        'assets/luke-lovegood.png'
-      )"
-    >
-
-      <img
-        src="assets/luke-lovegood.png"
-        alt="Luke R. Lovegood"
-      >
-
-      <h3>
-        Luke R. Lovegood
-      </h3>
-
-      <p>
-        Séptimo Año
-      </p>
-
-    </article>
-
-
-
-    <!-- SIRIUS -->
+    <!-- SIRIUS BLACK III -->
 
     <article
       class="profile-card"
@@ -2491,7 +2292,7 @@ footer{
 
 
 
-    <!-- REMUS -->
+    <!-- REMUS JOHN LUPIN -->
 
     <article
       class="profile-card"
@@ -2521,37 +2322,42 @@ footer{
 
 
 
-    <!-- LIAM -->
+    <!-- FRED WEASLEY
+         CAMBIADO DE SEXTO A SÉPTIMO -->
 
     <article
-      class="profile-card"
+      class="profile-card prefect-card"
 
       onclick="openProfile(
-        'Liam David Longbottom',
-        'Séptimo Año · Jugador de Quidditch',
-        '“El éxito es como un peo; la gente se enoja si no es suyo.”',
-        'assets/liam-david-longbottom.png'
+        'Fred Weasley',
+        'Séptimo Año · Prefecto Reclutador',
+        'Prefecto Reclutador de Gryffindor · Quidditch · Club de Arte · Clase de Fotografía.',
+        'assets/AE324995-2E3E-4423-9367-AAB565C25583.png'
       )"
     >
 
+      <div class="profile-badge">
+        Prefecto Reclutador
+      </div>
+
       <img
-        src="assets/liam-david-longbottom.png"
-        alt="Liam David Longbottom"
+        src="assets/AE324995-2E3E-4423-9367-AAB565C25583.png"
+        alt="Fred Weasley"
       >
 
       <h3>
-        Liam David Longbottom
+        Fred Weasley
       </h3>
 
       <p>
-        Séptimo Año · Quidditch
+        Séptimo Año · Prefecto Reclutador
       </p>
 
     </article>
 
 
 
-    <!-- RODRICK -->
+    <!-- RODRICK IVAN WOOD -->
 
     <article
       class="profile-card"
@@ -2581,7 +2387,7 @@ footer{
 
 
 
-    <!-- FREYA -->
+    <!-- FREYA ELEANOR LONGBOTTOM -->
 
     <article
       class="profile-card"
@@ -2611,7 +2417,7 @@ footer{
 
 
 
-    <!-- EVADNE -->
+    <!-- EVADNE ROSE -->
 
     <article
       class="profile-card"
@@ -2631,6 +2437,96 @@ footer{
 
       <h3>
         Evadne Rose
+      </h3>
+
+      <p>
+        Séptimo Año
+      </p>
+
+    </article>
+
+
+
+    <!-- REGINA GEORGE -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Regina George',
+        'Séptimo Año',
+        'Estudiante de Gryffindor.',
+        'assets/regina-george.png'
+      )"
+    >
+
+      <img
+        src="assets/regina-george.png"
+        alt="Regina George"
+      >
+
+      <h3>
+        Regina George
+      </h3>
+
+      <p>
+        Séptimo Año
+      </p>
+
+    </article>
+
+
+
+    <!-- ÉLÉONORE CARROW -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Éléonore Carrow',
+        'Séptimo Año',
+        '“Que nunca nos falte el valor para seguir con nuestra propia historia.”',
+        'assets/eleonore-carrow.png'
+      )"
+    >
+
+      <img
+        src="assets/eleonore-carrow.png"
+        alt="Éléonore Carrow"
+      >
+
+      <h3>
+        Éléonore Carrow
+      </h3>
+
+      <p>
+        Séptimo Año
+      </p>
+
+    </article>
+
+
+
+    <!-- ROWAN LUKE VAUDEMORT WOOD -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Rowan Luke Vaudermont Wood',
+        'Séptimo Año',
+        'Estudiante de Gryffindor.',
+        'assets/rowan-luke-vaudermont-wood.png'
+      )"
+    >
+
+      <img
+        src="assets/rowan-luke-vaudermont-wood.png"
+        alt="Rowan Luke Vaudermont Wood"
+      >
+
+      <h3>
+        Rowan Luke Vaudermont Wood
       </h3>
 
       <p>
@@ -2666,7 +2562,7 @@ footer{
 
 
 <!-- ======================================
-     PESTAÑA FLOTANTE
+     MODAL DE PERFIL
 ======================================= -->
 
 <div
@@ -2675,9 +2571,7 @@ footer{
   onclick="closeModalBackground(event)"
 >
 
-
   <div class="modal-card">
-
 
     <button
       class="modal-close"
@@ -2709,9 +2603,7 @@ footer{
       id="modalDescription"
     ></div>
 
-
   </div>
-
 
 </div>
 
