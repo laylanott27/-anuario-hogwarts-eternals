@@ -61,7 +61,7 @@ body{
     "Times New Roman",
     serif;
 
-  background:#f1e8da;
+  background:var(--paper);
 
   color:var(--ink);
 
@@ -145,7 +145,6 @@ img{
 .brand-mark{
 
   width:43px;
-
   height:43px;
 
   border:1px solid var(--gryffindor);
@@ -228,7 +227,6 @@ img{
 .house-crest{
 
   width:190px;
-
   height:210px;
 
   margin-bottom:25px;
@@ -245,7 +243,6 @@ img{
 .house-crest img{
 
   width:100%;
-
   height:100%;
 
   object-fit:contain;
@@ -372,6 +369,122 @@ img{
   letter-spacing:5px;
 
   text-transform:uppercase;
+
+}
+
+
+/* ==========================================
+   FUNDADOR
+========================================== */
+
+.founder-section{
+
+  padding:75px 45px;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.founder{
+
+  max-width:1000px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:320px 1fr;
+
+  gap:50px;
+
+  align-items:center;
+
+}
+
+
+.founder-photo img{
+
+  width:100%;
+
+  aspect-ratio:4/5;
+
+  object-fit:cover;
+
+  object-position:center 20%;
+
+  padding:8px;
+
+  border:1px solid var(--line);
+
+  background:#fbf8f2;
+
+}
+
+
+.founder-label{
+
+  color:var(--gryffindor);
+
+  font-size:10px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.founder-info h2{
+
+  margin:10px 0 12px;
+
+  color:var(--gryffindor-dark);
+
+  font-size:38px;
+
+  font-weight:400;
+
+}
+
+
+.founder-line{
+
+  width:65px;
+
+  height:1px;
+
+  margin:18px 0 25px;
+
+  background:var(--gryffindor);
+
+}
+
+
+.founder-info p{
+
+  color:#4d4944;
+
+  font-size:15px;
+
+  line-height:1.9;
+
+}
+
+
+.founder-quote{
+
+  margin-top:24px;
+
+  padding:18px 22px;
+
+  border-left:3px solid var(--gryffindor);
+
+  font-size:16px;
+
+  font-style:italic;
+
+  line-height:1.7;
 
 }
 
@@ -559,36 +672,6 @@ img{
 
 
 /* ==========================================
-   JEFA DE PREFECTOS
-========================================== */
-
-.head-prefect-card{
-
-  border:3px solid var(--gryffindor);
-
-  background:
-    linear-gradient(
-      145deg,
-      #fbf4dd,
-      #f6e8e3
-    );
-
-  box-shadow:
-    inset 0 0 0 3px rgba(200,154,49,.15);
-
-}
-
-
-.head-prefect-card .profile-badge{
-
-  background:var(--gryffindor-dark);
-
-  color:white;
-
-}
-
-
-/* ==========================================
    ETIQUETA
 ========================================== */
 
@@ -684,8 +767,7 @@ img{
 
   display:grid;
 
-  grid-template-columns:
-    repeat(3,1fr);
+  grid-template-columns:repeat(3,1fr);
 
   gap:28px;
 
@@ -720,7 +802,7 @@ img{
 
 
 /* ==========================================
-   MODAL / PESTAÑA FLOTANTE
+   MODAL
 ========================================== */
 
 .profile-modal{
@@ -775,8 +857,7 @@ img{
 
   border:1px solid var(--line);
 
-  box-shadow:
-    0 25px 70px rgba(0,0,0,.30);
+  box-shadow:0 25px 70px rgba(0,0,0,.30);
 
   text-align:center;
 
@@ -884,7 +965,7 @@ footer{
 
   background:#171717;
 
-  color:#d4b877;
+  color:#d6c5a7;
 
   text-align:center;
 
@@ -904,10 +985,7 @@ footer{
 @media(max-width:850px){
 
   .students{
-
-    grid-template-columns:
-      repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
   }
 
 }
@@ -920,130 +998,103 @@ footer{
 @media(max-width:600px){
 
   .nav{
-
     padding:14px 17px;
-
   }
-
 
   .brand-mark{
-
     width:40px;
-
     height:40px;
-
   }
-
 
   .brand-text{
-
     font-size:9px;
-
   }
-
 
   .back-button{
-
     padding:8px 10px;
-
     font-size:8px;
-
   }
-
 
   .house-hero{
-
     min-height:auto;
-
     padding:55px 25px;
-
   }
-
 
   .house-crest{
-
     width:150px;
-
     height:170px;
-
   }
-
 
   .house-hero h1{
-
     font-size:43px;
-
     letter-spacing:2px;
-
   }
-
 
   .house-description{
-
     font-size:15px;
-
   }
-
 
   .house-quote{
-
     font-size:19px;
-
   }
 
-
+  .founder-section,
   .house-head-section,
   .year-section{
-
-    padding:
-      55px 22px;
-
+    padding:55px 22px;
   }
 
+  .founder{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .founder-photo{
+    width:min(260px,100%);
+    margin:auto;
+  }
+
+  .founder-info{
+    text-align:center;
+  }
+
+  .founder-line{
+    margin:18px auto 25px;
+  }
+
+  .founder-info h2{
+    font-size:30px;
+  }
+
+  .founder-quote{
+    text-align:left;
+  }
 
   .section-heading{
-
     gap:14px;
-
   }
-
 
   .section-heading::before,
   .section-heading::after{
-
     width:50px;
-
   }
-
 
   .section-heading h2{
-
     font-size:18px;
-
     letter-spacing:3px;
-
   }
-
 
   .year-title{
-
     gap:18px;
-
   }
-
 
   .year-title::before,
   .year-title::after{
-
     width:60px;
-
   }
 
-
   .year-title h2{
-
     font-size:22px;
-
   }
 
 
@@ -1060,23 +1111,16 @@ footer{
 
 
   .profile-card{
-
     padding:8px;
-
   }
-
 
   .profile-card img{
-
     height:220px;
-
   }
-
 
   .profile-card h3{
 
-    margin:
-      12px 3px 5px;
+    margin:12px 3px 5px;
 
     font-size:13px;
 
@@ -1086,11 +1130,9 @@ footer{
 
   }
 
-
   .profile-card p{
 
-    margin:
-      0 3px 10px;
+    margin:0 3px 10px;
 
     font-size:8px;
 
@@ -1100,13 +1142,11 @@ footer{
 
   }
 
-
   .profile-badge{
 
     top:15px;
 
-    padding:
-      6px 9px;
+    padding:6px 9px;
 
     max-width:88%;
 
@@ -1121,33 +1161,23 @@ footer{
   }
 
 
-  /* JEFE DE CASA SE MANTIENE GRANDE */
+  /* JEFE DE CASA CONTINÚA GRANDE */
 
   .house-head-wrapper{
-
     max-width:620px;
-
   }
-
 
   .head-card{
-
     padding:15px;
-
   }
-
 
   .head-card img{
-
     height:390px;
-
   }
-
 
   .head-card h3{
 
-    margin:
-      20px 8px 8px;
+    margin:20px 8px 8px;
 
     font-size:23px;
 
@@ -1157,11 +1187,9 @@ footer{
 
   }
 
-
   .head-card p{
 
-    margin:
-      0 8px 18px;
+    margin:0 8px 18px;
 
     font-size:12px;
 
@@ -1169,13 +1197,11 @@ footer{
 
   }
 
-
   .head-card .profile-badge{
 
     top:22px;
 
-    padding:
-      8px 17px;
+    padding:8px 17px;
 
     max-width:none;
 
@@ -1185,26 +1211,16 @@ footer{
 
   }
 
-
   .modal-card{
-
-    padding:
-      22px 18px;
-
+    padding:22px 18px;
   }
-
 
   .modal-card h2{
-
     font-size:22px;
-
   }
 
-
   .modal-description{
-
     font-size:14px;
-
   }
 
 }
@@ -1259,8 +1275,15 @@ footer{
 
   <div class="house-crest">
 
+    <!--
+      IMPORTANTE:
+      REEMPLAZA ESTE ARCHIVO POR EL ESCUDO
+      REAL DE GRYFFINDOR.
+      NO ES LA FOTO DE GODRIC.
+    -->
+
     <img
-      src="assets/IMG_5340.jpeg"
+      src="assets/ESCUDO-GRYFFINDOR.png"
       alt="Escudo de Gryffindor"
     >
 
@@ -1291,9 +1314,9 @@ footer{
   <p class="house-description">
 
     Fundada por Godric Gryffindor,
-    esta casa reúne a estudiantes reconocidos por su valentía,
-    determinación, nobleza y disposición para defender
-    aquello en lo que creen.
+    esta casa reúne a estudiantes reconocidos por
+    su valentía, determinación, audacia y disposición
+    para defender aquello en lo que creen.
 
   </p>
 
@@ -1307,6 +1330,88 @@ footer{
 
 
 </header>
+
+
+
+<!-- ======================================
+     FUNDADOR
+======================================= -->
+
+<section class="founder-section">
+
+
+  <div class="section-heading">
+
+    <h2>
+      Fundador de la Casa
+    </h2>
+
+  </div>
+
+
+  <div class="founder">
+
+
+    <div class="founder-photo">
+
+      <img
+        src="assets/IMG_5334.jpeg"
+        alt="Godric Gryffindor"
+      >
+
+    </div>
+
+
+    <div class="founder-info">
+
+      <span class="founder-label">
+        Fundador
+      </span>
+
+
+      <h2>
+        Godric Gryffindor
+      </h2>
+
+
+      <div class="founder-line"></div>
+
+
+      <p>
+
+        Godric Gryffindor fue uno de los cuatro fundadores
+        del Colegio Hogwarts de Magia y Hechicería.
+        Reconocido por su valentía y determinación,
+        valoraba especialmente a quienes demostraban coraje,
+        nobleza y disposición para defender aquello en lo que creían.
+
+      </p>
+
+
+      <p>
+
+        Su legado continúa presente en los estudiantes de Gryffindor,
+        una casa en la que el valor no se mide por la ausencia de miedo,
+        sino por la decisión de seguir adelante a pesar de él.
+
+      </p>
+
+
+      <div class="founder-quote">
+
+        “El valor se demuestra cuando decidimos actuar
+        incluso frente al miedo.”
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
 
 
 
@@ -1355,16 +1460,12 @@ footer{
 
 
       <h3>
-
         Noah O. Gaunt
-
       </h3>
 
 
       <p>
-
-        Profesor de DCAO · Jefe de Casa de Gryffindor
-
+        Profesor de DCAO · Jefe de Gryffindor
       </p>
 
 
@@ -1384,15 +1485,9 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
-
-    <h2>
-      Primer Año
-    </h2>
-
+    <h2>Primer Año</h2>
   </div>
-
 
   <div class="students">
 
@@ -1401,7 +1496,6 @@ footer{
     </div>
 
   </div>
-
 
 </section>
 
@@ -1413,13 +1507,8 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
-
-    <h2>
-      Segundo Año
-    </h2>
-
+    <h2>Segundo Año</h2>
   </div>
 
 
@@ -1465,12 +1554,12 @@ footer{
         'Alexander Tobias Longbottom',
         'Segundo Año',
         '“A las mujeres en realidad les gusta el pollo 🦐”',
-        'assets/D9FB0547-697D-4A2D-8EB2-CA74FD3C7A81.jpeg'
+        'assets/alexander-longbottom.png'
       )"
     >
 
       <img
-        src="assets/D9FB0547-697D-4A2D-8EB2-CA74FD3C7A81.jpeg"
+        src="assets/alexander-longbottom.png"
         alt="Alexander Tobias Longbottom"
       >
 
@@ -1495,12 +1584,12 @@ footer{
         'Aries Summer',
         'Segundo Año · Jugadora de Quidditch',
         '“La magia más poderosa es creer en ti misma.”',
-        'assets/C9C25D28-2E44-4138-9B20-D6CAAB3D8B2B.jpeg'
+        'assets/aries-summer.png'
       )"
     >
 
       <img
-        src="assets/C9C25D28-2E44-4138-9B20-D6CAAB3D8B2B.jpeg"
+        src="assets/aries-summer.png"
         alt="Aries Summer"
       >
 
@@ -1517,7 +1606,6 @@ footer{
 
   </div>
 
-
 </section>
 
 
@@ -1528,13 +1616,8 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
-
-    <h2>
-      Tercer Año
-    </h2>
-
+    <h2>Tercer Año</h2>
   </div>
 
 
@@ -1542,7 +1625,8 @@ footer{
 
 
     <!-- ======================================
-         LIA EVELYNE WOOD · NUEVA PREFECTA
+         LIA EVELYNE WOOD
+         NUEVA PREFECTA
     ======================================= -->
 
     <article
@@ -1550,17 +1634,15 @@ footer{
 
       onclick="openProfile(
         'Lia Evelyne Wood',
-        'Tercer Año · Prefecta',
-        'Prefecta de Gryffindor · Cazadora de Quidditch #7.\n\n“No me interesa demostrar que soy mejor que nadie. Solo me interesa descubrir hasta dónde puedo llegar antes de que alguien intente detenerme.”',
+        'Tercer Año · Prefecta · Cazadora de Quidditch #7',
+        'Prefecta de Gryffindor · Cazadora del equipo de Quidditch de Gryffindor #7.\n\n“No me interesa demostrar que soy mejor que nadie. Solo me interesa descubrir hasta dónde puedo llegar antes de que alguien intente detenerme.”',
         'assets/lia-evelyne-wood.png'
       )"
     >
 
 
       <div class="profile-badge">
-
         Prefecta
-
       </div>
 
 
@@ -1571,16 +1653,12 @@ footer{
 
 
       <h3>
-
         Lia Evelyne Wood
-
       </h3>
 
 
       <p>
-
         Tercer Año · Prefecta
-
       </p>
 
 
@@ -1648,7 +1726,7 @@ footer{
 
 
 
-    <!-- HERMIONE JEAN NIGHTTIDE GRANGER -->
+    <!-- HERMIONE -->
 
     <article
       class="profile-card"
@@ -1679,7 +1757,6 @@ footer{
 
   </div>
 
-
 </section>
 
 
@@ -1690,13 +1767,8 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
-
-    <h2>
-      Cuarto Año
-    </h2>
-
+    <h2>Cuarto Año</h2>
   </div>
 
 
@@ -1734,7 +1806,6 @@ footer{
 
   </div>
 
-
 </section>
 
 
@@ -1745,15 +1816,9 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
-
-    <h2>
-      Quinto Año
-    </h2>
-
+    <h2>Quinto Año</h2>
   </div>
-
 
   <div class="students">
 
@@ -1762,7 +1827,6 @@ footer{
     </div>
 
   </div>
-
 
 </section>
 
@@ -1774,22 +1838,15 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
-
-    <h2>
-      Sexto Año
-    </h2>
-
+    <h2>Sexto Año</h2>
   </div>
 
 
   <div class="students">
 
 
-    <!-- ======================================
-         FRED WEASLEY
-    ======================================= -->
+    <!-- FRED WEASLEY -->
 
     <article
       class="profile-card prefect-card"
@@ -1802,35 +1859,28 @@ footer{
       )"
     >
 
-
       <div class="profile-badge">
-
         Prefecto Reclutador
-
       </div>
-
 
       <img
         src="assets/AE324995-2E3E-4423-9367-AAB565C25583.png"
         alt="Fred Weasley"
       >
 
-
       <h3>
         Fred Weasley
       </h3>
-
 
       <p>
         Sexto Año · Prefecto Reclutador
       </p>
 
-
     </article>
 
 
 
-    <!-- GALATEA CÉLINE BELL -->
+    <!-- GALATEA -->
 
     <article
       class="profile-card"
@@ -1860,7 +1910,7 @@ footer{
 
 
 
-    <!-- ODETTE ROSIER GRINDELWALD -->
+    <!-- ODETTE -->
 
     <article
       class="profile-card"
@@ -1869,12 +1919,12 @@ footer{
         'Odette Rosier Grindelwald',
         'Sexto Año · Porrista',
         '“Confía en tu magia, incluso cuando el camino se vuelva oscuro; a veces, la luz que buscas siempre estuvo dentro de ti.”',
-        'assets/0685697D-8A71-4CD1-9C7C-D0188D7B929D.jpeg'
+        'assets/odette-rosier-grindelwald.png'
       )"
     >
 
       <img
-        src="assets/0685697D-8A71-4CD1-9C7C-D0188D7B929D.jpeg"
+        src="assets/odette-rosier-grindelwald.png"
         alt="Odette Rosier Grindelwald"
       >
 
@@ -1890,7 +1940,7 @@ footer{
 
 
 
-    <!-- OLIVIA MELANIE KRUM -->
+    <!-- OLIVIA -->
 
     <article
       class="profile-card"
@@ -1899,12 +1949,12 @@ footer{
         'Olivia Melanie Krum',
         'Sexto Año',
         '“Todo pasa, pero algunos momentos se quedan para siempre.”',
-        'assets/EFE2F0B4-6D6F-4C9B-ABEC-A4A017E30ED6.jpeg
+        'assets/olivia-melanie-krum.png'
       )"
     >
 
       <img
-        src="assets/EFE2F0B4-6D6F-4C9B-ABEC-A4A017E30ED6.jpeg"
+        src="assets/olivia-melanie-krum.png"
         alt="Olivia Melanie Krum"
       >
 
@@ -1920,7 +1970,7 @@ footer{
 
 
 
-    <!-- AMELIA POTTER EVANS -->
+    <!-- AMELIA -->
 
     <article
       class="profile-card"
@@ -1929,12 +1979,12 @@ footer{
         'Amelia Potter Evans',
         'Sexto Año',
         '“Las almas más bonitas florecen en el caos.”',
-        'assets/898C9AA2-E7DE-48AE-8EF9-B27C0C5A9411.jpeg'
+        'assets/amelia-potter-evans.png'
       )"
     >
 
       <img
-        src="assets/898C9AA2-E7DE-48AE-8EF9-B27C0C5A9411.jpeg"
+        src="assets/amelia-potter-evans.png"
         alt="Amelia Potter Evans"
       >
 
@@ -1950,7 +2000,7 @@ footer{
 
 
 
-    <!-- AEGAN THOMAS M. WOOD -->
+    <!-- AEGAN -->
 
     <article
       class="profile-card"
@@ -1980,7 +2030,7 @@ footer{
 
 
 
-    <!-- GARRETH WEASLEY -->
+    <!-- GARRETH -->
 
     <article
       class="profile-card"
@@ -2010,7 +2060,7 @@ footer{
 
 
 
-    <!-- ZAYN BLACK -->
+    <!-- ZAYN -->
 
     <article
       class="profile-card"
@@ -2040,7 +2090,7 @@ footer{
 
 
 
-    <!-- EMMA REDFORD -->
+    <!-- EMMA -->
 
     <article
       class="profile-card"
@@ -2070,7 +2120,7 @@ footer{
 
 
 
-    <!-- OSCAR GREEN -->
+    <!-- OSCAR -->
 
     <article
       class="profile-card"
@@ -2101,7 +2151,6 @@ footer{
 
   </div>
 
-
 </section>
 
 
@@ -2112,13 +2161,8 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
-
-    <h2>
-      Séptimo Año
-    </h2>
-
+    <h2>Séptimo Año</h2>
   </div>
 
 
@@ -2126,8 +2170,43 @@ footer{
 
 
     <!-- ======================================
-         CHARLOTTE STARLIGHT
+         LUZMI
+         NUEVA JEFA DE PREFECTOS
     ======================================= -->
+
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Luzmi I. Levovich Volkonsky',
+        'Séptimo Año · Jefa de Prefectos',
+        'Jefa de Prefectos de Gryffindor · Porrista.',
+        'assets/0D42558F-96B3-445B-BFD5-E804AE419C71.png'
+      )"
+    >
+
+      <div class="profile-badge">
+        Jefa de Prefectos
+      </div>
+
+      <img
+        src="assets/0D42558F-96B3-445B-BFD5-E804AE419C71.png"
+        alt="Luzmi I. Levovich Volkonsky"
+      >
+
+      <h3>
+        Luzmi I. Levovich Volkonsky
+      </h3>
+
+      <p>
+        Séptimo Año · Jefa de Prefectos
+      </p>
+
+    </article>
+
+
+
+    <!-- CHARLOTTE STARLIGHT -->
 
     <article
       class="profile-card prefect-card"
@@ -2140,35 +2219,28 @@ footer{
       )"
     >
 
-
       <div class="profile-badge">
         Prefecta
       </div>
-
 
       <img
         src="assets/CA55AEFB-B448-4C63-A1BD-3B0BF1FC997C.png"
         alt="Charlotte Starlight"
       >
 
-
       <h3>
         Charlotte Starlight
       </h3>
-
 
       <p>
         Séptimo Año · Prefecta
       </p>
 
-
     </article>
 
 
 
-    <!-- ======================================
-         ALIS GAUNT CROUCH
-    ======================================= -->
+    <!-- ALIS -->
 
     <article
       class="profile-card prefect-card"
@@ -2181,35 +2253,28 @@ footer{
       )"
     >
 
-
       <div class="profile-badge">
         Prefecta
       </div>
-
 
       <img
         src="assets/4F3997B2-A358-439E-A88B-E063CB624B99.png"
         alt="Alis Gaunt Crouch"
       >
 
-
       <h3>
         Alis Gaunt Crouch
       </h3>
-
 
       <p>
         Séptimo Año · Prefecta
       </p>
 
-
     </article>
 
 
 
-    <!-- ======================================
-         ALEX GAUNT CROUCH
-    ======================================= -->
+    <!-- ALEX -->
 
     <article
       class="profile-card prefect-card"
@@ -2222,68 +2287,55 @@ footer{
       )"
     >
 
-
       <div class="profile-badge">
         Prefecto
       </div>
-
 
       <img
         src="assets/25FE8344-3113-4C71-A230-9E9137A3C1F8.png"
         alt="Alex Gaunt Crouch"
       >
 
-
       <h3>
         Alex Gaunt Crouch
       </h3>
 
-
       <p>
         Séptimo Año · Prefecto
       </p>
-
 
     </article>
 
 
 
     <!-- ======================================
-         LUZMI · JEFA DE PREFECTOS
+         AURORA
+         YA NO ES PREFECTA
     ======================================= -->
 
     <article
-      class="profile-card head-prefect-card"
+      class="profile-card"
 
       onclick="openProfile(
-        'Luzmi I. Levovich Volkonsky',
-        'Séptimo Año · Jefa de Prefectos',
-        'Jefa de Prefectos de Gryffindor · Porrista.',
-        'assets/0D42558F-96B3-445B-BFD5-E804AE419C71.png'
+        'Aurora Gaunt Crouch',
+        'Séptimo Año',
+        'Organizadora del Club de Arte · Organizadora de Quidditch.\n\n“No es lo que dices, es cómo lo dices.”',
+        'assets/7E1283BF-9DB2-4192-8159-E1A8DAB57F67.png'
       )"
     >
 
-
-      <div class="profile-badge">
-        Jefa de Prefectos
-      </div>
-
-
       <img
-        src="assets/0D42558F-96B3-445B-BFD5-E804AE419C71.png"
-        alt="Luzmi I. Levovich Volkonsky"
+        src="assets/7E1283BF-9DB2-4192-8159-E1A8DAB57F67.png"
+        alt="Aurora Gaunt Crouch"
       >
 
-
       <h3>
-        Luzmi I. Levovich Volkonsky
+        Aurora Gaunt Crouch
       </h3>
 
-
       <p>
-        Séptimo Año · Jefa de Prefectos
+        Séptimo Año
       </p>
-
 
     </article>
 
@@ -2298,12 +2350,12 @@ footer{
         'Oliver Wood',
         'Séptimo Año · Capitán de Quidditch',
         '“Si miran el cielo no se conformen con el suelo… ¡Únanse al equipo de Gryffindor!”',
-        'assets/EF1882E5-11E0-492A-997C-2A62C8062B6C.jpeg'
+        'assets/oliver-wood-castano.png'
       )"
     >
 
       <img
-        src="assets/EF1882E5-11E0-492A-997C-2A62C8062B6C.jpeg"
+        src="assets/oliver-wood-castano.png"
         alt="Oliver Wood"
       >
 
@@ -2313,6 +2365,36 @@ footer{
 
       <p>
         Séptimo Año · Capitán de Quidditch
+      </p>
+
+    </article>
+
+
+
+    <!-- OLIVER WOOD · DEPORTES -->
+
+    <article
+      class="profile-card"
+
+      onclick="openProfile(
+        'Oliver Wood',
+        'Séptimo Año · Coordinador de Deportes',
+        'Coordinador de Deportes · Organizador del Torneo de Quidditch.\n\n“Soy el boludo de los folletos.”',
+        'assets/oliver-wood-rubio.png'
+      )"
+    >
+
+      <img
+        src="assets/oliver-wood-rubio.png"
+        alt="Oliver Wood"
+      >
+
+      <h3>
+        Oliver Wood
+      </h3>
+
+      <p>
+        Séptimo Año · Coordinador de Deportes
       </p>
 
     </article>
@@ -2349,7 +2431,7 @@ footer{
 
 
 
-    <!-- LUKE R. LOVEGOOD -->
+    <!-- LUKE -->
 
     <article
       class="profile-card"
@@ -2379,7 +2461,7 @@ footer{
 
 
 
-    <!-- SIRIUS BLACK III -->
+    <!-- SIRIUS -->
 
     <article
       class="profile-card"
@@ -2409,7 +2491,7 @@ footer{
 
 
 
-    <!-- REMUS JOHN LUPIN -->
+    <!-- REMUS -->
 
     <article
       class="profile-card"
@@ -2439,7 +2521,7 @@ footer{
 
 
 
-    <!-- LIAM DAVID LONGBOTTOM -->
+    <!-- LIAM -->
 
     <article
       class="profile-card"
@@ -2469,7 +2551,7 @@ footer{
 
 
 
-    <!-- RODRICK IVAN WOOD -->
+    <!-- RODRICK -->
 
     <article
       class="profile-card"
@@ -2499,7 +2581,7 @@ footer{
 
 
 
-    <!-- FREYA ELEANOR LONGBOTTOM -->
+    <!-- FREYA -->
 
     <article
       class="profile-card"
@@ -2529,7 +2611,7 @@ footer{
 
 
 
-    <!-- EVADNE ROSE -->
+    <!-- EVADNE -->
 
     <article
       class="profile-card"
@@ -2560,7 +2642,6 @@ footer{
 
   </div>
 
-
 </section>
 
 
@@ -2585,7 +2666,7 @@ footer{
 
 
 <!-- ======================================
-     PESTAÑA FLOTANTE DE PERFILES
+     PESTAÑA FLOTANTE
 ======================================= -->
 
 <div
@@ -2603,9 +2684,7 @@ footer{
       onclick="closeProfile()"
       aria-label="Cerrar"
     >
-
       ×
-
     </button>
 
 
@@ -2616,24 +2695,19 @@ footer{
     >
 
 
-    <h2
-      id="modalName"
-    >
-    </h2>
+    <h2 id="modalName"></h2>
 
 
     <div
       class="modal-role"
       id="modalRole"
-    >
-    </div>
+    ></div>
 
 
     <div
       class="modal-description"
       id="modalDescription"
-    >
-    </div>
+    ></div>
 
 
   </div>
