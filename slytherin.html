@@ -3,1165 +3,1312 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
 
-  <title>
-    Slytherin | Anuario Hogwarts 2026–2027
-  </title>
+<title>
+Slytherin · Anuario Hogwarts 2026–2027
+</title>
 
 
-  <style>
+<style>
 
-    :root{
+/* ==========================================
+   COLORES GENERALES
+========================================== */
 
-      --paper:#f1e8da;
-      --paper-light:#faf6ee;
+:root{
 
-      --ink:#211d19;
-      --muted:#6b645c;
+  --paper:#f1e8da;
+  --paper-light:#f8f3ea;
 
-      --line:#bcae9d;
+  --ink:#211d19;
+  --muted:#746b61;
 
-      --green:#355d46;
-      --green-dark:#234332;
+  --line:#c8baa8;
 
-      --silver:#9fa4aa;
-      --silver-dark:#737980;
+  --slytherin:#355d46;
+  --slytherin-dark:#234332;
 
-      --white:#fbf8f2;
+  --silver:#aeb4bd;
+  --silver-dark:#737b86;
 
-      --shadow:
-        0 14px 30px rgba(0,0,0,.10);
-
-    }
-
-
-    *{
-      box-sizing:border-box;
-    }
-
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-
-    body{
-
-      margin:0;
-
-      background:
-        radial-gradient(
-          circle at 20% 20%,
-          rgba(0,0,0,.025) 1px,
-          transparent 1px
-        ),
-        radial-gradient(
-          circle at 80% 40%,
-          rgba(0,0,0,.02) 1px,
-          transparent 1px
-        ),
-        var(--paper);
-
-      background-size:
-        22px 22px,
-        31px 31px;
-
-      color:var(--ink);
-
-      font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    }
-
-
-    a{
-      color:inherit;
-      text-decoration:none;
-    }
-
-
-    img{
-      display:block;
-      width:100%;
-    }
-
-
-    button{
-      font:inherit;
-    }
-
-
-    .page{
-
-      width:min(1200px,96%);
-
-      margin:20px auto;
-
-      background:
-        var(--paper-light);
-
-      border:
-        1px solid #ab9e8c;
-
-      box-shadow:
-        0 20px 55px rgba(0,0,0,.12);
-
-      overflow:hidden;
-
-    }
-
-
-
-    /* =========================
-       NAV
-    ========================= */
-
-
-    nav{
-
-      min-height:74px;
-
-      display:flex;
-
-      align-items:center;
-
-      justify-content:space-between;
-
-      padding:
-        14px 5%;
-
-      border-bottom:
-        1px solid var(--line);
-
-      background:
-        rgba(250,246,238,.96);
-
-      position:sticky;
-
-      top:0;
-
-      z-index:100;
-
-      backdrop-filter:
-        blur(8px);
-
-    }
-
-
-    .brand{
-
-      font-size:13px;
-
-      text-transform:uppercase;
-
-      letter-spacing:2px;
-
-    }
-
-
-    .back{
-
-      border:
-        1px solid var(--line);
-
-      padding:
-        9px 15px;
-
-      font-size:10px;
-
-      text-transform:uppercase;
-
-      letter-spacing:1px;
-
-    }
-
-
-
-    /* =========================
-       HERO
-    ========================= */
-
-
-    .hero{
-
-      text-align:center;
-
-      padding:
-        70px 20px 55px;
-
-      border-bottom:
-        1px solid var(--line);
-
-    }
-
-
-    .hero::before{
-
-      content:"✦";
-
-      display:block;
-
-      margin-bottom:18px;
-
-      color:var(--silver);
-
-      font-size:22px;
-
-    }
-
-
-    .house-name{
-
-      margin:0;
-
-      color:
-        var(--green-dark);
-
-      font-size:
-        clamp(48px,10vw,92px);
-
-      font-weight:normal;
-
-      letter-spacing:5px;
-
-    }
-
-
-    .years{
-
-      margin:
-        16px 0;
-
-      color:
-        var(--green);
-
-      font-size:19px;
-
-      letter-spacing:5px;
-
-    }
-
-
-    .motto{
-
-      max-width:650px;
-
-      margin:
-        24px auto 0;
-
-      font-size:14px;
-
-      line-height:1.8;
-
-      letter-spacing:2px;
-
-      text-transform:uppercase;
-
-    }
-
-
-    .ornament{
-
-      margin-top:28px;
-
-      color:
-        var(--silver);
-
-      font-size:18px;
-
-      letter-spacing:14px;
-
-    }
-
-
-
-    /* =========================
-       TÍTULOS
-    ========================= */
-
-
-    .section-heading{
-
-      display:flex;
-
-      align-items:center;
-
-      gap:18px;
-
-      margin-bottom:35px;
-
-      text-align:center;
-
-      text-transform:uppercase;
-
-      letter-spacing:3px;
-
-      font-size:13px;
-
-    }
-
-
-    .section-heading::before,
-    .section-heading::after{
-
-      content:"";
-
-      flex:1;
-
-      height:1px;
-
-      background:
-        var(--line);
-
-    }
-
-
-
-    /* =========================
-       FUNDADOR
-    ========================= */
-
-
-    .founder-section{
-
-      padding:
-        55px 6%;
-
-      border-bottom:
-        1px solid var(--line);
-
-    }
-
-
-    .founder{
-
-      max-width:1050px;
-
-      margin:auto;
-
-      display:grid;
-
-      grid-template-columns:
-        320px 1fr;
-
-      gap:50px;
-
-      align-items:center;
-
-    }
-
-
-    .founder-photo img{
-
-      width:100%;
-
-      aspect-ratio:4/5;
-
-      object-fit:cover;
-
-      border:
-        1px solid var(--line);
-
-      padding:8px;
-
-      background:
-        var(--white);
-
-    }
-
-
-    .founder-label{
-
-      color:
-        var(--green);
-
-      font-size:10px;
-
-      letter-spacing:3px;
-
-      text-transform:uppercase;
-
-    }
-
-
-    .founder-info h2{
-
-      margin:
-        10px 0 12px;
-
-      color:
-        var(--green-dark);
-
-      font-size:38px;
-
-      font-weight:normal;
-
-    }
-
-
-    .founder-line{
-
-      width:65px;
-
-      height:1px;
-
-      margin:
-        18px 0 25px;
-
-      background:
-        var(--green);
-
-    }
-
-
-    .founder-info p{
-
-      font-size:15px;
-
-      line-height:1.9;
-
-      color:#4d4944;
-
-    }
-
-
-    .founder-quote{
-
-      margin-top:24px;
-
-      padding:
-        18px 22px;
-
-      border-left:
-        2px solid var(--green);
-
-      font-size:16px;
-
-      font-style:italic;
-
-    }
-
-
-
-    /* =========================
-       JEFE DE CASA
-    ========================= */
-
-
-    .staff-section{
-
-      padding:
-        55px 6%;
-
-      border-bottom:
-        1px solid var(--line);
-
-    }
-
-
-    .staff-grid{
-
-      display:flex;
-
-      justify-content:center;
-
-    }
-
-
-
-    /* =========================
-       AÑOS
-    ========================= */
-
-
-    .year-section{
-
-      padding:
-        55px 6%;
-
-      border-bottom:
-        1px solid var(--line);
-
-    }
-
-
-    .year-title{
-
-      display:flex;
-
-      align-items:center;
-
-      gap:20px;
-
-      margin-bottom:35px;
-
-    }
-
-
-    .year-title::before,
-    .year-title::after{
-
-      content:"";
-
-      flex:1;
-
-      height:1px;
-
-      background:
-        var(--line);
-
-    }
-
-
-    .year-title h2{
-
-      margin:0;
-
-      color:
-        var(--green-dark);
-
-      font-size:23px;
-
-      font-weight:normal;
-
-      letter-spacing:3px;
-
-      text-transform:uppercase;
-
-      white-space:nowrap;
-
-    }
-
-
-    .students{
-
-      max-width:1200px;
-
-      margin:auto;
-
-      display:grid;
-
-      grid-template-columns:
-        repeat(auto-fit,minmax(180px,1fr));
-
-      gap:26px;
-
-    }
-
-
-
-    /* =========================
-       TARJETAS
-    ========================= */
-
-
-    .profile-card{
-
-      width:100%;
-
-      max-width:220px;
-
-      margin:auto;
-
-      padding:
-        10px 10px 22px;
-
-      position:relative;
-
-      text-align:center;
-
-      cursor:pointer;
-
-      transition:
-        transform .25s ease,
-        box-shadow .25s ease;
-
-    }
-
-
-    .profile-card:hover{
-
-      transform:
-        translateY(-5px);
-
-      box-shadow:
-        var(--shadow);
-
-    }
-
-
-    .profile-card img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  object-position:center 20%;
-  background:#ddd4c8;
 }
 
 
-    .profile-card h3{
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+========================================== */
 
-      margin:
-        16px 5px 5px;
+*{
+  box-sizing:border-box;
+}
 
-      font-size:15px;
+html{
+  scroll-behavior:smooth;
+}
 
-      font-weight:normal;
+body{
 
-      letter-spacing:1px;
+  margin:0;
 
-      text-transform:uppercase;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
-    }
+  background:var(--paper);
 
+  color:var(--ink);
 
-    .profile-card p{
+}
 
-      margin:0;
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-      color:#655f58;
+img{
+  display:block;
+}
 
-      font-size:10px;
 
-      letter-spacing:1px;
+/* ==========================================
+   PÁGINA
+========================================== */
 
-      text-transform:uppercase;
+.page{
 
-      line-height:1.5;
+  width:min(1200px,100%);
 
-    }
+  margin:auto;
 
+  min-height:100vh;
 
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0,0,0,.018) 1px,
+      transparent 1px
+    ),
+    var(--paper-light);
 
-    /* ESTUDIANTE NORMAL */
+  background-size:25px 25px;
 
-    .student-card{
+}
 
-      border:
-        1px solid #d3c7b7;
 
-      background:
-        var(--white);
+/* ==========================================
+   NAVEGACIÓN
+========================================== */
 
-    }
+.nav{
 
+  position:sticky;
 
+  top:0;
 
-    /* JEFE DE CASA */
+  z-index:100;
 
-    .head-card{
+  display:flex;
 
-      border:
-        3px solid var(--green);
+  justify-content:space-between;
 
-      background:
-        #e9f0eb;
+  align-items:center;
 
-    }
+  padding:18px 38px;
 
+  background:rgba(248,243,234,.96);
 
+  border-bottom:1px solid var(--line);
 
-    /* PREFECTO */
+  backdrop-filter:blur(10px);
 
-    .prefect-card{
+}
 
-      border:
-        3px solid var(--silver);
 
-      background:
-        linear-gradient(
-          145deg,
-          #fafafa,
-          #e5e6e7
-        );
+.brand{
 
-    }
+  display:flex;
 
+  align-items:center;
 
+  gap:13px;
 
-    /* ETIQUETAS */
+}
 
-    .profile-badge{
 
-      position:absolute;
+.brand-mark{
 
-      top:20px;
+  width:43px;
 
-      left:50%;
+  height:43px;
 
-      transform:
-        translateX(-50%);
+  border:1px solid var(--slytherin);
 
-      padding:
-        5px 10px;
+  border-radius:50%;
 
-      font-size:8px;
+  display:grid;
 
-      letter-spacing:1.4px;
+  place-items:center;
 
-      text-transform:uppercase;
+  color:var(--slytherin);
 
-      white-space:nowrap;
+  font-size:20px;
 
-      z-index:2;
+}
 
-    }
 
+.brand-text{
 
-    .head-card .profile-badge{
+  font-size:12px;
 
-      background:
-        var(--green-dark);
+  letter-spacing:2px;
 
-      color:white;
+  text-transform:uppercase;
 
-    }
+}
 
 
-    .prefect-card .profile-badge{
+.back-button{
 
-      background:
-        var(--silver-dark);
+  border:1px solid var(--slytherin);
 
-      color:white;
+  padding:9px 15px;
 
-    }
+  font-size:10px;
 
+  letter-spacing:1.4px;
 
+  text-transform:uppercase;
 
-    /* =========================
-       MODAL
-    ========================= */
+  transition:.2s ease;
 
+}
 
-    .profile-modal{
 
-      position:fixed;
+.back-button:hover{
 
-      inset:0;
+  background:var(--slytherin);
 
-      z-index:999;
+  color:white;
 
-      display:none;
+}
 
-      align-items:center;
 
-      justify-content:center;
+/* ==========================================
+   PORTADA SLYTHERIN
+========================================== */
 
-      padding:20px;
+.house-hero{
 
-    }
+  min-height:560px;
 
+  padding:70px 45px;
 
-    .profile-modal.active{
-      display:flex;
-    }
+  display:flex;
 
+  flex-direction:column;
 
-    .modal-background{
+  justify-content:center;
 
-      position:absolute;
+  align-items:center;
 
-      inset:0;
+  text-align:center;
 
-      background:
-        rgba(10,10,10,.68);
+  border-bottom:1px solid var(--line);
 
-      backdrop-filter:
-        blur(4px);
+}
 
-    }
 
+.house-eyebrow{
 
-    .modal-card{
+  margin-bottom:12px;
 
-      width:
-        min(720px,95%);
+  font-size:13px;
 
-      max-height:90vh;
+  letter-spacing:4px;
 
-      position:relative;
+  text-transform:uppercase;
 
-      z-index:2;
+  color:var(--muted);
 
-      display:grid;
+}
 
-      grid-template-columns:
-        230px 1fr;
 
-      background:
-        #f5eee3;
+.house-hero h1{
 
-      border:
-        1px solid #918675;
+  margin:0;
 
-      box-shadow:
-        0 25px 70px rgba(0,0,0,.35);
+  color:var(--slytherin);
 
-      overflow:auto;
+  font-size:70px;
 
-    }
+  font-weight:400;
 
+  letter-spacing:5px;
 
-    .modal-card > img{
+}
 
-      width:100%;
 
-      height:100%;
+.house-motto{
 
-      min-height:380px;
+  margin-top:20px;
 
-      object-fit:cover;
+  font-size:18px;
 
-      background:#ddd4c8;
+  font-style:italic;
 
-    }
+}
 
 
-    .modal-content{
+.house-description{
 
-      padding:
-        45px 35px;
+  max-width:700px;
 
-      display:flex;
+  margin:35px auto 0;
 
-      flex-direction:column;
+  font-size:17px;
 
-      justify-content:center;
+  line-height:1.9;
 
-    }
+  color:#554e47;
 
+}
 
-    .modal-small{
 
-      font-size:9px;
+.house-quote{
 
-      letter-spacing:2px;
+  max-width:720px;
 
-      color:#777067;
+  margin:40px auto 0;
 
-      text-transform:uppercase;
+  padding:25px 35px;
 
-    }
+  border-left:4px solid var(--slytherin);
 
+  font-size:23px;
 
-    .modal-content h2{
+  line-height:1.5;
 
-      margin:
-        10px 0 4px;
+  font-style:italic;
 
-      color:
-        var(--green-dark);
+}
 
-      font-size:30px;
 
-      font-weight:normal;
+/* ==========================================
+   TÍTULOS
+========================================== */
 
-    }
+.section-heading{
 
+  display:flex;
 
-    .modal-role{
+  align-items:center;
 
-      margin:0;
+  justify-content:center;
 
-      color:
-        var(--green);
+  gap:25px;
 
-      font-size:11px;
+  margin-bottom:38px;
 
-      text-transform:uppercase;
+}
 
-      letter-spacing:1.5px;
 
-    }
+.section-heading::before,
+.section-heading::after{
 
+  content:"";
 
-    .modal-divider{
+  width:140px;
 
-      width:55px;
+  height:1px;
 
-      height:1px;
+  background:var(--line);
 
-      margin:
-        22px 0;
+}
 
-      background:
-        var(--line);
 
-    }
+.section-heading h2{
 
+  margin:0;
 
-    .modal-description{
+  font-size:25px;
 
-      margin:0;
+  font-weight:400;
 
-      font-size:15px;
+  letter-spacing:5px;
 
-      line-height:1.8;
+  text-transform:uppercase;
 
-      white-space:pre-line;
+}
 
-    }
 
+/* ==========================================
+   FUNDADOR
+========================================== */
 
-    .modal-star{
+.founder-section{
 
-      margin-top:25px;
+  padding:75px 45px;
 
-      color:
-        var(--silver-dark);
+  border-bottom:1px solid var(--line);
 
-      font-size:18px;
+}
 
-    }
 
+.founder{
 
-    .modal-close{
+  max-width:1000px;
 
-      position:absolute;
+  margin:auto;
 
-      top:12px;
+  display:grid;
 
-      right:15px;
+  grid-template-columns:320px 1fr;
 
-      width:34px;
+  gap:50px;
 
-      height:34px;
+  align-items:center;
 
-      border:none;
+}
 
-      background:
-        rgba(245,238,227,.92);
 
-      font-size:26px;
+.founder-photo img{
 
-      cursor:pointer;
+  width:100%;
 
-      z-index:4;
+  aspect-ratio:4/5;
 
-    }
+  object-fit:cover;
 
+  object-position:center 20%;
 
+  padding:8px;
 
-    /* =========================
-       FOOTER
-    ========================= */
+  border:1px solid var(--line);
 
+  background:#fbf8f2;
 
-    footer{
+}
 
-      padding:
-        35px 20px;
 
-      text-align:center;
+.founder-label{
 
-      background:
-        #1c1c1c;
+  color:var(--slytherin);
 
-      color:#d6c5a7;
+  font-size:10px;
 
-      font-size:11px;
+  letter-spacing:3px;
 
-      letter-spacing:2px;
+  text-transform:uppercase;
 
-      text-transform:uppercase;
+}
 
-    }
 
+.founder-info h2{
 
+  margin:10px 0 12px;
 
-    /* =========================
-       MÓVIL
-    ========================= */
+  color:var(--slytherin-dark);
 
+  font-size:38px;
 
-    @media(max-width:600px){
+  font-weight:400;
 
-      .page{
+}
 
-        width:100%;
 
-        margin:0;
+.founder-line{
 
-        border-left:none;
+  width:65px;
 
-        border-right:none;
+  height:1px;
 
-      }
+  margin:18px 0 25px;
 
+  background:var(--slytherin);
 
-      nav{
+}
 
-        padding:
-          14px 18px;
 
-      }
+.founder-info p{
 
+  color:#4d4944;
 
-      .brand{
-        font-size:10px;
-      }
+  font-size:15px;
 
+  line-height:1.9;
 
-      .back{
+}
 
-        padding:
-          8px 11px;
 
-        font-size:9px;
+.founder-quote{
 
-      }
+  margin-top:24px;
 
+  padding:18px 22px;
 
-      .hero{
+  border-left:3px solid var(--slytherin);
 
-        padding:
-          52px 18px 42px;
+  font-size:16px;
 
-      }
+  font-style:italic;
 
+  line-height:1.7;
 
-      .house-name{
+}
 
-        font-size:42px;
 
-        letter-spacing:3px;
+/* ==========================================
+   JEFATURA
+========================================== */
 
-      }
+.house-head-section{
 
+  padding:75px 45px;
 
-      .years{
-        font-size:16px;
-      }
+  border-bottom:1px solid var(--line);
 
+}
 
-      .founder{
 
-        grid-template-columns:1fr;
+.house-head-wrapper{
 
-        gap:25px;
+  max-width:620px;
 
-      }
+  margin:auto;
 
+}
 
-      .founder-photo{
 
-        max-width:260px;
+/* ==========================================
+   TARJETAS DE ESTUDIANTES
+========================================== */
 
-        margin:auto;
+.profile-card{
 
-      }
+  position:relative;
 
+  display:block;
 
-      .founder-info{
-        text-align:center;
-      }
+  padding:12px;
 
+  background:#f7f2e9;
 
-      .founder-line{
+  border:1px solid #cfc3b3;
 
-        margin:
-          18px auto 25px;
+  text-align:center;
 
-      }
+  cursor:pointer;
 
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
 
-      .founder-info h2{
-        font-size:30px;
-      }
+}
 
 
-      .students{
+.profile-card:hover{
 
-        grid-template-columns:
-          repeat(2,1fr);
+  transform:translateY(-5px);
 
-        gap:14px;
+  box-shadow:0 15px 30px rgba(0,0,0,.10);
 
-      }
+}
 
 
-      .profile-card{
+.profile-card img{
 
-        max-width:none;
+  width:100%;
 
-        padding:
-          8px 8px 18px;
+  height:250px;
 
-      }
+  object-fit:cover;
 
+  object-position:center 20%;
 
-      .profile-card img{
-        height:190px;
-      }
+  background:#ddd4c8;
 
+}
 
-      .profile-card h3{
-        font-size:12px;
-      }
 
+.profile-card h3{
 
-      .profile-card p{
-        font-size:9px;
-      }
+  margin:15px 5px 6px;
 
+  font-size:17px;
 
-      .year-section{
+  font-weight:400;
 
-        padding:
-          45px 18px;
+  letter-spacing:1.2px;
 
-      }
+  line-height:1.3;
 
+  text-transform:uppercase;
 
-      .year-title h2{
+}
 
-        font-size:16px;
 
-        letter-spacing:2px;
+.profile-card p{
 
-      }
+  margin:0 5px 12px;
 
+  color:var(--muted);
 
-      .modal-card{
+  font-size:10px;
 
-        grid-template-columns:1fr;
+  line-height:1.6;
 
-      }
+  letter-spacing:.9px;
 
+  text-transform:uppercase;
 
-      .modal-card > img{
+}
 
-        height:280px;
 
-        min-height:0;
+/* ==========================================
+   JEFE DE CASA
+========================================== */
 
-      }
+.head-card{
 
+  padding:15px;
 
-      .modal-content{
+  border:4px solid var(--slytherin);
 
-        padding:
-          28px 24px;
+  background:#edf2ee;
 
-      }
+}
 
 
-      .modal-content h2{
-        font-size:25px;
-      }
+.head-card img{
 
-    }
+  height:390px;
 
-  </style>
+  object-position:center 35%;
+
+}
+
+
+.head-card h3{
+
+  margin:20px 8px 8px;
+
+  font-size:23px;
+
+  letter-spacing:2px;
+
+}
+
+
+.head-card p{
+
+  margin-bottom:18px;
+
+  font-size:12px;
+
+  line-height:1.7;
+
+}
+
+
+.head-card .profile-badge{
+
+  background:var(--slytherin-dark);
+
+  color:white;
+
+}
+
+
+/* ==========================================
+   PREFECTOS
+========================================== */
+
+.prefect-card{
+
+  border:3px solid var(--silver);
+
+  background:
+    linear-gradient(
+      145deg,
+      #f7f4ed,
+      #ecebea
+    );
+
+}
+
+
+.prefect-card .profile-badge{
+
+  background:var(--silver-dark);
+
+  color:white;
+
+}
+
+
+/* ==========================================
+   ETIQUETAS
+========================================== */
+
+.profile-badge{
+
+  position:absolute;
+
+  z-index:5;
+
+  top:20px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  padding:7px 14px;
+
+  font-size:8px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+  white-space:nowrap;
+
+}
+
+
+/* ==========================================
+   AÑOS
+========================================== */
+
+.year-section{
+
+  padding:65px 45px;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.year-title{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:30px;
+
+  margin-bottom:40px;
+
+}
+
+
+.year-title::before,
+.year-title::after{
+
+  content:"";
+
+  height:1px;
+
+  width:180px;
+
+  background:var(--line);
+
+}
+
+
+.year-title h2{
+
+  margin:0;
+
+  color:var(--slytherin-dark);
+
+  font-size:27px;
+
+  font-weight:400;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* ==========================================
+   GRID ESTUDIANTES
+========================================== */
+
+.students{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:28px;
+
+  max-width:1000px;
+
+  margin:auto;
+
+}
+
+
+/* ==========================================
+   AÑO VACÍO
+========================================== */
+
+.empty-year{
+
+  grid-column:1/-1;
+
+  padding:25px;
+
+  text-align:center;
+
+  color:#9b9186;
+
+  font-size:12px;
+
+  font-style:italic;
+
+  letter-spacing:1px;
+
+}
+
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.profile-modal{
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:1000;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:25px;
+
+  background:rgba(20,20,20,.72);
+
+  opacity:0;
+
+  visibility:hidden;
+
+  transition:.25s ease;
+
+}
+
+
+.profile-modal.active{
+
+  opacity:1;
+
+  visibility:visible;
+
+}
+
+
+.modal-card{
+
+  position:relative;
+
+  width:min(500px,100%);
+
+  max-height:88vh;
+
+  overflow-y:auto;
+
+  padding:25px;
+
+  background:var(--paper-light);
+
+  border:1px solid var(--line);
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.30);
+
+  text-align:center;
+
+}
+
+
+.modal-card img{
+
+  width:100%;
+
+  max-height:430px;
+
+  object-fit:cover;
+
+  object-position:center 20%;
+
+  margin-bottom:23px;
+
+}
+
+
+.modal-card h2{
+
+  margin:5px 0 8px;
+
+  color:var(--slytherin);
+
+  font-size:27px;
+
+  font-weight:400;
+
+  text-transform:uppercase;
+
+  letter-spacing:2px;
+
+}
+
+
+.modal-role{
+
+  margin-bottom:22px;
+
+  color:var(--muted);
+
+  font-size:11px;
+
+  line-height:1.6;
+
+  letter-spacing:1.3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.modal-description{
+
+  padding-top:20px;
+
+  border-top:1px solid var(--line);
+
+  font-size:16px;
+
+  line-height:1.8;
+
+  white-space:pre-line;
+
+}
+
+
+.modal-close{
+
+  position:absolute;
+
+  z-index:5;
+
+  top:12px;
+
+  right:12px;
+
+  width:38px;
+
+  height:38px;
+
+  border:1px solid var(--line);
+
+  border-radius:50%;
+
+  background:var(--paper-light);
+
+  cursor:pointer;
+
+  font-size:19px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+  padding:35px 20px;
+
+  background:#171717;
+
+  color:#b9bdc5;
+
+  text-align:center;
+
+  font-size:10px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:850px){
+
+  .students{
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+  }
+
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media(max-width:600px){
+
+  .nav{
+
+    padding:14px 17px;
+
+  }
+
+
+  .brand-mark{
+
+    width:40px;
+
+    height:40px;
+
+  }
+
+
+  .brand-text{
+
+    font-size:9px;
+
+  }
+
+
+  .back-button{
+
+    padding:8px 10px;
+
+    font-size:8px;
+
+  }
+
+
+  .house-hero{
+
+    min-height:auto;
+
+    padding:55px 25px;
+
+  }
+
+
+  .house-hero h1{
+
+    font-size:40px;
+
+    letter-spacing:2px;
+
+  }
+
+
+  .house-description{
+
+    font-size:15px;
+
+  }
+
+
+  .house-quote{
+
+    font-size:19px;
+
+  }
+
+
+  .founder-section,
+  .house-head-section,
+  .year-section{
+
+    padding:55px 22px;
+
+  }
+
+
+  /* FUNDADOR */
+
+  .founder{
+
+    grid-template-columns:1fr;
+
+    gap:28px;
+
+  }
+
+
+  .founder-photo{
+
+    width:min(260px,100%);
+
+    margin:auto;
+
+  }
+
+
+  .founder-info{
+
+    text-align:center;
+
+  }
+
+
+  .founder-line{
+
+    margin:18px auto 25px;
+
+  }
+
+
+  .founder-info h2{
+
+    font-size:30px;
+
+  }
+
+
+  .founder-quote{
+
+    text-align:left;
+
+  }
+
+
+  .section-heading{
+
+    gap:14px;
+
+  }
+
+
+  .section-heading::before,
+  .section-heading::after{
+
+    width:50px;
+
+  }
+
+
+  .section-heading h2{
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+  }
+
+
+  .year-title{
+
+    gap:18px;
+
+  }
+
+
+  .year-title::before,
+  .year-title::after{
+
+    width:60px;
+
+  }
+
+
+  .year-title h2{
+
+    font-size:22px;
+
+  }
+
+
+  /* DOS ESTUDIANTES POR FILA */
+
+  .students{
+
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+
+    gap:14px;
+
+  }
+
+
+  .profile-card{
+
+    padding:8px;
+
+  }
+
+
+  .profile-card img{
+
+    height:220px;
+
+  }
+
+
+  .profile-card h3{
+
+    margin:12px 3px 5px;
+
+    font-size:13px;
+
+    letter-spacing:.8px;
+
+    line-height:1.25;
+
+  }
+
+
+  .profile-card p{
+
+    margin:0 3px 10px;
+
+    font-size:8px;
+
+    line-height:1.5;
+
+    letter-spacing:.6px;
+
+  }
+
+
+  .profile-badge{
+
+    top:15px;
+
+    padding:6px 9px;
+
+    max-width:88%;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+    font-size:7px;
+
+    letter-spacing:1px;
+
+  }
+
+
+  /* SNAPE SE MANTIENE GRANDE */
+
+  .house-head-wrapper{
+
+    max-width:620px;
+
+  }
+
+
+  .head-card{
+
+    padding:15px;
+
+  }
+
+
+  .head-card img{
+
+    height:390px;
+
+    object-position:center 35%;
+
+  }
+
+
+  .head-card h3{
+
+    margin:20px 8px 8px;
+
+    font-size:23px;
+
+    line-height:1.35;
+
+    letter-spacing:2px;
+
+  }
+
+
+  .head-card p{
+
+    margin:0 8px 18px;
+
+    font-size:12px;
+
+    line-height:1.7;
+
+  }
+
+
+  .head-card .profile-badge{
+
+    top:22px;
+
+    padding:8px 17px;
+
+    max-width:none;
+
+    font-size:9px;
+
+    letter-spacing:1.5px;
+
+  }
+
+
+  .modal-card{
+
+    padding:22px 18px;
+
+  }
+
+
+  .modal-card h2{
+
+    font-size:22px;
+
+  }
+
+
+  .modal-description{
+
+    font-size:14px;
+
+  }
+
+}
+
+</style>
 
 </head>
 
@@ -1172,606 +1319,690 @@
 <div class="page">
 
 
-  <!-- =========================
-       NAVEGACIÓN
-  ========================== -->
+<!-- ======================================
+     NAVEGACIÓN
+======================================= -->
 
+<nav class="nav">
 
-  <nav>
+  <div class="brand">
 
-    <div class="brand">
-      Anuario Hogwarts
+    <div class="brand-mark">
+      S
     </div>
 
-    <a
-      href="index.html"
-      class="back"
-    >
-      ← Inicio
-    </a>
-
-  </nav>
-
-
-
-  <!-- =========================
-       SLYTHERIN
-  ========================== -->
-
-
-  <header class="hero">
-
-    <h1 class="house-name">
-      SLYTHERIN
-    </h1>
-
-    <div class="years">
-      2026 — 2027
+    <div class="brand-text">
+      Casa Slytherin
     </div>
 
-    <p class="motto">
-      Ambición · Astucia · Liderazgo
-    </p>
-
-    <div class="ornament">
-      ✦ ✧ ✦
-    </div>
-
-  </header>
+  </div>
 
 
+  <a
+    href="index.html"
+    class="back-button"
+  >
+    ← Volver al Anuario
+  </a>
 
-  <!-- =========================
-       FUNDADOR
-  ========================== -->
+</nav>
 
 
-  <section class="founder-section">
 
-    <div class="section-heading">
+<!-- ======================================
+     PORTADA SLYTHERIN
+======================================= -->
+
+<header class="house-hero">
+
+
+  <div class="house-eyebrow">
+
+    Hogwarts · 2026–2027
+
+  </div>
+
+
+  <h1>
+
+    SLYTHERIN
+
+  </h1>
+
+
+  <div class="house-motto">
+
+    Ambición · Astucia · Liderazgo
+
+  </div>
+
+
+  <p class="house-description">
+
+    Fundada por Salazar Slytherin,
+    esta casa reúne a estudiantes reconocidos
+    por su ambición, determinación, astucia,
+    perseverancia y capacidad de liderazgo.
+
+  </p>
+
+
+  <div class="house-quote">
+
+    “La grandeza comienza con la voluntad
+    de convertir la ambición en acción.”
+
+  </div>
+
+
+</header>
+
+
+
+<!-- ======================================
+     FUNDADOR
+======================================= -->
+
+<section class="founder-section">
+
+
+  <div class="section-heading">
+
+    <h2>
       Fundador de la Casa
-    </div>
+    </h2>
+
+  </div>
 
 
-    <div class="founder">
+  <div class="founder">
 
 
-      <div class="founder-photo">
+    <div class="founder-photo">
 
-        <img
-          src="assets/IMG_5335.jpeg"
-          alt="Salazar Slytherin"
-        >
-
-      </div>
-
-
-      <div class="founder-info">
-
-
-        <span class="founder-label">
-          Fundador
-        </span>
-
-
-        <h2>
-          Salazar Slytherin
-        </h2>
-
-
-        <div class="founder-line"></div>
-
-
-        <p>
-
-          Salazar Slytherin fue uno de los cuatro fundadores
-          del Colegio Hogwarts de Magia y Hechicería.
-          Fue reconocido por su talento mágico,
-          su determinación y su capacidad
-          para identificar potencial y ambición en sus estudiantes.
-
-        </p>
-
-
-        <p>
-
-          La Casa Slytherin continúa representando
-          el ingenio estratégico, el liderazgo,
-          la perseverancia y la voluntad de alcanzar
-          grandes objetivos.
-
-        </p>
-
-
-        <div class="founder-quote">
-
-          “La grandeza comienza con la voluntad
-          de convertir la ambición en acción.”
-
-        </div>
-
-
-      </div>
-
+      <img
+        src="assets/IMG_5335.jpeg"
+        alt="Salazar Slytherin"
+      >
 
     </div>
 
 
-  </section>
+    <div class="founder-info">
+
+
+      <span class="founder-label">
+
+        Fundador
+
+      </span>
+
+
+      <h2>
+
+        Salazar Slytherin
+
+      </h2>
+
+
+      <div class="founder-line"></div>
+
+
+      <p>
+
+        Salazar Slytherin fue uno de los cuatro fundadores
+        del Colegio Hogwarts de Magia y Hechicería.
+        Fue reconocido por su talento mágico,
+        su determinación y su capacidad para identificar
+        potencial y ambición en sus estudiantes.
+
+      </p>
+
+
+      <p>
+
+        Su legado continúa presente en la Casa Slytherin,
+        cuyos estudiantes destacan por el ingenio estratégico,
+        la perseverancia, el liderazgo y la voluntad
+        de alcanzar grandes objetivos.
+
+      </p>
+
+
+      <div class="founder-quote">
+
+        “La grandeza comienza con la voluntad
+        de convertir la ambición en acción.”
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
 
 
 
-  <!-- =========================
-       JEFE DE CASA
-  ========================== -->
+<!-- ======================================
+     JEFE DE CASA
+======================================= -->
+
+<section class="house-head-section">
 
 
-  <section class="staff-section">
+  <div class="section-heading">
 
-
-    <div class="section-heading">
+    <h2>
       Jefatura de Slytherin
-    </div>
+    </h2>
+
+  </div>
 
 
-    <div class="staff-grid">
+  <div class="house-head-wrapper">
 
 
-      <article
-        class="profile-card head-card"
-        onclick="openProfile(
-          'Severus Snape',
-          'Jefe de Slytherin · Profesor de Pociones · Director de HETNE',
-          'No permitan que el nombre de su casa se convierta en el límite de lo que pueden llegar a ser. Ser valiente no pertenece únicamente a Gryffindor. La inteligencia no es patrimonio exclusivo de Ravenclaw. La lealtad no tiene dueño en Hufflepuff, y la ambición no convierte automáticamente a un Slytherin en alguien digno de desprecio.\n\nSean mejores que sus prejuicios. Más disciplinados que sus impulsos. Y, sobre todo, suficientemente firmes para decidir quiénes serán cuando nadie más esté observando.\n\nEl mundo no será amable con ustedes, habrá fracasos, pérdidas, decisiones difíciles y personas que intentarán convencerlos de que deben ser menos de lo que son. No les crean.\n\nConserven aquello que los hace únicos. Aprendan de sus errores. Y cuando caigan, tengan la dignidad de levantarse sin esperar que alguien lo haga por ustedes.\n\nSi alguna vez vuelven a estas paredes, espero que lo hagan siendo personas de las que ustedes mismos puedan sentirse orgullosos.\n\n— Severus Snape',
-          'assets/IMG_5421.png'
-        )"
+    <article
+      class="profile-card head-card"
+
+      onclick="openProfile(
+        'Severus Snape',
+        'Jefe de Slytherin · Profesor de Pociones · Director de HETNE',
+        'No permitan que el nombre de su casa se convierta en el límite de lo que pueden llegar a ser. Ser valiente no pertenece únicamente a Gryffindor. La inteligencia no es patrimonio exclusivo de Ravenclaw. La lealtad no tiene dueño en Hufflepuff, y la ambición no convierte automáticamente a un Slytherin en alguien digno de desprecio.\n\nSean mejores que sus prejuicios. Más disciplinados que sus impulsos. Y, sobre todo, suficientemente firmes para decidir quiénes serán cuando nadie más esté observando.\n\nEl mundo no será amable con ustedes, habrá fracasos, pérdidas, decisiones difíciles y personas que intentarán convencerlos de que deben ser menos de lo que son. No les crean.\n\nConserven aquello que los hace únicos. Aprendan de sus errores. Y cuando caigan, tengan la dignidad de levantarse sin esperar que alguien lo haga por ustedes.\n\nSi alguna vez vuelven a estas paredes, espero que lo hagan siendo personas de las que ustedes mismos puedan sentirse orgullosos.\n\n— Severus Snape',
+        'assets/IMG_5421.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Jefe de Casa
+
+      </div>
+
+
+      <img
+        src="assets/IMG_5421.png"
+        alt="Severus Snape"
       >
 
 
-        <div class="profile-badge">
-          Jefe de Casa
-        </div>
+      <h3>
+
+        Severus Snape
+
+      </h3>
 
 
-        <img
-          src="assets/IMG_5421.png"
-          alt="Severus Snape"
-        >
+      <p>
+
+        Profesor de Pociones · Director de HETNE
+
+      </p>
 
 
-        <h3>
-          Severus Snape
-        </h3>
+    </article>
 
 
-        <p>
-          Profesor de Pociones · Director de HETNE
-        </p>
+  </div>
 
 
-      </article>
+</section>
 
 
+
+<!-- ======================================
+     PRIMER AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Primer Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+      Estudiantes por añadir.
     </div>
 
-
-  </section>
-
+  </div>
 
 
-  <!-- =========================
-       PRIMER AÑO
-  ========================== -->
+</section>
 
 
-  <section class="year-section">
+
+<!-- ======================================
+     SEGUNDO AÑO
+======================================= -->
+
+<section class="year-section">
 
 
-    <div class="year-title">
+  <div class="year-title">
 
-      <h2>
-        Primer Año
-      </h2>
+    <h2>
+      Segundo Año
+    </h2>
 
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+      Estudiantes por añadir.
     </div>
 
+  </div>
 
-    <div class="students">
 
-      <!-- AGREGA AQUÍ ESTUDIANTES DE PRIMER AÑO -->
+</section>
 
+
+
+<!-- ======================================
+     TERCER AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Tercer Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+      Estudiantes por añadir.
     </div>
 
-
-  </section>
-
+  </div>
 
 
-  <!-- =========================
-       SEGUNDO AÑO
-  ========================== -->
+</section>
 
 
-  <section class="year-section">
+
+<!-- ======================================
+     CUARTO AÑO
+======================================= -->
+
+<section class="year-section">
 
 
-    <div class="year-title">
+  <div class="year-title">
 
-      <h2>
-        Segundo Año
-      </h2>
+    <h2>
+      Cuarto Año
+    </h2>
 
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+      Estudiantes por añadir.
     </div>
 
+  </div>
 
-    <div class="students">
 
-      <!-- AGREGA AQUÍ ESTUDIANTES DE SEGUNDO AÑO -->
+</section>
 
+
+
+<!-- ======================================
+     QUINTO AÑO
+======================================= -->
+
+<section class="year-section">
+
+
+  <div class="year-title">
+
+    <h2>
+      Quinto Año
+    </h2>
+
+  </div>
+
+
+  <div class="students">
+
+    <div class="empty-year">
+      Estudiantes por añadir.
     </div>
 
-
-  </section>
-
+  </div>
 
 
-  <!-- =========================
-       TERCER AÑO
-  ========================== -->
-
-
-  <section class="year-section">
-
-
-    <div class="year-title">
-
-      <h2>
-        Tercer Año
-      </h2>
-
-    </div>
-
-
-    <div class="students">
-
-      <!-- AGREGA AQUÍ ESTUDIANTES DE TERCER AÑO -->
-
-    </div>
-
-
-  </section>
+</section>
 
 
 
-  <!-- =========================
-       CUARTO AÑO
-  ========================== -->
+<!-- ======================================
+     SEXTO AÑO
+======================================= -->
+
+<section class="year-section">
 
 
-  <section class="year-section">
+  <div class="year-title">
+
+    <h2>
+      Sexto Año
+    </h2>
+
+  </div>
 
 
-    <div class="year-title">
-
-      <h2>
-        Cuarto Año
-      </h2>
-
-    </div>
+  <div class="students">
 
 
-    <div class="students">
+    <!-- ASTER SNAPE -->
 
-      <!-- AGREGA AQUÍ ESTUDIANTES DE CUARTO AÑO -->
+    <article
+      class="profile-card prefect-card"
 
-    </div>
-
-
-  </section>
-
-
-
-  <!-- =========================
-       QUINTO AÑO
-  ========================== -->
+      onclick="openProfile(
+        'Aster Snape',
+        'Sexto Año · Jefa de Prefectos · Slytherin',
+        'Jefa de Prefectos · Porrista.',
+        'assets/6685B5BE-AA6C-424D-9F83-17DCE6E3B34D.png'
+      )"
+    >
 
 
-  <section class="year-section">
+      <div class="profile-badge">
+
+        Jefa de Prefectos
+
+      </div>
 
 
-    <div class="year-title">
-
-      <h2>
-        Quinto Año
-      </h2>
-
-    </div>
-
-
-    <div class="students">
-
-      <!-- AGREGA AQUÍ ESTUDIANTES DE QUINTO AÑO -->
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- =========================
-       SEXTO AÑO
-  ========================== -->
-
-
-  <section class="year-section">
-
-
-    <div class="year-title">
-
-      <h2>
-        Sexto Año
-      </h2>
-
-    </div>
-
-
-    <div class="students">
-
-
-      <!-- ASTER SNAPE -->
-
-      <article
-        class="profile-card prefect-card"
-        onclick="openProfile(
-          'Aster Snape',
-          'Sexto Año · Jefa de Prefectos · Slytherin',
-          'Jefa de Prefectos, Porrista.',
-          'assets/6685B5BE-AA6C-424D-9F83-17DCE6E3B34D.png'
-        )"
+      <img
+        src="assets/6685B5BE-AA6C-424D-9F83-17DCE6E3B34D.png"
+        alt="Aster Snape"
       >
 
 
-        <div class="profile-badge">
-          Jefa de Prefectos
-        </div>
+      <h3>
+
+        Aster Snape
+
+      </h3>
 
 
-        <img
-          src="assets/6685B5BE-AA6C-424D-9F83-17DCE6E3B34D.png"
-          alt="Aster Snape"
-        >
+      <p>
+
+        Sexto Año · Jefa de Prefectos
+
+      </p>
 
 
-        <h3>
-          Aster Snape
-        </h3>
+    </article>
 
 
-        <p>
-          Sexto Año · Jefa de Prefectos
-        </p>
+  </div>
 
 
-      </article>
-
-
-    </div>
-
-
-  </section>
+</section>
 
 
 
-  <!-- =========================
-       SÉPTIMO AÑO
-  ========================== -->
+<!-- ======================================
+     SÉPTIMO AÑO
+======================================= -->
+
+<section class="year-section">
 
 
-  <section class="year-section">
+  <div class="year-title">
+
+    <h2>
+      Séptimo Año
+    </h2>
+
+  </div>
 
 
-    <div class="year-title">
-
-      <h2>
-        Séptimo Año
-      </h2>
-
-    </div>
+  <div class="students">
 
 
-    <div class="students">
+    <!-- CAS SNAPE -->
+
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Cas Snape',
+        'Séptimo Año · Prefecta Reclutadora · Slytherin',
+        'Prefecta Reclutadora de Slytherin.',
+        'assets/8CBF281F-7A0B-444E-9289-EC5661D688C5.png'
+      )"
+    >
 
 
-      <!-- CAS SNAPE -->
+      <div class="profile-badge">
 
-      <article
-        class="profile-card prefect-card"
-        onclick="openProfile(
-          'Cas Snape',
-          'Séptimo Año · Prefecta Reclutadora · Slytherin',
-          'Prefecta Reclutadora de Slytherin.',
-          'assets/8CBF281F-7A0B-444E-9289-EC5661D688C5.png'
-        )"
+        Prefecta Reclutadora
+
+      </div>
+
+
+      <img
+        src="assets/8CBF281F-7A0B-444E-9289-EC5661D688C5.png"
+        alt="Cas Snape"
       >
 
 
-        <div class="profile-badge">
-          Prefecta Reclutadora
-        </div>
+      <h3>
+
+        Cas Snape
+
+      </h3>
 
 
-        <img
-          src="assets/8CBF281F-7A0B-444E-9289-EC5661D688C5.png"
-          alt="Cas Snape"
-        >
+      <p>
+
+        Séptimo Año · Prefecta Reclutadora
+
+      </p>
 
 
-        <h3>
-          Cas Snape
-        </h3>
-
-
-        <p>
-          Séptimo Año · Prefecta Reclutadora
-        </p>
-
-
-      </article>
+    </article>
 
 
 
-      <!-- CHOI SEUNGCHEOL -->
+    <!-- CHOI SEUNGCHEOL -->
 
-      <article
-        class="profile-card prefect-card"
-        onclick="openProfile(
-          'Choi Seungcheol',
-          'Séptimo Año · Prefecto · Slytherin',
-          'Prefecto de Slytherin, Subcapitán de Quidditch.',
-          'assets/8068E02F-8CC1-4EC7-BD58-78DF0009E004.png'
-        )"
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Choi Seungcheol',
+        'Séptimo Año · Prefecto · Slytherin',
+        'Prefecto de Slytherin · Subcapitán de Quidditch.',
+        'assets/8068E02F-8CC1-4EC7-BD58-78DF0009E004.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecto
+
+      </div>
+
+
+      <img
+        src="assets/8068E02F-8CC1-4EC7-BD58-78DF0009E004.png"
+        alt="Choi Seungcheol"
       >
 
 
-        <div class="profile-badge">
-          Prefecto
-        </div>
+      <h3>
+
+        Choi Seungcheol
+
+      </h3>
 
 
-        <img
-          src="assets/8068E02F-8CC1-4EC7-BD58-78DF0009E004.png"
-          alt="Choi Seungcheol"
-        >
+      <p>
+
+        Séptimo Año · Prefecto
+
+      </p>
 
 
-        <h3>
-          Choi Seungcheol
-        </h3>
-
-
-        <p>
-          Séptimo Año · Prefecto 
-        </p>
-
-
-      </article>
+    </article>
 
 
 
-      <!-- ARAD VELTHOUGAR -->
+    <!-- ARAD VELTHOUGAR -->
 
-      <article
-        class="profile-card prefect-card"
-        onclick="openProfile(
-          'Arad Velthougar',
-          'Séptimo Año · Prefecta · Slytherin',
-          'Prefecta de Slytherin, Porrista.',
-          'assets/38F3D688-65D7-45DD-B35F-4DE6951AEF07.png'
-        )"
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Arad Velthougar',
+        'Séptimo Año · Prefecta · Slytherin',
+        'Prefecta de Slytherin · Porrista.',
+        'assets/38F3D688-65D7-45DD-B35F-4DE6951AEF07.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecta
+
+      </div>
+
+
+      <img
+        src="assets/38F3D688-65D7-45DD-B35F-4DE6951AEF07.png"
+        alt="Arad Velthougar"
       >
 
 
-        <div class="profile-badge">
-          Prefecta
-        </div>
+      <h3>
+
+        Arad Velthougar
+
+      </h3>
 
 
-        <img
-          src="assets/38F3D688-65D7-45DD-B35F-4DE6951AEF07.png"
-          alt="Arad Velthougar"
-        >
+      <p>
+
+        Séptimo Año · Prefecta
+
+      </p>
 
 
-        <h3>
-          Arad Velthougar
-        </h3>
-
-
-        <p>
-          Séptimo Año · Prefecta 
-        </p>
-
-
-      </article>
+    </article>
 
 
 
-      <!-- REGULUS CORVUS -->
+    <!-- REGULUS CORVUS -->
 
-      <article
-        class="profile-card prefect-card"
-        onclick="openProfile(
-          'Regulus Corvus',
-          'Séptimo Año · Prefecto · Slytherin',
-          'Prefecto de Slytherin.',
-          'assets/65E4A89B-7C02-4683-A130-0938281818E9.png'
-        )"
+    <article
+      class="profile-card prefect-card"
+
+      onclick="openProfile(
+        'Regulus Corvus',
+        'Séptimo Año · Prefecto · Slytherin',
+        'Prefecto de Slytherin.',
+        'assets/65E4A89B-7C02-4683-A130-0938281818E9.png'
+      )"
+    >
+
+
+      <div class="profile-badge">
+
+        Prefecto
+
+      </div>
+
+
+      <img
+        src="assets/65E4A89B-7C02-4683-A130-0938281818E9.png"
+        alt="Regulus Corvus"
       >
 
 
-        <div class="profile-badge">
-          Prefecto
-        </div>
+      <h3>
+
+        Regulus Corvus
+
+      </h3>
 
 
-        <img
-          src="assets/65E4A89B-7C02-4683-A130-0938281818E9.png"
-          alt="Regulus Corvus"
-        >
+      <p>
+
+        Séptimo Año · Prefecto
+
+      </p>
 
 
-        <h3>
-          Regulus Corvus
-        </h3>
+    </article>
 
 
-        <p>
-          Séptimo Año · Prefecto
-        </p>
+  </div>
 
 
-      </article>
-
-
-    </div>
-
-
-  </section>
+</section>
 
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+<!-- ======================================
+     FOOTER
+======================================= -->
 
+<footer>
 
-  <footer>
+  Anuario Escolar de Hogwarts
+  ·
+  Casa Slytherin
+  ·
+  2026–2027
 
-    Anuario Escolar de Hogwarts · Slytherin · 2026 — 2027
-
-  </footer>
+</footer>
 
 
 </div>
 
 
 
-<!-- =========================
-     VENTANA DE PERFIL
-========================== -->
-
+<!-- ======================================
+     PESTAÑA FLOTANTE DE PERFILES
+======================================= -->
 
 <div
   class="profile-modal"
   id="profileModal"
+  onclick="closeModalBackground(event)"
 >
-
-
-  <div
-    class="modal-background"
-    onclick="closeProfile()"
-  ></div>
 
 
   <div class="modal-card">
@@ -1780,8 +2011,11 @@
     <button
       class="modal-close"
       onclick="closeProfile()"
+      aria-label="Cerrar"
     >
+
       ×
+
     </button>
 
 
@@ -1792,40 +2026,21 @@
     >
 
 
-    <div class="modal-content">
+    <h2
+      id="modalName"
+    ></h2>
 
 
-      <span class="modal-small">
-
-        Anuario Hogwarts · Slytherin · 2026–2027
-
-      </span>
-
-
-      <h2 id="modalName"></h2>
+    <div
+      class="modal-role"
+      id="modalRole"
+    ></div>
 
 
-      <p
-        class="modal-role"
-        id="modalRole"
-      ></p>
-
-
-      <div class="modal-divider"></div>
-
-
-      <p
-        class="modal-description"
-        id="modalDescription"
-      ></p>
-
-
-      <div class="modal-star">
-        ✦
-      </div>
-
-
-    </div>
+    <div
+      class="modal-description"
+      id="modalDescription"
+    ></div>
 
 
   </div>
@@ -1838,70 +2053,108 @@
 <script>
 
 
-  function openProfile(
-    name,
-    role,
-    description,
-    image
+/* ==========================================
+   ABRIR PERFIL
+========================================== */
+
+function openProfile(
+  name,
+  role,
+  description,
+  image
+){
+
+  document
+    .getElementById("modalName")
+    .textContent = name;
+
+
+  document
+    .getElementById("modalRole")
+    .textContent = role;
+
+
+  document
+    .getElementById("modalDescription")
+    .textContent = description;
+
+
+  const modalImage =
+    document.getElementById("modalImage");
+
+
+  modalImage.src = image;
+
+  modalImage.alt = name;
+
+
+  document
+    .getElementById("profileModal")
+    .classList
+    .add("active");
+
+
+  document.body.style.overflow =
+    "hidden";
+
+}
+
+
+
+/* ==========================================
+   CERRAR PERFIL
+========================================== */
+
+function closeProfile(){
+
+  document
+    .getElementById("profileModal")
+    .classList
+    .remove("active");
+
+
+  document.body.style.overflow =
+    "";
+
+}
+
+
+
+/* ==========================================
+   CERRAR AL TOCAR EL FONDO
+========================================== */
+
+function closeModalBackground(event){
+
+  if(
+    event.target.id ===
+    "profileModal"
   ){
 
-
-    document
-      .getElementById("modalName")
-      .textContent =
-      name;
-
-
-    document
-      .getElementById("modalRole")
-      .textContent =
-      role;
-
-
-    document
-      .getElementById("modalDescription")
-      .textContent =
-      description;
-
-
-    document
-      .getElementById("modalImage")
-      .src =
-      image;
-
-
-    document
-      .getElementById("modalImage")
-      .alt =
-      name;
-
-
-    document
-      .getElementById("profileModal")
-      .classList
-      .add("active");
-
-
-    document.body.style.overflow =
-      "hidden";
+    closeProfile();
 
   }
 
+}
 
 
-  function closeProfile(){
 
+/* ==========================================
+   CERRAR CON ESC
+========================================== */
 
-    document
-      .getElementById("profileModal")
-      .classList
-      .remove("active");
+document.addEventListener(
+  "keydown",
+  function(event){
 
+    if(event.key === "Escape"){
 
-    document.body.style.overflow =
-      "";
+      closeProfile();
+
+    }
 
   }
+);
 
 
 </script>
