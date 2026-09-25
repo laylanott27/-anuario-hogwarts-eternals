@@ -65,7 +65,7 @@ body{
     "Times New Roman",
     serif;
 
-  background:#f1e8da;
+  background:var(--paper);
 
   color:var(--ink);
 
@@ -149,7 +149,6 @@ img{
 .brand-mark{
 
   width:43px;
-
   height:43px;
 
   border:1px solid var(--ravenclaw);
@@ -206,6 +205,7 @@ img{
 
 /* ==========================================
    PORTADA RAVENCLAW
+   SIN ESCUDO
 ========================================== */
 
 .house-hero{
@@ -225,34 +225,6 @@ img{
   text-align:center;
 
   border-bottom:1px solid var(--line);
-
-}
-
-
-.house-crest{
-
-  width:190px;
-
-  height:210px;
-
-  margin-bottom:25px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-}
-
-
-.house-crest img{
-
-  width:100%;
-
-  height:100%;
-
-  object-fit:contain;
 
 }
 
@@ -376,6 +348,122 @@ img{
   letter-spacing:5px;
 
   text-transform:uppercase;
+
+}
+
+
+/* ==========================================
+   FUNDADORA
+========================================== */
+
+.founder-section{
+
+  padding:75px 45px;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.founder{
+
+  max-width:1000px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:320px 1fr;
+
+  gap:50px;
+
+  align-items:center;
+
+}
+
+
+.founder-photo img{
+
+  width:100%;
+
+  aspect-ratio:4/5;
+
+  object-fit:cover;
+
+  object-position:center 20%;
+
+  padding:8px;
+
+  border:1px solid var(--line);
+
+  background:#fbf8f2;
+
+}
+
+
+.founder-label{
+
+  color:var(--ravenclaw);
+
+  font-size:10px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.founder-info h2{
+
+  margin:10px 0 12px;
+
+  color:var(--ravenclaw-dark);
+
+  font-size:38px;
+
+  font-weight:400;
+
+}
+
+
+.founder-line{
+
+  width:65px;
+
+  height:1px;
+
+  margin:18px 0 25px;
+
+  background:var(--ravenclaw);
+
+}
+
+
+.founder-info p{
+
+  color:#4d4944;
+
+  font-size:15px;
+
+  line-height:1.9;
+
+}
+
+
+.founder-quote{
+
+  margin-top:24px;
+
+  padding:18px 22px;
+
+  border-left:3px solid var(--ravenclaw);
+
+  font-size:16px;
+
+  font-style:italic;
+
+  line-height:1.7;
 
 }
 
@@ -633,8 +721,7 @@ img{
 
   display:block;
 
-  margin:
-    -1px 5px 11px;
+  margin:-1px 5px 11px;
 
   color:var(--memorial-dark);
 
@@ -745,8 +832,7 @@ img{
 
   display:grid;
 
-  grid-template-columns:
-    repeat(3,1fr);
+  grid-template-columns:repeat(3,1fr);
 
   gap:28px;
 
@@ -781,7 +867,7 @@ img{
 
 
 /* ==========================================
-   MODAL / PESTAÑA FLOTANTE
+   MODAL
 ========================================== */
 
 .profile-modal{
@@ -836,8 +922,7 @@ img{
 
   border:1px solid var(--line);
 
-  box-shadow:
-    0 25px 70px rgba(0,0,0,.30);
+  box-shadow:0 25px 70px rgba(0,0,0,.30);
 
   text-align:center;
 
@@ -919,7 +1004,6 @@ img{
   right:12px;
 
   width:38px;
-
   height:38px;
 
   border:1px solid var(--line);
@@ -1020,15 +1104,6 @@ footer{
   }
 
 
-  .house-crest{
-
-    width:150px;
-
-    height:170px;
-
-  }
-
-
   .house-hero h1{
 
     font-size:43px;
@@ -1052,11 +1127,59 @@ footer{
   }
 
 
+  .founder-section,
   .house-head-section,
   .year-section{
 
-    padding:
-      55px 22px;
+    padding:55px 22px;
+
+  }
+
+
+  /* FUNDADORA */
+
+  .founder{
+
+    grid-template-columns:1fr;
+
+    gap:28px;
+
+  }
+
+
+  .founder-photo{
+
+    width:min(260px,100%);
+
+    margin:auto;
+
+  }
+
+
+  .founder-info{
+
+    text-align:center;
+
+  }
+
+
+  .founder-line{
+
+    margin:18px auto 25px;
+
+  }
+
+
+  .founder-info h2{
+
+    font-size:30px;
+
+  }
+
+
+  .founder-quote{
+
+    text-align:left;
 
   }
 
@@ -1112,7 +1235,7 @@ footer{
   .students{
 
     grid-template-columns:
-      repeat(2, minmax(0,1fr));
+      repeat(2,minmax(0,1fr));
 
     gap:14px;
 
@@ -1135,8 +1258,7 @@ footer{
 
   .profile-card h3{
 
-    margin:
-      12px 3px 5px;
+    margin:12px 3px 5px;
 
     font-size:13px;
 
@@ -1149,8 +1271,7 @@ footer{
 
   .profile-card p{
 
-    margin:
-      0 3px 10px;
+    margin:0 3px 10px;
 
     font-size:8px;
 
@@ -1165,8 +1286,7 @@ footer{
 
     top:15px;
 
-    padding:
-      6px 9px;
+    padding:6px 9px;
 
     max-width:88%;
 
@@ -1181,11 +1301,7 @@ footer{
   }
 
 
-  /*
-    LA JEFA DE CASA SIGUE GRANDE.
-    SERAPHINE NO ADOPTA EL TAMAÑO
-    DE LAS TARJETAS DE ALUMNOS.
-  */
+  /* JEFA DE CASA CONTINÚA GRANDE */
 
   .house-head-wrapper{
 
@@ -1210,8 +1326,7 @@ footer{
 
   .head-card h3{
 
-    margin:
-      20px 8px 8px;
+    margin:20px 8px 8px;
 
     font-size:23px;
 
@@ -1224,8 +1339,7 @@ footer{
 
   .head-card p{
 
-    margin:
-      0 8px 18px;
+    margin:0 8px 18px;
 
     font-size:12px;
 
@@ -1238,8 +1352,7 @@ footer{
 
     top:22px;
 
-    padding:
-      8px 17px;
+    padding:8px 17px;
 
     max-width:none;
 
@@ -1261,8 +1374,7 @@ footer{
 
   .modal-card{
 
-    padding:
-      22px 18px;
+    padding:22px 18px;
 
   }
 
@@ -1324,20 +1436,11 @@ footer{
 
 
 <!-- ======================================
-     PORTADA
+     PORTADA RAVENCLAW
+     SIN ESCUDO
 ======================================= -->
 
 <header class="house-hero">
-
-
-  <div class="house-crest">
-
-    <img
-      src="assets/IMG_5336.jpeg"
-      alt="Escudo de Ravenclaw"
-    >
-
-  </div>
 
 
   <div class="house-eyebrow">
@@ -1379,6 +1482,95 @@ footer{
 
 
 </header>
+
+
+
+<!-- ======================================
+     FUNDADORA DE RAVENCLAW
+======================================= -->
+
+<section class="founder-section">
+
+
+  <div class="section-heading">
+
+    <h2>
+      Fundadora de la Casa
+    </h2>
+
+  </div>
+
+
+  <div class="founder">
+
+
+    <div class="founder-photo">
+
+      <img
+        src="assets/IMG_5336.jpeg"
+        alt="Rowena Ravenclaw"
+      >
+
+    </div>
+
+
+    <div class="founder-info">
+
+
+      <span class="founder-label">
+
+        Fundadora
+
+      </span>
+
+
+      <h2>
+
+        Rowena Ravenclaw
+
+      </h2>
+
+
+      <div class="founder-line"></div>
+
+
+      <p>
+
+        Rowena Ravenclaw fue una de las cuatro fundadoras
+        del Colegio Hogwarts de Magia y Hechicería.
+        Reconocida por su extraordinaria inteligencia,
+        creatividad y sabiduría, valoraba especialmente
+        a aquellos estudiantes que demostraban curiosidad,
+        ingenio y un profundo deseo de aprender.
+
+      </p>
+
+
+      <p>
+
+        Su legado continúa presente en los estudiantes de Ravenclaw,
+        una casa donde el conocimiento no consiste únicamente
+        en encontrar respuestas, sino también en atreverse
+        a formular nuevas preguntas y descubrir distintas
+        maneras de comprender el mundo.
+
+      </p>
+
+
+      <div class="founder-quote">
+
+        “El ingenio sin medida es el mayor tesoro del hombre.”
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
 
 
 
@@ -1456,7 +1648,6 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
 
     <h2>
@@ -1476,7 +1667,6 @@ footer{
 
   </div>
 
-
 </section>
 
 
@@ -1486,7 +1676,6 @@ footer{
 ======================================= -->
 
 <section class="year-section">
-
 
   <div class="year-title">
 
@@ -1507,7 +1696,6 @@ footer{
 
   </div>
 
-
 </section>
 
 
@@ -1517,7 +1705,6 @@ footer{
 ======================================= -->
 
 <section class="year-section">
-
 
   <div class="year-title">
 
@@ -1537,7 +1724,6 @@ footer{
     </div>
 
   </div>
-
 
 </section>
 
@@ -1562,9 +1748,7 @@ footer{
   <div class="students">
 
 
-    <!-- ======================================
-         COLETTE LESTRANGE BLACK
-    ======================================= -->
+    <!-- COLETTE LESTRANGE BLACK -->
 
     <article
       class="profile-card prefect-card"
@@ -1609,9 +1793,7 @@ footer{
 
 
 
-    <!-- ======================================
-         ANNA BERENICE CROUCH SELWYN
-    ======================================= -->
+    <!-- ANNA BERENICE CROUCH SELWYN -->
 
     <article
       class="profile-card prefect-card"
@@ -1681,9 +1863,7 @@ footer{
   <div class="students">
 
 
-    <!-- ======================================
-         MALLORY EMERY GRIMSHAW
-    ======================================= -->
+    <!-- MALLORY EMERY GRIMSHAW -->
 
     <article
       class="profile-card prefect-card"
@@ -1728,9 +1908,7 @@ footer{
 
 
 
-    <!-- ======================================
-         MINHO BLACK
-    ======================================= -->
+    <!-- MINHO BLACK -->
 
     <article
       class="profile-card prefect-card"
@@ -1775,9 +1953,7 @@ footer{
 
 
 
-    <!-- ======================================
-         ELIZABETH TRÜMPER
-    ======================================= -->
+    <!-- ELIZABETH TRÜMPER -->
 
     <article
       class="profile-card prefect-card"
@@ -1886,7 +2062,6 @@ footer{
 
 <section class="year-section">
 
-
   <div class="year-title">
 
     <h2>
@@ -1906,7 +2081,6 @@ footer{
 
   </div>
 
-
 </section>
 
 
@@ -1916,7 +2090,6 @@ footer{
 ======================================= -->
 
 <section class="year-section">
-
 
   <div class="year-title">
 
@@ -1936,7 +2109,6 @@ footer{
     </div>
 
   </div>
-
 
 </section>
 
@@ -1995,22 +2167,19 @@ footer{
 
     <h2
       id="modalName"
-    >
-    </h2>
+    ></h2>
 
 
     <div
       class="modal-role"
       id="modalRole"
-    >
-    </div>
+    ></div>
 
 
     <div
       class="modal-description"
       id="modalDescription"
-    >
-    </div>
+    ></div>
 
 
   </div>
@@ -2132,4 +2301,4 @@ document.addEventListener(
 
 </body>
 
-</html></html>
+</html>
