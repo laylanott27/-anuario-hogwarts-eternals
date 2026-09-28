@@ -1,0 +1,3037 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+  Profesores · Anuario Hogwarts 2026–2027
+</title>
+
+
+<style>
+
+/* =========================================================
+   COLORES
+========================================================= */
+
+:root{
+
+  --paper:#f1e8da;
+  --paper-light:#faf6ee;
+  --paper-2:#f8f2e9;
+
+  --ink:#211d19;
+  --muted:#6b645c;
+
+  --line:#bcae9d;
+  --line-light:#d9cfc1;
+
+  --gold:#a98645;
+  --gold-light:#d2bb7a;
+  --gold-dark:#745b2f;
+
+  --red:#8f2b26;
+  --green:#355d46;
+  --yellow:#c89a31;
+  --blue:#2d4d70;
+
+  --white:#fbf8f2;
+
+  --shadow:
+    0 14px 34px rgba(0,0,0,.09);
+
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+body{
+
+  margin:0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  color:var(--ink);
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0,0,0,.025) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(0,0,0,.02) 1px,
+      transparent 1px
+    ),
+    var(--paper);
+
+  background-size:
+    22px 22px,
+    31px 31px;
+
+}
+
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+
+img{
+  display:block;
+  width:100%;
+}
+
+
+button{
+  font:inherit;
+}
+
+
+.page{
+
+  width:min(1220px,96%);
+
+  margin:20px auto;
+
+  overflow:hidden;
+
+  background:var(--paper-2);
+
+  border:1px solid #ad9f8d;
+
+  box-shadow:
+    0 24px 60px rgba(0,0,0,.12);
+
+}
+
+
+
+/* =========================================================
+   NAVEGACIÓN
+========================================================= */
+
+.nav{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:100;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:20px;
+
+  padding:17px 30px;
+
+  background:
+    rgba(248,242,233,.96);
+
+  border-bottom:
+    1px solid var(--line);
+
+  backdrop-filter:blur(10px);
+
+}
+
+
+.brand{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+}
+
+
+.brand-mark{
+
+  width:42px;
+  height:42px;
+
+  display:grid;
+
+  place-items:center;
+
+  border:1px solid #867a6a;
+
+  border-radius:50%;
+
+  font-size:18px;
+
+  font-weight:bold;
+
+}
+
+
+.brand-text{
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-actions{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+}
+
+
+.nav-link{
+
+  padding:9px 14px;
+
+  border:1px solid #9f927f;
+
+  font-size:9px;
+
+  letter-spacing:1.2px;
+
+  text-transform:uppercase;
+
+  transition:.2s ease;
+
+}
+
+
+.nav-link:hover{
+
+  background:var(--ink);
+
+  color:white;
+
+}
+
+
+
+/* =========================================================
+   PORTADA
+========================================================= */
+
+.hero{
+
+  min-height:580px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:70px 40px;
+
+  text-align:center;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.hero-inner{
+
+  max-width:800px;
+
+}
+
+
+.hero-eyebrow{
+
+  margin-bottom:17px;
+
+  color:var(--gold-dark);
+
+  font-size:11px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.hero h1{
+
+  margin:0;
+
+  font-size:72px;
+
+  line-height:1;
+
+  font-weight:400;
+
+  letter-spacing:6px;
+
+}
+
+
+.hero-line{
+
+  width:90px;
+  height:1px;
+
+  margin:28px auto;
+
+  background:var(--gold);
+
+}
+
+
+.hero-year{
+
+  margin-bottom:30px;
+
+  color:var(--muted);
+
+  font-size:15px;
+
+  letter-spacing:4px;
+
+}
+
+
+.hero-quote{
+
+  max-width:670px;
+
+  margin:auto;
+
+  font-size:21px;
+
+  line-height:1.8;
+
+  font-style:italic;
+
+}
+
+
+.hero-symbol{
+
+  margin-top:35px;
+
+  color:var(--gold);
+
+  font-size:24px;
+
+  letter-spacing:12px;
+
+}
+
+
+
+/* =========================================================
+   INTRODUCCIÓN
+========================================================= */
+
+.intro{
+
+  padding:70px 40px;
+
+  text-align:center;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.intro-inner{
+
+  max-width:760px;
+
+  margin:auto;
+
+}
+
+
+.intro-label{
+
+  display:block;
+
+  margin-bottom:14px;
+
+  color:var(--gold-dark);
+
+  font-size:9px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.intro h2{
+
+  margin:0 0 24px;
+
+  font-size:33px;
+
+  font-weight:400;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.intro p{
+
+  margin:0;
+
+  color:#504a43;
+
+  font-size:16px;
+
+  line-height:2;
+
+}
+
+
+
+/* =========================================================
+   TÍTULOS
+========================================================= */
+
+.section-title{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:18px;
+
+  margin-bottom:50px;
+
+  text-align:center;
+
+}
+
+
+.section-title::before,
+.section-title::after{
+
+  content:"";
+
+  width:150px;
+  height:1px;
+
+  background:var(--line);
+
+}
+
+
+.section-title h2{
+
+  margin:0;
+
+  font-size:25px;
+
+  font-weight:400;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+
+/* =========================================================
+   PROFESORES
+========================================================= */
+
+.professors{
+
+  padding:70px 48px;
+
+}
+
+
+.professor{
+
+  max-width:1030px;
+
+  margin:0 auto 85px;
+
+  padding-bottom:85px;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.professor:last-child{
+
+  margin-bottom:0;
+
+  border-bottom:none;
+
+}
+
+
+.professor-header{
+
+  display:grid;
+
+  grid-template-columns:330px 1fr;
+
+  gap:48px;
+
+  align-items:center;
+
+  margin-bottom:38px;
+
+}
+
+
+
+/* FOTO PRINCIPAL */
+
+.professor-photo-frame{
+
+  position:relative;
+
+  padding:9px;
+
+  background:#fbf8f2;
+
+  border:1px solid var(--line);
+
+  box-shadow:
+    0 12px 25px rgba(0,0,0,.07);
+
+}
+
+
+.professor-photo{
+
+  aspect-ratio:4/5;
+
+  overflow:hidden;
+
+  background:#d8d0c5;
+
+}
+
+
+.professor-photo img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center 20%;
+
+}
+
+
+.professor-number{
+
+  position:absolute;
+
+  top:19px;
+  left:-12px;
+
+  padding:7px 14px;
+
+  background:var(--ink);
+
+  color:white;
+
+  font-size:8px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+
+/* INFORMACIÓN */
+
+.professor-info{
+
+  padding-right:20px;
+
+}
+
+
+.professor-subject{
+
+  display:block;
+
+  margin-bottom:10px;
+
+  color:var(--gold-dark);
+
+  font-size:9px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.professor-info h2{
+
+  margin:0;
+
+  font-size:38px;
+
+  line-height:1.15;
+
+  font-weight:400;
+
+}
+
+
+.professor-divider{
+
+  width:65px;
+  height:1px;
+
+  margin:21px 0;
+
+  background:var(--gold);
+
+}
+
+
+.professor-text{
+
+  color:#514b44;
+
+  font-size:15px;
+
+  line-height:1.95;
+
+  white-space:pre-line;
+
+}
+
+
+.professor-quote{
+
+  margin-top:22px;
+
+  padding-left:18px;
+
+  border-left:2px solid var(--gold-light);
+
+  color:#655d54;
+
+  font-size:15px;
+
+  line-height:1.8;
+
+  font-style:italic;
+
+}
+
+
+
+/* =========================================================
+   FOTOS DE LAS CLASES
+   2 ARRIBA + 2 ABAJO
+========================================================= */
+
+.class-label{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+
+  margin-bottom:18px;
+
+  color:#756a5d;
+
+  font-size:9px;
+
+  letter-spacing:2.5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.class-label::after{
+
+  content:"";
+
+  flex:1;
+
+  height:1px;
+
+  background:var(--line-light);
+
+}
+
+
+.class-gallery{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:17px;
+
+}
+
+
+.class-photo{
+
+  position:relative;
+
+  padding:7px;
+
+  background:white;
+
+  border:1px solid #c9bbaa;
+
+  box-shadow:
+    0 7px 15px rgba(0,0,0,.07);
+
+}
+
+
+.class-photo-image{
+
+  position:relative;
+
+  aspect-ratio:4/3;
+
+  overflow:hidden;
+
+  background:#ddd5ca;
+
+}
+
+
+.class-photo-image img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+
+.photo-placeholder{
+
+  width:100%;
+  height:100%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:20px;
+
+  color:#8d8479;
+
+  text-align:center;
+
+  font-size:10px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+.class-photo p{
+
+  margin:10px 5px 4px;
+
+  color:#71675c;
+
+  text-align:center;
+
+  font-size:9px;
+
+  line-height:1.5;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+
+/* =========================================================
+   PROFESOR DEL AÑO
+========================================================= */
+
+.teacher-year{
+
+  position:relative;
+
+  padding:80px 48px;
+
+  overflow:hidden;
+
+  color:#f5eee3;
+
+  background:
+    linear-gradient(
+      rgba(19,18,16,.92),
+      rgba(19,18,16,.95)
+    ),
+    #1d1c1a;
+
+  border-top:7px solid var(--gold);
+
+}
+
+
+.teacher-year::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  opacity:.12;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      white 1px,
+      transparent 1px
+    );
+
+  background-size:25px 25px;
+
+}
+
+
+.teacher-year-inner{
+
+  position:relative;
+
+  z-index:2;
+
+  max-width:1050px;
+
+  margin:auto;
+
+}
+
+
+.teacher-year-heading{
+
+  margin-bottom:55px;
+
+  text-align:center;
+
+}
+
+
+.teacher-year-small{
+
+  display:block;
+
+  margin-bottom:6px;
+
+  color:var(--gold-light);
+
+  font-size:10px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.teacher-year-heading h2{
+
+  margin:0;
+
+  color:#f5e6bd;
+
+  font-size:56px;
+
+  line-height:1;
+
+  font-weight:400;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.teacher-year-heading h2 span{
+
+  display:block;
+
+  margin-top:4px;
+
+  color:white;
+
+  font-size:37px;
+
+  font-style:italic;
+
+  letter-spacing:1px;
+
+  text-transform:none;
+
+}
+
+
+
+/* =========================================================
+   COLLAGE PROFESOR DEL AÑO
+========================================================= */
+
+.teacher-year-collage{
+
+  display:grid;
+
+  grid-template-columns:
+    .82fr 1.1fr .82fr;
+
+  grid-template-rows:auto auto;
+
+  gap:18px;
+
+  align-items:start;
+
+}
+
+
+.year-photo{
+
+  padding:7px;
+
+  background:#f8f4ed;
+
+  border:1px solid #bcae9d;
+
+  box-shadow:
+    0 12px 25px rgba(0,0,0,.24);
+
+}
+
+
+.year-photo-inner{
+
+  overflow:hidden;
+
+  background:#55514b;
+
+}
+
+
+.year-photo img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+
+.year-photo-1{
+
+  transform:rotate(-1.5deg);
+
+}
+
+
+.year-photo-1 .year-photo-inner{
+
+  aspect-ratio:3/4;
+
+}
+
+
+.year-photo-main{
+
+  transform:translateY(-15px);
+
+}
+
+
+.year-photo-main .year-photo-inner{
+
+  aspect-ratio:4/5;
+
+}
+
+
+.year-photo-3{
+
+  transform:rotate(1.7deg);
+
+}
+
+
+.year-photo-3 .year-photo-inner{
+
+  aspect-ratio:3/4;
+
+}
+
+
+.year-photo-4{
+
+  transform:rotate(1deg);
+
+}
+
+
+.year-photo-4 .year-photo-inner{
+
+  aspect-ratio:4/3;
+
+}
+
+
+.year-photo-5{
+
+  grid-column:3;
+
+  transform:rotate(-1deg);
+
+}
+
+
+.year-photo-5 .year-photo-inner{
+
+  aspect-ratio:4/3;
+
+}
+
+
+
+/* =========================================================
+   TEXTO CENTRAL DEL PROFESOR DEL AÑO
+========================================================= */
+
+.teacher-year-story{
+
+  grid-column:1 / -1;
+
+  max-width:760px;
+
+  margin:35px auto 15px;
+
+  text-align:center;
+
+}
+
+
+.teacher-year-subject{
+
+  display:block;
+
+  margin-bottom:10px;
+
+  color:var(--gold-light);
+
+  font-size:9px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.teacher-year-story h3{
+
+  margin:0;
+
+  color:white;
+
+  font-size:37px;
+
+  font-weight:400;
+
+}
+
+
+.teacher-year-line{
+
+  width:70px;
+  height:1px;
+
+  margin:23px auto;
+
+  background:var(--gold);
+
+}
+
+
+.teacher-year-story p{
+
+  margin:0 auto 17px;
+
+  color:#ddd6cc;
+
+  font-size:16px;
+
+  line-height:1.95;
+
+}
+
+
+.teacher-year-quote{
+
+  max-width:620px;
+
+  margin:28px auto 0;
+
+  padding:22px;
+
+  color:#f1dfaf;
+
+  border-top:1px solid rgba(210,187,122,.4);
+
+  border-bottom:1px solid rgba(210,187,122,.4);
+
+  font-size:17px;
+
+  line-height:1.8;
+
+  font-style:italic;
+
+}
+
+
+
+/* =========================================================
+   MÁS RECUERDOS DEL PROFESOR DEL AÑO
+========================================================= */
+
+.teacher-year-gallery-title{
+
+  margin:55px 0 22px;
+
+  text-align:center;
+
+  color:var(--gold-light);
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.teacher-year-extra{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:14px;
+
+}
+
+
+.teacher-year-extra .year-photo{
+
+  transform:none;
+
+}
+
+
+.teacher-year-extra .year-photo-inner{
+
+  aspect-ratio:1/1;
+
+}
+
+
+
+/* =========================================================
+   CIERRE
+========================================================= */
+
+.closing{
+
+  padding:75px 30px;
+
+  text-align:center;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+
+.closing-symbol{
+
+  margin-bottom:20px;
+
+  color:var(--gold);
+
+  font-size:26px;
+
+}
+
+
+.closing p{
+
+  max-width:650px;
+
+  margin:auto;
+
+  color:#5a534c;
+
+  font-size:16px;
+
+  line-height:2;
+
+  font-style:italic;
+
+}
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  padding:34px 20px;
+
+  background:#171717;
+
+  color:#ccb57c;
+
+  text-align:center;
+
+  border-top:1px solid #8f794d;
+
+  font-size:10px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+footer span{
+
+  display:block;
+
+  margin-top:9px;
+
+  color:#aaa49b;
+
+  font-size:8px;
+
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:850px){
+
+  .professor-header{
+
+    grid-template-columns:280px 1fr;
+
+    gap:30px;
+
+  }
+
+
+  .teacher-year-heading h2{
+
+    font-size:45px;
+
+  }
+
+}
+
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media(max-width:650px){
+
+  .page{
+
+    width:100%;
+
+    margin:0;
+
+    border-left:none;
+    border-right:none;
+
+  }
+
+
+  .nav{
+
+    padding:14px 16px;
+
+  }
+
+
+  .brand-mark{
+
+    width:38px;
+    height:38px;
+
+  }
+
+
+  .brand-text{
+
+    font-size:9px;
+
+  }
+
+
+  .nav-link{
+
+    padding:8px 9px;
+
+    font-size:7px;
+
+  }
+
+
+  .hero{
+
+    min-height:500px;
+
+    padding:60px 22px;
+
+  }
+
+
+  .hero h1{
+
+    font-size:43px;
+
+    letter-spacing:3px;
+
+  }
+
+
+  .hero-quote{
+
+    font-size:17px;
+
+  }
+
+
+  .intro{
+
+    padding:55px 24px;
+
+  }
+
+
+  .intro h2{
+
+    font-size:26px;
+
+  }
+
+
+  .intro p{
+
+    font-size:14px;
+
+  }
+
+
+  .professors{
+
+    padding:55px 20px;
+
+  }
+
+
+  .section-title{
+
+    gap:12px;
+
+  }
+
+
+  .section-title::before,
+  .section-title::after{
+
+    width:40px;
+
+  }
+
+
+  .section-title h2{
+
+    font-size:19px;
+
+  }
+
+
+  .professor{
+
+    margin-bottom:65px;
+
+    padding-bottom:65px;
+
+  }
+
+
+  .professor-header{
+
+    grid-template-columns:1fr;
+
+    gap:27px;
+
+  }
+
+
+  .professor-photo-frame{
+
+    width:min(310px,100%);
+
+    margin:auto;
+
+  }
+
+
+  .professor-info{
+
+    padding:0;
+
+    text-align:center;
+
+  }
+
+
+  .professor-info h2{
+
+    font-size:30px;
+
+  }
+
+
+  .professor-divider{
+
+    margin:20px auto;
+
+  }
+
+
+  .professor-text{
+
+    font-size:14px;
+
+  }
+
+
+  .professor-quote{
+
+    text-align:left;
+
+  }
+
+
+  /* SIEMPRE DOS ARRIBA Y DOS ABAJO */
+
+  .class-gallery{
+
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+
+    gap:9px;
+
+  }
+
+
+  .class-photo{
+
+    padding:5px;
+
+  }
+
+
+  .class-photo p{
+
+    font-size:7px;
+
+  }
+
+
+  .teacher-year{
+
+    padding:65px 18px;
+
+  }
+
+
+  .teacher-year-heading{
+
+    margin-bottom:45px;
+
+  }
+
+
+  .teacher-year-heading h2{
+
+    font-size:36px;
+
+  }
+
+
+  .teacher-year-heading h2 span{
+
+    font-size:25px;
+
+  }
+
+
+  .teacher-year-collage{
+
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+
+    gap:10px;
+
+  }
+
+
+  .year-photo-main{
+
+    transform:none;
+
+  }
+
+
+  .year-photo-1,
+  .year-photo-3,
+  .year-photo-4,
+  .year-photo-5{
+
+    transform:none;
+
+  }
+
+
+  .year-photo-main{
+
+    grid-column:auto;
+
+  }
+
+
+  .year-photo-5{
+
+    grid-column:auto;
+
+  }
+
+
+  .teacher-year-story{
+
+    grid-column:1 / -1;
+
+    margin-top:25px;
+
+  }
+
+
+  .teacher-year-story h3{
+
+    font-size:29px;
+
+  }
+
+
+  .teacher-year-story p{
+
+    font-size:14px;
+
+  }
+
+
+  .teacher-year-extra{
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+    gap:9px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- =====================================================
+     NAVEGACIÓN
+===================================================== -->
+
+<nav class="nav">
+
+  <div class="brand">
+
+    <div class="brand-mark">
+      H
+    </div>
+
+    <div class="brand-text">
+      Profesores de Hogwarts
+    </div>
+
+  </div>
+
+
+  <div class="nav-actions">
+
+    <a
+      href="index.html"
+      class="nav-link"
+    >
+      ← Anuario
+    </a>
+
+  </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     PORTADA
+===================================================== -->
+
+<header class="hero">
+
+  <div class="hero-inner">
+
+    <div class="hero-eyebrow">
+      Hogwarts · Anuario Escolar
+    </div>
+
+    <h1>
+      PROFESORES
+    </h1>
+
+    <div class="hero-line"></div>
+
+    <div class="hero-year">
+      2026 — 2027
+    </div>
+
+    <div class="hero-quote">
+
+      “Detrás de cada hechizo aprendido,
+      hubo alguien dispuesto a enseñarlo.”
+
+    </div>
+
+    <div class="hero-symbol">
+      ✦ ✧ ✦
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section class="intro">
+
+  <div class="intro-inner">
+
+    <span class="intro-label">
+      Hogwarts School of Witchcraft and Wizardry
+    </span>
+
+    <h2>
+      Quienes nos enseñaron
+    </h2>
+
+    <p>
+
+      Entre libros, pociones, encantamientos,
+      criaturas, ensayos interminables y alguna que otra
+      clase que terminó de una manera bastante distinta
+      a la planeada, ellos estuvieron allí.
+
+      Esta sección está dedicada a los profesores
+      que acompañaron a los estudiantes de Hogwarts
+      durante el curso 2026–2027.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LOS 9 PROFESORES
+===================================================== -->
+
+<section class="professors">
+
+
+  <div class="section-title">
+
+    <h2>
+      Nuestros Profesores
+    </h2>
+
+  </div>
+
+
+
+<!-- =====================================================
+     PROFESOR 01
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 01
+      </span>
+
+      <div class="professor-photo">
+
+        <!-- CAMBIAR FOTO DEL PROFESOR 01 AQUÍ -->
+
+        <img
+          src="assets/profesor-01.png"
+          alt="Profesor 01"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <!-- CAMBIAR ASIGNATURA AQUÍ -->
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+
+      <!-- CAMBIAR NOMBRE AQUÍ -->
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+
+      <div class="professor-divider"></div>
+
+
+      <!-- CAMBIAR TEXTO AQUÍ -->
+
+      <div class="professor-text">
+
+        Aquí puedes escribir el texto del profesor.
+        Puedes hablar de su forma de enseñar, de sus clases,
+        de cómo era con los estudiantes y de los momentos
+        que hicieron especial su asignatura durante este curso.
+
+      </div>
+
+
+      <!-- CAMBIAR FRASE AQUÍ -->
+
+      <div class="professor-quote">
+
+        “Aquí puedes colocar una frase característica
+        o memorable del profesor.”
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+
+    <!-- FOTO DE CLASE 1 -->
+
+    <div class="class-photo">
+
+      <div class="class-photo-image">
+
+        <img
+          src="assets/profesor-01-clase-01.png"
+          alt="Clase 1"
+        >
+
+      </div>
+
+      <p>
+        Clase · Momento 01
+      </p>
+
+    </div>
+
+
+    <!-- FOTO DE CLASE 2 -->
+
+    <div class="class-photo">
+
+      <div class="class-photo-image">
+
+        <img
+          src="assets/profesor-01-clase-02.png"
+          alt="Clase 2"
+        >
+
+      </div>
+
+      <p>
+        Clase · Momento 02
+      </p>
+
+    </div>
+
+
+    <!-- FOTO DE CLASE 3 -->
+
+    <div class="class-photo">
+
+      <div class="class-photo-image">
+
+        <img
+          src="assets/profesor-01-clase-03.png"
+          alt="Clase 3"
+        >
+
+      </div>
+
+      <p>
+        Clase · Momento 03
+      </p>
+
+    </div>
+
+
+    <!-- FOTO DE CLASE 4 -->
+
+    <div class="class-photo">
+
+      <div class="class-photo-image">
+
+        <img
+          src="assets/profesor-01-clase-04.png"
+          alt="Clase 4"
+        >
+
+      </div>
+
+      <p>
+        Clase · Momento 04
+      </p>
+
+    </div>
+
+
+  </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROFESOR 02
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 02
+      </span>
+
+      <div class="professor-photo">
+
+        <img
+          src="assets/profesor-02.png"
+          alt="Profesor 02"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+      <div class="professor-divider"></div>
+
+      <div class="professor-text">
+
+        Aquí puedes colocar el texto correspondiente
+        al segundo profesor de Hogwarts.
+
+      </div>
+
+      <div class="professor-quote">
+
+        “Frase del profesor.”
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-02-clase-01.png" alt="Clase 1">
+      </div>
+      <p>Clase · Momento 01</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-02-clase-02.png" alt="Clase 2">
+      </div>
+      <p>Clase · Momento 02</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-02-clase-03.png" alt="Clase 3">
+      </div>
+      <p>Clase · Momento 03</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-02-clase-04.png" alt="Clase 4">
+      </div>
+      <p>Clase · Momento 04</p>
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROFESOR 03
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 03
+      </span>
+
+      <div class="professor-photo">
+
+        <img
+          src="assets/profesor-03.png"
+          alt="Profesor 03"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+      <div class="professor-divider"></div>
+
+      <div class="professor-text">
+        Aquí puedes colocar el texto del profesor.
+      </div>
+
+      <div class="professor-quote">
+        “Frase del profesor.”
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-03-clase-01.png" alt="Clase 1">
+      </div>
+      <p>Clase · Momento 01</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-03-clase-02.png" alt="Clase 2">
+      </div>
+      <p>Clase · Momento 02</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-03-clase-03.png" alt="Clase 3">
+      </div>
+      <p>Clase · Momento 03</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-03-clase-04.png" alt="Clase 4">
+      </div>
+      <p>Clase · Momento 04</p>
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROFESOR 04
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 04
+      </span>
+
+      <div class="professor-photo">
+
+        <img
+          src="assets/profesor-04.png"
+          alt="Profesor 04"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+      <div class="professor-divider"></div>
+
+      <div class="professor-text">
+        Aquí puedes colocar el texto del profesor.
+      </div>
+
+      <div class="professor-quote">
+        “Frase del profesor.”
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-04-clase-01.png" alt="Clase 1">
+      </div>
+      <p>Clase · Momento 01</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-04-clase-02.png" alt="Clase 2">
+      </div>
+      <p>Clase · Momento 02</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-04-clase-03.png" alt="Clase 3">
+      </div>
+      <p>Clase · Momento 03</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-04-clase-04.png" alt="Clase 4">
+      </div>
+      <p>Clase · Momento 04</p>
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROFESOR 05
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 05
+      </span>
+
+      <div class="professor-photo">
+
+        <img
+          src="assets/profesor-05.png"
+          alt="Profesor 05"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+      <div class="professor-divider"></div>
+
+      <div class="professor-text">
+        Aquí puedes colocar el texto del profesor.
+      </div>
+
+      <div class="professor-quote">
+        “Frase del profesor.”
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-05-clase-01.png" alt="Clase 1">
+      </div>
+      <p>Clase · Momento 01</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-05-clase-02.png" alt="Clase 2">
+      </div>
+      <p>Clase · Momento 02</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-05-clase-03.png" alt="Clase 3">
+      </div>
+      <p>Clase · Momento 03</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-05-clase-04.png" alt="Clase 4">
+      </div>
+      <p>Clase · Momento 04</p>
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROFESOR 06
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 06
+      </span>
+
+      <div class="professor-photo">
+
+        <img
+          src="assets/profesor-06.png"
+          alt="Profesor 06"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+      <div class="professor-divider"></div>
+
+      <div class="professor-text">
+        Aquí puedes colocar el texto del profesor.
+      </div>
+
+      <div class="professor-quote">
+        “Frase del profesor.”
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-06-clase-01.png" alt="Clase 1">
+      </div>
+      <p>Clase · Momento 01</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-06-clase-02.png" alt="Clase 2">
+      </div>
+      <p>Clase · Momento 02</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-06-clase-03.png" alt="Clase 3">
+      </div>
+      <p>Clase · Momento 03</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-06-clase-04.png" alt="Clase 4">
+      </div>
+      <p>Clase · Momento 04</p>
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROFESOR 07
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 07
+      </span>
+
+      <div class="professor-photo">
+
+        <img
+          src="assets/profesor-07.png"
+          alt="Profesor 07"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+      <div class="professor-divider"></div>
+
+      <div class="professor-text">
+        Aquí puedes colocar el texto del profesor.
+      </div>
+
+      <div class="professor-quote">
+        “Frase del profesor.”
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-07-clase-01.png" alt="Clase 1">
+      </div>
+      <p>Clase · Momento 01</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-07-clase-02.png" alt="Clase 2">
+      </div>
+      <p>Clase · Momento 02</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-07-clase-03.png" alt="Clase 3">
+      </div>
+      <p>Clase · Momento 03</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-07-clase-04.png" alt="Clase 4">
+      </div>
+      <p>Clase · Momento 04</p>
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROFESOR 08
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 08
+      </span>
+
+      <div class="professor-photo">
+
+        <img
+          src="assets/profesor-08.png"
+          alt="Profesor 08"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+      <div class="professor-divider"></div>
+
+      <div class="professor-text">
+        Aquí puedes colocar el texto del profesor.
+      </div>
+
+      <div class="professor-quote">
+        “Frase del profesor.”
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-08-clase-01.png" alt="Clase 1">
+      </div>
+      <p>Clase · Momento 01</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-08-clase-02.png" alt="Clase 2">
+      </div>
+      <p>Clase · Momento 02</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-08-clase-03.png" alt="Clase 3">
+      </div>
+      <p>Clase · Momento 03</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-08-clase-04.png" alt="Clase 4">
+      </div>
+      <p>Clase · Momento 04</p>
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROFESOR 09
+===================================================== -->
+
+<article class="professor">
+
+  <div class="professor-header">
+
+    <div class="professor-photo-frame">
+
+      <span class="professor-number">
+        Profesor 09
+      </span>
+
+      <div class="professor-photo">
+
+        <img
+          src="assets/profesor-09.png"
+          alt="Profesor 09"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="professor-info">
+
+      <span class="professor-subject">
+        Asignatura
+      </span>
+
+      <h2>
+        Nombre del Profesor
+      </h2>
+
+      <div class="professor-divider"></div>
+
+      <div class="professor-text">
+        Aquí puedes colocar el texto del profesor.
+      </div>
+
+      <div class="professor-quote">
+        “Frase del profesor.”
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="class-label">
+    Recuerdos de sus clases
+  </div>
+
+
+  <div class="class-gallery">
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-09-clase-01.png" alt="Clase 1">
+      </div>
+      <p>Clase · Momento 01</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-09-clase-02.png" alt="Clase 2">
+      </div>
+      <p>Clase · Momento 02</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-09-clase-03.png" alt="Clase 3">
+      </div>
+      <p>Clase · Momento 03</p>
+    </div>
+
+    <div class="class-photo">
+      <div class="class-photo-image">
+        <img src="assets/profesor-09-clase-04.png" alt="Clase 4">
+      </div>
+      <p>Clase · Momento 04</p>
+    </div>
+
+  </div>
+
+</article>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROFESOR / PROFESORA DEL AÑO
+===================================================== -->
+
+<section class="teacher-year">
+
+
+  <div class="teacher-year-inner">
+
+
+    <div class="teacher-year-heading">
+
+      <span class="teacher-year-small">
+        Hogwarts · 2026–2027
+      </span>
+
+      <h2>
+
+        Profesor
+
+        <span>
+          del Año
+        </span>
+
+      </h2>
+
+    </div>
+
+
+
+    <!-- =================================================
+         COLLAGE SUPERIOR
+    ================================================= -->
+
+
+    <div class="teacher-year-collage">
+
+
+      <!-- FOTO CON ALUMNOS -->
+
+      <div class="year-photo year-photo-1">
+
+        <div class="year-photo-inner">
+
+          <!-- CAMBIAR FOTO AQUÍ -->
+
+          <img
+            src="assets/profesor-del-ano-alumnos-01.png"
+            alt="Profesor del año con alumnos"
+          >
+
+        </div>
+
+      </div>
+
+
+
+      <!-- RETRATO PRINCIPAL -->
+
+      <div class="year-photo year-photo-main">
+
+        <div class="year-photo-inner">
+
+          <!--
+            FOTO PRINCIPAL DEL
+            PROFESOR DEL AÑO
+          -->
+
+          <img
+            src="assets/profesor-del-ano.png"
+            alt="Profesor del Año"
+          >
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FOTO DE CLASE -->
+
+      <div class="year-photo year-photo-3">
+
+        <div class="year-photo-inner">
+
+          <!-- CAMBIAR FOTO AQUÍ -->
+
+          <img
+            src="assets/profesor-del-ano-clase-01.png"
+            alt="Clase del profesor del año"
+          >
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FOTO GRUPAL -->
+
+      <div class="year-photo year-photo-4">
+
+        <div class="year-photo-inner">
+
+          <!-- CAMBIAR FOTO AQUÍ -->
+
+          <img
+            src="assets/profesor-del-ano-alumnos-02.png"
+            alt="Profesor con estudiantes"
+          >
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FOTO ESPONTÁNEA -->
+
+      <div class="year-photo year-photo-5">
+
+        <div class="year-photo-inner">
+
+          <!-- CAMBIAR FOTO AQUÍ -->
+
+          <img
+            src="assets/profesor-del-ano-clase-02.png"
+            alt="Recuerdo del profesor del año"
+          >
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           TEXTO PROFESOR DEL AÑO
+      ================================================= -->
+
+      <div class="teacher-year-story">
+
+
+        <!-- CAMBIAR ASIGNATURA -->
+
+        <span class="teacher-year-subject">
+
+          Profesor/a de Asignatura
+
+        </span>
+
+
+        <!-- CAMBIAR NOMBRE -->
+
+        <h3>
+
+          Nombre del Profesor
+
+        </h3>
+
+
+        <div class="teacher-year-line"></div>
+
+
+        <!-- CAMBIAR TEXTO -->
+
+        <p>
+
+          Hay profesores que nos enseñan una asignatura,
+          y hay profesores que terminan formando parte
+          de nuestra historia.
+
+        </p>
+
+
+        <p>
+
+          Durante este curso, su dedicación, paciencia
+          y pasión dejaron una huella mucho más grande
+          que cualquier lección escrita en un pizarrón.
+          Estuvo presente para celebrar nuestros logros,
+          ayudarnos cuando las cosas no salían como esperábamos
+          y recordarnos que siempre éramos capaces de aprender
+          un poco más.
+
+        </p>
+
+
+        <p>
+
+          Gracias por cada clase, cada consejo,
+          cada momento compartido y por creer en nosotros
+          incluso cuando nosotros mismos todavía
+          no sabíamos hasta dónde podíamos llegar.
+
+        </p>
+
+
+        <p>
+
+          Parte de quienes somos al terminar este curso
+          también existe gracias a usted.
+
+        </p>
+
+
+        <div class="teacher-year-quote">
+
+          “Las mejores lecciones no siempre son
+          las que terminan apareciendo en un examen.
+          Algunas nos acompañan mucho después
+          de abandonar el aula.”
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         MÁS FOTOS PROFESOR DEL AÑO
+    ================================================= -->
+
+
+    <div class="teacher-year-gallery-title">
+
+      Algunos recuerdos del año
+
+    </div>
+
+
+    <div class="teacher-year-extra">
+
+
+      <!-- EXTRA 1 -->
+
+      <div class="year-photo">
+
+        <div class="year-photo-inner">
+
+          <img
+            src="assets/profesor-del-ano-extra-01.png"
+            alt="Recuerdo 1"
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- EXTRA 2 -->
+
+      <div class="year-photo">
+
+        <div class="year-photo-inner">
+
+          <img
+            src="assets/profesor-del-ano-extra-02.png"
+            alt="Recuerdo 2"
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- EXTRA 3 -->
+
+      <div class="year-photo">
+
+        <div class="year-photo-inner">
+
+          <img
+            src="assets/profesor-del-ano-extra-03.png"
+            alt="Recuerdo 3"
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- EXTRA 4 -->
+
+      <div class="year-photo">
+
+        <div class="year-photo-inner">
+
+          <img
+            src="assets/profesor-del-ano-extra-04.png"
+            alt="Recuerdo 4"
+          >
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CIERRE
+===================================================== -->
+
+<section class="closing">
+
+  <div class="closing-symbol">
+    ✦
+  </div>
+
+  <p>
+
+    “Tal vez olvidemos alguna fecha,
+    algún ensayo o incluso algún hechizo,
+    pero nunca olvidaremos a quienes hicieron
+    de Hogwarts algo más que un lugar donde aprender.”
+
+  </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+  Anuario Escolar de Hogwarts
+
+  <span>
+    Profesores · Curso 2026–2027
+  </span>
+
+</footer>
+
+
+</div>
+
+
+</body>
+
+</html>
