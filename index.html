@@ -3,2637 +3,2564 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
 
-  <title>
-    Anuario Hogwarts 2026–2027
-  </title>
+<title>Anuario Hogwarts 2026–2027</title>
 
+<style>
 
-  <style>
+:root{
 
-    :root{
+  --paper:#f1e8da;
+  --paper-light:#faf6ee;
+  --paper-2:#f8f2e9;
 
-      --paper:#f1e8da;
-      --paper-light:#faf6ee;
-      --paper-2:#f8f2e9;
+  --ink:#211d19;
+  --muted:#6b645c;
 
-      --ink:#211d19;
-      --muted:#6b645c;
+  --line:#bcae9d;
 
-      --line:#bcae9d;
+  --red:#8f2b26;
+  --red-dark:#6f201d;
 
-      --red:#8f2b26;
-      --red-dark:#6f201d;
+  --green:#355d46;
 
-      --green:#355d46;
+  --yellow:#c89a31;
+  --yellow-dark:#9d741f;
 
-      --yellow:#c89a31;
-      --yellow-dark:#9d741f;
+  --blue:#2d4d70;
 
-      --blue:#2d4d70;
+  --silver:#b6bac1;
 
-      --silver:#b6bac1;
+  --memorial:#758190;
+  --memorial-dark:#4b5868;
+  --memorial-light:#d7dbe0;
 
-      --memorial:#758190;
-      --memorial-dark:#4b5868;
-      --memorial-light:#d7dbe0;
+  --white:#fbf8f2;
 
-      --white:#fbf8f2;
+  --shadow:
+    0 14px 34px rgba(0,0,0,.08);
 
-      --shadow:
-        0 14px 34px rgba(0,0,0,.08);
+}
 
-    }
 
+*{
+  box-sizing:border-box;
+}
 
-    *{
-      box-sizing:border-box;
-    }
 
+html{
+  scroll-behavior:smooth;
+}
 
-    html{
-      scroll-behavior:smooth;
-    }
 
+body{
 
-    body{
+  margin:0;
 
-      margin:0;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
-      font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+  color:var(--ink);
 
-      color:var(--ink);
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0,0,0,.025) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(0,0,0,.02) 1px,
+      transparent 1px
+    ),
+    var(--paper);
 
-      background:
-        radial-gradient(
-          circle at 20% 20%,
-          rgba(0,0,0,.025) 1px,
-          transparent 1px
-        ),
-        radial-gradient(
-          circle at 80% 40%,
-          rgba(0,0,0,.02) 1px,
-          transparent 1px
-        ),
-        var(--paper);
+  background-size:
+    22px 22px,
+    31px 31px;
 
-      background-size:
-        22px 22px,
-        31px 31px;
+}
 
-    }
 
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-    a{
-      color:inherit;
-      text-decoration:none;
-    }
 
+button{
+  font:inherit;
+}
 
-    button{
-      font:inherit;
-    }
 
+img{
+  display:block;
+  width:100%;
+}
 
-    img{
-      display:block;
-      width:100%;
-    }
 
+.page{
 
-    .page{
+  width:min(1220px,96%);
 
-      width:min(1220px,96%);
+  margin:20px auto;
 
-      margin:20px auto;
+  position:relative;
 
-      position:relative;
+  overflow:hidden;
 
-      overflow:hidden;
+  background:var(--paper-2);
 
-      background:var(--paper-2);
+  border:1px solid #ad9f8d;
 
-      border:
-        1px solid #ad9f8d;
+  box-shadow:
+    0 24px 60px rgba(0,0,0,.12);
 
-      box-shadow:
-        0 24px 60px rgba(0,0,0,.12);
+}
 
-    }
 
+/* ==============================
+   NAVEGACIÓN
+============================== */
 
 
-    /* ==============================
-       NAVEGACIÓN
-    ============================== */
+.nav{
 
+  position:sticky;
 
-    .nav{
+  top:0;
 
-      position:sticky;
+  z-index:100;
 
-      top:0;
+  display:flex;
 
-      z-index:100;
+  align-items:center;
+  justify-content:space-between;
 
-      display:flex;
+  gap:20px;
 
-      align-items:center;
-      justify-content:space-between;
+  padding:17px 30px;
 
-      gap:20px;
+  background:rgba(248,242,233,.96);
 
-      padding:
-        17px 30px;
+  border-bottom:1px solid var(--line);
 
-      background:
-        rgba(248,242,233,.96);
+  backdrop-filter:blur(10px);
 
-      border-bottom:
-        1px solid var(--line);
+}
 
-      backdrop-filter:
-        blur(10px);
 
-    }
+.brand{
 
+  display:flex;
 
-    .brand{
+  align-items:center;
 
-      display:flex;
+  gap:12px;
 
-      align-items:center;
+  min-width:max-content;
 
-      gap:12px;
+}
 
-      min-width:max-content;
 
-    }
+.brand-mark{
 
+  width:42px;
+  height:42px;
 
-    .brand-mark{
+  display:grid;
 
-      width:42px;
-      height:42px;
+  place-items:center;
 
-      display:grid;
+  border:1px solid #867a6a;
 
-      place-items:center;
+  border-radius:50%;
 
-      border:
-        1px solid #867a6a;
+  font-size:18px;
 
-      border-radius:50%;
+  font-weight:bold;
 
-      font-size:18px;
+}
 
-      font-weight:bold;
 
-    }
+.brand-text{
 
+  font-size:12px;
 
-    .brand-text{
+  letter-spacing:2px;
 
-      font-size:12px;
+  text-transform:uppercase;
 
-      letter-spacing:2px;
+}
 
-      text-transform:uppercase;
 
-    }
+.nav-links{
 
+  display:flex;
 
-    .nav-links{
+  align-items:center;
 
-      display:flex;
+  gap:13px;
 
-      align-items:center;
+  font-size:8px;
 
-      gap:13px;
+  text-transform:uppercase;
 
-      font-size:8px;
+  letter-spacing:.9px;
 
-      text-transform:uppercase;
+}
 
-      letter-spacing:.9px;
 
-    }
+.nav-links a{
 
+  position:relative;
 
-    .nav-links a{
+  padding:7px 0;
 
-      position:relative;
+}
 
-      padding:
-        7px 0;
 
-    }
+.nav-links a::after{
 
+  content:"";
 
-    .nav-links a::after{
+  position:absolute;
 
-      content:"";
+  left:0;
+  bottom:1px;
 
-      position:absolute;
+  width:0;
+  height:1px;
 
-      left:0;
-      bottom:1px;
+  background:var(--ink);
 
-      width:0;
-      height:1px;
+  transition:.25s ease;
 
-      background:var(--ink);
+}
 
-      transition:.25s ease;
 
-    }
+.nav-links a:hover::after{
+  width:100%;
+}
 
 
-    .nav-links a:hover::after{
-      width:100%;
-    }
+.menu-button{
 
+  display:none;
 
-    .menu-button{
+  padding:9px 12px;
 
-      display:none;
+  border:1px solid var(--line);
 
-      padding:
-        9px 12px;
+  background:transparent;
 
-      border:
-        1px solid var(--line);
+  cursor:pointer;
 
-      background:transparent;
+  text-transform:uppercase;
 
-      cursor:pointer;
+  font-size:9px;
 
-      text-transform:uppercase;
+  letter-spacing:1px;
 
-      font-size:9px;
+}
 
-      letter-spacing:1px;
 
-    }
+.mobile-menu{
 
+  display:none;
 
-    .mobile-menu{
+  padding:12px 18px 18px;
 
-      display:none;
+  border-bottom:1px solid var(--line);
 
-      padding:
-        12px 18px 18px;
+  background:var(--paper-2);
 
-      border-bottom:
-        1px solid var(--line);
+}
 
-      background:
-        var(--paper-2);
 
-    }
+.mobile-menu.open{
+  display:block;
+}
 
 
-    .mobile-menu.open{
-      display:block;
-    }
+.mobile-menu a{
 
+  display:block;
 
-    .mobile-menu a{
+  padding:11px 0;
 
-      display:block;
+  border-bottom:1px solid #dfd6ca;
 
-      padding:
-        11px 0;
+  font-size:10px;
 
-      border-bottom:
-        1px solid #dfd6ca;
+  letter-spacing:1px;
 
-      font-size:10px;
+  text-transform:uppercase;
 
-      letter-spacing:1px;
+}
 
-      text-transform:uppercase;
 
-    }
+/* ==============================
+   PORTADA
+============================== */
 
 
+.hero{
 
-    /* ==============================
-       PORTADA
-    ============================== */
+  min-height:650px;
 
+  display:grid;
 
-    .hero{
+  grid-template-columns:
+    .9fr 1.35fr;
 
-      min-height:650px;
+  align-items:center;
 
-      display:grid;
+  gap:34px;
 
-      grid-template-columns:
-        .9fr 1.35fr;
+  padding:58px 58px 50px;
 
-      align-items:center;
+  border-bottom:1px solid var(--line);
 
-      gap:34px;
+}
 
-      padding:
-        58px 58px 50px;
 
-      border-bottom:
-        1px solid var(--line);
+.hero-copy{
 
-    }
+  position:relative;
 
+  z-index:2;
 
-    .hero-copy{
+}
 
-      position:relative;
 
-      z-index:2;
+.eyebrow{
 
-    }
+  margin-bottom:8px;
 
+  font-size:18px;
 
-    .eyebrow{
+  letter-spacing:2.5px;
 
-      margin-bottom:8px;
+  text-transform:uppercase;
 
-      font-size:18px;
+}
 
-      letter-spacing:2.5px;
 
-      text-transform:uppercase;
+.hero h1{
 
-    }
+  margin:0;
 
+  font-size:76px;
 
-    .hero h1{
+  line-height:.93;
 
-      margin:0;
+  font-weight:400;
 
-      font-size:76px;
+  letter-spacing:-2px;
 
-      line-height:.93;
+}
 
-      font-weight:400;
 
-      letter-spacing:-2px;
+.year{
 
-    }
+  margin:20px 0 18px;
 
+  color:var(--red);
 
-    .year{
+  font-size:34px;
 
-      margin:
-        20px 0 18px;
+  letter-spacing:2px;
 
-      color:var(--red);
+}
 
-      font-size:34px;
 
-      letter-spacing:2px;
+.flourish{
 
-    }
+  margin:19px 0;
 
+  color:#665b4d;
 
-    .flourish{
+  font-size:27px;
 
-      margin:
-        19px 0;
+  letter-spacing:9px;
 
-      color:#665b4d;
+}
 
-      font-size:27px;
 
-      letter-spacing:9px;
+.hero-quote{
 
-    }
+  max-width:410px;
 
+  font-size:15px;
 
-    .hero-quote{
+  line-height:1.75;
 
-      max-width:410px;
+  letter-spacing:1px;
 
-      font-size:15px;
+  text-transform:uppercase;
 
-      line-height:1.75;
+}
 
-      letter-spacing:1px;
 
-      text-transform:uppercase;
+/* ==============================
+   HOMENAJE PORTADA
+============================== */
 
-    }
 
+.memorial-dedication{
 
+  max-width:470px;
 
-    /* ==============================
-       HOMENAJE DE PORTADA
-    ============================== */
+  margin-top:30px;
 
+  padding:20px 22px;
 
-    .memorial-dedication{
+  position:relative;
 
-      max-width:470px;
+  color:var(--memorial-dark);
 
-      margin-top:30px;
+  border-top:1px solid var(--memorial-light);
+  border-bottom:1px solid var(--memorial-light);
 
-      padding:
-        20px 22px;
+}
 
-      position:relative;
 
-      color:
-        var(--memorial-dark);
+.memorial-dedication::before{
 
-      border-top:
-        1px solid var(--memorial-light);
+  content:"✦";
 
-      border-bottom:
-        1px solid var(--memorial-light);
+  position:absolute;
 
-    }
+  top:-9px;
+  left:50%;
 
+  transform:translateX(-50%);
 
-    .memorial-dedication::before{
+  padding:0 10px;
 
-      content:"✦";
+  background:var(--paper-2);
 
-      position:absolute;
+  color:var(--memorial);
 
-      top:-9px;
-      left:50%;
+}
 
-      transform:
-        translateX(-50%);
 
-      padding:
-        0 10px;
+.memorial-label{
 
-      background:
-        var(--paper-2);
+  display:block;
 
-      color:
-        var(--memorial);
+  margin-bottom:8px;
 
-    }
+  color:var(--memorial);
 
+  font-size:9px;
 
-    .memorial-label{
+  letter-spacing:3px;
 
-      display:block;
+  text-transform:uppercase;
 
-      margin-bottom:8px;
+}
 
-      color:
-        var(--memorial);
 
-      font-size:9px;
+.memorial-name{
 
-      letter-spacing:3px;
+  display:block;
 
-      text-transform:uppercase;
+  margin-bottom:9px;
 
-    }
+  color:var(--memorial-dark);
 
+  font-size:21px;
 
-    .memorial-name{
+  letter-spacing:1px;
 
-      display:block;
+}
 
-      margin-bottom:9px;
 
-      color:
-        var(--memorial-dark);
+.memorial-info{
 
-      font-size:21px;
+  display:block;
 
-      letter-spacing:1px;
+  font-size:10px;
 
-    }
+  line-height:1.8;
 
+  letter-spacing:1px;
 
-    .memorial-info{
+  text-transform:uppercase;
 
-      display:block;
+}
 
-      font-size:10px;
 
-      line-height:1.8;
+.memorial-founders{
 
-      letter-spacing:1px;
+  display:block;
 
-      text-transform:uppercase;
+  margin-top:11px;
 
-    }
+  color:#6f747b;
 
+  font-size:9px;
 
-    .memorial-founders{
+  line-height:1.7;
 
-      display:block;
+  letter-spacing:1.2px;
 
-      margin-top:11px;
+  text-transform:uppercase;
 
-      color:#6f747b;
+}
 
-      font-size:9px;
 
-      line-height:1.7;
+.castle{
 
-      letter-spacing:1.2px;
+  width:100%;
 
-      text-transform:uppercase;
+  min-height:620px;
 
-    }
+  display:flex;
 
+  align-items:stretch;
+  justify-content:center;
 
-    .castle{
+  overflow:hidden;
 
-      width:100%;
+  background:var(--paper);
 
-      min-height:620px;
+}
 
-      display:flex;
 
-      align-items:stretch;
-      justify-content:center;
+.castle-image{
 
-      overflow:hidden;
+  width:100%;
+  height:100%;
 
-      background:var(--paper);
+  min-height:620px;
 
-    }
+  object-fit:cover;
+  object-position:center;
 
+}
 
-    .castle-image{
 
-      width:100%;
-      height:100%;
+/* ==============================
+   GENERAL
+============================== */
 
-      min-height:620px;
 
-      object-fit:cover;
-      object-position:center;
+section{
 
-    }
+  padding:54px 48px;
 
+}
 
 
-    /* ==============================
-       GENERAL
-    ============================== */
+.section-title{
 
+  display:flex;
 
-    section{
+  align-items:center;
+  justify-content:center;
 
-      padding:
-        54px 48px;
+  gap:16px;
 
-    }
+  margin-bottom:35px;
 
+  text-align:center;
 
-    .section-title{
+}
 
-      display:flex;
 
-      align-items:center;
-      justify-content:center;
+.section-title::before,
+.section-title::after{
 
-      gap:16px;
+  content:"";
 
-      margin-bottom:35px;
+  width:170px;
+  height:1px;
 
-      text-align:center;
+  background:var(--line);
 
-    }
+}
 
 
-    .section-title::before,
-    .section-title::after{
+.section-title h2{
 
-      content:"";
+  margin:0;
 
-      width:170px;
-      height:1px;
+  font-size:27px;
 
-      background:var(--line);
+  font-weight:400;
 
-    }
+  letter-spacing:1.8px;
 
+  text-transform:uppercase;
 
-    .section-title h2{
+}
 
-      margin:0;
 
-      font-size:27px;
+.section-subtitle{
 
-      font-weight:400;
+  max-width:720px;
 
-      letter-spacing:1.8px;
+  margin:-10px auto 34px;
 
-      text-transform:uppercase;
+  color:var(--muted);
 
-    }
+  text-align:center;
 
+  font-size:14px;
 
-    .section-subtitle{
+  line-height:1.75;
 
-      max-width:720px;
+}
 
-      margin:
-        -10px auto 34px;
 
-      color:var(--muted);
+.btn{
 
-      text-align:center;
+  display:inline-block;
 
-      font-size:14px;
+  padding:10px 20px;
 
-      line-height:1.75;
+  border:1px solid #9f927f;
 
-    }
+  background:transparent;
 
+  font-size:9px;
 
-    .btn{
+  letter-spacing:1.2px;
 
-      display:inline-block;
+  text-transform:uppercase;
 
-      padding:
-        10px 20px;
+  transition:.22s ease;
 
-      border:
-        1px solid #9f927f;
+  cursor:pointer;
 
-      background:transparent;
+}
 
-      font-size:9px;
 
-      letter-spacing:1.2px;
+.btn:hover{
 
-      text-transform:uppercase;
+  color:white;
 
-      transition:.22s ease;
+  background:var(--ink);
 
-      cursor:pointer;
+}
 
-    }
 
+/* ==============================
+   DIRECCIÓN
+============================== */
 
-    .btn:hover{
 
-      color:white;
+.direction{
 
-      background:var(--ink);
+  border-bottom:1px solid var(--line);
 
-    }
+}
 
 
+.direction-grid{
 
-    /* ==============================
-       DIRECCIÓN
-    ============================== */
+  max-width:760px;
 
+  margin:auto;
 
-    .direction{
+  display:grid;
 
-      border-bottom:
-        1px solid var(--line);
+  grid-template-columns:
+    repeat(2,1fr);
 
-    }
+  gap:38px;
 
+}
 
-    .direction-grid{
 
-      max-width:760px;
+.direction-card{
 
-      margin:auto;
+  padding:12px 12px 25px;
 
-      display:grid;
+  text-align:center;
 
-      grid-template-columns:
-        repeat(2,1fr);
+  background:rgba(255,255,255,.19);
 
-      gap:38px;
+  border:1px solid var(--line);
 
-    }
+  cursor:pointer;
 
+  transition:.25s ease;
 
-    .direction-card{
+}
 
-      padding:
-        12px 12px 25px;
 
-      text-align:center;
+.direction-card:hover{
 
-      background:
-        rgba(255,255,255,.19);
+  transform:translateY(-5px);
 
-      border:
-        1px solid var(--line);
+  box-shadow:var(--shadow);
 
-      cursor:pointer;
+}
 
-      transition:.25s ease;
 
-    }
+.direction-photo{
 
+  width:100%;
 
-    .direction-card:hover{
+  aspect-ratio:4/5;
 
-      transform:
-        translateY(-5px);
+  display:grid;
 
-      box-shadow:
-        var(--shadow);
+  place-items:center;
 
-    }
+  overflow:hidden;
 
+  background:#d9d1c5;
 
-    .direction-photo{
+  color:#726b62;
 
-      width:100%;
+  font-size:11px;
 
-      aspect-ratio:4/5;
+}
 
-      display:grid;
 
-      place-items:center;
+.direction-photo img{
 
-      overflow:hidden;
+  width:100%;
+  height:100%;
 
-      background:#d9d1c5;
+  object-fit:cover;
 
-      color:#726b62;
+}
 
-      font-size:11px;
 
-    }
+.direction-role{
 
+  display:block;
 
-    .direction-photo img{
+  margin-top:16px;
 
-      width:100%;
-      height:100%;
+  color:#8a7652;
 
-      object-fit:cover;
+  font-size:9px;
 
-    }
+  letter-spacing:2px;
 
+  text-transform:uppercase;
 
-    .direction-role{
+}
 
-      display:block;
 
-      margin-top:16px;
+.direction-card h3{
 
-      color:#8a7652;
+  margin:8px 0 5px;
 
-      font-size:9px;
+  font-size:18px;
 
-      letter-spacing:2px;
+  font-weight:400;
 
-      text-transform:uppercase;
+  letter-spacing:1px;
 
-    }
+  text-transform:uppercase;
 
+}
 
-    .direction-card h3{
 
-      margin:
-        8px 0 5px;
+.direction-card p{
 
-      font-size:18px;
+  margin:0;
 
-      font-weight:400;
+  color:var(--muted);
 
-      letter-spacing:1px;
+  font-size:10px;
 
-      text-transform:uppercase;
+  letter-spacing:1px;
 
-    }
+  text-transform:uppercase;
 
+}
 
-    .direction-card p{
 
-      margin:0;
+.click-hint{
 
-      color:var(--muted);
+  display:block;
 
-      font-size:10px;
+  margin-top:14px;
 
-      letter-spacing:1px;
+  color:#8b7a61;
 
-      text-transform:uppercase;
+  font-size:8px;
 
-    }
+  letter-spacing:1.4px;
 
+  text-transform:uppercase;
 
-    .click-hint{
+}
 
-      display:block;
 
-      margin-top:14px;
+/* ==============================
+   CASAS
+============================== */
 
-      color:#8b7a61;
 
-      font-size:8px;
+.houses{
 
-      letter-spacing:1.4px;
+  border-bottom:1px solid var(--line);
 
-      text-transform:uppercase;
+}
 
-    }
 
+.houses-grid{
 
+  max-width:900px;
 
-    /* ==============================
-       CASAS
-    ============================== */
+  margin:auto;
 
+  display:grid;
 
-    .houses{
+  grid-template-columns:
+    repeat(2,1fr);
 
-      border-bottom:
-        1px solid var(--line);
+  gap:28px;
 
-    }
+}
 
 
-    .houses-grid{
+.house-card{
 
-      max-width:900px;
+  position:relative;
 
-      margin:auto;
+  padding:30px 22px 25px;
 
-      display:grid;
+  text-align:center;
 
-      grid-template-columns:
-        repeat(2,1fr);
+  background:rgba(255,255,255,.18);
 
-      gap:28px;
+  border:1px solid var(--line);
 
-    }
+  transition:.28s ease;
 
+}
 
-    .house-card{
 
-      position:relative;
+.house-card:hover{
 
-      padding:
-        30px 22px 25px;
+  transform:translateY(-5px);
 
-      text-align:center;
+  box-shadow:var(--shadow);
 
-      background:
-        rgba(255,255,255,.18);
+}
 
-      border:
-        1px solid var(--line);
 
-      transition:.28s ease;
+.house-card h3{
 
-    }
+  margin:0;
 
+  font-size:24px;
 
-    .house-card:hover{
+  font-weight:400;
 
-      transform:
-        translateY(-5px);
+}
 
-      box-shadow:
-        var(--shadow);
 
-    }
+.house-symbol{
 
+  width:180px;
+  height:210px;
 
-    .house-card h3{
+  margin:20px auto;
 
-      margin:0;
+  display:flex;
 
-      font-size:24px;
+  align-items:center;
+  justify-content:center;
 
-      font-weight:400;
+}
 
-    }
 
+.house-symbol img{
 
-    .house-symbol{
+  width:100%;
+  height:100%;
 
-      width:180px;
-      height:210px;
+  object-fit:contain;
 
-      margin:
-        20px auto;
+}
 
-      display:flex;
 
-      align-items:center;
-      justify-content:center;
+.house-card p{
 
-    }
+  min-height:42px;
 
+  margin:0 0 18px;
 
-    .house-symbol img{
+  font-size:11px;
 
-      width:100%;
-      height:100%;
+  line-height:1.5;
 
-      object-fit:contain;
+  letter-spacing:.8px;
 
-    }
+  text-transform:uppercase;
 
+}
 
-    .house-card p{
 
-      min-height:42px;
+.gryffindor h3{
+  color:var(--red);
+}
 
-      margin:
-        0 0 18px;
+.slytherin h3{
+  color:var(--green);
+}
 
-      font-size:11px;
+.hufflepuff h3{
+  color:var(--yellow-dark);
+}
 
-      line-height:1.5;
+.ravenclaw h3{
+  color:var(--blue);
+}
 
-      letter-spacing:.8px;
 
-      text-transform:uppercase;
+/* ==============================
+   PROFESORES
+============================== */
 
-    }
 
+.professors-section{
 
-    .gryffindor h3{
-      color:var(--red);
-    }
+  text-align:center;
 
+  border-bottom:1px solid var(--line);
 
-    .slytherin h3{
-      color:var(--green);
-    }
+}
 
 
-    .hufflepuff h3{
-      color:var(--yellow-dark);
-    }
+/* ==============================
+   LUCAS NOTT
+============================== */
 
 
-    .ravenclaw h3{
-      color:var(--blue);
-    }
+.lucas-section{
 
+  position:relative;
 
+  overflow:hidden;
 
-    /* ==============================
-       PROFESORES
-    ============================== */
+  border-bottom:1px solid var(--line);
 
+  background:
+    linear-gradient(
+      135deg,
+      rgba(45,77,112,.07),
+      rgba(255,255,255,.1)
+    );
 
-    .professors-section{
+}
 
-      text-align:center;
 
-      border-bottom:
-        1px solid var(--line);
+.lucas-section::before{
 
-    }
+  content:"";
 
+  position:absolute;
 
+  left:0;
+  top:0;
 
-    /* ==============================
-       LUCAS NOTT
-    ============================== */
+  width:6px;
+  height:100%;
 
+  background:var(--blue);
 
-    .lucas-section{
+  opacity:.75;
 
-      position:relative;
+}
 
-      overflow:hidden;
 
-      border-bottom:
-        1px solid var(--line);
+.lucas-wrap{
 
-      background:
+  max-width:960px;
 
-        linear-gradient(
-          135deg,
-          rgba(45,77,112,.07),
-          rgba(255,255,255,.1)
-        );
+  margin:auto;
 
-    }
+  display:grid;
 
+  grid-template-columns:
+    .78fr 1.22fr;
 
-    .lucas-section::before{
+  align-items:center;
 
-      content:"";
+  gap:48px;
 
-      position:absolute;
+}
 
-      left:0;
-      top:0;
 
-      width:6px;
-      height:100%;
+.lucas-photo-frame{
 
-      background:var(--blue);
+  position:relative;
 
-      opacity:.75;
+  padding:10px;
 
-    }
+  background:#f5f1e9;
 
+  border:1px solid #aeb5be;
 
-    .lucas-wrap{
+  box-shadow:
+    0 16px 34px rgba(39,48,60,.12);
 
-      max-width:960px;
+}
 
-      margin:auto;
 
-      display:grid;
+.lucas-photo-frame::before{
 
-      grid-template-columns:
-        .78fr 1.22fr;
+  content:"IN MEMORIAM";
 
-      align-items:center;
+  position:absolute;
 
-      gap:48px;
+  top:18px;
+  left:-13px;
 
-    }
+  z-index:2;
 
+  padding:6px 14px;
 
-    .lucas-photo-frame{
+  background:var(--blue);
 
-      position:relative;
+  color:white;
 
-      padding:10px;
+  font-size:8px;
 
-      background:#f5f1e9;
+  letter-spacing:2px;
 
-      border:
-        1px solid #aeb5be;
+  text-transform:uppercase;
 
-      box-shadow:
-        0 16px 34px rgba(39,48,60,.12);
+}
 
-    }
 
+.lucas-photo{
 
-    .lucas-photo-frame::before{
+  aspect-ratio:4/5;
 
-      content:"IN MEMORIAM";
+  overflow:hidden;
 
-      position:absolute;
+  display:grid;
 
-      top:18px;
-      left:-13px;
+  place-items:center;
 
-      z-index:2;
+  background:#d7d9dc;
 
-      padding:
-        6px 14px;
+  color:#68717a;
 
-      background:
-        var(--blue);
+  font-size:11px;
 
-      color:white;
+}
 
-      font-size:8px;
 
-      letter-spacing:2px;
+.lucas-photo img{
 
-      text-transform:uppercase;
+  width:100%;
+  height:100%;
 
-    }
+  object-fit:cover;
 
+  object-position:center 20%;
 
-    .lucas-photo{
+}
 
-      aspect-ratio:4/5;
 
-      overflow:hidden;
+.lucas-small-title{
 
-      display:grid;
+  display:block;
 
-      place-items:center;
+  margin-bottom:10px;
 
-      background:#d7d9dc;
+  color:var(--blue);
 
-      color:#68717a;
+  font-size:9px;
 
-      font-size:11px;
+  letter-spacing:3px;
 
-    }
+  text-transform:uppercase;
 
+}
 
-    .lucas-photo img{
 
-      width:100%;
-      height:100%;
+.lucas-copy h2{
 
-      object-fit:cover;
+  margin:0 0 10px;
 
-      object-position:center 20%;
+  color:var(--memorial-dark);
 
-    }
+  font-size:42px;
 
+  font-weight:400;
 
-    .lucas-small-title{
+}
 
-      display:block;
 
-      margin-bottom:10px;
+.lucas-roles{
 
-      color:var(--blue);
+  margin-bottom:24px;
 
-      font-size:9px;
+  color:var(--blue);
 
-      letter-spacing:3px;
+  font-size:10px;
 
-      text-transform:uppercase;
+  line-height:1.8;
 
-    }
+  letter-spacing:1.3px;
 
+  text-transform:uppercase;
 
-    .lucas-copy h2{
+}
 
-      margin:
-        0 0 10px;
 
-      color:
-        var(--memorial-dark);
+.lucas-divider{
 
-      font-size:42px;
+  width:70px;
+  height:1px;
 
-      font-weight:400;
+  margin-bottom:22px;
 
-    }
+  background:var(--memorial);
 
+}
 
-    .lucas-roles{
 
-      margin-bottom:24px;
+.lucas-copy p{
 
-      color:var(--blue);
+  max-width:600px;
 
-      font-size:10px;
+  margin:0 0 18px;
 
-      line-height:1.8;
+  color:#504d49;
 
-      letter-spacing:1.3px;
+  font-size:15px;
 
-      text-transform:uppercase;
+  line-height:1.9;
 
-    }
+}
 
 
-    .lucas-divider{
+.lucas-quote{
 
-      width:70px;
-      height:1px;
+  margin:25px 0;
 
-      margin-bottom:22px;
+  padding-left:20px;
 
-      background:
-        var(--memorial);
+  border-left:2px solid var(--memorial-light);
 
-    }
+  color:#5e6670;
 
+  font-size:16px;
 
-    .lucas-copy p{
+  line-height:1.75;
 
-      max-width:600px;
+  font-style:italic;
 
-      margin:
-        0 0 18px;
+}
 
-      color:#504d49;
 
-      font-size:15px;
+.lucas-btn{
 
-      line-height:1.9;
+  color:var(--blue);
 
-    }
+  border-color:var(--blue);
 
+}
 
-    .lucas-quote{
 
-      margin:
-        25px 0;
+.lucas-btn:hover{
 
-      padding-left:20px;
+  color:white;
 
-      border-left:
-        2px solid var(--memorial-light);
+  background:var(--blue);
 
-      color:#5e6670;
+}
 
-      font-size:16px;
 
-      line-height:1.75;
+/* ==============================
+   HOGWARTS
+============================== */
 
-      font-style:italic;
 
-    }
+.history-section{
 
+  border-bottom:1px solid var(--line);
 
-    .lucas-btn{
+}
 
-      color:var(--blue);
 
-      border-color:var(--blue);
+.history-box{
 
-    }
+  max-width:900px;
 
+  margin:auto;
 
-    .lucas-btn:hover{
+  padding:35px 48px;
 
-      color:white;
+  text-align:center;
 
-      background:var(--blue);
+  border:1px solid var(--line);
 
-    }
+  background:rgba(255,255,255,.13);
 
+}
 
 
-    /* ==============================
-       HOGWARTS
-    ============================== */
+.history-symbol{
 
+  margin-bottom:18px;
 
-    .history-section{
+  color:#8c795b;
 
-      border-bottom:
-        1px solid var(--line);
+  font-size:28px;
 
-    }
+}
 
 
-    .history-box{
+.history-box h3{
 
-      max-width:900px;
+  margin:0 0 22px;
 
-      margin:auto;
+  font-size:31px;
 
-      padding:
-        35px 48px;
+  font-weight:400;
 
-      text-align:center;
+  letter-spacing:1.5px;
 
-      border:
-        1px solid var(--line);
+  text-transform:uppercase;
 
-      background:
-        rgba(255,255,255,.13);
+}
 
-    }
 
+.history-box p{
 
-    .history-symbol{
+  max-width:780px;
 
-      margin-bottom:18px;
+  margin:0 auto 17px;
 
-      color:#8c795b;
+  color:#524c45;
 
-      font-size:28px;
+  font-size:15px;
 
-    }
+  line-height:1.9;
 
+}
 
-    .history-box h3{
 
-      margin:
-        0 0 22px;
+.founders{
 
-      font-size:31px;
+  margin-top:26px;
 
-      font-weight:400;
+  color:#746b61;
 
-      letter-spacing:1.5px;
+  font-size:11px;
 
-      text-transform:uppercase;
+  line-height:1.8;
 
-    }
+  letter-spacing:1.4px;
 
+  text-transform:uppercase;
 
-    .history-box p{
+}
 
-      max-width:780px;
 
-      margin:
-        0 auto 17px;
+/* ==============================
+   MOMENTOS IMPORTANTES
+============================== */
 
-      color:#524c45;
 
-      font-size:15px;
+.moments{
 
-      line-height:1.9;
+  border-bottom:1px solid var(--line);
 
-    }
+}
 
 
-    .founders{
+.moments-grid{
 
-      margin-top:26px;
+  display:grid;
 
-      color:#746b61;
+  grid-template-columns:
+    repeat(3,1fr);
 
-      font-size:11px;
+  gap:18px;
 
-      line-height:1.8;
+}
 
-      letter-spacing:1.4px;
 
-      text-transform:uppercase;
+.moment-card{
 
-    }
+  display:block;
 
+  position:relative;
 
+  padding:8px;
 
-    /* ==============================
-       MOMENTOS IMPORTANTES
-    ============================== */
+  color:inherit;
 
+  background:#f9f5ee;
 
-    .moments{
+  border:1px solid var(--line);
 
-      border-bottom:
-        1px solid var(--line);
+  transition:.25s ease;
 
-    }
+  cursor:pointer;
 
+}
 
-    .moments-grid{
 
-      display:grid;
+.moment-card:hover{
 
-      grid-template-columns:
-        repeat(3,1fr);
+  transform:translateY(-6px);
 
-      gap:18px;
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.09);
 
-    }
+}
 
 
-    .moment-card{
+.moment-photo{
 
-      display:block;
+  position:relative;
 
-      position:relative;
+  aspect-ratio:4/3;
 
-      padding:8px;
+  overflow:hidden;
 
-      color:inherit;
+  display:grid;
 
-      background:#f9f5ee;
+  place-items:center;
 
-      border:
-        1px solid var(--line);
+  background:#d9d2c7;
 
-      transition:.25s ease;
+  color:#7a7268;
 
-      cursor:pointer;
+  text-align:center;
 
-    }
+  font-size:10px;
 
+}
 
-    .moment-card:hover{
 
-      transform:
-        translateY(-6px);
+.moment-photo img{
 
-      box-shadow:
-        0 12px 28px rgba(0,0,0,.09);
+  width:100%;
+  height:100%;
 
-    }
+  object-fit:cover;
 
+}
 
-    .moment-photo{
 
-      position:relative;
+.moment-overlay{
 
-      aspect-ratio:4/3;
+  position:absolute;
 
-      overflow:hidden;
+  inset:0;
 
-      display:grid;
+  display:flex;
 
-      place-items:center;
+  align-items:center;
+  justify-content:center;
 
-      background:#d9d2c7;
+  opacity:0;
 
-      color:#7a7268;
+  color:white;
 
-      text-align:center;
+  background:rgba(25,24,22,.55);
 
-      font-size:10px;
+  font-size:9px;
 
-    }
+  letter-spacing:1.6px;
 
+  text-transform:uppercase;
 
-    .moment-photo img{
+  transition:.25s ease;
 
-      width:100%;
-      height:100%;
+}
 
-      object-fit:cover;
 
-    }
+.moment-card:hover .moment-overlay{
+  opacity:1;
+}
 
 
-    .moment-overlay{
+.moment-card h3{
 
-      position:absolute;
+  margin:13px 0 6px;
 
-      inset:0;
+  text-align:center;
 
-      display:flex;
+  font-size:14px;
 
-      align-items:center;
-      justify-content:center;
+  font-weight:400;
 
-      opacity:0;
+  letter-spacing:1px;
 
-      color:white;
+  text-transform:uppercase;
 
-      background:
-        rgba(25,24,22,.55);
+}
 
-      font-size:9px;
 
-      letter-spacing:1.6px;
+.moment-card p{
 
-      text-transform:uppercase;
+  margin:0 5px 9px;
 
-      transition:.25s ease;
+  color:var(--muted);
 
-    }
+  text-align:center;
 
+  font-size:9px;
 
-    .moment-card:hover .moment-overlay{
-      opacity:1;
-    }
+  line-height:1.6;
 
+}
 
-    .moment-card h3{
 
-      margin:
-        13px 0 6px;
+.moment-arrow{
 
-      text-align:center;
+  display:block;
 
-      font-size:14px;
+  margin-bottom:5px;
 
-      font-weight:400;
+  text-align:center;
 
-      letter-spacing:1px;
+  color:#8d7e68;
 
-      text-transform:uppercase;
+  font-size:16px;
 
-    }
+}
 
 
-    .moment-card p{
+/* ==============================
+   CUADRO DE HONOR
+============================== */
 
-      margin:
-        0 5px 9px;
 
-      color:var(--muted);
+.honor-section{
 
-      text-align:center;
+  border-bottom:1px solid var(--line);
 
-      font-size:9px;
+}
 
-      line-height:1.6;
 
-    }
+.honor-grid{
 
+  max-width:1000px;
 
-    .moment-arrow{
+  margin:auto;
 
-      display:block;
+  display:grid;
 
-      margin-bottom:5px;
+  grid-template-columns:
+    repeat(4,1fr);
 
-      text-align:center;
+  gap:18px;
 
-      color:#8d7e68;
+}
 
-      font-size:16px;
 
-    }
+.honor-card{
 
+  padding:28px 17px 24px;
 
+  text-align:center;
 
-    /* ==============================
-       CUADRO DE HONOR
-    ============================== */
+  background:rgba(255,255,255,.18);
 
+  border:1px solid var(--line);
 
-    .honor-section{
+}
 
-      border-bottom:
-        1px solid var(--line);
 
-    }
+.honor-card::before{
 
+  content:"✦";
 
-    .honor-grid{
+  display:block;
 
-      max-width:1000px;
+  margin-bottom:13px;
 
-      margin:auto;
+  font-size:17px;
 
-      display:grid;
+}
 
-      grid-template-columns:
-        repeat(4,1fr);
 
-      gap:18px;
+.honor-house{
 
-    }
+  display:block;
 
+  margin-bottom:13px;
 
-    .honor-card{
+  font-size:9px;
 
-      padding:
-        28px 17px 24px;
+  letter-spacing:1.6px;
 
-      text-align:center;
+  text-transform:uppercase;
 
-      background:
-        rgba(255,255,255,.18);
+}
 
-      border:
-        1px solid var(--line);
 
-    }
+.honor-card h3{
 
+  margin:0 0 8px;
 
-    .honor-card::before{
+  font-size:16px;
 
-      content:"✦";
+  font-weight:400;
 
-      display:block;
+  letter-spacing:1px;
 
-      margin-bottom:13px;
+  text-transform:uppercase;
 
-      font-size:17px;
+}
 
-    }
 
+.honor-card p{
 
-    .honor-house{
+  margin:0;
 
-      display:block;
+  color:var(--muted);
 
-      margin-bottom:13px;
+  font-size:10px;
 
-      font-size:9px;
+  line-height:1.6;
 
-      letter-spacing:1.6px;
+  text-transform:uppercase;
 
-      text-transform:uppercase;
+}
 
-    }
 
+.honor-gryffindor{
+  border-top:4px solid var(--red);
+}
 
-    .honor-card h3{
 
-      margin:
-        0 0 8px;
+.honor-gryffindor::before,
+.honor-gryffindor .honor-house{
+  color:var(--red);
+}
 
-      font-size:16px;
 
-      font-weight:400;
+.honor-slytherin{
+  border-top:4px solid var(--green);
+}
 
-      letter-spacing:1px;
 
-      text-transform:uppercase;
+.honor-slytherin::before,
+.honor-slytherin .honor-house{
+  color:var(--green);
+}
 
-    }
 
+.honor-hufflepuff{
+  border-top:4px solid var(--yellow);
+}
 
-    .honor-card p{
 
-      margin:0;
+.honor-hufflepuff::before,
+.honor-hufflepuff .honor-house{
+  color:var(--yellow-dark);
+}
 
-      color:var(--muted);
 
-      font-size:10px;
+.honor-ravenclaw{
+  border-top:4px solid var(--blue);
+}
 
-      line-height:1.6;
 
-      text-transform:uppercase;
+.honor-ravenclaw::before,
+.honor-ravenclaw .honor-house{
+  color:var(--blue);
+}
 
-    }
 
+/* ==============================
+   PREMIACIONES
+============================== */
 
-    .honor-gryffindor{
-      border-top:4px solid var(--red);
-    }
 
+.awards-section{
 
-    .honor-gryffindor::before,
-    .honor-gryffindor .honor-house{
-      color:var(--red);
-    }
+  border-bottom:1px solid var(--line);
 
+}
 
-    .honor-slytherin{
-      border-top:4px solid var(--green);
-    }
 
+.awards-list{
 
-    .honor-slytherin::before,
-    .honor-slytherin .honor-house{
-      color:var(--green);
-    }
+  max-width:850px;
 
+  margin:auto;
 
-    .honor-hufflepuff{
-      border-top:4px solid var(--yellow);
-    }
+  border-top:1px solid var(--line);
 
+}
 
-    .honor-hufflepuff::before,
-    .honor-hufflepuff .honor-house{
-      color:var(--yellow-dark);
-    }
 
+.award-button{
 
-    .honor-ravenclaw{
-      border-top:4px solid var(--blue);
-    }
+  width:100%;
 
+  display:grid;
 
-    .honor-ravenclaw::before,
-    .honor-ravenclaw .honor-house{
-      color:var(--blue);
-    }
+  grid-template-columns:
+    48px 1fr 50px;
 
+  align-items:center;
 
+  gap:12px;
 
-    /* ==============================
-       PREMIACIONES
-    ============================== */
+  padding:17px 5px;
 
+  border:none;
 
-    .awards-section{
+  border-bottom:1px solid var(--line);
 
-      border-bottom:
-        1px solid var(--line);
+  background:transparent;
 
-    }
+  color:var(--ink);
 
+  text-align:left;
 
-    .awards-list{
+  cursor:pointer;
 
-      max-width:850px;
+  transition:
+    background .2s ease,
+    padding .2s ease;
 
-      margin:auto;
+}
 
-      border-top:
-        1px solid var(--line);
 
-    }
+.award-button:hover{
 
+  padding-left:13px;
 
-    .award-button{
+  background:rgba(255,255,255,.28);
 
-      width:100%;
+}
 
-      display:grid;
 
-      grid-template-columns:
-        48px 1fr 50px;
+.award-number{
 
-      align-items:center;
+  color:#998b78;
 
-      gap:12px;
+  text-align:center;
 
-      padding:
-        17px 5px;
+  font-size:10px;
 
-      border:none;
+  letter-spacing:1px;
 
-      border-bottom:
-        1px solid var(--line);
+}
 
-      background:transparent;
 
-      color:var(--ink);
+.award-name{
 
-      text-align:left;
+  font-size:15px;
 
-      cursor:pointer;
+  letter-spacing:.7px;
 
-      transition:
-        background .2s ease,
-        padding .2s ease;
+  text-transform:uppercase;
 
-    }
+}
 
 
-    .award-button:hover{
+.award-arrow{
 
-      padding-left:13px;
+  text-align:center;
 
-      background:
-        rgba(255,255,255,.28);
+  color:#8e7c62;
 
-    }
+  font-size:22px;
 
+  transition:transform .2s ease;
 
-    .award-number{
+}
 
-      color:#998b78;
 
-      text-align:center;
+.award-button:hover .award-arrow{
 
-      font-size:10px;
+  transform:translateX(4px);
 
-      letter-spacing:1px;
+}
 
-    }
 
+/* ==============================
+   GALERÍA
+============================== */
 
-    .award-name{
 
-      font-size:15px;
+.gallery-section{
 
-      letter-spacing:.7px;
+  border-bottom:1px solid var(--line);
 
-      text-transform:uppercase;
+}
 
-    }
 
+.gallery-preview{
 
-    .award-arrow{
+  max-width:850px;
 
-      text-align:center;
+  margin:auto;
 
-      color:#8e7c62;
+  display:grid;
 
-      font-size:22px;
+  grid-template-columns:
+    repeat(4,1fr);
 
-      transition:
-        transform .2s ease;
+  gap:14px;
 
-    }
+}
 
 
-    .award-button:hover .award-arrow{
+.gallery-photo{
 
-      transform:
-        translateX(4px);
+  aspect-ratio:1/1;
 
-    }
+  display:grid;
 
+  place-items:center;
 
+  overflow:hidden;
 
-    /* ==============================
-       RECUERDOS / GALERÍA
-    ============================== */
+  background:#ddd5ca;
 
+  border:7px solid white;
 
-    .gallery-section{
+  box-shadow:
+    0 5px 12px rgba(0,0,0,.1);
 
-      border-bottom:
-        1px solid var(--line);
+  color:#7b736a;
 
-    }
+  font-size:10px;
 
+}
 
-    .gallery-preview{
 
-      max-width:850px;
+.gallery-photo:nth-child(odd){
+  transform:rotate(-1deg);
+}
 
-      margin:auto;
 
-      display:grid;
+.gallery-photo:nth-child(even){
+  transform:rotate(1deg);
+}
 
-      grid-template-columns:
-        repeat(4,1fr);
 
-      gap:14px;
+.gallery-photo img{
 
-    }
+  width:100%;
+  height:100%;
 
+  object-fit:cover;
 
-    .gallery-photo{
+}
 
-      aspect-ratio:1/1;
 
-      display:grid;
+.gallery-action{
 
-      place-items:center;
+  margin-top:32px;
 
-      overflow:hidden;
+  text-align:center;
 
-      background:#ddd5ca;
+}
 
-      border:
-        7px solid white;
 
-      box-shadow:
-        0 5px 12px rgba(0,0,0,.1);
+/* ==============================
+   MODAL GENERAL
+============================== */
 
-      color:#7b736a;
 
-      font-size:10px;
+.modal{
 
-    }
+  position:fixed;
 
+  inset:0;
 
-    .gallery-photo:nth-child(odd){
+  z-index:9999;
 
-      transform:
-        rotate(-1deg);
+  display:none;
 
-    }
+  align-items:center;
+  justify-content:center;
 
+  padding:20px;
 
-    .gallery-photo:nth-child(even){
+}
 
-      transform:
-        rotate(1deg);
 
-    }
+.modal.active{
+  display:flex;
+}
 
 
-    .gallery-photo img{
+.modal-overlay{
 
-      width:100%;
-      height:100%;
+  position:absolute;
 
-      object-fit:cover;
+  inset:0;
 
-    }
+  background:rgba(15,14,12,.72);
 
+  backdrop-filter:blur(5px);
 
-    .gallery-action{
+}
 
-      margin-top:32px;
 
-      text-align:center;
+.modal-card{
 
-    }
+  width:min(650px,96%);
 
+  max-height:88vh;
 
+  position:relative;
 
-    /* ==============================
-       MODAL GENERAL
-    ============================== */
+  z-index:2;
 
+  overflow-y:auto;
 
-    .modal{
+  padding:42px 36px 36px;
 
-      position:fixed;
+  background:#f4ecdf;
 
-      inset:0;
+  border:1px solid #9f927f;
 
-      z-index:9999;
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.30);
 
-      display:none;
+}
 
-      align-items:center;
-      justify-content:center;
 
-      padding:20px;
+.modal-close{
 
-    }
+  position:absolute;
 
+  top:12px;
+  right:14px;
 
-    .modal.active{
-      display:flex;
-    }
+  width:35px;
+  height:35px;
 
+  border:none;
 
-    .modal-overlay{
+  background:transparent;
 
-      position:absolute;
+  color:var(--ink);
 
-      inset:0;
+  font-size:28px;
 
-      background:
-        rgba(15,14,12,.72);
+  cursor:pointer;
 
-      backdrop-filter:
-        blur(5px);
+}
 
-    }
 
+.modal-symbol{
 
-    .modal-card{
+  margin-bottom:15px;
 
-      width:min(650px,96%);
+  color:#8d7857;
 
-      max-height:88vh;
+  text-align:center;
 
-      position:relative;
+  font-size:23px;
 
-      z-index:2;
+}
 
-      overflow-y:auto;
 
-      padding:
-        42px 36px 36px;
+.modal-card h2{
 
-      background:#f4ecdf;
+  margin:0 35px 7px;
 
-      border:
-        1px solid #9f927f;
+  text-align:center;
 
-      box-shadow:
-        0 25px 70px rgba(0,0,0,.30);
+  font-size:27px;
 
-    }
+  font-weight:400;
 
+}
 
-    .modal-close{
 
-      position:absolute;
+.modal-role{
 
-      top:12px;
-      right:14px;
+  margin:0;
 
-      width:35px;
-      height:35px;
+  color:#746b61;
 
-      border:none;
+  text-align:center;
 
-      background:transparent;
+  font-size:9px;
 
-      color:var(--ink);
+  line-height:1.7;
 
-      font-size:28px;
+  letter-spacing:1.7px;
 
-      cursor:pointer;
+  text-transform:uppercase;
 
-    }
+}
 
 
-    .modal-symbol{
+.modal-divider{
 
-      margin-bottom:15px;
+  width:60px;
+  height:1px;
 
-      color:#8d7857;
+  margin:22px auto;
 
-      text-align:center;
+  background:var(--line);
 
-      font-size:23px;
+}
 
-    }
 
+.message-text{
 
-    .modal-card h2{
+  margin:0;
 
-      margin:
-        0 35px 7px;
+  text-align:center;
 
-      text-align:center;
+  font-size:15px;
 
-      font-size:27px;
+  line-height:1.9;
 
-      font-weight:400;
+  white-space:pre-line;
 
-    }
+}
 
 
-    .modal-role{
+/* ==========================================
+   MODAL PREMIACIONES
+   CUATRO RENGLONES · UNO POR CASA
+========================================== */
 
-      margin:0;
 
-      color:#746b61;
+.award-modal-intro{
 
-      text-align:center;
+  max-width:520px;
 
-      font-size:9px;
+  margin:0 auto 28px;
 
-      line-height:1.7;
+  color:var(--muted);
 
-      letter-spacing:1.7px;
+  text-align:center;
 
-      text-transform:uppercase;
+  font-size:13px;
 
-    }
+  line-height:1.7;
 
+}
 
-    .modal-divider{
 
-      width:60px;
-      height:1px;
+.award-winners{
 
-      margin:
-        22px auto;
+  display:flex;
 
-      background:var(--line);
+  flex-direction:column;
 
-    }
+  gap:12px;
 
+}
 
-    .message-text{
 
-      margin:0;
+.winner-card{
 
-      text-align:center;
+  display:grid;
 
-      font-size:15px;
+  grid-template-columns:
+    95px 130px 1fr;
 
-      line-height:1.9;
+  align-items:center;
 
-      white-space:pre-line;
+  gap:20px;
 
-    }
+  padding:10px;
 
+  text-align:left;
 
+  background:rgba(255,255,255,.26);
 
-    /* ==============================
-       MODAL PREMIACIONES
-    ============================== */
+  border:1px solid var(--line);
 
+  transition:.2s ease;
 
-    .award-modal-intro{
+}
 
-      max-width:470px;
 
-      margin:
-        0 auto 25px;
+.winner-card:hover{
 
-      color:var(--muted);
+  transform:translateX(4px);
 
-      text-align:center;
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.07);
 
-      font-size:13px;
+}
 
-      line-height:1.7;
 
-    }
+.winner-gryffindor{
 
+  border-left:5px solid var(--red);
 
-    .award-winners{
+}
 
-      display:grid;
 
-      grid-template-columns:
-        repeat(2,1fr);
+.winner-slytherin{
 
-      gap:15px;
+  border-left:5px solid var(--green);
 
-    }
+}
 
 
-    .winner-card{
+.winner-hufflepuff{
 
-      padding:
-        9px 9px 16px;
+  border-left:5px solid var(--yellow);
 
-      text-align:center;
+}
 
-      background:
-        rgba(255,255,255,.26);
 
-      border:
-        1px solid var(--line);
+.winner-ravenclaw{
 
-    }
+  border-left:5px solid var(--blue);
 
+}
 
-    .winner-photo{
 
-      width:100%;
+.winner-photo{
 
-      aspect-ratio:4/5;
+  width:95px;
+  height:115px;
 
-      display:grid;
+  display:grid;
 
-      place-items:center;
+  place-items:center;
 
-      overflow:hidden;
+  overflow:hidden;
 
-      background:#d8d1c7;
+  background:#d8d1c7;
 
-      color:#786f65;
+  color:#786f65;
 
-      font-size:9px;
+  font-size:9px;
 
-    }
+}
 
 
-    .winner-photo img{
+.winner-photo img{
 
-      width:100%;
-      height:100%;
+  width:100%;
+  height:100%;
 
-      object-fit:cover;
+  object-fit:cover;
 
-      object-position:center 20%;
+  object-position:center 20%;
 
-    }
+}
 
 
-    .winner-house{
+.winner-house{
 
-      display:block;
+  display:block;
 
-      margin-top:13px;
+  margin:0;
 
-      color:#89765a;
+  font-size:10px;
 
-      font-size:8px;
+  line-height:1.5;
 
-      letter-spacing:1.8px;
+  letter-spacing:1.6px;
 
-      text-transform:uppercase;
+  text-transform:uppercase;
 
-    }
+}
 
 
-    .winner-card h3{
+.winner-gryffindor .winner-house{
+  color:var(--red);
+}
 
-      margin:
-        7px 0 4px;
 
-      font-size:14px;
+.winner-slytherin .winner-house{
+  color:var(--green);
+}
 
-      font-weight:400;
 
-      text-transform:uppercase;
+.winner-hufflepuff .winner-house{
+  color:var(--yellow-dark);
+}
 
-    }
 
+.winner-ravenclaw .winner-house{
+  color:var(--blue);
+}
 
-    .winner-card p{
 
-      margin:0;
+.winner-info h3{
 
-      color:var(--muted);
+  margin:6px 0 5px;
 
-      font-size:9px;
+  font-size:18px;
 
-      line-height:1.5;
+  font-weight:400;
 
-    }
+  letter-spacing:.6px;
 
+  text-transform:uppercase;
 
+}
 
-    /* ==============================
-       FOOTER
-    ============================== */
 
+.winner-info p{
 
-    footer{
+  margin:0;
 
-      padding:
-        32px 20px;
+  color:var(--muted);
 
-      text-align:center;
+  font-size:9px;
 
-      background:#171717;
+  line-height:1.5;
 
-      color:#ccb57c;
+  letter-spacing:.7px;
 
-      border-top:
-        1px solid #8f794d;
+  text-transform:uppercase;
 
-      font-size:10px;
+}
 
-      letter-spacing:2px;
 
-      text-transform:uppercase;
+/* ==============================
+   FOOTER
+============================== */
 
-    }
 
+footer{
 
-    footer .silver{
-      color:var(--silver);
-    }
+  padding:32px 20px;
 
+  text-align:center;
 
-    .footer-memorial{
+  background:#171717;
 
-      display:block;
+  color:#ccb57c;
 
-      margin-top:15px;
+  border-top:1px solid #8f794d;
 
-      color:#939ba5;
+  font-size:10px;
 
-      font-size:8px;
+  letter-spacing:2px;
 
-      line-height:1.8;
+  text-transform:uppercase;
 
-      letter-spacing:1.5px;
+}
 
-    }
 
+footer .silver{
+  color:var(--silver);
+}
 
 
-    /* ==============================
-       RESPONSIVE
-    ============================== */
+.footer-memorial{
 
+  display:block;
 
-    @media(max-width:1050px){
+  margin-top:15px;
 
-      .nav-links{
-        display:none;
-      }
+  color:#939ba5;
 
+  font-size:8px;
 
-      .menu-button{
-        display:block;
-      }
+  line-height:1.8;
 
+  letter-spacing:1.5px;
 
-      .hero h1{
-        font-size:64px;
-      }
+}
 
 
-      .honor-grid{
+/* ==============================
+   RESPONSIVE
+============================== */
 
-        grid-template-columns:
-          repeat(2,1fr);
 
-      }
+@media(max-width:1050px){
 
-    }
+  .nav-links{
+    display:none;
+  }
 
+  .menu-button{
+    display:block;
+  }
 
+  .hero h1{
+    font-size:64px;
+  }
 
-    @media(max-width:780px){
+  .honor-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-      .page{
+}
 
-        width:100%;
 
-        margin:0;
+@media(max-width:780px){
 
-        border-left:none;
-        border-right:none;
+  .page{
 
-      }
+    width:100%;
 
+    margin:0;
 
-      .nav{
+    border-left:none;
+    border-right:none;
 
-        padding:
-          14px 18px;
+  }
 
-      }
 
+  .nav{
+    padding:14px 18px;
+  }
 
-      .hero{
 
-        min-height:auto;
+  .hero{
 
-        grid-template-columns:1fr;
+    min-height:auto;
 
-        padding:
-          44px 24px 20px;
+    grid-template-columns:1fr;
 
-      }
+    padding:44px 24px 20px;
 
+  }
 
-      .hero h1{
-        font-size:53px;
-      }
 
+  .hero h1{
+    font-size:53px;
+  }
 
-      .year{
-        font-size:27px;
-      }
 
+  .year{
+    font-size:27px;
+  }
 
-      .castle{
 
-        min-height:0;
+  .castle{
 
-        height:auto;
+    min-height:0;
 
-      }
+    height:auto;
 
+  }
 
-      .castle-image{
 
-        min-height:0;
+  .castle-image{
 
-        height:auto;
+    min-height:0;
 
-        object-fit:contain;
+    height:auto;
 
-      }
+    object-fit:contain;
 
+  }
 
-      section{
 
-        padding:
-          44px 22px;
+  section{
+    padding:44px 22px;
+  }
 
-      }
 
+  .direction-grid{
 
-      .direction-grid{
+    grid-template-columns:repeat(2,1fr);
 
-        grid-template-columns:
-          repeat(2,1fr);
+    gap:14px;
 
-        gap:14px;
+  }
 
-      }
 
+  .houses-grid{
 
-      .houses-grid{
+    grid-template-columns:repeat(2,1fr);
 
-        grid-template-columns:
-          repeat(2,1fr);
+    gap:14px;
 
-        gap:14px;
+  }
 
-      }
 
+  .house-symbol{
 
-      .house-symbol{
+    width:130px;
+    height:150px;
 
-        width:130px;
-        height:150px;
+  }
 
-      }
 
+  .lucas-wrap{
 
-      .lucas-wrap{
+    max-width:520px;
 
-        max-width:520px;
+    grid-template-columns:1fr;
 
-        grid-template-columns:1fr;
+    gap:30px;
 
-        gap:30px;
+  }
 
-      }
 
+  .lucas-photo-frame{
 
-      .lucas-photo-frame{
+    width:min(330px,100%);
 
-        width:min(330px,100%);
+    margin:auto;
 
-        margin:auto;
+  }
 
-      }
 
+  .lucas-copy{
+    text-align:center;
+  }
 
-      .lucas-copy{
 
-        text-align:center;
+  .lucas-divider{
+    margin:0 auto 22px;
+  }
 
-      }
 
+  .lucas-quote{
+    text-align:left;
+  }
 
-      .lucas-divider{
 
-        margin:
-          0 auto 22px;
+  .moments-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-      }
 
+  .gallery-preview{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-      .lucas-quote{
 
-        text-align:left;
+  .section-title::before,
+  .section-title::after{
+    width:70px;
+  }
 
-      }
 
+  .history-box{
+    padding:30px 24px;
+  }
 
-      .moments-grid{
+}
 
-        grid-template-columns:
-          repeat(2,1fr);
 
-      }
+@media(max-width:520px){
 
+  .brand-text{
+    font-size:10px;
+  }
 
-      .gallery-preview{
 
-        grid-template-columns:
-          repeat(2,1fr);
+  .brand-mark{
 
-      }
+    width:38px;
+    height:38px;
 
+  }
 
-      .section-title::before,
-      .section-title::after{
 
-        width:70px;
+  .hero h1{
+    font-size:43px;
+  }
 
-      }
 
+  .eyebrow{
+    font-size:14px;
+  }
 
-      .history-box{
 
-        padding:
-          30px 24px;
+  .year{
+    font-size:23px;
+  }
 
-      }
 
-    }
+  .hero-quote{
+    font-size:12px;
+  }
 
 
+  .memorial-name{
+    font-size:18px;
+  }
 
-    @media(max-width:520px){
 
-      .brand-text{
-        font-size:10px;
-      }
+  .direction-card{
+    padding:7px 7px 17px;
+  }
 
 
-      .brand-mark{
+  .direction-card h3{
+    font-size:13px;
+  }
 
-        width:38px;
-        height:38px;
 
-      }
+  .direction-card p{
+    font-size:8px;
+  }
 
 
-      .hero h1{
-        font-size:43px;
-      }
+  .house-card{
+    padding:20px 12px;
+  }
 
 
-      .eyebrow{
-        font-size:14px;
-      }
+  .house-card h3{
+    font-size:18px;
+  }
 
 
-      .year{
-        font-size:23px;
-      }
+  .house-symbol{
 
+    width:110px;
+    height:130px;
 
-      .hero-quote{
-        font-size:12px;
-      }
+  }
 
 
-      .memorial-name{
-        font-size:18px;
-      }
+  .house-card p{
+    font-size:9px;
+  }
 
 
-      .direction-card{
+  .lucas-copy h2{
+    font-size:32px;
+  }
 
-        padding:
-          7px 7px 17px;
 
-      }
+  .lucas-copy p{
+    font-size:14px;
+  }
 
 
-      .direction-card h3{
-        font-size:13px;
-      }
+  .moments-grid{
 
+    grid-template-columns:1fr 1fr;
 
-      .direction-card p{
-        font-size:8px;
-      }
+    gap:10px;
 
+  }
 
-      .house-card{
 
-        padding:
-          20px 12px;
+  .moment-card h3{
+    font-size:11px;
+  }
 
-      }
 
+  .moment-card p{
+    font-size:8px;
+  }
 
-      .house-card h3{
-        font-size:18px;
-      }
 
+  .honor-grid{
 
-      .house-symbol{
+    grid-template-columns:1fr 1fr;
 
-        width:110px;
-        height:130px;
+    gap:10px;
 
-      }
+  }
 
 
-      .house-card p{
-        font-size:9px;
-      }
+  .honor-card{
+    padding:22px 10px 20px;
+  }
 
 
-      .lucas-copy h2{
-        font-size:32px;
-      }
+  .honor-card h3{
+    font-size:12px;
+  }
 
 
-      .lucas-copy p{
-        font-size:14px;
-      }
+  .section-title h2{
+    font-size:20px;
+  }
 
 
-      .moments-grid{
+  .section-title::before,
+  .section-title::after{
+    width:32px;
+  }
 
-        grid-template-columns:
-          1fr 1fr;
 
-        gap:10px;
+  .award-button{
 
-      }
+    grid-template-columns:
+      30px 1fr 30px;
 
+  }
 
-      .moment-card h3{
-        font-size:11px;
-      }
 
+  .award-name{
+    font-size:12px;
+  }
 
-      .moment-card p{
-        font-size:8px;
-      }
 
+  /* PREMIACIONES EN CELULAR */
 
-      .honor-grid{
+  .winner-card{
 
-        grid-template-columns:
-          1fr 1fr;
+    grid-template-columns:
+      72px 1fr;
 
-        gap:10px;
+    gap:12px;
 
-      }
+    padding:8px;
 
+  }
 
-      .honor-card{
 
-        padding:
-          22px 10px 20px;
+  .winner-photo{
 
-      }
+    width:72px;
+    height:90px;
 
+    grid-row:1 / span 2;
 
-      .honor-card h3{
-        font-size:12px;
-      }
+  }
 
 
-      .section-title h2{
-        font-size:20px;
-      }
+  .winner-house{
+    font-size:8px;
+  }
 
 
-      .section-title::before,
-      .section-title::after{
+  .winner-info h3{
 
-        width:32px;
+    margin:4px 0;
 
-      }
+    font-size:13px;
 
+  }
 
-      .award-button{
 
-        grid-template-columns:
-          30px 1fr 30px;
+  .winner-info p{
+    font-size:8px;
+  }
 
-      }
 
+  .modal-card{
+    padding:39px 20px 25px;
+  }
 
-      .award-name{
-        font-size:12px;
-      }
 
+  .modal-card h2{
+    font-size:22px;
+  }
 
-      .award-winners{
+}
 
-        grid-template-columns:
-          1fr 1fr;
-
-        gap:9px;
-
-      }
-
-
-      .modal-card{
-
-        padding:
-          39px 20px 25px;
-
-      }
-
-
-      .modal-card h2{
-        font-size:22px;
-      }
-
-    }
-
-
-  </style>
+</style>
 
 </head>
 
@@ -2644,1582 +2571,1222 @@
 <div class="page">
 
 
+<!-- ==============================
+     NAVEGACIÓN
+============================== -->
 
-  <!-- ==============================
-       NAVEGACIÓN
-  ============================== -->
+<nav class="nav">
 
+  <div class="brand">
 
-  <nav class="nav">
-
-
-    <div class="brand">
-
-      <div class="brand-mark">
-        H
-      </div>
-
-      <div class="brand-text">
-        Anuario Hogwarts
-      </div>
-
+    <div class="brand-mark">
+      H
     </div>
 
-
-    <div class="nav-links">
-
-      <a href="#inicio">
-        Inicio
-      </a>
-
-      <a href="#direccion">
-        Dirección
-      </a>
-
-      <a href="#casas">
-        Casas
-      </a>
-
-      <a href="#profesores">
-        Profesores
-      </a>
-
-      <a href="#lucas">
-        Lucas Nott
-      </a>
-
-      <a href="#historia">
-        Hogwarts
-      </a>
-
-      <a href="#momentos">
-        Momentos
-      </a>
-
-      <a href="#honor">
-        Honor
-      </a>
-
-      <a href="#premiaciones">
-        Premiaciones
-      </a>
-
-      <a href="#galeria">
-        Galería
-      </a>
-
+    <div class="brand-text">
+      Anuario Hogwarts
     </div>
-
-
-    <button
-      class="menu-button"
-      onclick="toggleMenu()"
-      type="button"
-    >
-      Menú
-    </button>
-
-
-  </nav>
-
-
-
-  <!-- MENÚ MÓVIL -->
-
-
-  <div
-    class="mobile-menu"
-    id="mobileMenu"
-  >
-
-    <a
-      href="#inicio"
-      onclick="closeMobileMenu()"
-    >
-      Inicio
-    </a>
-
-    <a
-      href="#direccion"
-      onclick="closeMobileMenu()"
-    >
-      Dirección
-    </a>
-
-    <a
-      href="#casas"
-      onclick="closeMobileMenu()"
-    >
-      Casas
-    </a>
-
-    <a
-      href="#profesores"
-      onclick="closeMobileMenu()"
-    >
-      Profesores
-    </a>
-
-    <a
-      href="#lucas"
-      onclick="closeMobileMenu()"
-    >
-      Lucas Nott
-    </a>
-
-    <a
-      href="#historia"
-      onclick="closeMobileMenu()"
-    >
-      Hogwarts
-    </a>
-
-    <a
-      href="#momentos"
-      onclick="closeMobileMenu()"
-    >
-      Momentos
-    </a>
-
-    <a
-      href="#honor"
-      onclick="closeMobileMenu()"
-    >
-      Cuadro de Honor
-    </a>
-
-    <a
-      href="#premiaciones"
-      onclick="closeMobileMenu()"
-    >
-      Premiaciones
-    </a>
-
-    <a
-      href="#galeria"
-      onclick="closeMobileMenu()"
-    >
-      Galería
-    </a>
 
   </div>
 
 
+  <div class="nav-links">
 
-  <!-- ==============================
-       PORTADA
-  ============================== -->
+    <a href="#inicio">Inicio</a>
+    <a href="#direccion">Dirección</a>
+    <a href="#casas">Casas</a>
+    <a href="#profesores">Profesores</a>
+    <a href="#lucas">Lucas Nott</a>
+    <a href="#historia">Hogwarts</a>
+    <a href="#momentos">Momentos</a>
+    <a href="#honor">Honor</a>
+    <a href="#premiaciones">Premiaciones</a>
+    <a href="#galeria">Galería</a>
+
+  </div>
 
 
-  <header
-    class="hero"
-    id="inicio"
+  <button
+    class="menu-button"
+    onclick="toggleMenu()"
+    type="button"
   >
-
-
-    <div class="hero-copy">
-
-
-      <div class="eyebrow">
-        Anuario Escolar
-      </div>
-
-
-      <h1>
-        HOGWARTS
-      </h1>
-
-
-      <div class="year">
-        2026 – 2027
-      </div>
-
-
-      <div class="flourish">
-        ✦ ─ ✧ ─ ✦
-      </div>
-
-
-      <div class="hero-quote">
-
-        Memorias que ni Obliviate podrá borrar.
-
-      </div>
-
-
-
-      <div class="memorial-dedication">
-
-
-        <span class="memorial-label">
-          En honor a
-        </span>
-
-
-        <strong class="memorial-name">
-          Lucas Nott
-        </strong>
-
-
-        <span class="memorial-info">
-
-          Alumno de Ravenclaw
-          ·
-          Prefecto
-          ·
-          Capitán de Quidditch
-
-        </span>
-
-
-        <span class="memorial-founders">
-
-          Cofundador del Anuario Hogwarts
-          junto a Layla Nott
-
-        </span>
-
-
-      </div>
-
-
-    </div>
-
-
-
-    <div class="castle">
-
-      <img
-        src="assets/5DD6ACDF-FCD2-4D23-98D8-FF9F03BC04AA.png"
-        alt="Castillo de Hogwarts"
-        class="castle-image"
-      >
-
-    </div>
-
-
-  </header>
-
-
-
-  <!-- ==============================
-       DIRECCIÓN
-  ============================== -->
-
-
-  <section
-    class="direction"
-    id="direccion"
-  >
-
-
-    <div class="section-title">
-
-      <h2>
-        Dirección de Hogwarts
-      </h2>
-
-    </div>
-
-
-    <p class="section-subtitle">
-
-      Quienes estuvieron al frente de Hogwarts
-      durante el curso 2026–2027.
-
-    </p>
-
-
-
-    <div class="direction-grid">
-
-
-
-      <!-- DIRECTOR -->
-
-
-      <article
-        class="direction-card"
-        onclick="openMessage(
-          'Nombre del Director',
-          'Director de Hogwarts',
-          'Aquí irá el mensaje del Director para los estudiantes del curso 2026–2027.'
-        )"
-      >
-
-
-        <div class="direction-photo">
-
-          Foto del Director
-
-        </div>
-
-
-        <span class="direction-role">
-          Director
-        </span>
-
-
-        <h3>
-          Nombre del Director
-        </h3>
-
-
-        <p>
-          Director de Hogwarts
-        </p>
-
-
-        <span class="click-hint">
-          Tocar para leer mensaje
-        </span>
-
-
-      </article>
-
-
-
-      <!-- SUBDIRECTORA -->
-
-
-      <article
-        class="direction-card"
-        onclick="openMessage(
-          'Nombre de la Subdirectora',
-          'Subdirectora de Hogwarts',
-          'Aquí irá el mensaje de la Subdirectora para los estudiantes del curso 2026–2027.'
-        )"
-      >
-
-
-        <div class="direction-photo">
-
-          Foto de la Subdirectora
-
-        </div>
-
-
-        <span class="direction-role">
-          Subdirectora
-        </span>
-
-
-        <h3>
-          Nombre de la Subdirectora
-        </h3>
-
-
-        <p>
-          Subdirectora de Hogwarts
-        </p>
-
-
-        <span class="click-hint">
-          Tocar para leer mensaje
-        </span>
-
-
-      </article>
-
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       CASAS
-  ============================== -->
-
-
-  <section
-    class="houses"
-    id="casas"
-  >
-
-
-    <div class="section-title">
-
-      <h2>
-        Las Cuatro Casas
-      </h2>
-
-    </div>
-
-
-    <p class="section-subtitle">
-
-      Cuatro casas, cuatro legados y generaciones de estudiantes
-      que dejaron su propia marca en Hogwarts.
-
-    </p>
-
-
-
-    <div class="houses-grid">
-
-
-
-      <!-- GRYFFINDOR -->
-
-
-      <article class="house-card gryffindor">
-
-
-        <h3>
-          Gryffindor
-        </h3>
-
-
-        <div class="house-symbol">
-
-          <img
-            src="assets/IMG_5340.jpeg"
-            alt="Gryffindor"
-          >
-
-        </div>
-
-
-        <p>
-          Valor, determinación y coraje
-        </p>
-
-
-        <a
-          href="gryffindor.html"
-          class="btn"
-        >
-          Explorar
-        </a>
-
-
-      </article>
-
-
-
-      <!-- SLYTHERIN -->
-
-
-      <article class="house-card slytherin">
-
-
-        <h3>
-          Slytherin
-        </h3>
-
-
-        <div class="house-symbol">
-
-          <img
-            src="assets/IMG_5339.jpeg"
-            alt="Slytherin"
-          >
-
-        </div>
-
-
-        <p>
-          Ambición, astucia y liderazgo
-        </p>
-
-
-        <a
-          href="slytherin.html"
-          class="btn"
-        >
-          Explorar
-        </a>
-
-
-      </article>
-
-
-
-      <!-- HUFFLEPUFF -->
-
-
-      <article class="house-card hufflepuff">
-
-
-        <h3>
-          Hufflepuff
-        </h3>
-
-
-        <div class="house-symbol">
-
-          <img
-            src="assets/IMG_5350.jpeg"
-            alt="Hufflepuff"
-          >
-
-        </div>
-
-
-        <p>
-          Lealtad, paciencia y dedicación
-        </p>
-
-
-        <a
-          href="hufflepuff.html"
-          class="btn"
-        >
-          Explorar
-        </a>
-
-
-      </article>
-
-
-
-      <!-- RAVENCLAW -->
-
-
-      <article class="house-card ravenclaw">
-
-
-        <h3>
-          Ravenclaw
-        </h3>
-
-
-        <div class="house-symbol">
-
-          <img
-            src="assets/IMG_5341.jpeg"
-            alt="Ravenclaw"
-          >
-
-        </div>
-
-
-        <p>
-          Ingenio, sabiduría y creatividad
-        </p>
-
-
-        <a
-          href="ravenclaw.html"
-          class="btn"
-        >
-          Explorar
-        </a>
-
-
-      </article>
-
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       PROFESORES
-  ============================== -->
-
-
-  <section
-    class="professors-section"
-    id="profesores"
-  >
-
-
-    <div class="section-title">
-
-      <h2>
-        Profesores
-      </h2>
-
-    </div>
-
-
-    <p class="section-subtitle">
-
-      Conoce a nuestros profesores.
-
-    </p>
-
-
-    <a
-      href="profesores.html"
-      class="btn"
-    >
-      Ver Profesores
-    </a>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       LUCAS NOTT
-  ============================== -->
-
-
-  <section
-    class="lucas-section"
-    id="lucas"
-  >
-
-
-    <div class="lucas-wrap">
-
-
-
-      <div class="lucas-photo-frame">
-
-
-        <div class="lucas-photo">
-
-
-          <img
-            src="assets/lucas-nott-memorial.png"
-            alt="Lucas Nott"
-          >
-
-
-        </div>
-
-
-      </div>
-
-
-
-      <div class="lucas-copy">
-
-
-        <span class="lucas-small-title">
-          En memoria de
-        </span>
-
-
-        <h2>
-          Lucas Nott
-        </h2>
-
-
-        <div class="lucas-roles">
-
-          Ravenclaw
-          ·
-          Prefecto
-          ·
-          Capitán de Quidditch
-          ·
-          Cofundador del Anuario
-
-        </div>
-
-
-        <div class="lucas-divider"></div>
-
-
-        <p>
-
-          Algunas personas pasan por Hogwarts y dejan recuerdos.
-          Otras terminan formando parte de la historia de sus pasillos.
-
-        </p>
-
-
-        <p>
-
-          Lucas Nott fue alumno de Ravenclaw, prefecto,
-          capitán del equipo de Quidditch y una de las personas
-          que, junto a Layla Nott, ayudó a dar origen a este anuario.
-
-        </p>
-
-
-        <p>
-
-          Este espacio conserva parte de su historia:
-          sus años en Hogwarts, el Quidditch, sus amigos,
-          su familia y los momentos que quienes lo conocieron
-          decidieron guardar para siempre.
-
-        </p>
-
-
-        <div class="lucas-quote">
-
-          Hay personas cuya ausencia cambia un lugar,
-          pero cuyos recuerdos hacen imposible que desaparezcan del todo.
-
-        </div>
-
-
-        <a
-          href="lucas-nott.html"
-          class="btn lucas-btn"
-        >
-          Conocer su historia
-        </a>
-
-
-      </div>
-
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       HOGWARTS
-  ============================== -->
-
-
-  <section
-    class="history-section"
-    id="historia"
-  >
-
-
-    <div class="section-title">
-
-      <h2>
-        Hogwarts
-      </h2>
-
-    </div>
-
-
-
-    <div class="history-box">
-
-
-      <div class="history-symbol">
-        ✦
-      </div>
-
-
-      <h3>
-        Hogwarts y sus Fundadores
-      </h3>
-
-
-      <p>
-
-        El Colegio Hogwarts de Magia y Hechicería
-        fue fundado hace siglos como un lugar donde jóvenes
-        brujas y magos pudieran aprender, desarrollar sus habilidades
-        y encontrar un hogar dentro de la comunidad mágica.
-
-      </p>
-
-
-      <p>
-
-        Entre sus torres, pasillos, aulas y terrenos han crecido
-        generaciones de estudiantes. Cada curso añade nuevas historias
-        a un castillo cuya memoria parece ser tan extensa como sus secretos.
-
-      </p>
-
-
-      <div class="founders">
-
-        Godric Gryffindor
-        ·
-        Salazar Slytherin
-        ·
-        Helga Hufflepuff
-        ·
-        Rowena Ravenclaw
-
-      </div>
-
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       MOMENTOS IMPORTANTES
-  ============================== -->
-
-
-  <section
-    class="moments"
-    id="momentos"
-  >
-
-
-    <div class="section-title">
-
-      <h2>
-        Momentos Importantes
-      </h2>
-
-    </div>
-
-
-    <p class="section-subtitle">
-
-      Partidos, entrenamientos, presentaciones,
-      actividades, excursiones y celebraciones
-      que marcaron el curso 2026–2027.
-
-      Toca cualquier sección para ver su álbum completo.
-
-    </p>
-
-
-
-    <div class="moments-grid">
-
-
-
-      <!-- QUIDDITCH -->
-
-
-      <a
-        href="quidditch.html"
-        class="moment-card"
-      >
-
-
-        <div class="moment-photo">
-
-          Foto de Quidditch
-
-          <div class="moment-overlay">
-            Abrir temporada
-          </div>
-
-        </div>
-
-
-        <h3>
-          Quidditch
-        </h3>
-
-
-        <p>
-
-          Partidos, entrenamientos, gradas,
-          resultados y recuerdos de la temporada.
-
-        </p>
-
-
-        <span class="moment-arrow">
-          ›
-        </span>
-
-
-      </a>
-
-
-
-      <!-- PORRISTAS -->
-
-
-      <a
-        href="porristas.html"
-        class="moment-card"
-      >
-
-
-        <div class="moment-photo">
-
-          Foto de Porristas
-
-          <div class="moment-overlay">
-            Abrir álbum
-          </div>
-
-        </div>
-
-
-        <h3>
-          Porristas
-        </h3>
-
-
-        <p>
-
-          Presentaciones, prácticas,
-          partidos y momentos detrás de escena.
-
-        </p>
-
-
-        <span class="moment-arrow">
-          ›
-        </span>
-
-
-      </a>
-
-
-
-      <!-- CLUB DE ARTE -->
-
-
-      <a
-        href="club-arte.html"
-        class="moment-card"
-      >
-
-
-        <div class="moment-photo">
-
-          Foto del Club de Arte
-
-          <div class="moment-overlay">
-            Abrir álbum
-          </div>
-
-        </div>
-
-
-        <h3>
-          Club de Arte
-        </h3>
-
-
-        <p>
-
-          Creaciones, reuniones,
-          proyectos y recuerdos del club.
-
-        </p>
-
-
-        <span class="moment-arrow">
-          ›
-        </span>
-
-
-      </a>
-
-
-
-      <!-- ACTIVIDADES -->
-
-
-      <a
-        href="actividades.html"
-        class="moment-card"
-      >
-
-
-        <div class="moment-photo">
-
-          Foto de Actividades
-
-          <div class="moment-overlay">
-            Abrir álbum
-          </div>
-
-        </div>
-
-
-        <h3>
-          Actividades
-        </h3>
-
-
-        <p>
-
-          Actividades escolares,
-          competencias y momentos especiales.
-
-        </p>
-
-
-        <span class="moment-arrow">
-          ›
-        </span>
-
-
-      </a>
-
-
-
-      <!-- EXCURSIONES -->
-
-
-      <a
-        href="excursiones.html"
-        class="moment-card"
-      >
-
-
-        <div class="moment-photo">
-
-          Foto de Excursiones
-
-          <div class="moment-overlay">
-            Abrir álbum
-          </div>
-
-        </div>
-
-
-        <h3>
-          Excursiones
-        </h3>
-
-
-        <p>
-
-          Visitas, viajes,
-          salidas y aventuras fuera de las aulas.
-
-        </p>
-
-
-        <span class="moment-arrow">
-          ›
-        </span>
-
-
-      </a>
-
-
-
-      <!-- EVENTOS ESPECIALES -->
-
-
-      <a
-        href="eventos.html"
-        class="moment-card"
-      >
-
-
-        <div class="moment-photo">
-
-          Foto de Eventos
-
-          <div class="moment-overlay">
-            Abrir álbum
-          </div>
-
-        </div>
-
-
-        <h3>
-          Eventos Especiales
-        </h3>
-
-
-        <p>
-
-          Bailes, ceremonias,
-          celebraciones y acontecimientos del año.
-
-        </p>
-
-
-        <span class="moment-arrow">
-          ›
-        </span>
-
-
-      </a>
-
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       CUADRO DE HONOR
-  ============================== -->
-
-
-  <section
-    class="honor-section"
-    id="honor"
-  >
-
-
-    <div class="section-title">
-
-      <h2>
-        Cuadro de Honor
-      </h2>
-
-    </div>
-
-
-    <p class="section-subtitle">
-
-      Un estudiante destacado de cada casa
-      durante el curso 2026–2027.
-
-    </p>
-
-
-
-    <div class="honor-grid">
-
-
-
-      <article
-        class="honor-card honor-gryffindor"
-      >
-
-        <span class="honor-house">
-          Gryffindor
-        </span>
-
-        <h3>
-          Estudiante Gryffindor
-        </h3>
-
-        <p>
-          Estudiante destacado del año
-        </p>
-
-      </article>
-
-
-
-      <article
-        class="honor-card honor-slytherin"
-      >
-
-        <span class="honor-house">
-          Slytherin
-        </span>
-
-        <h3>
-          Estudiante Slytherin
-        </h3>
-
-        <p>
-          Estudiante destacado del año
-        </p>
-
-      </article>
-
-
-
-      <article
-        class="honor-card honor-hufflepuff"
-      >
-
-        <span class="honor-house">
-          Hufflepuff
-        </span>
-
-        <h3>
-          Estudiante Hufflepuff
-        </h3>
-
-        <p>
-          Estudiante destacado del año
-        </p>
-
-      </article>
-
-
-
-      <article
-        class="honor-card honor-ravenclaw"
-      >
-
-        <span class="honor-house">
-          Ravenclaw
-        </span>
-
-        <h3>
-          Estudiante Ravenclaw
-        </h3>
-
-        <p>
-          Estudiante destacado del año
-        </p>
-
-      </article>
-
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       PREMIACIONES DEL AÑO
-  ============================== -->
-
-
-  <section
-    class="awards-section"
-    id="premiaciones"
-  >
-
-
-    <div class="section-title">
-
-      <h2>
-        Premiaciones del Año
-      </h2>
-
-    </div>
-
-
-    <p class="section-subtitle">
-
-      Los títulos que Hogwarts decidió entregar
-      porque claramente siete años de magia no eran suficientes
-      sin convertir también la reputación de los estudiantes en competencia.
-
-      Toca cada premio para descubrir a sus ganadores.
-
-    </p>
-
-
-
-    <div class="awards-list">
-
-
-
-      <!-- 01 -->
-
-
-      <button
-        class="award-button"
-        type="button"
-        onclick="openAward(
-          'Mejor Vestido/a',
-          'Estilo, presencia y suficiente dedicación como para no aparecer en el Gran Comedor vestido de cualquier manera.'
-        )"
-      >
-
-        <span class="award-number">
-          01
-        </span>
-
-        <span class="award-name">
-          Mejor Vestido/a
-        </span>
-
-        <span class="award-arrow">
-          ›
-        </span>
-
-      </button>
-
-
-
-      <!-- 02 -->
-
-
-      <button
-        class="award-button"
-        type="button"
-        onclick="openAward(
-          'Más Divertido/a',
-          'Porque incluso Hogwarts necesita a alguien capaz de hacer reír al resto cuando todo parece demasiado serio.'
-        )"
-      >
-
-        <span class="award-number">
-          02
-        </span>
-
-        <span class="award-name">
-          Más Divertido/a
-        </span>
-
-        <span class="award-arrow">
-          ›
-        </span>
-
-      </button>
-
-
-
-      <!-- 03 -->
-
-
-      <button
-        class="award-button"
-        type="button"
-        onclick="openAward(
-          'Dúo Inseparable',
-          'Dos estudiantes cuya existencia individual aparentemente dejó de ser una opción durante este curso.'
-        )"
-      >
-
-        <span class="award-number">
-          03
-        </span>
-
-        <span class="award-name">
-          Dúo Inseparable
-        </span>
-
-        <span class="award-arrow">
-          ›
-        </span>
-
-      </button>
-
-
-
-      <!-- 04 -->
-
-
-      <button
-        class="award-button"
-        type="button"
-        onclick="openAward(
-          'Mejor Jugador/a de Quidditch',
-          'Reconocimiento a quienes dejaron una impresión especial durante la temporada de Quidditch.'
-        )"
-      >
-
-        <span class="award-number">
-          04
-        </span>
-
-        <span class="award-name">
-          Mejor Jugador/a de Quidditch
-        </span>
-
-        <span class="award-arrow">
-          ›
-        </span>
-
-      </button>
-
-
-
-      <!-- 05 -->
-
-
-      <button
-        class="award-button"
-        type="button"
-        onclick="openAward(
-          'Mente Más Brillante',
-          'Para quienes parecían saber la respuesta incluso antes de que el profesor terminara de formular la pregunta.'
-        )"
-      >
-
-        <span class="award-number">
-          05
-        </span>
-
-        <span class="award-name">
-          Mente Más Brillante
-        </span>
-
-        <span class="award-arrow">
-          ›
-        </span>
-
-      </button>
-
-
-
-      <!-- 06 -->
-
-
-      <button
-        class="award-button"
-        type="button"
-        onclick="openAward(
-          'Espíritu de Hogwarts',
-          'Para quienes representaron especialmente la amistad, participación y vida de la escuela durante este curso.'
-        )"
-      >
-
-        <span class="award-number">
-          06
-        </span>
-
-        <span class="award-name">
-          Espíritu de Hogwarts
-        </span>
-
-        <span class="award-arrow">
-          ›
-        </span>
-
-      </button>
-
-
-
-      <!-- 07 -->
-
-
-      <button
-        class="award-button"
-        type="button"
-        onclick="openAward(
-          'Más Migajero/a',
-          'Porque conformarse con migajas también terminó siendo, inexplicablemente, una disciplina competitiva en Hogwarts.'
-        )"
-      >
-
-        <span class="award-number">
-          07
-        </span>
-
-        <span class="award-name">
-          Más Migajero/a
-        </span>
-
-        <span class="award-arrow">
-          ›
-        </span>
-
-      </button>
-
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       GALERÍA
-  ============================== -->
-
-
-  <section
-    class="gallery-section"
-    id="galeria"
-  >
-
-
-    <div class="section-title">
-
-      <h2>
-        Galería
-      </h2>
-
-    </div>
-
-
-    <p class="section-subtitle">
-
-      Fotografías espontáneas, recuerdos cotidianos
-      y pequeños momentos que también formaron parte del año.
-
-    </p>
-
-
-
-    <div class="gallery-preview">
-
-
-      <div class="gallery-photo">
-        Foto
-      </div>
-
-
-      <div class="gallery-photo">
-        Foto
-      </div>
-
-
-      <div class="gallery-photo">
-        Foto
-      </div>
-
-
-      <div class="gallery-photo">
-        Foto
-      </div>
-
-
-    </div>
-
-
-
-    <div class="gallery-action">
-
-      <a
-        href="galeria.html"
-        class="btn"
-      >
-        Ver Galería Completa
-      </a>
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- ==============================
-       FOOTER
-  ============================== -->
-
-
-  <footer>
-
-
-    Anuario Escolar de Hogwarts
-
-
-    <br><br>
-
-
-    <span class="silver">
-      Curso 2026 – 2027
-    </span>
-
-
-    <span class="footer-memorial">
-
-      En memoria y honor de Lucas Nott
-      ·
-      Prefecto
-      ·
-      Capitán de Quidditch
-      ·
-      Cofundador del Anuario Hogwarts
-
-    </span>
-
-
-  </footer>
-
+    Menú
+  </button>
+
+</nav>
+
+
+<div
+  class="mobile-menu"
+  id="mobileMenu"
+>
+
+  <a href="#inicio" onclick="closeMobileMenu()">Inicio</a>
+  <a href="#direccion" onclick="closeMobileMenu()">Dirección</a>
+  <a href="#casas" onclick="closeMobileMenu()">Casas</a>
+  <a href="#profesores" onclick="closeMobileMenu()">Profesores</a>
+  <a href="#lucas" onclick="closeMobileMenu()">Lucas Nott</a>
+  <a href="#historia" onclick="closeMobileMenu()">Hogwarts</a>
+  <a href="#momentos" onclick="closeMobileMenu()">Momentos</a>
+  <a href="#honor" onclick="closeMobileMenu()">Cuadro de Honor</a>
+  <a href="#premiaciones" onclick="closeMobileMenu()">Premiaciones</a>
+  <a href="#galeria" onclick="closeMobileMenu()">Galería</a>
 
 </div>
 
+
+<!-- ==============================
+     PORTADA
+============================== -->
+
+<header
+  class="hero"
+  id="inicio"
+>
+
+  <div class="hero-copy">
+
+    <div class="eyebrow">
+      Anuario Escolar
+    </div>
+
+
+    <h1>
+      HOGWARTS
+    </h1>
+
+
+    <div class="year">
+      2026 – 2027
+    </div>
+
+
+    <div class="flourish">
+      ✦ ─ ✧ ─ ✦
+    </div>
+
+
+    <div class="hero-quote">
+      Memorias que ni Obliviate podrá borrar.
+    </div>
+
+
+    <div class="memorial-dedication">
+
+      <span class="memorial-label">
+        En honor a
+      </span>
+
+
+      <strong class="memorial-name">
+        Lucas Nott
+      </strong>
+
+
+      <span class="memorial-info">
+
+        Alumno de Ravenclaw
+        ·
+        Prefecto
+        ·
+        Capitán de Quidditch
+
+      </span>
+
+
+      <span class="memorial-founders">
+
+        Cofundador del Anuario Hogwarts
+        junto a Layla Nott
+
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div class="castle">
+
+    <img
+      src="assets/5DD6ACDF-FCD2-4D23-98D8-FF9F03BC04AA.png"
+      alt="Castillo de Hogwarts"
+      class="castle-image"
+    >
+
+  </div>
+
+</header>
+
+
+<!-- ==============================
+     DIRECCIÓN
+============================== -->
+
+<section
+  class="direction"
+  id="direccion"
+>
+
+  <div class="section-title">
+
+    <h2>
+      Dirección de Hogwarts
+    </h2>
+
+  </div>
+
+
+  <p class="section-subtitle">
+
+    Quienes estuvieron al frente de Hogwarts
+    durante el curso 2026–2027.
+
+  </p>
+
+
+  <div class="direction-grid">
+
+
+    <article
+      class="direction-card"
+      onclick="openMessage(
+        'Nombre del Director',
+        'Director de Hogwarts',
+        'Aquí irá el mensaje del Director para los estudiantes del curso 2026–2027.'
+      )"
+    >
+
+      <div class="direction-photo">
+        Foto del Director
+      </div>
+
+      <span class="direction-role">
+        Director
+      </span>
+
+      <h3>
+        Nombre del Director
+      </h3>
+
+      <p>
+        Director de Hogwarts
+      </p>
+
+      <span class="click-hint">
+        Tocar para leer mensaje
+      </span>
+
+    </article>
+
+
+    <article
+      class="direction-card"
+      onclick="openMessage(
+        'Nombre de la Subdirectora',
+        'Subdirectora de Hogwarts',
+        'Aquí irá el mensaje de la Subdirectora para los estudiantes del curso 2026–2027.'
+      )"
+    >
+
+      <div class="direction-photo">
+        Foto de la Subdirectora
+      </div>
+
+      <span class="direction-role">
+        Subdirectora
+      </span>
+
+      <h3>
+        Nombre de la Subdirectora
+      </h3>
+
+      <p>
+        Subdirectora de Hogwarts
+      </p>
+
+      <span class="click-hint">
+        Tocar para leer mensaje
+      </span>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==============================
+     CASAS
+============================== -->
+
+<section
+  class="houses"
+  id="casas"
+>
+
+  <div class="section-title">
+
+    <h2>
+      Las Cuatro Casas
+    </h2>
+
+  </div>
+
+
+  <p class="section-subtitle">
+
+    Cuatro casas, cuatro legados y generaciones de estudiantes
+    que dejaron su propia marca en Hogwarts.
+
+  </p>
+
+
+  <div class="houses-grid">
+
+
+    <!-- GRYFFINDOR -->
+
+    <article class="house-card gryffindor">
+
+      <h3>
+        Gryffindor
+      </h3>
+
+      <div class="house-symbol">
+
+        <img
+          src="assets/IMG_5340.jpeg"
+          alt="Gryffindor"
+        >
+
+      </div>
+
+      <p>
+        Valor, determinación y coraje
+      </p>
+
+      <a
+        href="gryffindor.html"
+        class="btn"
+      >
+        Explorar
+      </a>
+
+    </article>
+
+
+    <!-- SLYTHERIN -->
+
+    <article class="house-card slytherin">
+
+      <h3>
+        Slytherin
+      </h3>
+
+      <div class="house-symbol">
+
+        <img
+          src="assets/IMG_5339.jpeg"
+          alt="Slytherin"
+        >
+
+      </div>
+
+      <p>
+        Ambición, astucia y liderazgo
+      </p>
+
+      <a
+        href="slytherin.html"
+        class="btn"
+      >
+        Explorar
+      </a>
+
+    </article>
+
+
+    <!-- HUFFLEPUFF -->
+
+    <article class="house-card hufflepuff">
+
+      <h3>
+        Hufflepuff
+      </h3>
+
+      <div class="house-symbol">
+
+        <img
+          src="assets/IMG_5350.jpeg"
+          alt="Hufflepuff"
+        >
+
+      </div>
+
+      <p>
+        Lealtad, paciencia y dedicación
+      </p>
+
+      <a
+        href="hufflepuff.html"
+        class="btn"
+      >
+        Explorar
+      </a>
+
+    </article>
+
+
+    <!-- RAVENCLAW -->
+
+    <article class="house-card ravenclaw">
+
+      <h3>
+        Ravenclaw
+      </h3>
+
+      <div class="house-symbol">
+
+        <img
+          src="assets/IMG_5341.jpeg"
+          alt="Ravenclaw"
+        >
+
+      </div>
+
+      <p>
+        Ingenio, sabiduría y creatividad
+      </p>
+
+      <a
+        href="ravenclaw.html"
+        class="btn"
+      >
+        Explorar
+      </a>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==============================
+     PROFESORES
+============================== -->
+
+<section
+  class="professors-section"
+  id="profesores"
+>
+
+  <div class="section-title">
+
+    <h2>
+      Profesores
+    </h2>
+
+  </div>
+
+
+  <p class="section-subtitle">
+    Conoce a nuestros profesores.
+  </p>
+
+
+  <a
+    href="profesores.html"
+    class="btn"
+  >
+    Ver Profesores
+  </a>
+
+</section>
+
+
+<!-- ==============================
+     LUCAS NOTT
+============================== -->
+
+<section
+  class="lucas-section"
+  id="lucas"
+>
+
+  <div class="lucas-wrap">
+
+
+    <div class="lucas-photo-frame">
+
+      <div class="lucas-photo">
+
+        <img
+          src="assets/lucas-nott-memorial.png"
+          alt="Lucas Nott"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="lucas-copy">
+
+      <span class="lucas-small-title">
+        En memoria de
+      </span>
+
+
+      <h2>
+        Lucas Nott
+      </h2>
+
+
+      <div class="lucas-roles">
+
+        Ravenclaw
+        ·
+        Prefecto
+        ·
+        Capitán de Quidditch
+        ·
+        Cofundador del Anuario
+
+      </div>
+
+
+      <div class="lucas-divider"></div>
+
+
+      <p>
+
+        Algunas personas pasan por Hogwarts y dejan recuerdos.
+        Otras terminan formando parte de la historia de sus pasillos.
+
+      </p>
+
+
+      <p>
+
+        Lucas Nott fue alumno de Ravenclaw, prefecto,
+        capitán del equipo de Quidditch y una de las personas
+        que, junto a Layla Nott, ayudó a dar origen a este anuario.
+
+      </p>
+
+
+      <p>
+
+        Este espacio conserva parte de su historia:
+        sus años en Hogwarts, el Quidditch, sus amigos,
+        su familia y los momentos que quienes lo conocieron
+        decidieron guardar para siempre.
+
+      </p>
+
+
+      <div class="lucas-quote">
+
+        Hay personas cuya ausencia cambia un lugar,
+        pero cuyos recuerdos hacen imposible que desaparezcan del todo.
+
+      </div>
+
+
+      <a
+        href="lucas-nott.html"
+        class="btn lucas-btn"
+      >
+        Conocer su historia
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==============================
+     HOGWARTS
+============================== -->
+
+<section
+  class="history-section"
+  id="historia"
+>
+
+  <div class="section-title">
+
+    <h2>
+      Hogwarts
+    </h2>
+
+  </div>
+
+
+  <div class="history-box">
+
+    <div class="history-symbol">
+      ✦
+    </div>
+
+
+    <h3>
+      Hogwarts y sus Fundadores
+    </h3>
+
+
+    <p>
+
+      El Colegio Hogwarts de Magia y Hechicería
+      fue fundado hace siglos como un lugar donde jóvenes
+      brujas y magos pudieran aprender, desarrollar sus habilidades
+      y encontrar un hogar dentro de la comunidad mágica.
+
+    </p>
+
+
+    <p>
+
+      Entre sus torres, pasillos, aulas y terrenos han crecido
+      generaciones de estudiantes. Cada curso añade nuevas historias
+      a un castillo cuya memoria parece ser tan extensa como sus secretos.
+
+    </p>
+
+
+    <div class="founders">
+
+      Godric Gryffindor
+      ·
+      Salazar Slytherin
+      ·
+      Helga Hufflepuff
+      ·
+      Rowena Ravenclaw
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==============================
+     MOMENTOS IMPORTANTES
+============================== -->
+
+<section
+  class="moments"
+  id="momentos"
+>
+
+  <div class="section-title">
+
+    <h2>
+      Momentos Importantes
+    </h2>
+
+  </div>
+
+
+  <p class="section-subtitle">
+
+    Partidos, entrenamientos, presentaciones,
+    actividades, excursiones y celebraciones
+    que marcaron el curso 2026–2027.
+
+    Toca cualquier sección para ver su álbum completo.
+
+  </p>
+
+
+  <div class="moments-grid">
+
+
+    <!-- QUIDDITCH -->
+
+    <a
+      href="quidditch.html"
+      class="moment-card"
+    >
+
+      <div class="moment-photo">
+
+        Foto de Quidditch
+
+        <div class="moment-overlay">
+          Abrir temporada
+        </div>
+
+      </div>
+
+      <h3>
+        Quidditch
+      </h3>
+
+      <p>
+
+        Partidos, entrenamientos, gradas,
+        resultados y recuerdos de la temporada.
+
+      </p>
+
+      <span class="moment-arrow">
+        ›
+      </span>
+
+    </a>
+
+
+    <!-- PORRISTAS -->
+
+    <a
+      href="porristas.html"
+      class="moment-card"
+    >
+
+      <div class="moment-photo">
+
+        Foto de Porristas
+
+        <div class="moment-overlay">
+          Abrir álbum
+        </div>
+
+      </div>
+
+      <h3>
+        Porristas
+      </h3>
+
+      <p>
+
+        Presentaciones, prácticas,
+        partidos y momentos detrás de escena.
+
+      </p>
+
+      <span class="moment-arrow">
+        ›
+      </span>
+
+    </a>
+
+
+    <!-- CLUB DE ARTE -->
+
+    <a
+      href="club-arte.html"
+      class="moment-card"
+    >
+
+      <div class="moment-photo">
+
+        Foto del Club de Arte
+
+        <div class="moment-overlay">
+          Abrir álbum
+        </div>
+
+      </div>
+
+      <h3>
+        Club de Arte
+      </h3>
+
+      <p>
+
+        Creaciones, reuniones,
+        proyectos y recuerdos del club.
+
+      </p>
+
+      <span class="moment-arrow">
+        ›
+      </span>
+
+    </a>
+
+
+    <!-- ACTIVIDADES -->
+
+    <a
+      href="actividades.html"
+      class="moment-card"
+    >
+
+      <div class="moment-photo">
+
+        Foto de Actividades
+
+        <div class="moment-overlay">
+          Abrir álbum
+        </div>
+
+      </div>
+
+      <h3>
+        Actividades
+      </h3>
+
+      <p>
+
+        Actividades escolares,
+        competencias y momentos especiales.
+
+      </p>
+
+      <span class="moment-arrow">
+        ›
+      </span>
+
+    </a>
+
+
+    <!-- EXCURSIONES -->
+
+    <a
+      href="excursiones.html"
+      class="moment-card"
+    >
+
+      <div class="moment-photo">
+
+        Foto de Excursiones
+
+        <div class="moment-overlay">
+          Abrir álbum
+        </div>
+
+      </div>
+
+      <h3>
+        Excursiones
+      </h3>
+
+      <p>
+
+        Visitas, viajes,
+        salidas y aventuras fuera de las aulas.
+
+      </p>
+
+      <span class="moment-arrow">
+        ›
+      </span>
+
+    </a>
+
+
+    <!-- EVENTOS -->
+
+    <a
+      href="eventos.html"
+      class="moment-card"
+    >
+
+      <div class="moment-photo">
+
+        Foto de Eventos
+
+        <div class="moment-overlay">
+          Abrir álbum
+        </div>
+
+      </div>
+
+      <h3>
+        Eventos Especiales
+      </h3>
+
+      <p>
+
+        Bailes, ceremonias,
+        celebraciones y acontecimientos del año.
+
+      </p>
+
+      <span class="moment-arrow">
+        ›
+      </span>
+
+    </a>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==============================
+     CUADRO DE HONOR
+============================== -->
+
+<section
+  class="honor-section"
+  id="honor"
+>
+
+  <div class="section-title">
+
+    <h2>
+      Cuadro de Honor
+    </h2>
+
+  </div>
+
+
+  <p class="section-subtitle">
+
+    Un estudiante destacado de cada casa
+    durante el curso 2026–2027.
+
+  </p>
+
+
+  <div class="honor-grid">
+
+
+    <article class="honor-card honor-gryffindor">
+
+      <span class="honor-house">
+        Gryffindor
+      </span>
+
+      <h3>
+        Estudiante Gryffindor
+      </h3>
+
+      <p>
+        Estudiante destacado del año
+      </p>
+
+    </article>
+
+
+    <article class="honor-card honor-slytherin">
+
+      <span class="honor-house">
+        Slytherin
+      </span>
+
+      <h3>
+        Estudiante Slytherin
+      </h3>
+
+      <p>
+        Estudiante destacado del año
+      </p>
+
+    </article>
+
+
+    <article class="honor-card honor-hufflepuff">
+
+      <span class="honor-house">
+        Hufflepuff
+      </span>
+
+      <h3>
+        Estudiante Hufflepuff
+      </h3>
+
+      <p>
+        Estudiante destacado del año
+      </p>
+
+    </article>
+
+
+    <article class="honor-card honor-ravenclaw">
+
+      <span class="honor-house">
+        Ravenclaw
+      </span>
+
+      <h3>
+        Estudiante Ravenclaw
+      </h3>
+
+      <p>
+        Estudiante destacado del año
+      </p>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==========================================
+     PREMIACIONES DEL AÑO
+========================================== -->
+
+<section
+  class="awards-section"
+  id="premiaciones"
+>
+
+  <div class="section-title">
+
+    <h2>
+      Premiaciones del Año
+    </h2>
+
+  </div>
+
+
+  <p class="section-subtitle">
+
+    Los títulos que Hogwarts decidió entregar
+    porque claramente siete años de magia no eran suficientes
+    sin convertir también la reputación de los estudiantes en competencia.
+
+    Toca cada premio para descubrir a los ganadores
+    de Gryffindor, Slytherin, Hufflepuff y Ravenclaw.
+
+  </p>
+
+
+  <div class="awards-list">
+
+
+    <button
+      class="award-button"
+      type="button"
+      onclick="openAward('bestDressed')"
+    >
+
+      <span class="award-number">01</span>
+
+      <span class="award-name">
+        Mejor Vestido/a
+      </span>
+
+      <span class="award-arrow">›</span>
+
+    </button>
+
+
+    <button
+      class="award-button"
+      type="button"
+      onclick="openAward('funniest')"
+    >
+
+      <span class="award-number">02</span>
+
+      <span class="award-name">
+        Más Divertido/a
+      </span>
+
+      <span class="award-arrow">›</span>
+
+    </button>
+
+
+    <button
+      class="award-button"
+      type="button"
+      onclick="openAward('duo')"
+    >
+
+      <span class="award-number">03</span>
+
+      <span class="award-name">
+        Dúo Inseparable
+      </span>
+
+      <span class="award-arrow">›</span>
+
+    </button>
+
+
+    <button
+      class="award-button"
+      type="button"
+      onclick="openAward('quidditch')"
+    >
+
+      <span class="award-number">04</span>
+
+      <span class="award-name">
+        Mejor Jugador/a de Quidditch
+      </span>
+
+      <span class="award-arrow">›</span>
+
+    </button>
+
+
+    <button
+      class="award-button"
+      type="button"
+      onclick="openAward('brightest')"
+    >
+
+      <span class="award-number">05</span>
+
+      <span class="award-name">
+        Mente Más Brillante
+      </span>
+
+      <span class="award-arrow">›</span>
+
+    </button>
+
+
+    <button
+      class="award-button"
+      type="button"
+      onclick="openAward('spirit')"
+    >
+
+      <span class="award-number">06</span>
+
+      <span class="award-name">
+        Espíritu de Hogwarts
+      </span>
+
+      <span class="award-arrow">›</span>
+
+    </button>
+
+
+    <button
+      class="award-button"
+      type="button"
+      onclick="openAward('migajero')"
+    >
+
+      <span class="award-number">07</span>
+
+      <span class="award-name">
+        Más Migajero/a
+      </span>
+
+      <span class="award-arrow">›</span>
+
+    </button>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==============================
+     GALERÍA
+============================== -->
+
+<section
+  class="gallery-section"
+  id="galeria"
+>
+
+  <div class="section-title">
+
+    <h2>
+      Galería
+    </h2>
+
+  </div>
+
+
+  <p class="section-subtitle">
+
+    Fotografías espontáneas, recuerdos cotidianos
+    y pequeños momentos que también formaron parte del año.
+
+  </p>
+
+
+  <div class="gallery-preview">
+
+    <div class="gallery-photo">
+      Foto
+    </div>
+
+    <div class="gallery-photo">
+      Foto
+    </div>
+
+    <div class="gallery-photo">
+      Foto
+    </div>
+
+    <div class="gallery-photo">
+      Foto
+    </div>
+
+  </div>
+
+
+  <div class="gallery-action">
+
+    <a
+      href="galeria.html"
+      class="btn"
+    >
+      Ver Galería Completa
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
+
+<footer>
+
+  Anuario Escolar de Hogwarts
+
+  <br><br>
+
+  <span class="silver">
+    Curso 2026 – 2027
+  </span>
+
+
+  <span class="footer-memorial">
+
+    En memoria y honor de Lucas Nott
+    ·
+    Prefecto
+    ·
+    Capitán de Quidditch
+    ·
+    Cofundador del Anuario Hogwarts
+
+  </span>
+
+</footer>
+
+
+</div>
 
 
 <!-- =================================
      MODAL DIRECCIÓN
 ================================= -->
 
-
 <div
   class="modal"
   id="messageModal"
 >
-
 
   <div
     class="modal-overlay"
@@ -4228,7 +3795,6 @@
 
 
   <div class="modal-card">
-
 
     <button
       class="modal-close"
@@ -4261,24 +3827,19 @@
       id="messageText"
     ></p>
 
-
   </div>
 
-
 </div>
-
 
 
 <!-- =================================
      MODAL PREMIACIONES
 ================================= -->
 
-
 <div
   class="modal"
   id="awardModal"
 >
-
 
   <div
     class="modal-overlay"
@@ -4287,7 +3848,6 @@
 
 
   <div class="modal-card">
-
 
     <button
       class="modal-close"
@@ -4309,9 +3869,7 @@
 
 
     <h2 id="awardTitle">
-
       Premio
-
     </h2>
 
 
@@ -4324,322 +3882,749 @@
     ></p>
 
 
-
     <!--
-      ESTOS SON LOS GANADORES TEMPORALES.
-
-      Más adelante cambiamos nombres y fotos.
-
-      Si un premio tiene un solo ganador,
-      simplemente eliminamos las otras tres tarjetas.
-
-      Si gana uno por casa, dejamos las cuatro.
+      AQUÍ SE GENERAN LOS CUATRO RENGLONES:
+      GRYFFINDOR
+      SLYTHERIN
+      HUFFLEPUFF
+      RAVENCLAW
     -->
 
-
-    <div class="award-winners">
-
-
-      <!-- GRYFFINDOR -->
-
-
-      <article class="winner-card">
-
-
-        <div class="winner-photo">
-
-          Foto
-
-        </div>
-
-
-        <span class="winner-house">
-          Gryffindor
-        </span>
-
-
-        <h3>
-          Ganador/a
-        </h3>
-
-
-        <p>
-          Ganador de Gryffindor
-        </p>
-
-
-      </article>
-
-
-
-      <!-- SLYTHERIN -->
-
-
-      <article class="winner-card">
-
-
-        <div class="winner-photo">
-
-          Foto
-
-        </div>
-
-
-        <span class="winner-house">
-          Slytherin
-        </span>
-
-
-        <h3>
-          Ganador/a
-        </h3>
-
-
-        <p>
-          Ganador de Slytherin
-        </p>
-
-
-      </article>
-
-
-
-      <!-- HUFFLEPUFF -->
-
-
-      <article class="winner-card">
-
-
-        <div class="winner-photo">
-
-          Foto
-
-        </div>
-
-
-        <span class="winner-house">
-          Hufflepuff
-        </span>
-
-
-        <h3>
-          Ganador/a
-        </h3>
-
-
-        <p>
-          Ganador de Hufflepuff
-        </p>
-
-
-      </article>
-
-
-
-      <!-- RAVENCLAW -->
-
-
-      <article class="winner-card">
-
-
-        <div class="winner-photo">
-
-          Foto
-
-        </div>
-
-
-        <span class="winner-house">
-          Ravenclaw
-        </span>
-
-
-        <h3>
-          Ganador/a
-        </h3>
-
-
-        <p>
-          Ganador de Ravenclaw
-        </p>
-
-
-      </article>
-
-
-    </div>
-
+    <div
+      class="award-winners"
+      id="awardWinners"
+    ></div>
 
   </div>
-
 
 </div>
 
 
-
-<!-- =================================
-     JAVASCRIPT
-================================= -->
-
-
 <script>
 
+/* ==========================================
+   MENÚ MÓVIL
+========================================== */
 
-  /* ===============================
-     MENÚ MÓVIL
-  =============================== */
+function toggleMenu(){
 
+  document
+    .getElementById("mobileMenu")
+    .classList
+    .toggle("open");
 
-  function toggleMenu(){
-
-    document
-      .getElementById("mobileMenu")
-      .classList
-      .toggle("open");
-
-  }
+}
 
 
-  function closeMobileMenu(){
+function closeMobileMenu(){
 
-    document
-      .getElementById("mobileMenu")
-      .classList
-      .remove("open");
+  document
+    .getElementById("mobileMenu")
+    .classList
+    .remove("open");
 
-  }
-
-
-
-  /* ===============================
-     DIRECCIÓN
-  =============================== */
+}
 
 
-  function openMessage(
-    name,
-    role,
-    message
-  ){
+/* ==========================================
+   DIRECCIÓN
+========================================== */
 
-    document
-      .getElementById("messageName")
-      .textContent =
-      name;
+function openMessage(
+  name,
+  role,
+  message
+){
 
-
-    document
-      .getElementById("messageRole")
-      .textContent =
-      role;
+  document
+    .getElementById("messageName")
+    .textContent =
+    name;
 
 
-    document
-      .getElementById("messageText")
-      .textContent =
-      message;
+  document
+    .getElementById("messageRole")
+    .textContent =
+    role;
 
 
-    document
-      .getElementById("messageModal")
-      .classList
-      .add("active");
+  document
+    .getElementById("messageText")
+    .textContent =
+    message;
 
 
-    document.body.style.overflow =
-      "hidden";
-
-  }
-
-
-  function closeMessage(){
-
-    document
-      .getElementById("messageModal")
-      .classList
-      .remove("active");
+  document
+    .getElementById("messageModal")
+    .classList
+    .add("active");
 
 
-    document.body.style.overflow =
-      "";
+  document.body.style.overflow =
+    "hidden";
 
-  }
-
-
-
-  /* ===============================
-     PREMIACIONES
-  =============================== */
+}
 
 
-  function openAward(
-    title,
-    description
-  ){
+function closeMessage(){
 
-    document
-      .getElementById("awardTitle")
-      .textContent =
-      title;
+  document
+    .getElementById("messageModal")
+    .classList
+    .remove("active");
 
 
-    document
-      .getElementById("awardDescription")
-      .textContent =
-      description;
+  document.body.style.overflow =
+    "";
+
+}
 
 
-    document
-      .getElementById("awardModal")
-      .classList
-      .add("active");
+/* ============================================================
+   PREMIACIONES
+
+   ✦ ESTA ES LA PARTE QUE VAS A EDITAR ✦
+
+   Para cambiar un nombre:
+   name:"Layla Nott Rosier"
+
+   Para cambiar una foto:
+   image:"assets/nombre-de-tu-foto.png"
+
+============================================================ */
 
 
-    document.body.style.overflow =
-      "hidden";
-
-  }
+const awardsData = {
 
 
-  function closeAward(){
+  /* ==========================================================
+     01 · MEJOR VESTIDO/A
+  ========================================================== */
 
-    document
-      .getElementById("awardModal")
-      .classList
-      .remove("active");
+  bestDressed:{
 
+    title:"Mejor Vestido/a",
 
-    document.body.style.overflow =
-      "";
+    description:
+      "Estilo, presencia y suficiente dedicación como para no aparecer en el Gran Comedor vestido de cualquier manera.",
 
-  }
-
-
-
-  /* ===============================
-     CERRAR MODALES CON ESCAPE
-  =============================== */
+    winners:[
 
 
-  document.addEventListener(
-    "keydown",
-    function(event){
+      /* GRYFFINDOR */
 
-      if(event.key === "Escape"){
+      {
+        house:"Gryffindor",
 
-        closeMessage();
+        name:"Nombre ganador Gryffindor",
 
-        closeAward();
+        image:
+          "assets/mejor-vestido-gryffindor.png"
+      },
 
+
+      /* SLYTHERIN */
+
+      {
+        house:"Slytherin",
+
+        name:"Nombre ganador Slytherin",
+
+        image:
+          "assets/mejor-vestido-slytherin.png"
+      },
+
+
+      /* HUFFLEPUFF */
+
+      {
+        house:"Hufflepuff",
+
+        name:"Nombre ganador Hufflepuff",
+
+        image:
+          "assets/mejor-vestido-hufflepuff.png"
+      },
+
+
+      /* RAVENCLAW */
+
+      {
+        house:"Ravenclaw",
+
+        name:"Nombre ganador Ravenclaw",
+
+        image:
+          "assets/mejor-vestido-ravenclaw.png"
       }
+
+
+    ]
+
+  },
+
+
+  /* ==========================================================
+     02 · MÁS DIVERTIDO/A
+  ========================================================== */
+
+  funniest:{
+
+    title:"Más Divertido/a",
+
+    description:
+      "Porque incluso Hogwarts necesita a alguien capaz de hacer reír al resto cuando todo parece demasiado serio.",
+
+    winners:[
+
+
+      /* GRYFFINDOR */
+
+      {
+        house:"Gryffindor",
+
+        name:"Nombre ganador Gryffindor",
+
+        image:
+          "assets/mas-divertido-gryffindor.png"
+      },
+
+
+      /* SLYTHERIN */
+
+      {
+        house:"Slytherin",
+
+        name:"Nombre ganador Slytherin",
+
+        image:
+          "assets/mas-divertido-slytherin.png"
+      },
+
+
+      /* HUFFLEPUFF */
+
+      {
+        house:"Hufflepuff",
+
+        name:"Nombre ganador Hufflepuff",
+
+        image:
+          "assets/mas-divertido-hufflepuff.png"
+      },
+
+
+      /* RAVENCLAW */
+
+      {
+        house:"Ravenclaw",
+
+        name:"Nombre ganador Ravenclaw",
+
+        image:
+          "assets/mas-divertido-ravenclaw.png"
+      }
+
+
+    ]
+
+  },
+
+
+  /* ==========================================================
+     03 · DÚO INSEPARABLE
+  ========================================================== */
+
+  duo:{
+
+    title:"Dúo Inseparable",
+
+    description:
+      "Dos estudiantes cuya existencia individual aparentemente dejó de ser una opción durante este curso.",
+
+    winners:[
+
+
+      /* GRYFFINDOR */
+
+      {
+        house:"Gryffindor",
+
+        name:"Dúo ganador Gryffindor",
+
+        image:
+          "assets/duo-gryffindor.png"
+      },
+
+
+      /* SLYTHERIN */
+
+      {
+        house:"Slytherin",
+
+        name:"Dúo ganador Slytherin",
+
+        image:
+          "assets/duo-slytherin.png"
+      },
+
+
+      /* HUFFLEPUFF */
+
+      {
+        house:"Hufflepuff",
+
+        name:"Dúo ganador Hufflepuff",
+
+        image:
+          "assets/duo-hufflepuff.png"
+      },
+
+
+      /* RAVENCLAW */
+
+      {
+        house:"Ravenclaw",
+
+        name:"Dúo ganador Ravenclaw",
+
+        image:
+          "assets/duo-ravenclaw.png"
+      }
+
+
+    ]
+
+  },
+
+
+  /* ==========================================================
+     04 · MEJOR JUGADOR/A DE QUIDDITCH
+  ========================================================== */
+
+  quidditch:{
+
+    title:"Mejor Jugador/a de Quidditch",
+
+    description:
+      "Reconocimiento a quienes dejaron una impresión especial durante la temporada de Quidditch.",
+
+    winners:[
+
+
+      /* GRYFFINDOR */
+
+      {
+        house:"Gryffindor",
+
+        name:"Nombre jugador Gryffindor",
+
+        image:
+          "assets/quidditch-gryffindor.png"
+      },
+
+
+      /* SLYTHERIN */
+
+      {
+        house:"Slytherin",
+
+        name:"Nombre jugador Slytherin",
+
+        image:
+          "assets/quidditch-slytherin.png"
+      },
+
+
+      /* HUFFLEPUFF */
+
+      {
+        house:"Hufflepuff",
+
+        name:"Nombre jugador Hufflepuff",
+
+        image:
+          "assets/quidditch-hufflepuff.png"
+      },
+
+
+      /* RAVENCLAW */
+
+      {
+        house:"Ravenclaw",
+
+        name:"Nombre jugador Ravenclaw",
+
+        image:
+          "assets/quidditch-ravenclaw.png"
+      }
+
+
+    ]
+
+  },
+
+
+  /* ==========================================================
+     05 · MENTE MÁS BRILLANTE
+  ========================================================== */
+
+  brightest:{
+
+    title:"Mente Más Brillante",
+
+    description:
+      "Para quienes parecían saber la respuesta incluso antes de que el profesor terminara de formular la pregunta.",
+
+    winners:[
+
+
+      /* GRYFFINDOR */
+
+      {
+        house:"Gryffindor",
+
+        name:"Nombre ganador Gryffindor",
+
+        image:
+          "assets/mente-gryffindor.png"
+      },
+
+
+      /* SLYTHERIN */
+
+      {
+        house:"Slytherin",
+
+        name:"Nombre ganador Slytherin",
+
+        image:
+          "assets/mente-slytherin.png"
+      },
+
+
+      /* HUFFLEPUFF */
+
+      {
+        house:"Hufflepuff",
+
+        name:"Nombre ganador Hufflepuff",
+
+        image:
+          "assets/mente-hufflepuff.png"
+      },
+
+
+      /* RAVENCLAW */
+
+      {
+        house:"Ravenclaw",
+
+        name:"Nombre ganador Ravenclaw",
+
+        image:
+          "assets/mente-ravenclaw.png"
+      }
+
+
+    ]
+
+  },
+
+
+  /* ==========================================================
+     06 · ESPÍRITU DE HOGWARTS
+  ========================================================== */
+
+  spirit:{
+
+    title:"Espíritu de Hogwarts",
+
+    description:
+      "Para quienes representaron especialmente la amistad, participación y vida de la escuela durante este curso.",
+
+    winners:[
+
+
+      /* GRYFFINDOR */
+
+      {
+        house:"Gryffindor",
+
+        name:"Nombre ganador Gryffindor",
+
+        image:
+          "assets/espiritu-gryffindor.png"
+      },
+
+
+      /* SLYTHERIN */
+
+      {
+        house:"Slytherin",
+
+        name:"Nombre ganador Slytherin",
+
+        image:
+          "assets/espiritu-slytherin.png"
+      },
+
+
+      /* HUFFLEPUFF */
+
+      {
+        house:"Hufflepuff",
+
+        name:"Nombre ganador Hufflepuff",
+
+        image:
+          "assets/espiritu-hufflepuff.png"
+      },
+
+
+      /* RAVENCLAW */
+
+      {
+        house:"Ravenclaw",
+
+        name:"Nombre ganador Ravenclaw",
+
+        image:
+          "assets/espiritu-ravenclaw.png"
+      }
+
+
+    ]
+
+  },
+
+
+  /* ==========================================================
+     07 · MÁS MIGAJERO/A
+  ========================================================== */
+
+  migajero:{
+
+    title:"Más Migajero/a",
+
+    description:
+      "Porque conformarse con migajas también terminó siendo, inexplicablemente, una disciplina competitiva en Hogwarts.",
+
+    winners:[
+
+
+      /* GRYFFINDOR */
+
+      {
+        house:"Gryffindor",
+
+        name:"Nombre ganador Gryffindor",
+
+        image:
+          "assets/migajero-gryffindor.png"
+      },
+
+
+      /* SLYTHERIN */
+
+      {
+        house:"Slytherin",
+
+        name:"Nombre ganador Slytherin",
+
+        image:
+          "assets/migajero-slytherin.png"
+      },
+
+
+      /* HUFFLEPUFF */
+
+      {
+        house:"Hufflepuff",
+
+        name:"Nombre ganador Hufflepuff",
+
+        image:
+          "assets/migajero-hufflepuff.png"
+      },
+
+
+      /* RAVENCLAW */
+
+      {
+        house:"Ravenclaw",
+
+        name:"Nombre ganador Ravenclaw",
+
+        image:
+          "assets/migajero-ravenclaw.png"
+      }
+
+
+    ]
+
+  }
+
+
+};
+
+
+/* ==========================================
+   ABRIR PREMIACIÓN
+========================================== */
+
+function openAward(awardID){
+
+
+  const award =
+    awardsData[awardID];
+
+
+  if(!award){
+    return;
+  }
+
+
+  document
+    .getElementById("awardTitle")
+    .textContent =
+    award.title;
+
+
+  document
+    .getElementById("awardDescription")
+    .textContent =
+    award.description;
+
+
+  const winnersContainer =
+    document.getElementById("awardWinners");
+
+
+  winnersContainer.innerHTML = "";
+
+
+  award.winners.forEach(
+    function(winner){
+
+
+      const houseClass =
+        winner.house.toLowerCase();
+
+
+      const winnerHTML = `
+
+        <article
+          class="
+            winner-card
+            winner-${houseClass}
+          "
+        >
+
+
+          <div class="winner-photo">
+
+            <img
+              src="${winner.image}"
+              alt="${winner.name}"
+            >
+
+          </div>
+
+
+          <span class="winner-house">
+
+            ${winner.house}
+
+          </span>
+
+
+          <div class="winner-info">
+
+            <h3>
+
+              ${winner.name}
+
+            </h3>
+
+
+            <p>
+
+              Ganador/a de ${winner.house}
+
+            </p>
+
+          </div>
+
+
+        </article>
+
+      `;
+
+
+      winnersContainer
+        .insertAdjacentHTML(
+          "beforeend",
+          winnerHTML
+        );
+
 
     }
   );
 
+
+  document
+    .getElementById("awardModal")
+    .classList
+    .add("active");
+
+
+  document.body.style.overflow =
+    "hidden";
+
+}
+
+
+/* ==========================================
+   CERRAR PREMIACIÓN
+========================================== */
+
+function closeAward(){
+
+  document
+    .getElementById("awardModal")
+    .classList
+    .remove("active");
+
+
+  document.body.style.overflow =
+    "";
+
+}
+
+
+/* ==========================================
+   CERRAR MODALES CON ESC
+========================================== */
+
+document.addEventListener(
+  "keydown",
+  function(event){
+
+    if(event.key === "Escape"){
+
+      closeMessage();
+
+      closeAward();
+
+    }
+
+  }
+);
 
 </script>
 
 
 </body>
 
-</html></html>
+</html>
