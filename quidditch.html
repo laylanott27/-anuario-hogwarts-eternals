@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+  Quidditch · Anuario Hogwarts 2026–2027
+</title>
+
+
+<style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+
+  --paper:#f1e8da;
+  --paper-light:#faf6ee;
+  --ink:#171717;
+  --muted:#746c63;
+
+  --huffle:#e3b62f;
+  --huffle-dark:#8f6812;
+  --huffle-black:#171717;
+
+  --slytherin:#315b45;
+  --slytherin-dark:#193b2a;
+  --slytherin-silver:#c5c9c7;
+
+  --ravenclaw:#2d4d70;
+  --ravenclaw-dark:#182f49;
+  --ravenclaw-silver:#b9c1ca;
+
+  --gryffindor:#8f2b26;
+  --gryffindor-dark:#641b18;
+  --gryffindor-gold:#d1a23b;
+
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  margin:0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  background:#161616;
+
+  color:var(--ink);
+
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  display:block;
+  width:100%;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page{
+
+  width:min(1400px,100%);
+
+  margin:auto;
+
+  overflow:hidden;
+
+  background:var(--paper);
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nav{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:1000;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:20px;
+
+  padding:16px 32px;
+
+  background:rgba(245,238,226,.96);
+
+  border-bottom:1px solid #b9ad9e;
+
+  backdrop-filter:blur(10px);
+
+}
+
+
+.brand{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+}
+
+
+.brand-mark{
+
+  width:42px;
+  height:42px;
+
+  display:grid;
+
+  place-items:center;
+
+  border:1px solid #756b5e;
+
+  border-radius:50%;
+
+  font-size:18px;
+
+}
+
+
+.brand-text{
+
+  font-size:11px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-links{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:17px;
+
+  font-size:9px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-links a{
+
+  padding:8px 0;
+
+  border-bottom:1px solid transparent;
+
+}
+
+
+.nav-links a:hover{
+
+  border-color:#222;
+
+}
+
+
+.back-btn{
+
+  padding:9px 13px;
+
+  border:1px solid #766c60;
+
+  font-size:8px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+  min-height:720px;
+
+  position:relative;
+
+  display:flex;
+
+  align-items:flex-end;
+
+  overflow:hidden;
+
+  padding:70px 60px;
+
+  color:white;
+
+  background:#111;
+
+}
+
+
+.hero-background{
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.90) 0%,
+      rgba(0,0,0,.60) 45%,
+      rgba(0,0,0,.18) 100%
+    ),
+
+    url("assets/quidditch-cover.jpg")
+    center/cover no-repeat;
+
+}
+
+
+.hero-content{
+
+  position:relative;
+
+  z-index:2;
+
+  max-width:800px;
+
+}
+
+
+.hero-eyebrow{
+
+  margin-bottom:12px;
+
+  color:#d5b25d;
+
+  font-size:12px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.hero h1{
+
+  margin:0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size:clamp(65px,11vw,150px);
+
+  line-height:.78;
+
+  letter-spacing:-7px;
+
+  text-transform:uppercase;
+
+}
+
+
+.hero h1 span{
+
+  display:block;
+
+  color:#d8ae3d;
+
+}
+
+
+.hero-subtitle{
+
+  max-width:570px;
+
+  margin-top:32px;
+
+  font-size:16px;
+
+  line-height:1.8;
+
+}
+
+
+.hero-season{
+
+  margin-top:24px;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size:11px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.season-intro{
+
+  padding:70px 45px;
+
+  text-align:center;
+
+  background:#f7f1e7;
+
+}
+
+
+.season-intro h2{
+
+  margin:0 0 20px;
+
+  font-size:38px;
+
+  font-weight:400;
+
+  text-transform:uppercase;
+
+  letter-spacing:3px;
+
+}
+
+
+.season-intro p{
+
+  max-width:780px;
+
+  margin:auto;
+
+  color:#595149;
+
+  font-size:16px;
+
+  line-height:1.9;
+
+}
+
+
+/* =========================================================
+   TEAM SPREAD
+========================================================= */
+
+.team-spread{
+
+  position:relative;
+
+  min-height:1000px;
+
+  overflow:hidden;
+
+  padding:65px 55px 70px;
+
+}
+
+
+.team-spread::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  opacity:.055;
+
+  pointer-events:none;
+
+  background-image:
+
+    linear-gradient(
+      rgba(255,255,255,.5) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.5) 1px,
+      transparent 1px
+    );
+
+  background-size:30px 30px;
+
+}
+
+
+/* =========================================================
+   HOUSE COLORS
+========================================================= */
+
+.hufflepuff-spread{
+
+  color:#fff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #171717 0%,
+      #1b1b1b 55%,
+      #3c3010 100%
+    );
+
+  --accent:var(--huffle);
+
+}
+
+
+.slytherin-spread{
+
+  color:white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #102a1e,
+      #1c3f2e 55%,
+      #0c1711
+    );
+
+  --accent:var(--slytherin-silver);
+
+}
+
+
+.ravenclaw-spread{
+
+  color:white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #142a42,
+      #274866 55%,
+      #101d2b
+    );
+
+  --accent:var(--ravenclaw-silver);
+
+}
+
+
+.gryffindor-spread{
+
+  color:white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #501714,
+      #7e2924 55%,
+      #2b0c0a
+    );
+
+  --accent:var(--gryffindor-gold);
+
+}
+
+
+/* =========================================================
+   GIANT BACKGROUND NUMBER
+========================================================= */
+
+.spread-number{
+
+  position:absolute;
+
+  top:-40px;
+  right:20px;
+
+  z-index:0;
+
+  color:rgba(255,255,255,.055);
+
+  font-family:
+    Arial Black,
+    Arial,
+    sans-serif;
+
+  font-size:300px;
+
+  line-height:1;
+
+  pointer-events:none;
+
+}
+
+
+/* =========================================================
+   TEAM HEADER
+========================================================= */
+
+.team-header{
+
+  position:relative;
+
+  z-index:3;
+
+  max-width:1180px;
+
+  margin:0 auto 35px;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:flex-end;
+
+  gap:35px;
+
+}
+
+
+.team-ranking{
+
+  display:block;
+
+  margin-bottom:8px;
+
+  color:var(--accent);
+
+  font-family:Arial,sans-serif;
+
+  font-size:10px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.team-header h2{
+
+  margin:0;
+
+  font-family:
+    Arial Black,
+    Arial,
+    sans-serif;
+
+  font-size:clamp(48px,7vw,100px);
+
+  line-height:.85;
+
+  letter-spacing:-4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.team-summary{
+
+  max-width:330px;
+
+  padding-left:20px;
+
+  border-left:4px solid var(--accent);
+
+  font-size:13px;
+
+  line-height:1.75;
+
+}
+
+
+/* =========================================================
+   CHAMPION LABEL
+========================================================= */
+
+.champion{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  margin-bottom:17px;
+
+  padding:8px 15px;
+
+  color:#171717;
+
+  background:var(--huffle);
+
+  font-family:Arial,sans-serif;
+
+  font-size:9px;
+
+  font-weight:bold;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   COLLAGE
+========================================================= */
+
+.collage{
+
+  position:relative;
+
+  z-index:2;
+
+  max-width:1180px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(12,1fr);
+
+  grid-template-rows:
+    repeat(12,55px);
+
+  gap:12px;
+
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.photo{
+
+  position:relative;
+
+  overflow:hidden;
+
+  border:4px solid rgba(255,255,255,.9);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.28);
+
+  background:#333;
+
+}
+
+
+.photo img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  transition:.35s ease;
+
+}
+
+
+.photo:hover img{
+
+  transform:scale(1.035);
+
+}
+
+
+.photo-caption{
+
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:0;
+
+  padding:
+    30px 11px 9px;
+
+  color:white;
+
+  background:
+    linear-gradient(
+      transparent,
+      rgba(0,0,0,.85)
+    );
+
+  font-family:Arial,sans-serif;
+
+  font-size:8px;
+
+  line-height:1.45;
+
+  letter-spacing:.5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.photo-caption strong{
+
+  display:block;
+
+  margin-bottom:2px;
+
+  color:var(--accent);
+
+  font-size:9px;
+
+}
+
+
+/* =========================================================
+   COLLAGE POSITIONS
+========================================================= */
+
+/* TEAM PHOTO */
+
+.team-photo{
+
+  grid-column:1 / 8;
+
+  grid-row:1 / 7;
+
+}
+
+
+/* MATCH 1 */
+
+.match-1{
+
+  grid-column:8 / 13;
+
+  grid-row:1 / 5;
+
+}
+
+
+/* MATCH 2 */
+
+.match-2{
+
+  grid-column:8 / 11;
+
+  grid-row:5 / 9;
+
+}
+
+
+/* MATCH 3 */
+
+.match-3{
+
+  grid-column:11 / 13;
+
+  grid-row:5 / 9;
+
+}
+
+
+/* MATCH 4 */
+
+.match-4{
+
+  grid-column:1 / 5;
+
+  grid-row:7 / 11;
+
+}
+
+
+/* MATCH 5 */
+
+.match-5{
+
+  grid-column:5 / 8;
+
+  grid-row:7 / 10;
+
+}
+
+
+/* MATCH 6 */
+
+.match-6{
+
+  grid-column:5 / 9;
+
+  grid-row:10 / 13;
+
+}
+
+
+/* MATCH 7 */
+
+.match-7{
+
+  grid-column:9 / 13;
+
+  grid-row:9 / 13;
+
+}
+
+
+/* =========================================================
+   EDITORIAL TEXT BOX
+========================================================= */
+
+.story-box{
+
+  grid-column:1 / 5;
+
+  grid-row:11 / 13;
+
+  padding:12px 16px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  border-left:4px solid var(--accent);
+
+  background:rgba(0,0,0,.20);
+
+}
+
+
+.story-box h3{
+
+  margin:0 0 5px;
+
+  color:var(--accent);
+
+  font-family:Arial,sans-serif;
+
+  font-size:15px;
+
+  text-transform:uppercase;
+
+}
+
+
+.story-box p{
+
+  margin:0;
+
+  font-size:10px;
+
+  line-height:1.55;
+
+}
+
+
+/* =========================================================
+   MATCH LABEL
+========================================================= */
+
+.match-label{
+
+  position:absolute;
+
+  top:8px;
+  left:8px;
+
+  z-index:3;
+
+  padding:5px 8px;
+
+  color:#111;
+
+  background:var(--accent);
+
+  font-family:Arial,sans-serif;
+
+  font-size:7px;
+
+  font-weight:bold;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   TEAM PHOTO LABEL
+========================================================= */
+
+.team-photo .match-label{
+
+  padding:7px 11px;
+
+  font-size:8px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  padding:38px 20px;
+
+  color:#bbb;
+
+  background:#111;
+
+  text-align:center;
+
+  font-size:9px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:900px){
+
+  .nav-links{
+    display:none;
+  }
+
+
+  .team-spread{
+
+    min-height:auto;
+
+    padding:
+      55px 30px;
+
+  }
+
+
+  .team-header{
+
+    align-items:flex-start;
+
+    flex-direction:column;
+
+  }
+
+
+  .team-summary{
+
+    max-width:600px;
+
+  }
+
+
+  .collage{
+
+    grid-template-rows:
+      repeat(12,45px);
+
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:650px){
+
+  .nav{
+
+    padding:13px 15px;
+
+  }
+
+
+  .brand-text{
+
+    font-size:9px;
+
+  }
+
+
+  .back-btn{
+
+    padding:8px 9px;
+
+    font-size:7px;
+
+  }
+
+
+  .hero{
+
+    min-height:600px;
+
+    padding:
+      55px 24px;
+
+  }
+
+
+  .hero h1{
+
+    letter-spacing:-3px;
+
+  }
+
+
+  .season-intro{
+
+    padding:
+      50px 25px;
+
+  }
+
+
+  .season-intro h2{
+
+    font-size:27px;
+
+  }
+
+
+  .team-spread{
+
+    padding:
+      45px 17px 55px;
+
+  }
+
+
+  .team-header h2{
+
+    letter-spacing:-2px;
+
+  }
+
+
+  .spread-number{
+
+    font-size:180px;
+
+  }
+
+
+  /* MOBILE COLLAGE STILL LOOKS LIKE YEARBOOK */
+
+  .collage{
+
+    grid-template-columns:
+      repeat(6,1fr);
+
+    grid-template-rows:
+      repeat(22,42px);
+
+    gap:7px;
+
+  }
+
+
+  .team-photo{
+
+    grid-column:1 / 7;
+
+    grid-row:1 / 7;
+
+  }
+
+
+  .match-1{
+
+    grid-column:1 / 4;
+
+    grid-row:7 / 11;
+
+  }
+
+
+  .match-2{
+
+    grid-column:4 / 7;
+
+    grid-row:7 / 11;
+
+  }
+
+
+  .match-3{
+
+    grid-column:1 / 3;
+
+    grid-row:11 / 15;
+
+  }
+
+
+  .match-4{
+
+    grid-column:3 / 7;
+
+    grid-row:11 / 15;
+
+  }
+
+
+  .match-5{
+
+    grid-column:1 / 4;
+
+    grid-row:15 / 19;
+
+  }
+
+
+  .match-6{
+
+    grid-column:4 / 7;
+
+    grid-row:15 / 19;
+
+  }
+
+
+  .match-7{
+
+    grid-column:1 / 5;
+
+    grid-row:19 / 23;
+
+  }
+
+
+  .story-box{
+
+    grid-column:5 / 7;
+
+    grid-row:19 / 23;
+
+    padding:8px;
+
+  }
+
+
+  .story-box h3{
+
+    font-size:10px;
+
+  }
+
+
+  .story-box p{
+
+    font-size:7px;
+
+    line-height:1.4;
+
+  }
+
+
+  .photo{
+
+    border-width:2px;
+
+  }
+
+
+  .photo-caption{
+
+    padding:
+      20px 6px 5px;
+
+    font-size:6px;
+
+  }
+
+
+  .photo-caption strong{
+
+    font-size:7px;
+
+  }
+
+
+  .match-label{
+
+    top:5px;
+    left:5px;
+
+    padding:4px 5px;
+
+    font-size:5px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- ======================================================
+     NAV
+====================================================== -->
+
+<nav class="nav">
+
+  <div class="brand">
+
+    <div class="brand-mark">
+      Q
+    </div>
+
+    <div class="brand-text">
+      Quidditch · Hogwarts
+    </div>
+
+  </div>
+
+
+  <div class="nav-links">
+
+    <a href="#hufflepuff">
+      Hufflepuff
+    </a>
+
+    <a href="#slytherin">
+      Slytherin
+    </a>
+
+    <a href="#ravenclaw">
+      Ravenclaw
+    </a>
+
+    <a href="#gryffindor">
+      Gryffindor
+    </a>
+
+  </div>
+
+
+  <a
+    href="index.html"
+    class="back-btn"
+  >
+    ← Anuario
+  </a>
+
+</nav>
+
+
+
+<!-- ======================================================
+     COVER
+====================================================== -->
+
+<header class="hero">
+
+  <div class="hero-background"></div>
+
+
+  <div class="hero-content">
+
+    <div class="hero-eyebrow">
+      Hogwarts Athletics
+    </div>
+
+
+    <h1>
+
+      QUIDDITCH
+
+      <span>
+        SEASON
+      </span>
+
+    </h1>
+
+
+    <p class="hero-subtitle">
+
+      Siete partidos. Cuatro casas. Una temporada marcada
+      por rivalidades, remontadas, gradas llenas y momentos
+      que terminaron formando parte de la historia de Hogwarts.
+
+    </p>
+
+
+    <div class="hero-season">
+
+      Temporada 2026–2027
+
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<!-- ======================================================
+     INTRO
+====================================================== -->
+
+<section class="season-intro">
+
+  <h2>
+    The Quidditch Season
+  </h2>
+
+
+  <p>
+
+    Desde los primeros entrenamientos hasta el último partido,
+    cada casa llevó sus colores al campo durante una temporada
+    llena de competencia, compañerismo y espíritu escolar.
+
+    Estas páginas reúnen una fotografía de cada uno de los
+    siete partidos disputados por cada equipo, además de
+    su fotografía oficial de temporada.
+
+  </p>
+
+</section>
+
+
+
+<!-- ======================================================
+     HUFFLEPUFF
+     CAMPEONES
+====================================================== -->
+
+<section
+  class="team-spread hufflepuff-spread"
+  id="hufflepuff"
+>
+
+
+  <div class="spread-number">
+    01
+  </div>
+
+
+  <div class="team-header">
+
+
+    <div>
+
+      <div class="champion">
+        🏆 Campeones del Torneo
+      </div>
+
+
+      <span class="team-ranking">
+        Primer Lugar · Temporada 2026–2027
+      </span>
+
+
+      <h2>
+        Hufflepuff
+      </h2>
+
+    </div>
+
+
+    <div class="team-summary">
+
+      Una temporada para recordar. Hufflepuff cerró el torneo
+      en lo más alto, llevando sus colores hasta el campeonato
+      y dejando siete partidos que definieron su camino hacia
+      la copa.
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="collage">
+
+
+    <!-- ==============================
+         FOTO OFICIAL DEL EQUIPO
+    ============================== -->
+
+    <div class="photo team-photo">
+
+      <span class="match-label">
+        Equipo 2026–2027
+      </span>
+
+      <img
+        src="assets/hufflepuff-team.jpg"
+        alt="Equipo de Quidditch de Hufflepuff"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Hufflepuff Quidditch
+        </strong>
+
+        Fotografía oficial del equipo campeón.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 1 -->
+
+    <div class="photo match-1">
+
+      <span class="match-label">
+        Partido 01
+      </span>
+
+      <img
+        src="assets/hufflepuff-match-1.jpg"
+        alt="Partido 1 de Hufflepuff"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Hufflepuff vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 2 -->
+
+    <div class="photo match-2">
+
+      <span class="match-label">
+        Partido 02
+      </span>
+
+      <img
+        src="assets/hufflepuff-match-2.jpg"
+        alt="Partido 2 de Hufflepuff"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Hufflepuff vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 3 -->
+
+    <div class="photo match-3">
+
+      <span class="match-label">
+        Partido 03
+      </span>
+
+      <img
+        src="assets/hufflepuff-match-3.jpg"
+        alt="Partido 3 de Hufflepuff"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Three
+        </strong>
+
+        Momento del partido.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 4 -->
+
+    <div class="photo match-4">
+
+      <span class="match-label">
+        Partido 04
+      </span>
+
+      <img
+        src="assets/hufflepuff-match-4.jpg"
+        alt="Partido 4 de Hufflepuff"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Hufflepuff vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 5 -->
+
+    <div class="photo match-5">
+
+      <span class="match-label">
+        Partido 05
+      </span>
+
+      <img
+        src="assets/hufflepuff-match-5.jpg"
+        alt="Partido 5 de Hufflepuff"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Five
+        </strong>
+
+        Temporada 2026–2027.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 6 -->
+
+    <div class="photo match-6">
+
+      <span class="match-label">
+        Partido 06
+      </span>
+
+      <img
+        src="assets/hufflepuff-match-6.jpg"
+        alt="Partido 6 de Hufflepuff"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Hufflepuff vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 7 -->
+
+    <div class="photo match-7">
+
+      <span class="match-label">
+        Partido 07
+      </span>
+
+      <img
+        src="assets/hufflepuff-match-7.jpg"
+        alt="Partido 7 de Hufflepuff"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          The Final Match
+        </strong>
+
+        El partido que cerró la temporada del campeón.
+
+      </div>
+
+    </div>
+
+
+
+    <div class="story-box">
+
+      <h3>
+        Champions
+      </h3>
+
+      <p>
+
+        Escribe aquí un pequeño texto sobre la temporada
+        de Hufflepuff, sus jugadores y cómo consiguieron
+        convertirse en campeones.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     SLYTHERIN
+====================================================== -->
+
+<section
+  class="team-spread slytherin-spread"
+  id="slytherin"
+>
+
+
+  <div class="spread-number">
+    02
+  </div>
+
+
+  <div class="team-header">
+
+
+    <div>
+
+      <span class="team-ranking">
+        Temporada 2026–2027
+      </span>
+
+      <h2>
+        Slytherin
+      </h2>
+
+    </div>
+
+
+    <div class="team-summary">
+
+      Estrategia, ambición y siete encuentros que
+      construyeron la temporada de Slytherin dentro
+      del campo de Quidditch.
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="collage">
+
+
+    <!-- FOTO DEL EQUIPO -->
+
+    <div class="photo team-photo">
+
+      <span class="match-label">
+        Equipo 2026–2027
+      </span>
+
+      <img
+        src="assets/slytherin-team.jpg"
+        alt="Equipo de Quidditch de Slytherin"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Slytherin Quidditch
+        </strong>
+
+        Fotografía oficial del equipo.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 1 -->
+
+    <div class="photo match-1">
+
+      <span class="match-label">
+        Partido 01
+      </span>
+
+      <img
+        src="assets/slytherin-match-1.jpg"
+        alt="Partido 1 de Slytherin"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Slytherin vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 2 -->
+
+    <div class="photo match-2">
+
+      <span class="match-label">
+        Partido 02
+      </span>
+
+      <img
+        src="assets/slytherin-match-2.jpg"
+        alt="Partido 2 de Slytherin"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Slytherin vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 3 -->
+
+    <div class="photo match-3">
+
+      <span class="match-label">
+        Partido 03
+      </span>
+
+      <img
+        src="assets/slytherin-match-3.jpg"
+        alt="Partido 3 de Slytherin"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Three
+        </strong>
+
+        Temporada 2026–2027.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 4 -->
+
+    <div class="photo match-4">
+
+      <span class="match-label">
+        Partido 04
+      </span>
+
+      <img
+        src="assets/slytherin-match-4.jpg"
+        alt="Partido 4 de Slytherin"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Slytherin vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 5 -->
+
+    <div class="photo match-5">
+
+      <span class="match-label">
+        Partido 05
+      </span>
+
+      <img
+        src="assets/slytherin-match-5.jpg"
+        alt="Partido 5 de Slytherin"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Five
+        </strong>
+
+        Momento del partido.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 6 -->
+
+    <div class="photo match-6">
+
+      <span class="match-label">
+        Partido 06
+      </span>
+
+      <img
+        src="assets/slytherin-match-6.jpg"
+        alt="Partido 6 de Slytherin"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Slytherin vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 7 -->
+
+    <div class="photo match-7">
+
+      <span class="match-label">
+        Partido 07
+      </span>
+
+      <img
+        src="assets/slytherin-match-7.jpg"
+        alt="Partido 7 de Slytherin"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Seven
+        </strong>
+
+        Último encuentro de la temporada.
+
+      </div>
+
+    </div>
+
+
+
+    <div class="story-box">
+
+      <h3>
+        The Season
+      </h3>
+
+      <p>
+
+        Escribe aquí la historia de la temporada
+        de Slytherin, sus mejores momentos,
+        jugadores y resultados.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     RAVENCLAW
+====================================================== -->
+
+<section
+  class="team-spread ravenclaw-spread"
+  id="ravenclaw"
+>
+
+
+  <div class="spread-number">
+    03
+  </div>
+
+
+  <div class="team-header">
+
+
+    <div>
+
+      <span class="team-ranking">
+        Temporada 2026–2027
+      </span>
+
+      <h2>
+        Ravenclaw
+      </h2>
+
+    </div>
+
+
+    <div class="team-summary">
+
+      Siete partidos, una temporada completa y una colección
+      de momentos que quedaron entre las gradas, los vestidores
+      y el campo de Quidditch.
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="collage">
+
+
+    <!-- FOTO DEL EQUIPO -->
+
+    <div class="photo team-photo">
+
+      <span class="match-label">
+        Equipo 2026–2027
+      </span>
+
+      <img
+        src="assets/ravenclaw-team.jpg"
+        alt="Equipo de Quidditch de Ravenclaw"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Ravenclaw Quidditch
+        </strong>
+
+        Fotografía oficial del equipo.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 1 -->
+
+    <div class="photo match-1">
+
+      <span class="match-label">
+        Partido 01
+      </span>
+
+      <img
+        src="assets/ravenclaw-match-1.jpg"
+        alt="Partido 1 de Ravenclaw"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Ravenclaw vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 2 -->
+
+    <div class="photo match-2">
+
+      <span class="match-label">
+        Partido 02
+      </span>
+
+      <img
+        src="assets/ravenclaw-match-2.jpg"
+        alt="Partido 2 de Ravenclaw"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Ravenclaw vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 3 -->
+
+    <div class="photo match-3">
+
+      <span class="match-label">
+        Partido 03
+      </span>
+
+      <img
+        src="assets/ravenclaw-match-3.jpg"
+        alt="Partido 3 de Ravenclaw"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Three
+        </strong>
+
+        Momento del partido.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 4 -->
+
+    <div class="photo match-4">
+
+      <span class="match-label">
+        Partido 04
+      </span>
+
+      <img
+        src="assets/ravenclaw-match-4.jpg"
+        alt="Partido 4 de Ravenclaw"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Ravenclaw vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 5 -->
+
+    <div class="photo match-5">
+
+      <span class="match-label">
+        Partido 05
+      </span>
+
+      <img
+        src="assets/ravenclaw-match-5.jpg"
+        alt="Partido 5 de Ravenclaw"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Five
+        </strong>
+
+        Temporada 2026–2027.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 6 -->
+
+    <div class="photo match-6">
+
+      <span class="match-label">
+        Partido 06
+      </span>
+
+      <img
+        src="assets/ravenclaw-match-6.jpg"
+        alt="Partido 6 de Ravenclaw"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Ravenclaw vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 7 -->
+
+    <div class="photo match-7">
+
+      <span class="match-label">
+        Partido 07
+      </span>
+
+      <img
+        src="assets/ravenclaw-match-7.jpg"
+        alt="Partido 7 de Ravenclaw"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Seven
+        </strong>
+
+        Último encuentro de la temporada.
+
+      </div>
+
+    </div>
+
+
+
+    <div class="story-box">
+
+      <h3>
+        Ravenclaw Season
+      </h3>
+
+      <p>
+
+        Escribe aquí un pequeño resumen de la temporada,
+        los jugadores y los momentos más importantes
+        del equipo de Ravenclaw.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     GRYFFINDOR
+====================================================== -->
+
+<section
+  class="team-spread gryffindor-spread"
+  id="gryffindor"
+>
+
+
+  <div class="spread-number">
+    04
+  </div>
+
+
+  <div class="team-header">
+
+
+    <div>
+
+      <span class="team-ranking">
+        Temporada 2026–2027
+      </span>
+
+      <h2>
+        Gryffindor
+      </h2>
+
+    </div>
+
+
+    <div class="team-summary">
+
+      Velocidad, riesgo y determinación definieron los siete
+      encuentros que Gryffindor disputó durante esta temporada.
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="collage">
+
+
+    <!-- FOTO DEL EQUIPO -->
+
+    <div class="photo team-photo">
+
+      <span class="match-label">
+        Equipo 2026–2027
+      </span>
+
+      <img
+        src="assets/gryffindor-team.jpg"
+        alt="Equipo de Quidditch de Gryffindor"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Gryffindor Quidditch
+        </strong>
+
+        Fotografía oficial del equipo.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 1 -->
+
+    <div class="photo match-1">
+
+      <span class="match-label">
+        Partido 01
+      </span>
+
+      <img
+        src="assets/gryffindor-match-1.jpg"
+        alt="Partido 1 de Gryffindor"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Gryffindor vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 2 -->
+
+    <div class="photo match-2">
+
+      <span class="match-label">
+        Partido 02
+      </span>
+
+      <img
+        src="assets/gryffindor-match-2.jpg"
+        alt="Partido 2 de Gryffindor"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Gryffindor vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 3 -->
+
+    <div class="photo match-3">
+
+      <span class="match-label">
+        Partido 03
+      </span>
+
+      <img
+        src="assets/gryffindor-match-3.jpg"
+        alt="Partido 3 de Gryffindor"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Three
+        </strong>
+
+        Momento del partido.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 4 -->
+
+    <div class="photo match-4">
+
+      <span class="match-label">
+        Partido 04
+      </span>
+
+      <img
+        src="assets/gryffindor-match-4.jpg"
+        alt="Partido 4 de Gryffindor"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Gryffindor vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 5 -->
+
+    <div class="photo match-5">
+
+      <span class="match-label">
+        Partido 05
+      </span>
+
+      <img
+        src="assets/gryffindor-match-5.jpg"
+        alt="Partido 5 de Gryffindor"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Five
+        </strong>
+
+        Temporada 2026–2027.
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 6 -->
+
+    <div class="photo match-6">
+
+      <span class="match-label">
+        Partido 06
+      </span>
+
+      <img
+        src="assets/gryffindor-match-6.jpg"
+        alt="Partido 6 de Gryffindor"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Gryffindor vs. ______
+        </strong>
+
+        Resultado · ______
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PARTIDO 7 -->
+
+    <div class="photo match-7">
+
+      <span class="match-label">
+        Partido 07
+      </span>
+
+      <img
+        src="assets/gryffindor-match-7.jpg"
+        alt="Partido 7 de Gryffindor"
+      >
+
+      <div class="photo-caption">
+
+        <strong>
+          Match Seven
+        </strong>
+
+        Último encuentro de la temporada.
+
+      </div>
+
+    </div>
+
+
+
+    <div class="story-box">
+
+      <h3>
+        Gryffindor Season
+      </h3>
+
+      <p>
+
+        Escribe aquí la historia de la temporada de Gryffindor,
+        sus jugadores, resultados y los momentos que
+        definieron al equipo durante el torneo.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+  Hogwarts Yearbook
+  ·
+  Quidditch Season
+  ·
+  2026–2027
+
+</footer>
+
+
+</div>
+
+
+</body>
+
+</html>
