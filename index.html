@@ -46,6 +46,8 @@
   --memorial-dark:#4b5868;
   --memorial-light:#d7dbe0;
 
+  --gold:#9d8351;
+
   --white:#fbf8f2;
 
   --shadow:
@@ -1508,6 +1510,102 @@ section{
 
 
 /* =========================================================
+   GRADUACIÓN DESTACADA
+========================================================= */
+
+.graduation-card{
+
+  grid-column:1 / -1;
+
+  display:grid;
+
+  grid-template-columns:
+    1.45fr .75fr;
+
+  grid-template-rows:
+    auto auto 1fr;
+
+  column-gap:30px;
+
+  align-items:center;
+
+  padding:12px;
+
+  border-top:
+    4px solid var(--gold);
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8f3e9,
+      #eee3cf
+    );
+
+}
+
+
+.graduation-card .moment-photo{
+
+  grid-column:1;
+
+  grid-row:1 / 4;
+
+  aspect-ratio:16/7;
+
+}
+
+
+.graduation-card h3{
+
+  grid-column:2;
+
+  grid-row:1;
+
+  margin:
+    20px 15px 8px;
+
+  text-align:left;
+
+  font-size:23px;
+
+}
+
+
+.graduation-card p{
+
+  grid-column:2;
+
+  grid-row:2;
+
+  margin:
+    0 15px;
+
+  text-align:left;
+
+  font-size:10px;
+
+  line-height:1.8;
+
+}
+
+
+.graduation-card .moment-arrow{
+
+  grid-column:2;
+
+  grid-row:3;
+
+  margin:
+    5px 15px 15px;
+
+  text-align:left;
+
+  font-size:25px;
+
+}
+
+
+/* =========================================================
    CUADRO DE HONOR
 ========================================================= */
 
@@ -1655,7 +1753,7 @@ section{
 
 
 /* =========================================================
-   PREMIACIONES DEL AÑO
+   PREMIACIONES
 ========================================================= */
 
 .awards-section{
@@ -1732,8 +1830,6 @@ section{
 
   font-size:10px;
 
-  letter-spacing:1px;
-
 }
 
 
@@ -1755,17 +1851,6 @@ section{
   color:#8e7c62;
 
   font-size:22px;
-
-  transition:
-    transform .2s ease;
-
-}
-
-
-.award-button:hover .award-arrow{
-
-  transform:
-    translateX(4px);
 
 }
 
@@ -1940,8 +2025,6 @@ section{
 
   background:transparent;
 
-  color:var(--ink);
-
   font-size:28px;
 
   cursor:pointer;
@@ -2024,8 +2107,7 @@ section{
 
 
 /* =========================================================
-   MODAL PREMIACIONES
-   2 ARRIBA + 2 ABAJO
+   PREMIACIONES · 2 ARRIBA + 2 ABAJO
 ========================================================= */
 
 .award-modal-card{
@@ -2052,15 +2134,6 @@ section{
 
 }
 
-
-/*
-  IMPORTANTE:
-  Esta cuadrícula siempre tiene DOS columnas.
-  Resultado:
-
-  Gryffindor | Slytherin
-  Hufflepuff | Ravenclaw
-*/
 
 .award-winners{
 
@@ -2098,17 +2171,6 @@ section{
 }
 
 
-.winner-card:hover{
-
-  transform:
-    translateY(-4px);
-
-  box-shadow:
-    0 12px 25px rgba(0,0,0,.08);
-
-}
-
-
 .winner-photo{
 
   width:100%;
@@ -2126,10 +2188,6 @@ section{
   color:#786f65;
 
   font-size:9px;
-
-  text-transform:uppercase;
-
-  letter-spacing:1px;
 
 }
 
@@ -2185,70 +2243,46 @@ section{
 
   font-size:9px;
 
-  line-height:1.5;
-
 }
 
 
-/* COLOR DE CADA CASA */
-
 .winner-gryffindor{
-
-  border-top:
-    4px solid var(--red);
-
+  border-top:4px solid var(--red);
 }
 
 
 .winner-gryffindor .winner-house{
-
   color:var(--red);
-
 }
 
 
 .winner-slytherin{
-
-  border-top:
-    4px solid var(--green);
-
+  border-top:4px solid var(--green);
 }
 
 
 .winner-slytherin .winner-house{
-
   color:var(--green);
-
 }
 
 
 .winner-hufflepuff{
-
-  border-top:
-    4px solid var(--yellow);
-
+  border-top:4px solid var(--yellow);
 }
 
 
 .winner-hufflepuff .winner-house{
-
   color:var(--yellow-dark);
-
 }
 
 
 .winner-ravenclaw{
-
-  border-top:
-    4px solid var(--blue);
-
+  border-top:4px solid var(--blue);
 }
 
 
 .winner-ravenclaw .winner-house{
-
   color:var(--blue);
-
 }
 
 
@@ -2471,17 +2505,55 @@ footer .silver{
   }
 
 
-  .lucas-quote{
-
-    text-align:left;
-
-  }
-
-
   .moments-grid{
 
     grid-template-columns:
       repeat(2,1fr);
+
+  }
+
+
+  .graduation-card{
+
+    display:block;
+
+  }
+
+
+  .graduation-card .moment-photo{
+
+    aspect-ratio:16/9;
+
+  }
+
+
+  .graduation-card h3{
+
+    margin:
+      15px 5px 7px;
+
+    text-align:center;
+
+    font-size:16px;
+
+  }
+
+
+  .graduation-card p{
+
+    margin:
+      0 8px 8px;
+
+    text-align:center;
+
+  }
+
+
+  .graduation-card .moment-arrow{
+
+    margin:0 0 5px;
+
+    text-align:center;
 
   }
 
@@ -2679,12 +2751,6 @@ footer .silver{
   }
 
 
-  /*
-    NO CAMBIAR A UNA COLUMNA.
-    Así permanecen 2 arriba y 2 abajo
-    también en teléfono.
-  */
-
   .award-winners{
 
     grid-template-columns:
@@ -2704,9 +2770,7 @@ footer .silver{
 
 
   .winner-card h3{
-
     font-size:11px;
-
   }
 
 
@@ -2720,9 +2784,7 @@ footer .silver{
 
 
   .winner-card p{
-
     font-size:8px;
-
   }
 
 
@@ -2993,9 +3055,7 @@ footer .silver{
 
 
       <div class="direction-photo">
-
         Foto del Director
-
       </div>
 
 
@@ -3033,9 +3093,7 @@ footer .silver{
 
 
       <div class="direction-photo">
-
         Foto de la Subdirectora
-
       </div>
 
 
@@ -3098,8 +3156,6 @@ footer .silver{
   <div class="houses-grid">
 
 
-    <!-- GRYFFINDOR -->
-
     <article class="house-card gryffindor">
 
 
@@ -3133,8 +3189,6 @@ footer .silver{
 
     </article>
 
-
-    <!-- SLYTHERIN -->
 
     <article class="house-card slytherin">
 
@@ -3170,8 +3224,6 @@ footer .silver{
     </article>
 
 
-    <!-- HUFFLEPUFF -->
-
     <article class="house-card hufflepuff">
 
 
@@ -3205,8 +3257,6 @@ footer .silver{
 
     </article>
 
-
-    <!-- RAVENCLAW -->
 
     <article class="house-card ravenclaw">
 
@@ -3269,7 +3319,8 @@ footer .silver{
 
   <p class="section-subtitle">
 
-    Conoce a nuestros profesores.
+    Conoce a los profesores que acompañaron
+    a los estudiantes durante el curso 2026–2027.
 
   </p>
 
@@ -3488,17 +3539,19 @@ footer .silver{
 
   <p class="section-subtitle">
 
-    Partidos, entrenamientos, presentaciones,
-    actividades, excursiones y celebraciones
-    que marcaron el curso 2026–2027.
+    Partidos, torneos, presentaciones, excursiones,
+    celebraciones y despedidas que marcaron el curso 2026–2027.
 
-    Toca cualquier sección para ver su álbum completo.
+    Toca cualquier sección para descubrir
+    todos los recuerdos de este año.
 
   </p>
 
 
   <div class="moments-grid">
 
+
+    <!-- QUIDDITCH -->
 
     <a
       href="quidditch.html"
@@ -3524,8 +3577,9 @@ footer .silver{
 
       <p>
 
-        Partidos, entrenamientos, gradas,
-        resultados y recuerdos de la temporada.
+        Los siete partidos de cada equipo,
+        entrenamientos, gradas, victorias,
+        derrotas y recuerdos de la temporada.
 
       </p>
 
@@ -3537,6 +3591,8 @@ footer .silver{
 
     </a>
 
+
+    <!-- PORRISTAS -->
 
     <a
       href="porristas.html"
@@ -3563,7 +3619,8 @@ footer .silver{
       <p>
 
         Presentaciones, prácticas,
-        partidos y momentos detrás de escena.
+        partidos y momentos detrás de escena
+        de los cuatro equipos de Hogwarts.
 
       </p>
 
@@ -3576,32 +3633,35 @@ footer .silver{
     </a>
 
 
+    <!-- TORNEO DE LOS TRES MAGOS -->
+
     <a
-      href="club-arte.html"
+      href="torneo-tres-magos.html"
       class="moment-card"
     >
 
 
       <div class="moment-photo">
 
-        Foto del Club de Arte
+        Foto del Torneo de los Tres Magos
 
         <div class="moment-overlay">
-          Abrir álbum
+          Ver el Torneo
         </div>
 
       </div>
 
 
       <h3>
-        Club de Arte
+        Torneo de los Tres Magos
       </h3>
 
 
       <p>
 
-        Creaciones, reuniones,
-        proyectos y recuerdos del club.
+        Campeones, pruebas, espectadores,
+        celebraciones y los momentos que hicieron
+        historia durante el torneo.
 
       </p>
 
@@ -3613,6 +3673,8 @@ footer .silver{
 
     </a>
 
+
+    <!-- ACTIVIDADES -->
 
     <a
       href="actividades.html"
@@ -3638,8 +3700,9 @@ footer .silver{
 
       <p>
 
-        Actividades escolares,
-        competencias y momentos especiales.
+        Competencias, proyectos,
+        actividades escolares y momentos
+        especiales vividos durante el curso.
 
       </p>
 
@@ -3651,6 +3714,8 @@ footer .silver{
 
     </a>
 
+
+    <!-- EXCURSIONES -->
 
     <a
       href="excursiones.html"
@@ -3676,8 +3741,9 @@ footer .silver{
 
       <p>
 
-        Visitas, viajes,
-        salidas y aventuras fuera de las aulas.
+        Visitas, viajes, trabajos de campo,
+        salidas y aventuras fuera
+        de las aulas de Hogwarts.
 
       </p>
 
@@ -3689,6 +3755,8 @@ footer .silver{
 
     </a>
 
+
+    <!-- EVENTOS -->
 
     <a
       href="eventos.html"
@@ -3714,8 +3782,52 @@ footer .silver{
 
       <p>
 
-        Bailes, ceremonias,
-        celebraciones y acontecimientos del año.
+        Bailes, fiestas, ceremonias,
+        celebraciones y acontecimientos
+        inolvidables del año.
+
+      </p>
+
+
+      <span class="moment-arrow">
+        ›
+      </span>
+
+
+    </a>
+
+
+    <!-- =====================================================
+         GRADUACIÓN
+    ====================================================== -->
+
+    <a
+      href="graduacion.html"
+      class="moment-card graduation-card"
+    >
+
+
+      <div class="moment-photo">
+
+        Foto de Graduación 2027
+
+        <div class="moment-overlay">
+          Ver Graduación
+        </div>
+
+      </div>
+
+
+      <h3>
+        Graduación 2027
+      </h3>
+
+
+      <p>
+
+        La última noche como estudiantes de Hogwarts.
+        Séptimo año, discursos, familias, amistades
+        y una despedida después de siete años de magia.
 
       </p>
 
@@ -3847,7 +3959,7 @@ footer .silver{
 
 
 <!-- =========================================================
-     PREMIACIONES DEL AÑO
+     PREMIACIONES
 ========================================================= -->
 
 <section
@@ -3880,30 +3992,22 @@ footer .silver{
   <div class="awards-list">
 
 
-    <!-- 01 -->
-
     <button
       class="award-button"
       type="button"
       onclick="openAward('bestDressed')"
     >
 
-      <span class="award-number">
-        01
-      </span>
+      <span class="award-number">01</span>
 
       <span class="award-name">
         Mejor Vestido/a
       </span>
 
-      <span class="award-arrow">
-        ›
-      </span>
+      <span class="award-arrow">›</span>
 
     </button>
 
-
-    <!-- 02 -->
 
     <button
       class="award-button"
@@ -3911,22 +4015,16 @@ footer .silver{
       onclick="openAward('funniest')"
     >
 
-      <span class="award-number">
-        02
-      </span>
+      <span class="award-number">02</span>
 
       <span class="award-name">
         Más Divertido/a
       </span>
 
-      <span class="award-arrow">
-        ›
-      </span>
+      <span class="award-arrow">›</span>
 
     </button>
 
-
-    <!-- 03 -->
 
     <button
       class="award-button"
@@ -3934,22 +4032,16 @@ footer .silver{
       onclick="openAward('duo')"
     >
 
-      <span class="award-number">
-        03
-      </span>
+      <span class="award-number">03</span>
 
       <span class="award-name">
         Dúo Inseparable
       </span>
 
-      <span class="award-arrow">
-        ›
-      </span>
+      <span class="award-arrow">›</span>
 
     </button>
 
-
-    <!-- 04 -->
 
     <button
       class="award-button"
@@ -3957,22 +4049,16 @@ footer .silver{
       onclick="openAward('quidditch')"
     >
 
-      <span class="award-number">
-        04
-      </span>
+      <span class="award-number">04</span>
 
       <span class="award-name">
         Mejor Jugador/a de Quidditch
       </span>
 
-      <span class="award-arrow">
-        ›
-      </span>
+      <span class="award-arrow">›</span>
 
     </button>
 
-
-    <!-- 05 -->
 
     <button
       class="award-button"
@@ -3980,22 +4066,16 @@ footer .silver{
       onclick="openAward('brightest')"
     >
 
-      <span class="award-number">
-        05
-      </span>
+      <span class="award-number">05</span>
 
       <span class="award-name">
         Mente Más Brillante
       </span>
 
-      <span class="award-arrow">
-        ›
-      </span>
+      <span class="award-arrow">›</span>
 
     </button>
 
-
-    <!-- 06 -->
 
     <button
       class="award-button"
@@ -4003,22 +4083,16 @@ footer .silver{
       onclick="openAward('spirit')"
     >
 
-      <span class="award-number">
-        06
-      </span>
+      <span class="award-number">06</span>
 
       <span class="award-name">
         Espíritu de Hogwarts
       </span>
 
-      <span class="award-arrow">
-        ›
-      </span>
+      <span class="award-arrow">›</span>
 
     </button>
 
-
-    <!-- 07 -->
 
     <button
       class="award-button"
@@ -4026,17 +4100,13 @@ footer .silver{
       onclick="openAward('migajero')"
     >
 
-      <span class="award-number">
-        07
-      </span>
+      <span class="award-number">07</span>
 
       <span class="award-name">
         Más Migajero/a
       </span>
 
-      <span class="award-arrow">
-        ›
-      </span>
+      <span class="award-arrow">›</span>
 
     </button>
 
@@ -4212,9 +4282,6 @@ footer .silver{
 
 <!-- =========================================================
      MODAL PREMIACIONES
-
-     NO NECESITAS DUPLICAR ESTE MODAL.
-     JAVASCRIPT CAMBIA AUTOMÁTICAMENTE LOS GANADORES.
 ========================================================= -->
 
 <div
@@ -4266,13 +4333,6 @@ footer .silver{
     ></p>
 
 
-    <!--
-      ORDEN:
-
-      GRYFFINDOR | SLYTHERIN
-      HUFFLEPUFF | RAVENCLAW
-    -->
-
     <div
       class="award-winners"
       id="awardWinners"
@@ -4288,7 +4348,7 @@ footer .silver{
 <script>
 
 /* =========================================================
-   MENÚ MÓVIL
+   MENÚ
 ========================================================= */
 
 function toggleMenu(){
@@ -4366,33 +4426,11 @@ function closeMessage(){
 
 
 /* =========================================================
-   DATOS DE PREMIACIONES
-
-   ⭐ ESTA ES LA PARTE QUE VAS A EDITAR ⭐
-
-   Para cambiar un ganador:
-
-   name: "Nombre del estudiante"
-
-   Para poner su foto:
-
-   image: "assets/nombre-de-la-foto.png"
-
-   EJEMPLO:
-
-   gryffindor:{
-     name:"Hermione Granger",
-     image:"assets/hermione.png"
-   }
-
+   PREMIACIONES
 ========================================================= */
 
 const awardsData = {
 
-
-  /* =====================================================
-     01 · MEJOR VESTIDO/A
-  ===================================================== */
 
   bestDressed:{
 
@@ -4403,46 +4441,30 @@ const awardsData = {
 
 
     gryffindor:{
-
       name:"Ganador/a Gryffindor",
-
       image:""
-
     },
 
 
     slytherin:{
-
       name:"Aster Snape",
-
       image:"assets/Aster Snape.jpg"
-
     },
 
 
     hufflepuff:{
-
       name:"Gianna Rosier",
-
       image:"assets/Gianna Rosier.jpeg"
-
     },
 
 
     ravenclaw:{
-
       name:"Colette Black",
-
       image:"assets/0E3A0C53-0EC0-4CF5-A9FE-38E50826FE52.png"
-
     }
 
   },
 
-
-  /* =====================================================
-     02 · MÁS DIVERTIDO/A
-  ===================================================== */
 
   funniest:{
 
@@ -4453,46 +4475,30 @@ const awardsData = {
 
 
     gryffindor:{
-
       name:"Ganador/a Gryffindor",
-
       image:""
-
     },
 
 
     slytherin:{
-
       name:"Draco Malfoy",
-
       image:"assets/Draco Malfoy premios.jpg"
-
     },
 
 
     hufflepuff:{
-
       name:"Minho Everden",
-
       image:"assets/Minho Everden.jpeg"
-
     },
 
 
     ravenclaw:{
-
       name:"Anna Berenice Crouch Selwyn",
-
       image:"assets/4D0C2C26-23A3-4F49-9EEE-51C8A8CD59B2.png"
-
     }
 
   },
 
-
-  /* =====================================================
-     03 · DÚO INSEPARABLE
-  ===================================================== */
 
   duo:{
 
@@ -4503,46 +4509,30 @@ const awardsData = {
 
 
     gryffindor:{
-
       name:"Dúo ganador Gryffindor",
-
       image:""
-
     },
 
 
     slytherin:{
-
       name:"Adrian Rosier y Nicol Velthougar",
-
       image:"assets/Adrian Rosier y Nicol Velthougar.jpg"
-
     },
 
 
     hufflepuff:{
-
       name:"Stelian Loren y Gianna Rosier",
-
       image:"assets/Stelian Loren y Gianna Rosier.jpeg"
-
     },
 
 
     ravenclaw:{
-
       name:"Minho Black y Mallory Grimshaw",
-
       image:"assets/988C5893-DDDB-4185-AD40-01542B3C704B.png"
-
     }
 
   },
 
-
-  /* =====================================================
-     04 · MEJOR JUGADOR/A DE QUIDDITCH
-  ===================================================== */
 
   quidditch:{
 
@@ -4553,46 +4543,30 @@ const awardsData = {
 
 
     gryffindor:{
-
       name:"Ganador/a Gryffindor",
-
       image:""
-
     },
 
 
     slytherin:{
-
       name:"Ellodie Cullen",
-
       image:"assets/Ellodie Cullen premios.jpg"
-
     },
 
 
     hufflepuff:{
-
       name:"Honey Diggory",
-
       image:"assets/Honey Diggory.jpeg"
-
     },
 
 
     ravenclaw:{
-
       name:"Willow Blackthorn",
-
       image:"assets/DFF8DE76-341E-4F99-8A98-880652C987C6.png"
-
     }
 
   },
 
-
-  /* =====================================================
-     05 · MENTE MÁS BRILLANTE
-  ===================================================== */
 
   brightest:{
 
@@ -4603,46 +4577,30 @@ const awardsData = {
 
 
     gryffindor:{
-
       name:"Ganador/a Gryffindor",
-
       image:""
-
     },
 
 
     slytherin:{
-
       name:"Cas Snape",
-
       image:"assets/Cas Snape.jpg"
-
     },
 
 
     hufflepuff:{
-
       name:"Alexandra Delacoure",
-
       image:"assets/Alexandra Delacoure.jpeg"
-
     },
 
 
     ravenclaw:{
-
       name:"Layla Nott Rosier",
-
       image:"assets/37E63057-F1D3-4881-B322-A87A7E70820B.png"
-
     }
 
   },
 
-
-  /* =====================================================
-     06 · ESPÍRITU DE HOGWARTS
-  ===================================================== */
 
   spirit:{
 
@@ -4653,46 +4611,30 @@ const awardsData = {
 
 
     gryffindor:{
-
       name:"Ganador/a Gryffindor",
-
       image:""
-
     },
 
 
     slytherin:{
-
       name:"Altair Nott",
-
       image:"assets/Altair Nott.jpg"
-
     },
 
 
     hufflepuff:{
-
       name:"Rose Scamander",
-
       image:"assets/Rose Scamander.jpeg"
-
     },
 
 
     ravenclaw:{
-
       name:"Minho Black",
-
       image:"assets/4661A305-EA18-46BA-8C3F-4AD5EA2D4B9E.png"
-
     }
 
   },
 
-
-  /* =====================================================
-     07 · MÁS MIGAJERO/A
-  ===================================================== */
 
   migajero:{
 
@@ -4703,38 +4645,26 @@ const awardsData = {
 
 
     gryffindor:{
-
       name:"Ganador/a Gryffindor",
-
       image:""
-
     },
 
 
     slytherin:{
-
       name:"Adrian Rosier",
-
       image:"assets/Adrian Rosier.jpg"
-
     },
 
 
     hufflepuff:{
-
       name:"Ganador/a Hufflepuff",
-
       image:""
-
     },
 
 
     ravenclaw:{
-
       name:"Logan Carter Burke",
-
       image:"assets/A9AFC907-52A6-42A2-A84D-A5A93A7D0864.png"
-
     }
 
   }
@@ -4743,7 +4673,7 @@ const awardsData = {
 
 
 /* =========================================================
-   CREAR TARJETA DE GANADOR
+   TARJETA GANADOR
 ========================================================= */
 
 function createWinnerCard(
@@ -4841,13 +4771,6 @@ function openAward(
     .textContent =
     award.description;
 
-
-  /*
-    ESTE ORDEN CREA:
-
-    GRYFFINDOR | SLYTHERIN
-    HUFFLEPUFF | RAVENCLAW
-  */
 
   const winnersHTML =
 
