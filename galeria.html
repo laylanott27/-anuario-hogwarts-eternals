@@ -1,0 +1,2438 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Galería · Hogwarts 2025–2026</title>
+
+<style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+
+  --paper:#f1e8da;
+  --paper-light:#f8f3ea;
+  --ink:#181716;
+  --muted:#746c61;
+  --line:#b9aa94;
+
+  --gryffindor:#740001;
+  --slytherin:#1a472a;
+  --ravenclaw:#0e3a5d;
+  --hufflepuff:#ecb939;
+
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  margin:0;
+
+  background:#171717;
+
+  color:var(--ink);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+}
+
+img{
+  display:block;
+  width:100%;
+}
+
+button{
+  font:inherit;
+}
+
+.page{
+
+  width:min(1550px,100%);
+
+  margin:auto;
+
+  background:var(--paper);
+
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.nav{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:100;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  padding:15px 30px;
+
+  color:white;
+
+  background:rgba(18,18,18,.96);
+
+  border-bottom:1px solid #444;
+
+}
+
+.nav-brand{
+
+  font-size:10px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+.nav-links{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:22px;
+
+  font-size:8px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
+.nav-links a{
+
+  color:#ccc;
+
+  text-decoration:none;
+
+}
+
+.nav-links a:hover{
+  color:white;
+}
+
+.nav-back{
+
+  padding:8px 12px;
+
+  border:1px solid #777;
+
+  color:white !important;
+
+}
+
+
+/* =========================================================
+   PORTADA
+========================================================= */
+
+.hero{
+
+  min-height:600px;
+
+  position:relative;
+
+  display:flex;
+
+  align-items:flex-end;
+
+  overflow:hidden;
+
+  color:white;
+
+  background:#171717;
+
+}
+
+.hero-photo{
+
+  position:absolute;
+
+  inset:0;
+
+}
+
+.hero-photo img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  filter:
+    grayscale(.15)
+    contrast(1.05);
+
+}
+
+.hero-photo::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.78),
+      rgba(0,0,0,.12)
+    ),
+
+    linear-gradient(
+      transparent 55%,
+      rgba(0,0,0,.75)
+    );
+
+}
+
+.hero-copy{
+
+  position:relative;
+
+  z-index:5;
+
+  padding:
+    60px 50px;
+
+}
+
+.hero-small{
+
+  display:block;
+
+  margin-bottom:12px;
+
+  font-size:9px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+.hero h1{
+
+  margin:0;
+
+  font-size:
+    clamp(85px,15vw,220px);
+
+  line-height:.67;
+
+  font-weight:400;
+
+  letter-spacing:-8px;
+
+}
+
+.hero h1 em{
+
+  display:block;
+
+  margin-left:12%;
+
+  font-weight:400;
+
+}
+
+.hero p{
+
+  max-width:540px;
+
+  margin:
+    35px 0 0;
+
+  font-size:14px;
+
+  line-height:1.8;
+
+}
+
+
+/* =========================================================
+   HOUSE STRIPE
+========================================================= */
+
+.house-stripe{
+
+  height:14px;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+}
+
+.house-stripe div:nth-child(1){
+  background:var(--gryffindor);
+}
+
+.house-stripe div:nth-child(2){
+  background:var(--slytherin);
+}
+
+.house-stripe div:nth-child(3){
+  background:var(--ravenclaw);
+}
+
+.house-stripe div:nth-child(4){
+  background:var(--hufflepuff);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro{
+
+  padding:
+    90px 40px 70px;
+
+  background:var(--paper-light);
+
+}
+
+.intro-wrap{
+
+  max-width:1150px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:80px;
+
+  align-items:end;
+
+}
+
+.intro h2{
+
+  margin:0;
+
+  font-size:
+    clamp(65px,10vw,140px);
+
+  line-height:.76;
+
+  font-weight:400;
+
+}
+
+.intro h2 em{
+
+  display:block;
+
+  color:#80705c;
+
+  font-weight:400;
+
+}
+
+.intro-copy{
+
+  font-size:13px;
+
+  line-height:1.9;
+
+}
+
+.intro-copy span{
+
+  display:block;
+
+  margin-bottom:15px;
+
+  color:#8c795d;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   ARCHIVE HEADER
+========================================================= */
+
+.archive-header{
+
+  padding:
+    65px 35px 30px;
+
+}
+
+.archive-header-inner{
+
+  max-width:1300px;
+
+  margin:auto;
+
+  display:flex;
+
+  align-items:flex-end;
+
+  justify-content:space-between;
+
+  gap:40px;
+
+  padding-bottom:20px;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+.archive-header span{
+
+  font-size:9px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+  color:#7e715f;
+
+}
+
+.archive-header h2{
+
+  margin:
+    4px 0 0;
+
+  font-size:
+    clamp(50px,7vw,95px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+.archive-number{
+
+  font-size:
+    clamp(45px,7vw,90px);
+
+  color:#c2b39d;
+
+}
+
+
+/* =========================================================
+   GALERÍA MASONRY
+
+   Esta parte permite que las fotos tengan alturas diferentes.
+========================================================= */
+
+.gallery{
+
+  padding:
+    20px 25px 100px;
+
+}
+
+.gallery-grid{
+
+  max-width:1400px;
+
+  margin:auto;
+
+  columns:4;
+
+  column-gap:10px;
+
+}
+
+
+/* =========================================================
+   FOTOS
+========================================================= */
+
+.gallery-item{
+
+  position:relative;
+
+  display:inline-block;
+
+  width:100%;
+
+  margin:
+    0 0 10px;
+
+  overflow:hidden;
+
+  cursor:pointer;
+
+  background:#d8d0c4;
+
+  break-inside:avoid;
+
+}
+
+.gallery-item img{
+
+  width:100%;
+
+  height:auto;
+
+  transition:
+    transform .45s ease,
+    filter .45s ease;
+
+}
+
+.gallery-item:hover img{
+
+  transform:scale(1.025);
+
+}
+
+
+/* CAPTION */
+
+.gallery-caption{
+
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:0;
+
+  padding:
+    35px 12px 11px;
+
+  color:white;
+
+  opacity:0;
+
+  background:
+
+    linear-gradient(
+      transparent,
+      rgba(0,0,0,.75)
+    );
+
+  transition:.3s;
+
+}
+
+.gallery-item:hover .gallery-caption{
+  opacity:1;
+}
+
+.gallery-caption strong{
+
+  display:block;
+
+  font-size:10px;
+
+  font-weight:400;
+
+  letter-spacing:1px;
+
+}
+
+.gallery-caption span{
+
+  display:block;
+
+  margin-top:3px;
+
+  color:#ddd;
+
+  font-size:8px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   SEPARADOR TIPO ANUARIO
+========================================================= */
+
+.yearbook-break{
+
+  margin:
+    30px 0 40px;
+
+  padding:
+    80px 25px;
+
+  color:white;
+
+  background:#171717;
+
+}
+
+.yearbook-break-inner{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    1.2fr .8fr;
+
+  gap:50px;
+
+  align-items:end;
+
+}
+
+.yearbook-break h2{
+
+  margin:0;
+
+  font-size:
+    clamp(65px,10vw,140px);
+
+  line-height:.72;
+
+  font-weight:400;
+
+}
+
+.yearbook-break h2 em{
+
+  display:block;
+
+  color:#aaa;
+
+  font-weight:400;
+
+}
+
+.yearbook-break p{
+
+  margin:0;
+
+  color:#bbb;
+
+  font-size:13px;
+
+  line-height:1.9;
+
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.lightbox{
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:9999;
+
+  display:none;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:60px;
+
+  background:rgba(0,0,0,.94);
+
+}
+
+.lightbox.active{
+  display:flex;
+}
+
+.lightbox img{
+
+  width:auto;
+  height:auto;
+
+  max-width:88vw;
+  max-height:85vh;
+
+  object-fit:contain;
+
+  box-shadow:
+    0 20px 80px rgba(0,0,0,.6);
+
+}
+
+.lightbox-close{
+
+  position:absolute;
+
+  top:20px;
+  right:25px;
+
+  width:45px;
+  height:45px;
+
+  border:0;
+
+  color:white;
+
+  background:transparent;
+
+  font-family:Arial,sans-serif;
+
+  font-size:35px;
+
+  cursor:pointer;
+
+}
+
+.lightbox-arrow{
+
+  position:absolute;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
+  width:55px;
+  height:80px;
+
+  border:0;
+
+  color:white;
+
+  background:rgba(255,255,255,.08);
+
+  font-size:35px;
+
+  cursor:pointer;
+
+}
+
+.lightbox-arrow:hover{
+
+  background:
+    rgba(255,255,255,.16);
+
+}
+
+.lightbox-prev{
+  left:20px;
+}
+
+.lightbox-next{
+  right:20px;
+}
+
+.lightbox-info{
+
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:15px;
+
+  color:#bbb;
+
+  text-align:center;
+
+  font-size:9px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   FINAL
+========================================================= */
+
+.end{
+
+  padding:
+    120px 30px;
+
+  text-align:center;
+
+  background:#e1d8ca;
+
+}
+
+.end-small{
+
+  font-size:9px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+  color:#776a57;
+
+}
+
+.end h2{
+
+  margin:
+    10px 0 25px;
+
+  font-size:
+    clamp(65px,10vw,140px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+}
+
+.end p{
+
+  max-width:600px;
+
+  margin:auto;
+
+  font-size:14px;
+
+  line-height:1.9;
+
+  color:#5e574e;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  padding:
+    50px 20px;
+
+  color:#bbb;
+
+  background:#111;
+
+  text-align:center;
+
+}
+
+footer strong{
+
+  display:block;
+
+  margin-bottom:8px;
+
+  color:white;
+
+  font-size:22px;
+
+  font-weight:400;
+
+}
+
+footer span{
+
+  font-size:8px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:1000px){
+
+  .gallery-grid{
+    columns:3;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:700px){
+
+  .nav{
+
+    padding:
+      12px 15px;
+
+  }
+
+  .nav-links a:not(.nav-back){
+    display:none;
+  }
+
+
+  /* HERO */
+
+  .hero{
+    min-height:650px;
+  }
+
+  .hero-copy{
+
+    padding:
+      45px 20px;
+
+  }
+
+  .hero h1{
+
+    font-size:76px;
+
+    letter-spacing:-5px;
+
+  }
+
+
+  /* INTRO */
+
+  .intro{
+
+    padding:
+      60px 20px;
+
+  }
+
+  .intro-wrap{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+  }
+
+  .intro h2{
+    font-size:62px;
+  }
+
+
+  /* ARCHIVE */
+
+  .archive-header{
+
+    padding:
+      50px 15px 20px;
+
+  }
+
+  .archive-header h2{
+    font-size:50px;
+  }
+
+
+  /* GALERÍA */
+
+  .gallery{
+
+    padding:
+      10px 7px 70px;
+
+  }
+
+  .gallery-grid{
+
+    columns:2;
+
+    column-gap:5px;
+
+  }
+
+  .gallery-item{
+
+    margin-bottom:5px;
+
+  }
+
+
+  /* Siempre mostrar caption en móvil */
+
+  .gallery-caption{
+
+    opacity:1;
+
+    padding:
+      25px 8px 7px;
+
+  }
+
+  .gallery-caption strong{
+    font-size:8px;
+  }
+
+  .gallery-caption span{
+    font-size:6px;
+  }
+
+
+  /* BREAK */
+
+  .yearbook-break{
+
+    padding:
+      65px 20px;
+
+  }
+
+  .yearbook-break-inner{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+  }
+
+  .yearbook-break h2{
+    font-size:60px;
+  }
+
+
+  /* LIGHTBOX */
+
+  .lightbox{
+    padding:20px;
+  }
+
+  .lightbox img{
+
+    max-width:95vw;
+    max-height:80vh;
+
+  }
+
+  .lightbox-arrow{
+
+    width:42px;
+    height:60px;
+
+    font-size:27px;
+
+    background:
+      rgba(0,0,0,.4);
+
+  }
+
+  .lightbox-prev{
+    left:5px;
+  }
+
+  .lightbox-next{
+    right:5px;
+  }
+
+
+  /* END */
+
+  .end{
+
+    padding:
+      90px 20px;
+
+  }
+
+  .end h2{
+    font-size:62px;
+  }
+
+}
+
+
+/* =========================================================
+   MUY PEQUEÑO
+========================================================= */
+
+@media(max-width:400px){
+
+  .hero h1{
+    font-size:65px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- =========================================================
+     NAVEGACIÓN
+========================================================= -->
+
+<nav class="nav">
+
+  <div class="nav-brand">
+    Hogwarts · Photo Archive
+  </div>
+
+  <div class="nav-links">
+
+    <a href="#gallery">
+      Galería
+    </a>
+
+    <!-- CAMBIA index.html SI TU PRINCIPAL TIENE OTRO NOMBRE -->
+
+    <a
+      href="index.html"
+      class="nav-back"
+    >
+      ← Anuario
+    </a>
+
+  </div>
+
+</nav>
+
+
+<!-- =========================================================
+     PORTADA
+
+     AQUÍ PONES UNA FOTO GRANDE PARA LA PORTADA
+========================================================= -->
+
+<header class="hero">
+
+  <div class="hero-photo">
+
+    <img
+      src="assets/galeria-portada.jpg"
+      alt="Galería Hogwarts"
+    >
+
+  </div>
+
+
+  <div class="hero-copy">
+
+    <span class="hero-small">
+      Hogwarts Yearbook · 2025–2026
+    </span>
+
+    <h1>
+
+      PHOTO
+
+      <em>
+        ARCHIVE
+      </em>
+
+    </h1>
+
+    <p>
+
+      Las fotografías que no necesitaban
+      una ocasión especial para merecer
+      un lugar en el anuario.
+
+      Pasillos, aulas, salas comunes,
+      amigos, profesores y todos esos
+      pequeños momentos que hicieron
+      de Hogwarts nuestro hogar.
+
+    </p>
+
+  </div>
+
+</header>
+
+
+<div class="house-stripe">
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</div>
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="intro">
+
+  <div class="intro-wrap">
+
+    <h2>
+
+      EVERYTHING
+
+      <em>
+        IN BETWEEN.
+      </em>
+
+    </h2>
+
+
+    <div class="intro-copy">
+
+      <span>
+        The photographs left behind
+      </span>
+
+      No todo ocurrió durante un partido,
+      una ceremonia o una excursión.
+
+      Algunas de nuestras fotografías favoritas
+      simplemente sucedieron.
+
+      Una cámara en el momento correcto,
+      alguien riéndose demasiado fuerte,
+      una tarde en la sala común,
+      una clase que terminó siendo más divertida
+      de lo esperado o una fotografía que nadie
+      recordaba haber tomado.
+
+      Esta es la parte del anuario donde
+      guardamos todo lo demás.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ARCHIVO
+========================================================= -->
+
+<section
+  class="archive-header"
+  id="gallery"
+>
+
+  <div class="archive-header-inner">
+
+    <div>
+
+      <span>
+        Hogwarts Photo Archive
+      </span>
+
+      <h2>
+        THE REST OF THE YEAR
+      </h2>
+
+    </div>
+
+    <div class="archive-number">
+      25—26
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     GALERÍA
+
+     IMPORTANTE:
+
+     PARA AGREGAR OTRA FOTO:
+
+     COPIA:
+
+     <figure class="gallery-item">
+       <img src="assets/NOMBRE.jpg" alt="">
+       <figcaption class="gallery-caption">
+         <strong>Texto opcional</strong>
+         <span>Texto pequeño</span>
+       </figcaption>
+     </figure>
+
+     Y PÉGALO AQUÍ.
+
+     PUEDES PONER 20, 50, 100, 200...
+========================================================= -->
+
+<section class="gallery">
+
+
+<div class="gallery-grid">
+
+
+<!-- FOTO 01 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-01.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Just another day
+    </strong>
+
+    <span>
+      Hogwarts · 2025
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 02 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-02.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Between classes
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 03 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-03.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      No context needed.
+    </strong>
+
+    <span>
+      2025–2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 04 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-04.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 05 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-05.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2025
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 06 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-06.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 07 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-07.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2025–2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 08 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-08.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 09 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-09.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 10 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-10.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2025–2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 11 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-11.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 12 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-12.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 13 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-13.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 14 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-14.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 15 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-15.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2025–2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 16 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-16.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 17 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-17.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 18 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-18.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 19 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-19.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 20 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-20.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2025–2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- =====================================================
+     SIGUE PEGANDO FOTOS AQUÍ
+
+     EJEMPLO:
+
+     gallery-21.jpg
+     gallery-22.jpg
+     gallery-23.jpg
+     gallery-24.jpg
+
+     NO HAY UN LÍMITE FIJO.
+====================================================== -->
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     SEPARADOR
+========================================================= -->
+
+<section class="yearbook-break">
+
+  <div class="yearbook-break-inner">
+
+    <h2>
+
+      WE TOOK
+
+      <em>
+        A LOT
+
+        OF PHOTOS.
+      </em>
+
+    </h2>
+
+
+    <p>
+
+      Algunas estaban perfectamente planeadas.
+
+      La mayoría no.
+
+      Y probablemente por eso terminaron siendo
+      las que mejor recordamos.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SEGUNDA GALERÍA
+
+     ESTA EXISTE PARA QUE PUEDAS SEGUIR AGREGANDO
+     CIENTOS DE FOTOS SIN QUE LA PÁGINA SE SIENTA
+     COMO UN BLOQUE INFINITO.
+========================================================= -->
+
+<section class="gallery">
+
+<div class="gallery-grid">
+
+
+<!-- FOTO 21 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-21.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Another one for the yearbook
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 22 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-22.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2025–2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 23 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-23.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 24 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-24.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 25 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-25.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 26 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-26.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 27 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-27.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 28 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-28.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      2025–2026
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 29 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-29.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- FOTO 30 -->
+
+<figure class="gallery-item">
+
+  <img
+    src="assets/gallery-30.jpg"
+    alt=""
+  >
+
+  <figcaption class="gallery-caption">
+
+    <strong>
+      Nombre / momento
+    </strong>
+
+    <span>
+      Hogwarts
+    </span>
+
+  </figcaption>
+
+</figure>
+
+
+<!-- =====================================================
+     PUEDES SEGUIR:
+
+     gallery-31.jpg
+     gallery-32.jpg
+     gallery-33.jpg
+     gallery-34.jpg
+     gallery-35.jpg
+     ETC.
+====================================================== -->
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL
+========================================================= -->
+
+<section class="end">
+
+  <span class="end-small">
+    End of the photo archive
+  </span>
+
+  <h2>
+    THAT WAS
+    <br>
+    OUR YEAR.
+  </h2>
+
+  <p>
+
+    Miles de momentos.
+
+    Cientos de fotografías.
+
+    Cuatro casas.
+
+    Un año que algún día solo podremos
+    volver a visitar de esta manera.
+
+  </p>
+
+</section>
+
+
+<div class="house-stripe">
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</div>
+
+
+<footer>
+
+  <strong>
+    Hogwarts Photo Archive
+  </strong>
+
+  <span>
+    Hogwarts Yearbook · Academic Year 2025–2026
+  </span>
+
+</footer>
+
+
+</div>
+
+
+<!-- =========================================================
+     LIGHTBOX
+
+     NO TIENES QUE TOCAR ESTO.
+========================================================= -->
+
+<div
+  class="lightbox"
+  id="lightbox"
+>
+
+  <button
+    class="lightbox-close"
+    id="lightboxClose"
+    aria-label="Cerrar"
+  >
+    ×
+  </button>
+
+
+  <button
+    class="lightbox-arrow lightbox-prev"
+    id="lightboxPrev"
+    aria-label="Anterior"
+  >
+    ‹
+  </button>
+
+
+  <img
+    id="lightboxImage"
+    src=""
+    alt=""
+  >
+
+
+  <button
+    class="lightbox-arrow lightbox-next"
+    id="lightboxNext"
+    aria-label="Siguiente"
+  >
+    ›
+  </button>
+
+
+  <div
+    class="lightbox-info"
+    id="lightboxInfo"
+  >
+  </div>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+const galleryItems =
+  Array.from(
+    document.querySelectorAll(".gallery-item")
+  );
+
+
+const lightbox =
+  document.getElementById("lightbox");
+
+const lightboxImage =
+  document.getElementById("lightboxImage");
+
+const lightboxClose =
+  document.getElementById("lightboxClose");
+
+const lightboxPrev =
+  document.getElementById("lightboxPrev");
+
+const lightboxNext =
+  document.getElementById("lightboxNext");
+
+const lightboxInfo =
+  document.getElementById("lightboxInfo");
+
+
+let currentIndex = 0;
+
+
+/* =========================================================
+   ABRIR FOTO
+========================================================= */
+
+function openPhoto(index){
+
+  currentIndex = index;
+
+  const image =
+    galleryItems[currentIndex]
+      .querySelector("img");
+
+  lightboxImage.src =
+    image.src;
+
+  lightboxImage.alt =
+    image.alt;
+
+  lightboxInfo.textContent =
+    `${currentIndex + 1} / ${galleryItems.length}`;
+
+  lightbox.classList.add("active");
+
+  document.body.style.overflow =
+    "hidden";
+
+}
+
+
+/* =========================================================
+   CERRAR
+========================================================= */
+
+function closePhoto(){
+
+  lightbox.classList.remove("active");
+
+  document.body.style.overflow =
+    "";
+
+}
+
+
+/* =========================================================
+   SIGUIENTE
+========================================================= */
+
+function nextPhoto(){
+
+  currentIndex =
+    (currentIndex + 1)
+    % galleryItems.length;
+
+  openPhoto(currentIndex);
+
+}
+
+
+/* =========================================================
+   ANTERIOR
+========================================================= */
+
+function previousPhoto(){
+
+  currentIndex =
+    (
+      currentIndex
+      - 1
+      + galleryItems.length
+    )
+    % galleryItems.length;
+
+  openPhoto(currentIndex);
+
+}
+
+
+/* =========================================================
+   CLICK EN CADA FOTO
+========================================================= */
+
+galleryItems.forEach(
+  (item,index) => {
+
+    item.addEventListener(
+      "click",
+      () => openPhoto(index)
+    );
+
+  }
+);
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+lightboxClose.addEventListener(
+  "click",
+  closePhoto
+);
+
+lightboxNext.addEventListener(
+  "click",
+  nextPhoto
+);
+
+lightboxPrev.addEventListener(
+  "click",
+  previousPhoto
+);
+
+
+/* =========================================================
+   CLICK AFUERA
+========================================================= */
+
+lightbox.addEventListener(
+  "click",
+  function(event){
+
+    if(event.target === lightbox){
+
+      closePhoto();
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   TECLADO
+========================================================= */
+
+document.addEventListener(
+  "keydown",
+  function(event){
+
+    if(
+      !lightbox.classList.contains("active")
+    ){
+      return;
+    }
+
+
+    if(event.key === "Escape"){
+      closePhoto();
+    }
+
+
+    if(event.key === "ArrowRight"){
+      nextPhoto();
+    }
+
+
+    if(event.key === "ArrowLeft"){
+      previousPhoto();
+    }
+
+  }
+);
+
+</script>
+
+
+</body>
+
+</html>
