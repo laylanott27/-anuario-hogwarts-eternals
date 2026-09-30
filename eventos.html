@@ -1,0 +1,3497 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eventos Especiales · Hogwarts 2025–2026</title>
+
+<style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+
+  --paper:#f3ecdf;
+  --cream:#faf6ee;
+  --ink:#191714;
+  --muted:#756c61;
+  --line:#b8aa98;
+
+  --night:#0c1018;
+  --night-blue:#121d31;
+
+  --autumn:#713c2c;
+  --autumn-light:#d8aa77;
+
+  --quidditch:#173248;
+  --quidditch-light:#a9c5d5;
+
+  --senior:#e4d7c6;
+
+  --gold:#b99950;
+  --gold-light:#ead8a5;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  margin:0;
+
+  background:var(--paper);
+
+  color:var(--ink);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+}
+
+img{
+
+  width:100%;
+  height:100%;
+
+  display:block;
+
+  object-fit:cover;
+
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page{
+
+  width:min(1450px,97%);
+
+  margin:20px auto;
+
+  overflow:hidden;
+
+  background:var(--cream);
+
+  border:1px solid #aa9c88;
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.15);
+
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.nav{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:1000;
+
+  padding:14px 28px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+
+  background:
+    rgba(250,246,238,.96);
+
+  border-bottom:
+    1px solid var(--line);
+
+  backdrop-filter:blur(12px);
+
+}
+
+
+.brand{
+
+  display:flex;
+  align-items:center;
+
+  gap:12px;
+
+}
+
+
+.brand-mark{
+
+  width:40px;
+  height:40px;
+
+  display:grid;
+  place-items:center;
+
+  border:1px solid #766b5d;
+  border-radius:50%;
+
+  font-size:17px;
+  font-weight:bold;
+
+}
+
+
+.brand-text{
+
+  font-size:9px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-links{
+
+  display:flex;
+
+  gap:17px;
+
+  align-items:center;
+
+  font-size:8px;
+
+  letter-spacing:1.4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-links a{
+
+  padding:7px 0;
+
+  border-bottom:
+    1px solid transparent;
+
+}
+
+
+.nav-links a:hover{
+  border-color:var(--ink);
+}
+
+
+.back{
+
+  padding:8px 13px !important;
+
+  border:1px solid var(--line) !important;
+
+}
+
+
+/* =========================================================
+   GENERALES
+========================================================= */
+
+.photo{
+
+  position:relative;
+
+  overflow:hidden;
+
+  background:#d4cec4;
+
+}
+
+
+.photo img{
+
+  transition:
+    transform .5s ease;
+
+}
+
+
+.photo:hover img{
+  transform:scale(1.025);
+}
+
+
+.kicker{
+
+  display:block;
+
+  margin-bottom:10px;
+
+  font-size:9px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.caption{
+
+  font-size:9px;
+
+  line-height:1.5;
+
+}
+
+
+.handwritten{
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+}
+
+
+/* =========================================================
+   PORTADA
+========================================================= */
+
+.events-cover{
+
+  min-height:760px;
+
+  position:relative;
+
+  padding:55px;
+
+  overflow:hidden;
+
+  color:white;
+
+  background:#151515;
+
+}
+
+
+.cover-title{
+
+  position:relative;
+
+  z-index:10;
+
+  width:56%;
+
+}
+
+
+.cover-title .kicker{
+
+  color:#c5bbaa;
+
+}
+
+
+.cover-title h1{
+
+  margin:0;
+
+  font-size:
+    clamp(75px,10vw,150px);
+
+  line-height:.72;
+
+  font-weight:400;
+
+  letter-spacing:-6px;
+
+}
+
+
+.cover-title h1 em{
+
+  display:block;
+
+  margin-left:60px;
+
+  color:var(--gold-light);
+
+  font-weight:400;
+
+}
+
+
+.cover-title p{
+
+  max-width:390px;
+
+  margin-top:35px;
+
+  color:#ccc3b7;
+
+  font-size:14px;
+
+  line-height:1.8;
+
+}
+
+
+.cover-collage{
+
+  position:absolute;
+
+  inset:0;
+
+}
+
+
+.cover-photo-1{
+
+  width:43%;
+  height:74%;
+
+  position:absolute;
+
+  right:4%;
+  bottom:5%;
+
+  z-index:2;
+
+}
+
+
+.cover-photo-2{
+
+  width:25%;
+  height:34%;
+
+  position:absolute;
+
+  right:38%;
+  bottom:6%;
+
+  z-index:4;
+
+  border:
+    7px solid #f5efe4;
+
+  transform:
+    rotate(-4deg);
+
+}
+
+
+.cover-photo-3{
+
+  width:22%;
+  height:27%;
+
+  position:absolute;
+
+  right:3%;
+  top:5%;
+
+  z-index:5;
+
+  border:
+    7px solid #f5efe4;
+
+  transform:
+    rotate(4deg);
+
+}
+
+
+.cover-year{
+
+  position:absolute;
+
+  left:55px;
+  bottom:45px;
+
+  z-index:20;
+
+  color:var(--gold-light);
+
+  font-size:11px;
+
+  letter-spacing:5px;
+
+}
+
+
+/* =========================================================
+   ÍNDICE VISUAL
+========================================================= */
+
+.events-index{
+
+  padding:
+    75px 55px;
+
+}
+
+
+.index-header{
+
+  display:flex;
+
+  justify-content:space-between;
+  align-items:flex-end;
+
+  gap:30px;
+
+  margin-bottom:35px;
+
+}
+
+
+.index-header h2{
+
+  margin:0;
+
+  font-size:55px;
+
+  font-weight:400;
+
+}
+
+
+.index-header p{
+
+  max-width:440px;
+
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:13px;
+
+  line-height:1.7;
+
+}
+
+
+.index-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:13px;
+
+}
+
+
+.index-card{
+
+  min-height:360px;
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+
+.index-card img{
+
+  position:absolute;
+
+  inset:0;
+
+}
+
+
+.index-card::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      transparent 35%,
+      rgba(0,0,0,.8)
+    );
+
+}
+
+
+.index-card-text{
+
+  position:absolute;
+
+  z-index:5;
+
+  left:20px;
+  right:20px;
+  bottom:20px;
+
+  color:white;
+
+}
+
+
+.index-card-text span{
+
+  font-size:8px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.index-card-text h3{
+
+  margin:
+    6px 0 0;
+
+  font-size:25px;
+
+  font-weight:400;
+
+}
+
+
+/* =========================================================
+   BAILE DE BIENVENIDA
+========================================================= */
+
+.welcome-dance{
+
+  min-height:850px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  color:white;
+
+  background:
+    var(--night);
+
+}
+
+
+.welcome-bg{
+
+  position:absolute;
+
+  inset:0;
+
+}
+
+
+.welcome-bg img{
+
+  opacity:.67;
+
+}
+
+
+.welcome-bg::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.87) 0%,
+      rgba(0,0,0,.35) 55%,
+      rgba(0,0,0,.55) 100%
+    );
+
+}
+
+
+.welcome-content{
+
+  position:relative;
+
+  z-index:5;
+
+  padding:
+    65px 55px;
+
+}
+
+
+.welcome-title{
+
+  width:54%;
+
+}
+
+
+.welcome-title h2{
+
+  margin:0;
+
+  font-size:
+    clamp(65px,9vw,125px);
+
+  line-height:.75;
+
+  font-weight:300;
+
+  letter-spacing:-5px;
+
+}
+
+
+.welcome-title h2 em{
+
+  color:#a8caec;
+
+  font-weight:400;
+
+}
+
+
+.welcome-copy{
+
+  width:390px;
+
+  margin-top:30px;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+
+.welcome-strip{
+
+  width:50%;
+
+  position:absolute;
+
+  top:60px;
+  right:4%;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:7px;
+
+  padding:9px;
+
+  background:
+    rgba(13,18,28,.88);
+
+}
+
+
+.welcome-strip .photo{
+
+  height:150px;
+
+}
+
+
+.welcome-strip p{
+
+  grid-column:
+    1 / 5;
+
+  margin:3px 3px 0;
+
+  color:#cbd5e1;
+
+  font-size:9px;
+
+  line-height:1.5;
+
+}
+
+
+.welcome-bottom{
+
+  width:49%;
+
+  position:absolute;
+
+  right:4%;
+  bottom:45px;
+
+  display:grid;
+
+  grid-template-columns:
+    1.3fr .7fr;
+
+  gap:10px;
+
+}
+
+
+.welcome-bottom .photo{
+
+  height:250px;
+
+}
+
+
+/* =========================================================
+   BAILE DE OTOÑO
+========================================================= */
+
+.autumn{
+
+  padding:
+    80px 55px;
+
+  background:#f0e4d6;
+
+}
+
+
+.autumn-header{
+
+  display:grid;
+
+  grid-template-columns:
+    1.1fr .9fr;
+
+  align-items:end;
+
+  gap:50px;
+
+  margin-bottom:45px;
+
+}
+
+
+.autumn-header h2{
+
+  margin:0;
+
+  color:var(--autumn);
+
+  font-size:
+    clamp(70px,10vw,145px);
+
+  line-height:.73;
+
+  font-weight:400;
+
+  letter-spacing:-6px;
+
+}
+
+
+.autumn-header p{
+
+  max-width:460px;
+
+  margin:0;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+
+.autumn-layout{
+
+  display:grid;
+
+  grid-template-columns:
+    1.4fr .6fr;
+
+  gap:15px;
+
+}
+
+
+.autumn-main{
+
+  height:610px;
+
+}
+
+
+.autumn-side{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  grid-template-rows:
+    200px 200px auto;
+
+  gap:10px;
+
+}
+
+
+.autumn-side .photo{
+  min-height:190px;
+}
+
+
+.autumn-story{
+
+  grid-column:
+    1 / 3;
+
+  padding:25px;
+
+  color:#f7eee4;
+
+  background:var(--autumn);
+
+}
+
+
+.autumn-story h3{
+
+  margin:
+    0 0 10px;
+
+  font-size:27px;
+
+  font-weight:400;
+
+}
+
+
+.autumn-story p{
+
+  margin:0;
+
+  font-size:11px;
+
+  line-height:1.8;
+
+}
+
+
+.autumn-mini-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(5,1fr);
+
+  gap:9px;
+
+  margin-top:10px;
+
+}
+
+
+.autumn-mini-grid .photo{
+
+  height:170px;
+
+}
+
+
+/* =========================================================
+   QUIDDITCH TEAM CHALLENGES
+========================================================= */
+
+.teams{
+
+  padding:
+    80px 55px;
+
+  color:white;
+
+  background:
+    var(--quidditch);
+
+}
+
+
+.teams-header{
+
+  display:grid;
+
+  grid-template-columns:
+    .9fr 1.1fr;
+
+  align-items:end;
+
+  gap:45px;
+
+  margin-bottom:40px;
+
+}
+
+
+.teams-header h2{
+
+  margin:0;
+
+  font-size:
+    clamp(65px,9vw,130px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+  letter-spacing:-5px;
+
+}
+
+
+.teams-header p{
+
+  max-width:500px;
+
+  margin:0;
+
+  color:#d1dbe1;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+
+.team-label{
+
+  display:inline-block;
+
+  margin-top:17px;
+
+  padding:
+    8px 14px;
+
+  color:#183247;
+
+  background:#c8dce7;
+
+  transform:
+    rotate(-2deg);
+
+  font-size:10px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.teams-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    .65fr 1.35fr .7fr;
+
+  grid-template-rows:
+    240px 260px 210px;
+
+  gap:10px;
+
+}
+
+
+.teams-grid .photo{
+
+  border:
+    4px solid rgba(255,255,255,.12);
+
+}
+
+
+.teams-main{
+
+  grid-column:
+    2 / 4;
+
+  grid-row:
+    1 / 3;
+
+}
+
+
+.teams-story{
+
+  padding:24px;
+
+  color:#142a3b;
+
+  background:#c7dae5;
+
+}
+
+
+.teams-story h3{
+
+  margin:
+    0 0 10px;
+
+  font-size:24px;
+
+  font-weight:400;
+
+}
+
+
+.teams-story p{
+
+  margin:0;
+
+  font-size:11px;
+
+  line-height:1.75;
+
+}
+
+
+.teams-bottom{
+
+  grid-column:
+    1 / 3;
+
+}
+
+
+/* =========================================================
+   GRADUADOS 2026
+========================================================= */
+
+.graduates{
+
+  padding:
+    85px 55px;
+
+  background:
+    var(--senior);
+
+}
+
+
+.graduate-title{
+
+  position:relative;
+
+  margin-bottom:50px;
+
+}
+
+
+.graduate-title h2{
+
+  margin:0;
+
+  font-size:
+    clamp(75px,11vw,160px);
+
+  line-height:.72;
+
+  font-weight:400;
+
+  letter-spacing:-6px;
+
+}
+
+
+.graduate-title em{
+
+  display:block;
+
+  margin-left:22%;
+
+  color:#78634f;
+
+  font-weight:400;
+
+}
+
+
+.graduate-title .year{
+
+  position:absolute;
+
+  right:5%;
+  bottom:4px;
+
+  color:#78634f;
+
+  font-size:18px;
+
+  letter-spacing:7px;
+
+}
+
+
+.graduate-layout{
+
+  display:grid;
+
+  grid-template-columns:
+    .72fr 1.28fr;
+
+  gap:18px;
+
+}
+
+
+.graduate-copy{
+
+  padding:
+    35px;
+
+  background:#f6eee3;
+
+}
+
+
+.graduate-copy h3{
+
+  margin:
+    0 0 18px;
+
+  font-size:33px;
+
+  font-weight:400;
+
+}
+
+
+.graduate-copy p{
+
+  margin:
+    0 0 15px;
+
+  font-size:12px;
+
+  line-height:1.85;
+
+}
+
+
+.graduate-photos{
+
+  display:grid;
+
+  grid-template-columns:
+    1.25fr .75fr;
+
+  grid-template-rows:
+    310px 230px;
+
+  gap:10px;
+
+}
+
+
+.graduate-main{
+
+  grid-row:
+    1 / 3;
+
+}
+
+
+.graduate-strip{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(5,1fr);
+
+  gap:9px;
+
+  margin-top:10px;
+
+}
+
+
+.graduate-strip .photo{
+
+  height:160px;
+
+}
+
+
+/* =========================================================
+   REYES DEL BAILE
+   PÁGINA COMPLETA PROPIA
+========================================================= */
+
+.court{
+
+  min-height:950px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  color:white;
+
+  background:#080808;
+
+}
+
+
+.court-bg{
+
+  position:absolute;
+
+  inset:0;
+
+}
+
+
+.court-bg img{
+
+  opacity:.73;
+
+}
+
+
+.court-bg::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.2),
+      rgba(0,0,0,.08) 45%,
+      rgba(0,0,0,.78) 72%,
+      rgba(0,0,0,.95)
+    );
+
+}
+
+
+.court-content{
+
+  position:relative;
+
+  z-index:5;
+
+  min-height:950px;
+
+  padding:
+    50px 50px;
+
+}
+
+
+.court-heading{
+
+  max-width:600px;
+
+}
+
+
+.court-heading .small{
+
+  display:block;
+
+  margin-bottom:5px;
+
+  font-size:15px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.court-heading h2{
+
+  margin:0;
+
+  font-size:
+    clamp(70px,10vw,145px);
+
+  line-height:.7;
+
+  font-weight:400;
+
+  letter-spacing:-6px;
+
+}
+
+
+.court-heading h2 em{
+
+  color:var(--gold-light);
+
+  font-weight:400;
+
+}
+
+
+.court-quote{
+
+  max-width:450px;
+
+  margin:
+    25px 0 0;
+
+  color:#e7dcc4;
+
+  font-size:17px;
+
+  line-height:1.6;
+
+  font-style:italic;
+
+}
+
+
+.royals{
+
+  position:absolute;
+
+  left:50px;
+  bottom:55px;
+
+  display:flex;
+
+  gap:30px;
+
+}
+
+
+.royal{
+
+  padding-left:13px;
+
+  border-left:
+    2px solid var(--gold);
+
+}
+
+
+.royal span{
+
+  display:block;
+
+  color:#c7b47c;
+
+  font-size:8px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.royal strong{
+
+  display:block;
+
+  margin-top:5px;
+
+  font-size:23px;
+
+  font-weight:400;
+
+}
+
+
+/* CORTE LATERAL */
+
+.court-side{
+
+  width:31%;
+
+  position:absolute;
+
+  top:40px;
+  right:35px;
+
+  z-index:8;
+
+}
+
+
+.court-side-title{
+
+  margin-bottom:10px;
+
+  padding:10px 13px;
+
+  color:#171717;
+
+  background:var(--gold-light);
+
+  font-size:11px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.court-candidates{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:5px;
+
+}
+
+
+.candidate{
+
+  background:#161616;
+
+}
+
+
+.candidate .photo{
+
+  height:130px;
+
+}
+
+
+.candidate p{
+
+  margin:0;
+
+  padding:7px 4px 10px;
+
+  text-align:center;
+
+  font-size:7px;
+
+  line-height:1.3;
+
+}
+
+
+.court-story{
+
+  margin-top:12px;
+
+  padding:18px;
+
+  background:
+    rgba(0,0,0,.77);
+
+}
+
+
+.court-story h3{
+
+  margin:
+    0 0 9px;
+
+  color:var(--gold-light);
+
+  font-size:20px;
+
+  font-weight:400;
+
+}
+
+
+.court-story p{
+
+  margin:0;
+
+  color:#d1cbc1;
+
+  font-size:9px;
+
+  line-height:1.7;
+
+}
+
+
+.court-moments{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:7px;
+
+  margin-top:8px;
+
+}
+
+
+.court-moments .photo{
+
+  height:140px;
+
+}
+
+
+/* =========================================================
+   FINAL COLLAGE
+========================================================= */
+
+.year-moments{
+
+  padding:
+    80px 45px;
+
+  background:#f7f2e9;
+
+}
+
+
+.year-moments-title{
+
+  margin-bottom:40px;
+
+  text-align:center;
+
+}
+
+
+.year-moments-title h2{
+
+  margin:0;
+
+  font-size:
+    clamp(60px,9vw,125px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+
+.year-moments-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(6,1fr);
+
+  grid-auto-rows:
+    125px;
+
+  gap:8px;
+
+}
+
+
+.year-moments-grid .photo:nth-child(1){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.year-moments-grid .photo:nth-child(2){
+
+  grid-column:span 2;
+
+}
+
+
+.year-moments-grid .photo:nth-child(3){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.year-moments-grid .photo:nth-child(6){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.year-moments-grid .photo:nth-child(9){
+
+  grid-column:span 2;
+
+}
+
+
+.year-moments-grid .photo:nth-child(10){
+
+  grid-column:span 2;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  padding:35px 20px;
+
+  color:#c8b992;
+
+  background:#15130f;
+
+  text-align:center;
+
+  font-size:9px;
+
+  line-height:1.8;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:950px){
+
+  .index-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .welcome-title{
+    width:65%;
+  }
+
+  .welcome-strip{
+    width:48%;
+  }
+
+  .court-side{
+    width:37%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:700px){
+
+  .page{
+
+    width:100%;
+
+    margin:0;
+
+    border:none;
+
+  }
+
+
+  .nav{
+
+    padding:12px 14px;
+
+  }
+
+
+  .nav-links a:not(.back){
+
+    display:none;
+
+  }
+
+
+  /* COVER */
+
+  .events-cover{
+
+    min-height:780px;
+
+    padding:
+      45px 20px;
+
+  }
+
+
+  .cover-title{
+
+    width:100%;
+
+  }
+
+
+  .cover-title h1{
+
+    font-size:67px;
+
+    letter-spacing:-4px;
+
+  }
+
+
+  .cover-title h1 em{
+
+    margin-left:25px;
+
+  }
+
+
+  .cover-title p{
+
+    width:70%;
+
+    font-size:12px;
+
+  }
+
+
+  .cover-photo-1{
+
+    width:73%;
+    height:46%;
+
+    right:4%;
+    bottom:5%;
+
+  }
+
+
+  .cover-photo-2{
+
+    width:40%;
+    height:26%;
+
+    right:55%;
+    bottom:7%;
+
+  }
+
+
+  .cover-photo-3{
+
+    width:34%;
+    height:21%;
+
+    top:37%;
+    right:4%;
+
+  }
+
+
+  .cover-year{
+
+    display:none;
+
+  }
+
+
+  /* INDEX */
+
+  .events-index{
+
+    padding:
+      50px 15px;
+
+  }
+
+
+  .index-header{
+
+    display:block;
+
+  }
+
+
+  .index-header h2{
+
+    margin-bottom:15px;
+
+    font-size:39px;
+
+  }
+
+
+  .index-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap:7px;
+
+  }
+
+
+  .index-card{
+
+    min-height:270px;
+
+  }
+
+
+  .index-card-text{
+
+    left:12px;
+    right:12px;
+    bottom:13px;
+
+  }
+
+
+  .index-card-text h3{
+
+    font-size:18px;
+
+  }
+
+
+  /* WELCOME */
+
+  .welcome-dance{
+
+    min-height:850px;
+
+  }
+
+
+  .welcome-content{
+
+    padding:
+      50px 18px;
+
+  }
+
+
+  .welcome-title{
+
+    width:100%;
+
+  }
+
+
+  .welcome-title h2{
+
+    font-size:61px;
+
+  }
+
+
+  .welcome-copy{
+
+    width:65%;
+
+    font-size:11px;
+
+  }
+
+
+  .welcome-strip{
+
+    width:92%;
+
+    top:auto;
+    right:4%;
+    bottom:300px;
+
+  }
+
+
+  .welcome-strip .photo{
+
+    height:100px;
+
+  }
+
+
+  .welcome-bottom{
+
+    width:92%;
+
+    right:4%;
+    bottom:30px;
+
+  }
+
+
+  .welcome-bottom .photo{
+
+    height:220px;
+
+  }
+
+
+  /* AUTUMN */
+
+  .autumn{
+
+    padding:
+      55px 15px;
+
+  }
+
+
+  .autumn-header{
+
+    display:block;
+
+  }
+
+
+  .autumn-header h2{
+
+    margin-bottom:25px;
+
+    font-size:63px;
+
+  }
+
+
+  .autumn-layout{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .autumn-main{
+
+    height:390px;
+
+  }
+
+
+  .autumn-side{
+
+    grid-template-rows:
+      170px 170px auto;
+
+  }
+
+
+  .autumn-mini-grid{
+
+    grid-template-columns:
+      repeat(3,1fr);
+
+  }
+
+
+  .autumn-mini-grid .photo{
+
+    height:130px;
+
+  }
+
+
+  /* TEAMS */
+
+  .teams{
+
+    padding:
+      55px 15px;
+
+  }
+
+
+  .teams-header{
+
+    display:block;
+
+  }
+
+
+  .teams-header h2{
+
+    margin-bottom:25px;
+
+    font-size:57px;
+
+  }
+
+
+  .teams-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    grid-template-rows:
+      180px 280px 180px 180px;
+
+    gap:6px;
+
+  }
+
+
+  .teams-main{
+
+    grid-column:
+      1 / 3;
+
+    grid-row:
+      2;
+
+  }
+
+
+  .teams-bottom{
+
+    grid-column:
+      1 / 3;
+
+  }
+
+
+  /* GRADUATES */
+
+  .graduates{
+
+    padding:
+      55px 15px;
+
+  }
+
+
+  .graduate-title h2{
+
+    font-size:66px;
+
+  }
+
+
+  .graduate-title em{
+
+    margin-left:10%;
+
+  }
+
+
+  .graduate-title .year{
+
+    position:relative;
+
+    right:auto;
+    bottom:auto;
+
+    display:block;
+
+    margin-top:25px;
+
+  }
+
+
+  .graduate-layout{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .graduate-copy{
+
+    padding:23px;
+
+  }
+
+
+  .graduate-photos{
+
+    grid-template-columns:
+      1.25fr .75fr;
+
+    grid-template-rows:
+      250px 180px;
+
+  }
+
+
+  .graduate-strip{
+
+    grid-template-columns:
+      repeat(3,1fr);
+
+  }
+
+
+  .graduate-strip .photo{
+
+    height:120px;
+
+  }
+
+
+  /* COURT */
+
+  .court{
+
+    min-height:1050px;
+
+  }
+
+
+  .court-content{
+
+    min-height:1050px;
+
+    padding:
+      45px 18px;
+
+  }
+
+
+  .court-heading{
+
+    width:67%;
+
+  }
+
+
+  .court-heading h2{
+
+    font-size:60px;
+
+  }
+
+
+  .court-quote{
+
+    width:65%;
+
+    font-size:13px;
+
+  }
+
+
+  .court-side{
+
+    width:94%;
+
+    top:auto;
+    right:3%;
+    bottom:30px;
+
+  }
+
+
+  .candidate .photo{
+
+    height:95px;
+
+  }
+
+
+  .royals{
+
+    left:18px;
+    bottom:490px;
+
+    gap:15px;
+
+  }
+
+
+  .royal strong{
+
+    font-size:16px;
+
+  }
+
+
+  /* FINAL */
+
+  .year-moments{
+
+    padding:
+      55px 10px;
+
+  }
+
+
+  .year-moments-title h2{
+
+    font-size:55px;
+
+  }
+
+
+  .year-moments-grid{
+
+    grid-template-columns:
+      repeat(4,1fr);
+
+    grid-auto-rows:
+      90px;
+
+    gap:5px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+<!-- =========================================================
+     NAV
+========================================================= -->
+
+<nav class="nav">
+
+  <div class="brand">
+
+    <div class="brand-mark">
+      H
+    </div>
+
+    <div class="brand-text">
+      Hogwarts · Anuario 2025–2026
+    </div>
+
+  </div>
+
+
+  <div class="nav-links">
+
+    <a href="#bienvenida">
+      Bienvenida
+    </a>
+
+    <a href="#otono">
+      Otoño
+    </a>
+
+    <a href="#quidditch">
+      Quidditch
+    </a>
+
+    <a href="#graduados">
+      Graduados
+    </a>
+
+    <a href="#reyes">
+      Reyes
+    </a>
+
+    <a
+      href="index.html#momentos"
+      class="back"
+    >
+      ← Volver
+    </a>
+
+  </div>
+
+</nav>
+
+
+
+<!-- =========================================================
+     PORTADA
+========================================================= -->
+
+<header class="events-cover">
+
+
+  <div class="cover-title">
+
+    <span class="kicker">
+      Student Life · 2025–2026
+    </span>
+
+    <h1>
+
+      SPECIAL
+
+      <em>
+        EVENTS
+      </em>
+
+    </h1>
+
+
+    <p>
+
+      Algunas noches se convirtieron
+      en tradiciones. Algunas actividades
+      terminaron en historias que nadie dejó
+      de contar. Y algunas fotografías
+      simplemente tenían que terminar aquí.
+
+    </p>
+
+  </div>
+
+
+  <div class="cover-collage">
+
+
+    <div class="photo cover-photo-1">
+
+      <img
+        src="assets/events-cover-01.jpg"
+        alt="Eventos especiales"
+      >
+
+    </div>
+
+
+    <div class="photo cover-photo-2">
+
+      <img
+        src="assets/events-cover-02.jpg"
+        alt="Estudiantes de Hogwarts"
+      >
+
+    </div>
+
+
+    <div class="photo cover-photo-3">
+
+      <img
+        src="assets/events-cover-03.jpg"
+        alt="Evento de Hogwarts"
+      >
+
+    </div>
+
+
+  </div>
+
+
+  <div class="cover-year">
+    HOGWARTS · 2025 — 2026
+  </div>
+
+
+</header>
+
+
+
+<!-- =========================================================
+     ÍNDICE
+========================================================= -->
+
+<section class="events-index">
+
+
+  <div class="index-header">
+
+    <h2>
+      THIS YEAR
+    </h2>
+
+    <p>
+
+      Bailes, tradiciones, actividades entre
+      equipos y momentos dedicados a quienes
+      se despiden de Hogwarts en 2026.
+
+    </p>
+
+  </div>
+
+
+  <div class="index-grid">
+
+
+    <a
+      href="#bienvenida"
+      class="index-card"
+    >
+
+      <img
+        src="assets/index-bienvenida.jpg"
+        alt="Baile de bienvenida"
+      >
+
+      <div class="index-card-text">
+
+        <span>
+          September
+        </span>
+
+        <h3>
+          Baile de Bienvenida
+        </h3>
+
+      </div>
+
+    </a>
+
+
+    <a
+      href="#otono"
+      class="index-card"
+    >
+
+      <img
+        src="assets/index-otono.jpg"
+        alt="Baile de otoño"
+      >
+
+      <div class="index-card-text">
+
+        <span>
+          Autumn
+        </span>
+
+        <h3>
+          Baile de Otoño
+        </h3>
+
+      </div>
+
+    </a>
+
+
+    <a
+      href="#quidditch"
+      class="index-card"
+    >
+
+      <img
+        src="assets/index-quidditch.jpg"
+        alt="Equipos de Quidditch"
+      >
+
+      <div class="index-card-text">
+
+        <span>
+          Team Traditions
+        </span>
+
+        <h3>
+          Quidditch Challenges
+        </h3>
+
+      </div>
+
+    </a>
+
+
+    <a
+      href="#graduados"
+      class="index-card"
+    >
+
+      <img
+        src="assets/index-graduados.jpg"
+        alt="Graduados 2026"
+      >
+
+      <div class="index-card-text">
+
+        <span>
+          Class of 2026
+        </span>
+
+        <h3>
+          Graduados
+        </h3>
+
+      </div>
+
+    </a>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     BAILE DE BIENVENIDA
+========================================================= -->
+
+<section
+  class="welcome-dance"
+  id="bienvenida"
+>
+
+
+  <div class="welcome-bg">
+
+    <img
+      src="assets/bienvenida-main.jpg"
+      alt="Baile de bienvenida"
+    >
+
+  </div>
+
+
+  <div class="welcome-content">
+
+
+    <div class="welcome-title">
+
+      <span class="kicker">
+        Welcome Back · Hogwarts
+      </span>
+
+      <h2>
+
+        DANCE
+        <br>
+
+        <em>
+          THE NIGHT
+        </em>
+
+        <br>
+        AWAY
+
+      </h2>
+
+
+      <p class="welcome-copy">
+
+        Después de regresar al castillo,
+        reencontrarse con amigos y comenzar
+        un nuevo curso, Hogwarts dio oficialmente
+        la bienvenida al año escolar con una noche
+        dedicada simplemente a celebrar que todos
+        estaban juntos otra vez.
+
+      </p>
+
+    </div>
+
+
+    <div class="welcome-strip">
+
+
+      <div class="photo">
+        <img
+          src="assets/bienvenida-01.jpg"
+          alt=""
+        >
+      </div>
+
+
+      <div class="photo">
+        <img
+          src="assets/bienvenida-02.jpg"
+          alt=""
+        >
+      </div>
+
+
+      <div class="photo">
+        <img
+          src="assets/bienvenida-03.jpg"
+          alt=""
+        >
+      </div>
+
+
+      <div class="photo">
+        <img
+          src="assets/bienvenida-04.jpg"
+          alt=""
+        >
+      </div>
+
+
+      <p>
+
+        Fotos antes del baile, grupos improvisados,
+        vestidos, trajes y esos momentos que
+        sobrevivieron gracias a una cámara compacta.
+
+      </p>
+
+
+    </div>
+
+
+    <div class="welcome-bottom">
+
+
+      <div class="photo">
+
+        <img
+          src="assets/bienvenida-05.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <div class="photo">
+
+        <img
+          src="assets/bienvenida-06.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     BAILE DE OTOÑO
+========================================================= -->
+
+<section
+  class="autumn"
+  id="otono"
+>
+
+
+  <div class="autumn-header">
+
+
+    <div>
+
+      <span class="kicker">
+        Autumn at Hogwarts
+      </span>
+
+      <h2>
+
+        FALL
+        <br>
+        FORMAL
+
+      </h2>
+
+    </div>
+
+
+    <p>
+
+      Con el castillo entrando de lleno en otoño,
+      el Gran Comedor cambió por una noche.
+      Luces cálidas, vestidos, trajes, fotografías
+      con amigos y una pista que permaneció llena
+      hasta el final.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="autumn-layout">
+
+
+    <div class="photo autumn-main">
+
+      <img
+        src="assets/otono-main.jpg"
+        alt="Baile de otoño"
+      >
+
+    </div>
+
+
+    <div class="autumn-side">
+
+
+      <div class="photo">
+
+        <img
+          src="assets/otono-01.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <div class="photo">
+
+        <img
+          src="assets/otono-02.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <div class="photo">
+
+        <img
+          src="assets/otono-03.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <div class="photo">
+
+        <img
+          src="assets/otono-04.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <article class="autumn-story">
+
+        <h3>
+          A Night to Remember
+        </h3>
+
+        <p>
+
+          Hubo quienes llegaron en pareja,
+          quienes llegaron con sus amigos y quienes
+          pasaron más tiempo tomándose fotografías
+          que bailando. Al final, todos terminaron
+          compartiendo la misma pista.
+
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+
+  <div class="autumn-mini-grid">
+
+
+    <div class="photo">
+      <img src="assets/otono-05.jpg" alt="">
+    </div>
+
+
+    <div class="photo">
+      <img src="assets/otono-06.jpg" alt="">
+    </div>
+
+
+    <div class="photo">
+      <img src="assets/otono-07.jpg" alt="">
+    </div>
+
+
+    <div class="photo">
+      <img src="assets/otono-08.jpg" alt="">
+    </div>
+
+
+    <div class="photo">
+      <img src="assets/otono-09.jpg" alt="">
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     ACTIVIDADES ENTRE EQUIPOS DE QUIDDITCH
+
+     NO SE LLAMAN SENIOR PRANKS.
+========================================================= -->
+
+<section
+  class="teams"
+  id="quidditch"
+>
+
+
+  <div class="teams-header">
+
+
+    <div>
+
+      <span class="kicker">
+        Quidditch · Off the Pitch
+      </span>
+
+      <h2>
+
+        TEAM
+        <br>
+        CHAOS
+
+      </h2>
+
+      <span class="team-label">
+        Quidditch Team Challenges
+      </span>
+
+    </div>
+
+
+    <p>
+
+      No todo entre los equipos ocurrió durante
+      un partido. A lo largo del curso surgieron
+      retos, bromas y pequeñas competencias entre
+      los equipos de las casas.
+
+      <br><br>
+
+      Algunas fueron planeadas.
+      Otras definitivamente no.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="teams-grid">
+
+
+    <div class="photo">
+
+      <img
+        src="assets/team-chaos-01.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="photo teams-main">
+
+      <img
+        src="assets/team-chaos-main.jpg"
+        alt="Actividad de equipos de Quidditch"
+      >
+
+    </div>
+
+
+    <article class="teams-story">
+
+      <span class="kicker">
+        Friendly Competition?
+      </span>
+
+      <h3>
+        It Started as a Joke...
+      </h3>
+
+      <p>
+
+        Lo que comenzó como bromas entre jugadores
+        terminó convirtiéndose en una tradición
+        informal entre los equipos.
+
+        Nadie recuerda exactamente quién empezó.
+        Todos recuerdan quién intentó vengarse.
+
+      </p>
+
+    </article>
+
+
+    <div class="photo">
+
+      <img
+        src="assets/team-chaos-02.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="photo teams-bottom">
+
+      <img
+        src="assets/team-chaos-03.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="photo">
+
+      <img
+        src="assets/team-chaos-04.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     ACTIVIDAD ESPECIAL DE GRADUADOS
+========================================================= -->
+
+<section
+  class="graduates"
+  id="graduados"
+>
+
+
+  <div class="graduate-title">
+
+    <span class="kicker">
+      One Last Year
+    </span>
+
+    <h2>
+
+      SENIOR
+
+      <em>
+        MEMORIES
+      </em>
+
+    </h2>
+
+
+    <span class="year">
+      2026
+    </span>
+
+  </div>
+
+
+  <div class="graduate-layout">
+
+
+    <article class="graduate-copy">
+
+
+      <span class="kicker">
+        Class of 2026
+      </span>
+
+
+      <h3>
+        One More Memory Before Goodbye
+      </h3>
+
+
+      <p>
+
+        Para los estudiantes que vivirían
+        su último año en Hogwarts, se preparó
+        una actividad especial dedicada únicamente
+        a ellos.
+
+      </p>
+
+
+      <p>
+
+        Entre fotografías, recuerdos y mensajes
+        de amigos, la actividad terminó siendo
+        una pequeña pausa antes de comenzar
+        la última parte de su historia como
+        estudiantes del castillo.
+
+      </p>
+
+
+      <p class="handwritten">
+
+        one castle.
+        seven years.
+        way too many memories.
+
+      </p>
+
+
+    </article>
+
+
+    <div class="graduate-photos">
+
+
+      <div class="photo graduate-main">
+
+        <img
+          src="assets/seniors-main.jpg"
+          alt="Graduados 2026"
+        >
+
+      </div>
+
+
+      <div class="photo">
+
+        <img
+          src="assets/seniors-01.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <div class="photo">
+
+        <img
+          src="assets/seniors-02.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <div class="graduate-strip">
+
+
+    <div class="photo">
+      <img src="assets/seniors-03.jpg" alt="">
+    </div>
+
+
+    <div class="photo">
+      <img src="assets/seniors-04.jpg" alt="">
+    </div>
+
+
+    <div class="photo">
+      <img src="assets/seniors-05.jpg" alt="">
+    </div>
+
+
+    <div class="photo">
+      <img src="assets/seniors-06.jpg" alt="">
+    </div>
+
+
+    <div class="photo">
+      <img src="assets/seniors-07.jpg" alt="">
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     REYES DEL BAILE
+
+     ESTA ES SU PROPIA "PÁGINA" VISUAL.
+========================================================= -->
+
+<section
+  class="court"
+  id="reyes"
+>
+
+
+  <!--
+    ESTA FOTO DEBE SER LA FOTO GRANDE
+    DEL REY Y LA REINA JUNTOS
+  -->
+
+  <div class="court-bg">
+
+    <img
+      src="assets/rey-reina-main.jpg"
+      alt="Rey y Reina del Baile"
+    >
+
+  </div>
+
+
+  <div class="court-content">
+
+
+    <div class="court-heading">
+
+
+      <span class="small">
+        Hogwarts Presents
+      </span>
+
+
+      <h2>
+
+        THE
+
+        <em>
+          CROWNING
+        </em>
+
+        MOMENT
+
+      </h2>
+
+
+      <p class="court-quote">
+
+        “For one night,
+        the Great Hall had its own royalty.”
+
+      </p>
+
+
+    </div>
+
+
+    <!--
+      CAMBIA AQUÍ LOS NOMBRES
+    -->
+
+    <div class="royals">
+
+
+      <div class="royal">
+
+        <span>
+          King
+        </span>
+
+        <strong>
+          Nombre del Rey
+        </strong>
+
+      </div>
+
+
+      <div class="royal">
+
+        <span>
+          Queen
+        </span>
+
+        <strong>
+          Nombre de la Reina
+        </strong>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- CORTE / NOMINADOS -->
+
+    <aside class="court-side">
+
+
+      <div class="court-side-title">
+        The Court
+      </div>
+
+
+      <div class="court-candidates">
+
+
+        <div class="candidate">
+
+          <div class="photo">
+            <img src="assets/court-01.jpg" alt="">
+          </div>
+
+          <p>
+            Nombre
+          </p>
+
+        </div>
+
+
+        <div class="candidate">
+
+          <div class="photo">
+            <img src="assets/court-02.jpg" alt="">
+          </div>
+
+          <p>
+            Nombre
+          </p>
+
+        </div>
+
+
+        <div class="candidate">
+
+          <div class="photo">
+            <img src="assets/court-03.jpg" alt="">
+          </div>
+
+          <p>
+            Nombre
+          </p>
+
+        </div>
+
+
+        <div class="candidate">
+
+          <div class="photo">
+            <img src="assets/court-04.jpg" alt="">
+          </div>
+
+          <p>
+            Nombre
+          </p>
+
+        </div>
+
+
+        <div class="candidate">
+
+          <div class="photo">
+            <img src="assets/court-05.jpg" alt="">
+          </div>
+
+          <p>
+            Nombre
+          </p>
+
+        </div>
+
+
+        <div class="candidate">
+
+          <div class="photo">
+            <img src="assets/court-06.jpg" alt="">
+          </div>
+
+          <p>
+            Nombre
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+      <article class="court-story">
+
+
+        <h3>
+          And the crowns go to...
+        </h3>
+
+
+        <p>
+
+          Después de las votaciones,
+          llegó uno de los momentos más esperados
+          de la noche: el anuncio del Rey
+          y la Reina del Baile.
+
+          Entre aplausos, fotografías y coronas,
+          ambos ocuparon oficialmente su lugar
+          como los elegidos de Hogwarts.
+
+        </p>
+
+
+      </article>
+
+
+      <div class="court-moments">
+
+
+        <div class="photo">
+
+          <img
+            src="assets/crowning-01.jpg"
+            alt="Coronación"
+          >
+
+        </div>
+
+
+        <div class="photo">
+
+          <img
+            src="assets/crowning-02.jpg"
+            alt="Coronación"
+          >
+
+        </div>
+
+
+      </div>
+
+
+    </aside>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     COLLAGE FINAL
+========================================================= -->
+
+<section class="year-moments">
+
+
+  <div class="year-moments-title">
+
+    <span class="kicker">
+      Collected Moments
+    </span>
+
+    <h2>
+      NIGHTS WE'LL
+      <br>
+      REMEMBER
+    </h2>
+
+  </div>
+
+
+  <div class="year-moments-grid">
+
+
+    <div class="photo">
+      <img src="assets/event-memory-01.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-02.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-03.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-04.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-05.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-06.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-07.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-08.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-09.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/event-memory-10.jpg" alt="">
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+  Hogwarts School Yearbook
+  <br>
+
+  Special Events · Student Life
+  <br>
+
+  2025–2026
+
+</footer>
+
+
+</div>
+
+</body>
+</html>
