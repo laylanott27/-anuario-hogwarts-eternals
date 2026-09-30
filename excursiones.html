@@ -1,0 +1,3642 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>Excursiones · Anuario Hogwarts 2025–2026</title>
+
+
+<style>
+
+/* =========================================================
+   COLORES
+========================================================= */
+
+:root{
+
+  --paper:#f1e8da;
+  --paper-light:#faf6ee;
+  --paper-dark:#e4d8c7;
+
+  --ink:#211d19;
+  --muted:#6c645b;
+
+  --line:#b8aa98;
+
+  --blue:#395b7b;
+  --blue-light:#b8cfda;
+
+  --red:#8f352e;
+  --green:#486451;
+  --yellow:#b68b2e;
+
+  --brown:#76583f;
+
+  --white:#fffdf8;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+body{
+
+  margin:0;
+
+  color:var(--ink);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0,0,0,.025) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(0,0,0,.018) 1px,
+      transparent 1px
+    ),
+    var(--paper);
+
+  background-size:
+    23px 23px,
+    31px 31px;
+
+}
+
+
+img{
+
+  width:100%;
+  height:100%;
+
+  display:block;
+
+  object-fit:cover;
+
+}
+
+
+a{
+
+  color:inherit;
+
+  text-decoration:none;
+
+}
+
+
+button{
+  font:inherit;
+}
+
+
+/* =========================================================
+   PÁGINA
+========================================================= */
+
+.page{
+
+  width:min(1400px,97%);
+
+  margin:20px auto;
+
+  overflow:hidden;
+
+  background:var(--paper-light);
+
+  border:
+    1px solid #a99b88;
+
+  box-shadow:
+    0 24px 65px rgba(0,0,0,.13);
+
+}
+
+
+/* =========================================================
+   NAVEGACIÓN
+========================================================= */
+
+.nav{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:1000;
+
+  min-height:65px;
+
+  padding:
+    14px 30px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+
+  background:
+    rgba(250,246,238,.95);
+
+  border-bottom:
+    1px solid var(--line);
+
+  backdrop-filter:
+    blur(12px);
+
+}
+
+
+.brand{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+}
+
+
+.brand-mark{
+
+  width:40px;
+  height:40px;
+
+  display:grid;
+
+  place-items:center;
+
+  border:
+    1px solid #817463;
+
+  border-radius:50%;
+
+  font-size:17px;
+
+  font-weight:bold;
+
+}
+
+
+.brand-text{
+
+  font-size:10px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-links{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+
+  font-size:9px;
+
+  letter-spacing:1.3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-links a{
+
+  padding:7px 0;
+
+  border-bottom:
+    1px solid transparent;
+
+}
+
+
+.nav-links a:hover{
+
+  border-color:var(--ink);
+
+}
+
+
+.back{
+
+  padding:
+    8px 13px;
+
+  border:
+    1px solid var(--line);
+
+}
+
+
+/* =========================================================
+   ELEMENTOS GENERALES
+========================================================= */
+
+.kicker{
+
+  display:block;
+
+  margin-bottom:9px;
+
+  color:#806f5c;
+
+  font-size:9px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.caption{
+
+  margin-top:7px;
+
+  font-size:9px;
+
+  line-height:1.45;
+
+  color:#6c645c;
+
+}
+
+
+.photo{
+
+  overflow:hidden;
+
+  background:#d8d2c8;
+
+}
+
+
+.photo img{
+
+  transition:
+    transform .5s ease;
+
+}
+
+
+.photo:hover img{
+
+  transform:
+    scale(1.025);
+
+}
+
+
+.handwritten{
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-weight:400;
+
+}
+
+
+/* =========================================================
+   PORTADA
+========================================================= */
+
+.hero{
+
+  min-height:730px;
+
+  position:relative;
+
+  display:grid;
+
+  grid-template-columns:
+    .77fr 1.23fr;
+
+  border-bottom:
+    1px solid var(--line);
+
+  overflow:hidden;
+
+}
+
+
+.hero-copy{
+
+  position:relative;
+
+  z-index:4;
+
+  padding:
+    78px 20px 60px 60px;
+
+}
+
+
+.hero-small{
+
+  margin-bottom:15px;
+
+  font-size:10px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.hero h1{
+
+  position:relative;
+
+  z-index:5;
+
+  width:150%;
+
+  margin:0;
+
+  font-size:
+    clamp(75px,10vw,150px);
+
+  line-height:.72;
+
+  font-weight:400;
+
+  letter-spacing:-6px;
+
+}
+
+
+.hero h1 span{
+
+  display:block;
+
+}
+
+
+.hero h1 span:nth-child(2){
+
+  margin-left:65px;
+
+  font-style:italic;
+
+}
+
+
+.hero-year{
+
+  margin:
+    40px 0 20px;
+
+  color:var(--blue);
+
+  font-size:19px;
+
+  letter-spacing:5px;
+
+}
+
+
+.hero-description{
+
+  max-width:370px;
+
+  margin-top:30px;
+
+  font-size:15px;
+
+  line-height:1.8;
+
+}
+
+
+.hero-note{
+
+  display:inline-block;
+
+  margin-top:30px;
+
+  padding:
+    7px 14px;
+
+  background:
+    var(--blue-light);
+
+  transform:
+    rotate(-2deg);
+
+  font-size:16px;
+
+}
+
+
+.hero-images{
+
+  min-width:0;
+
+  position:relative;
+
+  padding:
+    42px 42px 50px 80px;
+
+}
+
+
+.hero-main{
+
+  width:86%;
+  height:530px;
+
+  position:absolute;
+
+  top:65px;
+  right:45px;
+
+  overflow:hidden;
+
+  border:
+    9px solid var(--white);
+
+  box-shadow:
+    0 18px 35px rgba(0,0,0,.15);
+
+}
+
+
+.hero-polaroid{
+
+  width:210px;
+
+  position:absolute;
+
+  z-index:4;
+
+  left:25px;
+  bottom:40px;
+
+  padding:
+    8px 8px 30px;
+
+  background:white;
+
+  box-shadow:
+    0 9px 20px rgba(0,0,0,.17);
+
+  transform:
+    rotate(-6deg);
+
+}
+
+
+.hero-polaroid .photo{
+
+  height:210px;
+
+}
+
+
+.hero-polaroid p{
+
+  margin:
+    10px 3px 0;
+
+  text-align:center;
+
+  font-size:10px;
+
+}
+
+
+.hero-stamp{
+
+  position:absolute;
+
+  right:18px;
+  bottom:35px;
+
+  z-index:5;
+
+  padding:
+    12px 17px;
+
+  color:var(--blue);
+
+  border:
+    2px solid var(--blue);
+
+  transform:
+    rotate(8deg);
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro{
+
+  padding:
+    75px 60px;
+
+  display:grid;
+
+  grid-template-columns:
+    .65fr 1.35fr;
+
+  gap:70px;
+
+  border-bottom:
+    1px solid var(--line);
+
+}
+
+
+.intro-number{
+
+  color:#c7b8a3;
+
+  font-size:130px;
+
+  line-height:.8;
+
+}
+
+
+.intro-copy h2{
+
+  max-width:750px;
+
+  margin:
+    0 0 25px;
+
+  font-size:42px;
+
+  line-height:1.05;
+
+  font-weight:400;
+
+  text-transform:uppercase;
+
+}
+
+
+.intro-copy p{
+
+  max-width:760px;
+
+  margin:
+    0 0 16px;
+
+  font-size:15px;
+
+  line-height:1.9;
+
+}
+
+
+/* =========================================================
+   DURMSTRANG
+========================================================= */
+
+.durmstrang{
+
+  padding:
+    70px 55px 85px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  color:#eee8df;
+
+  background:#202528;
+
+}
+
+
+.durmstrang::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  pointer-events:none;
+
+  opacity:.1;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      #fff 4px
+    );
+
+}
+
+
+.durm-header{
+
+  position:relative;
+
+  z-index:2;
+
+  display:flex;
+
+  align-items:flex-end;
+  justify-content:space-between;
+
+  gap:30px;
+
+  margin-bottom:35px;
+
+}
+
+
+.durm-header h2{
+
+  margin:0;
+
+  font-size:
+    clamp(65px,9vw,130px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+  letter-spacing:-5px;
+
+}
+
+
+.durm-header p{
+
+  max-width:330px;
+
+  margin:0;
+
+  color:#bbb7b0;
+
+  font-size:13px;
+
+  line-height:1.7;
+
+}
+
+
+.durm-grid{
+
+  position:relative;
+
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:
+    1.25fr .62fr .83fr;
+
+  grid-template-rows:
+    300px 250px;
+
+  gap:15px;
+
+}
+
+
+.durm-main{
+
+  grid-row:
+    1 / 3;
+
+}
+
+
+.durm-top{
+
+  grid-column:
+    2 / 4;
+
+}
+
+
+.durm-text{
+
+  padding:
+    26px;
+
+  color:#202020;
+
+  background:#d8d0c3;
+
+}
+
+
+.durm-text h3{
+
+  margin:
+    0 0 12px;
+
+  font-size:26px;
+
+  font-weight:400;
+
+}
+
+
+.durm-text p{
+
+  margin:0;
+
+  font-size:12px;
+
+  line-height:1.8;
+
+}
+
+
+.durm-small{
+
+  position:relative;
+
+}
+
+
+.durm-label{
+
+  position:absolute;
+
+  left:8px;
+  bottom:8px;
+
+  padding:
+    5px 8px;
+
+  color:#181818;
+
+  background:#e5ded4;
+
+  font-size:8px;
+
+  letter-spacing:1.3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.durm-quote{
+
+  max-width:750px;
+
+  margin:
+    55px auto 0;
+
+  text-align:center;
+
+  color:#d6d0c8;
+
+  font-size:26px;
+
+  line-height:1.5;
+
+  font-style:italic;
+
+}
+
+
+/* =========================================================
+   CAMPAMENTOS DE LAS CASAS
+========================================================= */
+
+.house-camps{
+
+  padding:
+    80px 55px;
+
+  border-bottom:
+    1px solid var(--line);
+
+}
+
+
+.camp-heading{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  align-items:end;
+
+  gap:50px;
+
+  margin-bottom:45px;
+
+}
+
+
+.camp-heading h2{
+
+  margin:0;
+
+  font-size:
+    clamp(60px,8vw,115px);
+
+  line-height:.77;
+
+  font-weight:400;
+
+  letter-spacing:-4px;
+
+}
+
+
+.camp-heading p{
+
+  max-width:520px;
+
+  margin:0 0 5px;
+
+  font-size:14px;
+
+  line-height:1.8;
+
+}
+
+
+.house-collage{
+
+  display:grid;
+
+  grid-template-columns:
+    1.15fr .85fr 1fr;
+
+  grid-template-rows:
+    280px 220px 250px;
+
+  gap:13px;
+
+}
+
+
+.house-collage .photo{
+
+  position:relative;
+
+}
+
+
+.house-camp-main{
+
+  grid-column:
+    1 / 3;
+
+  grid-row:
+    1 / 3;
+
+}
+
+
+.house-camp-story{
+
+  padding:
+    28px;
+
+  border:
+    1px solid var(--line);
+
+  background:#efe5d7;
+
+}
+
+
+.house-camp-story h3{
+
+  margin:
+    0 0 10px;
+
+  font-size:30px;
+
+  font-weight:400;
+
+}
+
+
+.house-camp-story p{
+
+  margin:0;
+
+  font-size:12px;
+
+  line-height:1.8;
+
+}
+
+
+.house-photo-4{
+
+  grid-column:
+    1 / 2;
+
+}
+
+
+.house-photo-5{
+
+  grid-column:
+    2 / 4;
+
+}
+
+
+.house-tags{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:10px;
+
+  margin-top:30px;
+
+}
+
+
+.house-tag{
+
+  padding:
+    8px 15px;
+
+  border:
+    1px solid;
+
+  font-size:9px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.tag-gryffindor{
+  color:var(--red);
+}
+
+
+.tag-slytherin{
+  color:var(--green);
+}
+
+
+.tag-hufflepuff{
+  color:var(--yellow);
+}
+
+
+.tag-ravenclaw{
+  color:var(--blue);
+}
+
+
+/* =========================================================
+   MUNDO MUGGLE
+========================================================= */
+
+.muggle{
+
+  padding:
+    75px 55px 90px;
+
+  overflow:hidden;
+
+  background:#d8e5e8;
+
+  border-bottom:
+    1px solid #9baeb2;
+
+}
+
+
+.muggle-title{
+
+  position:relative;
+
+  margin-bottom:45px;
+
+}
+
+
+.muggle-title h2{
+
+  margin:0;
+
+  color:#263d45;
+
+  font-size:
+    clamp(70px,11vw,160px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+  letter-spacing:-6px;
+
+}
+
+
+.muggle-title span{
+
+  position:absolute;
+
+  right:3%;
+  bottom:4px;
+
+  padding:
+    8px 14px;
+
+  background:#f4e2a8;
+
+  transform:
+    rotate(-3deg);
+
+  font-size:20px;
+
+}
+
+
+.muggle-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    .72fr 1.25fr .75fr .8fr;
+
+  grid-template-rows:
+    240px 220px 250px;
+
+  gap:13px;
+
+}
+
+
+.muggle-grid .photo{
+
+  position:relative;
+
+  border:
+    5px solid #f7f3e9;
+
+}
+
+
+.muggle-main{
+
+  grid-column:
+    2 / 4;
+
+  grid-row:
+    1 / 3;
+
+}
+
+
+.muggle-tall{
+
+  grid-row:
+    1 / 3;
+
+}
+
+
+.muggle-story{
+
+  padding:
+    23px;
+
+  background:#f6efe3;
+
+  border:
+    1px solid #a5b3b5;
+
+}
+
+
+.muggle-story h3{
+
+  margin:
+    0 0 12px;
+
+  font-size:24px;
+
+  font-weight:400;
+
+}
+
+
+.muggle-story p{
+
+  margin:0;
+
+  font-size:11px;
+
+  line-height:1.75;
+
+}
+
+
+.muggle-note{
+
+  position:absolute;
+
+  left:10px;
+  bottom:10px;
+
+  padding:
+    5px 8px;
+
+  background:#9fd9e6;
+
+  color:#1f3338;
+
+  font-size:8px;
+
+  font-weight:bold;
+
+  text-transform:uppercase;
+
+}
+
+
+.muggle-photo-6{
+
+  grid-column:
+    2 / 3;
+
+}
+
+
+.muggle-photo-7{
+
+  grid-column:
+    3 / 5;
+
+}
+
+
+/* =========================================================
+   FIELD NOTES
+========================================================= */
+
+.field-notes{
+
+  padding:
+    85px 55px;
+
+  border-bottom:
+    1px solid var(--line);
+
+}
+
+
+.field-header{
+
+  margin-bottom:45px;
+
+  text-align:center;
+
+}
+
+
+.field-header h2{
+
+  margin:0;
+
+  font-size:
+    clamp(55px,8vw,110px);
+
+  line-height:.85;
+
+  font-weight:400;
+
+}
+
+
+.field-header p{
+
+  max-width:600px;
+
+  margin:
+    22px auto 0;
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.8;
+
+}
+
+
+.field-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr .75fr 1.15fr;
+
+  grid-template-rows:
+    270px 250px 240px;
+
+  gap:15px;
+
+}
+
+
+.field-grid .photo{
+
+  position:relative;
+
+}
+
+
+.field-big{
+
+  grid-column:
+    1 / 3;
+
+}
+
+
+.field-tall{
+
+  grid-row:
+    1 / 3;
+
+  grid-column:
+    3;
+
+}
+
+
+.field-text{
+
+  padding:
+    27px;
+
+  background:#eadbc7;
+
+}
+
+
+.field-text h3{
+
+  margin:
+    0 0 10px;
+
+  font-size:25px;
+
+  font-weight:400;
+
+}
+
+
+.field-text p{
+
+  margin:0;
+
+  font-size:11px;
+
+  line-height:1.8;
+
+}
+
+
+.field-bottom{
+
+  grid-column:
+    2 / 4;
+
+}
+
+
+/* =========================================================
+   POSTCARDS
+========================================================= */
+
+.postcards{
+
+  padding:
+    80px 55px;
+
+  overflow:hidden;
+
+  background:#ead9cf;
+
+  border-bottom:
+    1px solid var(--line);
+
+}
+
+
+.postcards h2{
+
+  margin:
+    0 0 55px;
+
+  text-align:center;
+
+  font-size:
+    clamp(60px,9vw,125px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+  letter-spacing:-5px;
+
+}
+
+
+.postcard-row{
+
+  min-height:430px;
+
+  position:relative;
+
+  max-width:1100px;
+
+  margin:auto;
+
+}
+
+
+.postcard{
+
+  width:260px;
+
+  position:absolute;
+
+  padding:
+    9px 9px 34px;
+
+  background:white;
+
+  box-shadow:
+    0 12px 25px rgba(0,0,0,.16);
+
+}
+
+
+.postcard .photo{
+
+  height:285px;
+
+}
+
+
+.postcard p{
+
+  margin:
+    12px 4px 0;
+
+  text-align:center;
+
+  font-size:10px;
+
+}
+
+
+.postcard:nth-child(1){
+
+  left:3%;
+  top:30px;
+
+  transform:
+    rotate(-7deg);
+
+}
+
+
+.postcard:nth-child(2){
+
+  left:27%;
+  top:0;
+
+  z-index:3;
+
+  transform:
+    rotate(4deg);
+
+}
+
+
+.postcard:nth-child(3){
+
+  left:52%;
+  top:45px;
+
+  z-index:2;
+
+  transform:
+    rotate(-3deg);
+
+}
+
+
+.postcard:nth-child(4){
+
+  right:1%;
+  top:5px;
+
+  transform:
+    rotate(7deg);
+
+}
+
+
+/* =========================================================
+   WISH YOU WERE HERE
+========================================================= */
+
+.final-collage{
+
+  padding:
+    75px 45px 80px;
+
+  color:white;
+
+  background:#24211e;
+
+}
+
+
+.final-title{
+
+  position:relative;
+
+  z-index:3;
+
+  margin-bottom:45px;
+
+  text-align:center;
+
+}
+
+
+.final-title span{
+
+  display:block;
+
+  margin-bottom:10px;
+
+  color:#c7b89f;
+
+  font-size:10px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.final-title h2{
+
+  margin:0;
+
+  font-size:
+    clamp(60px,10vw,145px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+  letter-spacing:-5px;
+
+}
+
+
+.final-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(6,1fr);
+
+  grid-auto-rows:
+    135px;
+
+  gap:9px;
+
+}
+
+
+.final-grid .photo{
+
+  position:relative;
+
+}
+
+
+.final-grid .photo:nth-child(1){
+
+  grid-column:
+    span 2;
+
+  grid-row:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(2){
+
+  grid-column:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(3){
+
+  grid-column:
+    span 2;
+
+  grid-row:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(4){
+
+  grid-column:
+    span 1;
+
+}
+
+
+.final-grid .photo:nth-child(5){
+
+  grid-column:
+    span 1;
+
+}
+
+
+.final-grid .photo:nth-child(6){
+
+  grid-column:
+    span 2;
+
+  grid-row:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(7){
+
+  grid-column:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(8){
+
+  grid-column:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(9){
+
+  grid-column:
+    span 1;
+
+}
+
+
+.final-grid .photo:nth-child(10){
+
+  grid-column:
+    span 1;
+
+}
+
+
+.final-grid .photo:nth-child(11){
+
+  grid-column:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(12){
+
+  grid-column:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(13){
+
+  grid-column:
+    span 2;
+
+  grid-row:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(14){
+
+  grid-column:
+    span 2;
+
+}
+
+
+.final-grid .photo:nth-child(15){
+
+  grid-column:
+    span 2;
+
+}
+
+
+.final-quote{
+
+  max-width:720px;
+
+  margin:
+    55px auto 0;
+
+  color:#d5cbbd;
+
+  text-align:center;
+
+  font-size:19px;
+
+  line-height:1.7;
+
+  font-style:italic;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  padding:
+    35px 20px;
+
+  text-align:center;
+
+  color:#cbb98e;
+
+  background:#171614;
+
+  font-size:9px;
+
+  line-height:1.8;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:950px){
+
+  .nav-links{
+    gap:10px;
+  }
+
+
+  .hero{
+
+    grid-template-columns:
+      .8fr 1.2fr;
+
+  }
+
+
+  .hero-copy{
+
+    padding-left:35px;
+
+  }
+
+
+  .hero-images{
+
+    padding-right:20px;
+
+  }
+
+
+  .hero-main{
+
+    right:20px;
+
+  }
+
+
+  .durm-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    grid-template-rows:
+      360px 230px 230px;
+
+  }
+
+
+  .durm-main{
+
+    grid-column:
+      1 / 3;
+
+    grid-row:auto;
+
+  }
+
+
+  .durm-top{
+
+    grid-column:auto;
+
+  }
+
+
+  .muggle-grid{
+
+    grid-template-columns:
+      repeat(3,1fr);
+
+  }
+
+
+  .muggle-main{
+
+    grid-column:
+      2 / 4;
+
+  }
+
+
+  .muggle-photo-7{
+
+    grid-column:
+      2 / 4;
+
+  }
+
+
+  .final-grid{
+
+    grid-template-columns:
+      repeat(4,1fr);
+
+  }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media(max-width:700px){
+
+  .page{
+
+    width:100%;
+
+    margin:0;
+
+    border:none;
+
+  }
+
+
+  .nav{
+
+    padding:
+      12px 15px;
+
+  }
+
+
+  .nav-links a:not(.back){
+
+    display:none;
+
+  }
+
+
+  .brand-text{
+    font-size:8px;
+  }
+
+
+  /* PORTADA */
+
+  .hero{
+
+    min-height:820px;
+
+    display:block;
+
+  }
+
+
+  .hero-copy{
+
+    padding:
+      50px 22px 0;
+
+  }
+
+
+  .hero h1{
+
+    width:100%;
+
+    font-size:75px;
+
+    letter-spacing:-4px;
+
+  }
+
+
+  .hero h1 span:nth-child(2){
+
+    margin-left:25px;
+
+  }
+
+
+  .hero-year{
+
+    margin-top:28px;
+
+  }
+
+
+  .hero-description{
+
+    font-size:13px;
+
+  }
+
+
+  .hero-images{
+
+    height:390px;
+
+    padding:0;
+
+  }
+
+
+  .hero-main{
+
+    width:82%;
+    height:315px;
+
+    top:35px;
+    right:20px;
+
+    border-width:6px;
+
+  }
+
+
+  .hero-polaroid{
+
+    width:130px;
+
+    left:14px;
+    bottom:5px;
+
+  }
+
+
+  .hero-polaroid .photo{
+
+    height:130px;
+
+  }
+
+
+  .hero-stamp{
+
+    right:13px;
+    bottom:3px;
+
+    font-size:8px;
+
+  }
+
+
+  /* INTRO */
+
+  .intro{
+
+    padding:
+      50px 23px;
+
+    grid-template-columns:
+      .3fr 1fr;
+
+    gap:20px;
+
+  }
+
+
+  .intro-number{
+
+    font-size:70px;
+
+  }
+
+
+  .intro-copy h2{
+
+    font-size:29px;
+
+  }
+
+
+  .intro-copy p{
+
+    font-size:13px;
+
+  }
+
+
+  /* DURMSTRANG */
+
+  .durmstrang{
+
+    padding:
+      55px 17px;
+
+  }
+
+
+  .durm-header{
+
+    display:block;
+
+  }
+
+
+  .durm-header h2{
+
+    margin-bottom:25px;
+
+    font-size:62px;
+
+    letter-spacing:-3px;
+
+  }
+
+
+  .durm-grid{
+
+    grid-template-columns:
+      1.25fr .75fr;
+
+    grid-template-rows:
+      280px 180px 190px;
+
+    gap:7px;
+
+  }
+
+
+  .durm-main{
+
+    grid-column:
+      1 / 3;
+
+  }
+
+
+  .durm-top{
+
+    grid-column:auto;
+
+  }
+
+
+  .durm-text{
+
+    padding:16px;
+
+  }
+
+
+  .durm-text h3{
+
+    font-size:19px;
+
+  }
+
+
+  .durm-text p{
+
+    font-size:9px;
+
+  }
+
+
+  .durm-quote{
+
+    margin-top:35px;
+
+    font-size:18px;
+
+  }
+
+
+  /* HOUSE CAMPS */
+
+  .house-camps{
+
+    padding:
+      55px 17px;
+
+  }
+
+
+  .camp-heading{
+
+    display:block;
+
+  }
+
+
+  .camp-heading h2{
+
+    margin-bottom:25px;
+
+    font-size:60px;
+
+  }
+
+
+  .house-collage{
+
+    grid-template-columns:
+      1.15fr .85fr;
+
+    grid-template-rows:
+      230px 180px 180px 210px;
+
+    gap:7px;
+
+  }
+
+
+  .house-camp-main{
+
+    grid-column:
+      1 / 3;
+
+    grid-row:
+      1;
+
+  }
+
+
+  .house-camp-story{
+
+    padding:16px;
+
+  }
+
+
+  .house-camp-story h3{
+
+    font-size:19px;
+
+  }
+
+
+  .house-camp-story p{
+
+    font-size:9px;
+
+  }
+
+
+  .house-photo-4{
+
+    grid-column:auto;
+
+  }
+
+
+  .house-photo-5{
+
+    grid-column:
+      1 / 3;
+
+  }
+
+
+  /* MUGGLE */
+
+  .muggle{
+
+    padding:
+      55px 15px;
+
+  }
+
+
+  .muggle-title h2{
+
+    font-size:66px;
+
+  }
+
+
+  .muggle-title span{
+
+    position:relative;
+
+    right:auto;
+    bottom:auto;
+
+    display:inline-block;
+
+    margin-top:20px;
+
+  }
+
+
+  .muggle-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    grid-template-rows:
+      180px 240px 170px 190px;
+
+    gap:7px;
+
+  }
+
+
+  .muggle-main{
+
+    grid-column:
+      1 / 3;
+
+    grid-row:
+      2;
+
+  }
+
+
+  .muggle-tall{
+
+    grid-row:auto;
+
+  }
+
+
+  .muggle-story{
+
+    padding:15px;
+
+  }
+
+
+  .muggle-story h3{
+
+    font-size:17px;
+
+  }
+
+
+  .muggle-story p{
+
+    font-size:9px;
+
+  }
+
+
+  .muggle-photo-6{
+
+    grid-column:auto;
+
+  }
+
+
+  .muggle-photo-7{
+
+    grid-column:
+      1 / 3;
+
+  }
+
+
+  /* FIELD NOTES */
+
+  .field-notes{
+
+    padding:
+      55px 16px;
+
+  }
+
+
+  .field-header h2{
+
+    font-size:58px;
+
+  }
+
+
+  .field-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    grid-template-rows:
+      220px 180px 190px 220px;
+
+    gap:7px;
+
+  }
+
+
+  .field-big{
+
+    grid-column:
+      1 / 3;
+
+  }
+
+
+  .field-tall{
+
+    grid-row:auto;
+
+    grid-column:auto;
+
+  }
+
+
+  .field-bottom{
+
+    grid-column:
+      1 / 3;
+
+  }
+
+
+  .field-text{
+
+    padding:15px;
+
+  }
+
+
+  .field-text h3{
+
+    font-size:18px;
+
+  }
+
+
+  .field-text p{
+
+    font-size:9px;
+
+  }
+
+
+  /* POSTCARDS */
+
+  .postcards{
+
+    padding:
+      55px 15px;
+
+  }
+
+
+  .postcards h2{
+
+    font-size:60px;
+
+  }
+
+
+  .postcard-row{
+
+    min-height:630px;
+
+  }
+
+
+  .postcard{
+
+    width:47%;
+
+  }
+
+
+  .postcard .photo{
+
+    height:190px;
+
+  }
+
+
+  .postcard:nth-child(1){
+
+    left:1%;
+    top:10px;
+
+  }
+
+
+  .postcard:nth-child(2){
+
+    left:auto;
+    right:1%;
+    top:35px;
+
+  }
+
+
+  .postcard:nth-child(3){
+
+    left:2%;
+    top:310px;
+
+  }
+
+
+  .postcard:nth-child(4){
+
+    right:1%;
+    top:330px;
+
+  }
+
+
+  /* FINAL */
+
+  .final-collage{
+
+    padding:
+      55px 10px;
+
+  }
+
+
+  .final-title h2{
+
+    font-size:57px;
+
+  }
+
+
+  .final-grid{
+
+    grid-template-columns:
+      repeat(4,1fr);
+
+    grid-auto-rows:
+      90px;
+
+    gap:5px;
+
+  }
+
+
+  .final-quote{
+
+    font-size:15px;
+
+  }
+
+}
+
+
+/* =========================================================
+   TELÉFONOS PEQUEÑOS
+========================================================= */
+
+@media(max-width:420px){
+
+  .hero h1{
+
+    font-size:64px;
+
+  }
+
+
+  .intro{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .intro-number{
+
+    font-size:55px;
+
+  }
+
+
+  .durm-header h2{
+
+    font-size:53px;
+
+  }
+
+
+  .camp-heading h2{
+
+    font-size:51px;
+
+  }
+
+
+  .muggle-title h2{
+
+    font-size:57px;
+
+  }
+
+
+  .field-header h2{
+
+    font-size:50px;
+
+  }
+
+
+  .postcards h2{
+
+    font-size:52px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- =========================================================
+     NAVEGACIÓN
+========================================================= -->
+
+<nav class="nav">
+
+
+  <div class="brand">
+
+    <div class="brand-mark">
+      H
+    </div>
+
+    <div class="brand-text">
+      Anuario Hogwarts · 2025–2026
+    </div>
+
+  </div>
+
+
+  <div class="nav-links">
+
+    <a href="#durmstrang">
+      Durmstrang
+    </a>
+
+    <a href="#campamentos">
+      Campamentos
+    </a>
+
+    <a href="#muggle">
+      Mundo Muggle
+    </a>
+
+    <a href="#salidas">
+      Más Salidas
+    </a>
+
+    <a
+      href="index.html#momentos"
+      class="back"
+    >
+      ← Volver
+    </a>
+
+  </div>
+
+
+</nav>
+
+
+<!-- =========================================================
+     PORTADA
+
+     CAMBIA:
+     assets/excursiones-portada.jpg
+     assets/excursiones-polaroid.jpg
+========================================================= -->
+
+<header class="hero">
+
+
+  <div class="hero-copy">
+
+
+    <div class="hero-small">
+      Hogwarts · Student Life
+    </div>
+
+
+    <h1>
+
+      <span>
+        BEYOND
+      </span>
+
+      <span>
+        THE
+      </span>
+
+      <span>
+        CASTLE
+      </span>
+
+    </h1>
+
+
+    <div class="hero-year">
+      2025 — 2026
+    </div>
+
+
+    <p class="hero-description">
+
+      Hogwarts fue nuestro hogar,
+      pero algunas de las mejores historias
+      del curso comenzaron cuando dejamos
+      atrás las puertas del castillo.
+
+    </p>
+
+
+    <div class="hero-note handwritten">
+      field trips, camps & questionable decisions ♡
+    </div>
+
+
+  </div>
+
+
+  <div class="hero-images">
+
+
+    <div class="hero-main photo">
+
+      <img
+        src="assets/excursiones-portada.jpg"
+        alt="Excursiones de Hogwarts"
+      >
+
+    </div>
+
+
+    <div class="hero-polaroid">
+
+      <div class="photo">
+
+        <img
+          src="assets/excursiones-polaroid.jpg"
+          alt="Estudiantes durante una excursión"
+        >
+
+      </div>
+
+      <p>
+        somewhere outside Hogwarts...
+      </p>
+
+    </div>
+
+
+    <div class="hero-stamp">
+      Hogwarts Travel Club
+    </div>
+
+
+  </div>
+
+
+</header>
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="intro">
+
+
+  <div class="intro-number">
+    01
+  </div>
+
+
+  <div class="intro-copy">
+
+    <span class="kicker">
+      Beyond the classroom
+    </span>
+
+    <h2>
+      El año también ocurrió fuera de Hogwarts
+    </h2>
+
+
+    <p>
+
+      Entre campamentos, visitas,
+      actividades especiales y excursiones,
+      el curso 2025–2026 llevó a los estudiantes
+      bastante más lejos de las aulas habituales.
+
+    </p>
+
+
+    <p>
+
+      Hubo maletas perdidas, dormitorios improvisados,
+      primeras experiencias en el mundo muggle,
+      competencias entre casas y suficientes fotografías
+      como para demostrar que mandar estudiantes de Hogwarts
+      de viaje siempre termina produciendo historias.
+
+    </p>
+
+  </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     DURMSTRANG
+
+     CAMBIA LAS FOTOS:
+     durmstrang-01.jpg
+     durmstrang-02.jpg
+     durmstrang-03.jpg
+========================================================= -->
+
+<section
+  class="durmstrang"
+  id="durmstrang"
+>
+
+
+  <div class="durm-header">
+
+
+    <div>
+
+      <span class="kicker">
+        Campamento Especial
+      </span>
+
+      <h2>
+        DURMSTRANG
+      </h2>
+
+    </div>
+
+
+    <p>
+
+      Durante varios días, estudiantes de Hogwarts
+      cambiaron las torres familiares del castillo
+      por una experiencia completamente diferente
+      en Durmstrang.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="durm-grid">
+
+
+    <!-- FOTO GRANDE -->
+
+    <div class="photo durm-main">
+
+      <img
+        src="assets/durmstrang-01.jpg"
+        alt="Campamento en Durmstrang"
+      >
+
+      <span class="durm-label">
+        Arrival Day
+      </span>
+
+    </div>
+
+
+    <!-- FOTO HORIZONTAL -->
+
+    <div class="photo durm-top">
+
+      <img
+        src="assets/durmstrang-02.jpg"
+        alt="Estudiantes en Durmstrang"
+      >
+
+      <span class="durm-label">
+        Far From Hogwarts
+      </span>
+
+    </div>
+
+
+    <!-- TEXTO -->
+
+    <article class="durm-text">
+
+      <span class="kicker">
+        Field Notes
+      </span>
+
+      <h3>
+        Far From Home
+      </h3>
+
+      <p>
+
+        Nuevos dormitorios, otras costumbres,
+        actividades en grupo y un clima
+        que hizo que más de uno extrañara
+        incluso las escaleras cambiantes de Hogwarts.
+
+      </p>
+
+    </article>
+
+
+    <!-- FOTO -->
+
+    <div class="photo durm-small">
+
+      <img
+        src="assets/durmstrang-03.jpg"
+        alt="Actividad durante el campamento"
+      >
+
+      <span class="durm-label">
+        Camp Life
+      </span>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="durm-quote">
+
+    “Turns out Hogwarts isn't the coldest school after all.”
+
+  </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     CAMPAMENTOS DE LAS CASAS
+
+     AQUÍ PUEDES MEZCLAR FOTOS DE LOS CUATRO CAMPAMENTOS.
+========================================================= -->
+
+<section
+  class="house-camps"
+  id="campamentos"
+>
+
+
+  <div class="camp-heading">
+
+
+    <div>
+
+      <span class="kicker">
+        Four Houses · Four Adventures
+      </span>
+
+      <h2>
+        HOUSE
+        <br>
+        CAMPS
+      </h2>
+
+    </div>
+
+
+    <p>
+
+      Cada casa tuvo la oportunidad de salir
+      del castillo y compartir actividades lejos
+      de las clases. Cuatro campamentos,
+      cuatro estilos completamente distintos
+      y muchísimas historias que terminaron
+      regresando a Hogwarts.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="house-collage">
+
+
+    <!-- FOTO PRINCIPAL -->
+
+    <div class="photo house-camp-main">
+
+      <img
+        src="assets/house-camp-01.jpg"
+        alt="Campamento de las casas"
+      >
+
+    </div>
+
+
+    <!-- FOTO -->
+
+    <div class="photo">
+
+      <img
+        src="assets/house-camp-02.jpg"
+        alt="Estudiantes durante el campamento"
+      >
+
+    </div>
+
+
+    <!-- TEXTO -->
+
+    <article class="house-camp-story">
+
+      <span class="kicker">
+        Camp Diary
+      </span>
+
+      <h3>
+        No Classes Today
+      </h3>
+
+      <p>
+
+        Juegos, competencias,
+        actividades al aire libre y esos momentos
+        en los que alguien inevitablemente preguntaba
+        quién había olvidado llevar algo importante.
+
+      </p>
+
+    </article>
+
+
+    <!-- FOTO -->
+
+    <div class="photo house-photo-4">
+
+      <img
+        src="assets/house-camp-03.jpg"
+        alt="Campamento Hogwarts"
+      >
+
+    </div>
+
+
+    <!-- FOTO HORIZONTAL -->
+
+    <div class="photo house-photo-5">
+
+      <img
+        src="assets/house-camp-04.jpg"
+        alt="Grupo de estudiantes"
+      >
+
+    </div>
+
+
+  </div>
+
+
+  <div class="house-tags">
+
+    <span class="house-tag tag-gryffindor">
+      Gryffindor Camp
+    </span>
+
+    <span class="house-tag tag-slytherin">
+      Slytherin Camp
+    </span>
+
+    <span class="house-tag tag-hufflepuff">
+      Hufflepuff Camp
+    </span>
+
+    <span class="house-tag tag-ravenclaw">
+      Ravenclaw Camp
+    </span>
+
+  </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     MUNDO MUGGLE
+
+     MUCHAS FOTOS / ESTÉTICA MÁS Y2K
+========================================================= -->
+
+<section
+  class="muggle"
+  id="muggle"
+>
+
+
+  <div class="muggle-title">
+
+    <span class="kicker">
+      No Wands Required
+    </span>
+
+    <h2>
+      MUGGLE
+      <br>
+      WORLD
+    </h2>
+
+    <span class="handwritten">
+      we survived ♡
+    </span>
+
+  </div>
+
+
+  <div class="muggle-grid">
+
+
+    <!-- FOTO 1 -->
+
+    <div class="photo muggle-tall">
+
+      <img
+        src="assets/muggle-01.jpg"
+        alt="Excursión al mundo muggle"
+      >
+
+      <span class="muggle-note">
+        first stop!
+      </span>
+
+    </div>
+
+
+    <!-- FOTO PRINCIPAL -->
+
+    <div class="photo muggle-main">
+
+      <img
+        src="assets/muggle-02.jpg"
+        alt="Estudiantes explorando el mundo muggle"
+      >
+
+      <span class="muggle-note">
+        no magic allowed
+      </span>
+
+    </div>
+
+
+    <!-- FOTO 3 -->
+
+    <div class="photo">
+
+      <img
+        src="assets/muggle-03.jpg"
+        alt="Actividad muggle"
+      >
+
+      <span class="muggle-note">
+        what is this?
+      </span>
+
+    </div>
+
+
+    <!-- TEXTO -->
+
+    <article class="muggle-story">
+
+      <span class="kicker">
+        Muggle Studies IRL
+      </span>
+
+      <h3>
+        No Wands. No Problem?</h3>
+
+      <p>
+
+        Por unas horas, la teoría de Estudios Muggles
+        dejó de ser teoría. Los estudiantes tuvieron
+        que desenvolverse sin depender de la magia,
+        descubrir objetos cotidianos y tratar de no
+        llamar demasiado la atención.
+
+      </p>
+
+    </article>
+
+
+    <!-- FOTO 4 -->
+
+    <div class="photo">
+
+      <img
+        src="assets/muggle-04.jpg"
+        alt="Estudiantes durante la excursión"
+      >
+
+      <span class="muggle-note">
+        muggle food
+      </span>
+
+    </div>
+
+
+    <!-- FOTO 5 -->
+
+    <div class="photo">
+
+      <img
+        src="assets/muggle-05.jpg"
+        alt="Estudiantes en la ciudad"
+      >
+
+      <span class="muggle-note">
+        somehow lost
+      </span>
+
+    </div>
+
+
+    <!-- FOTO 6 -->
+
+    <div class="photo muggle-photo-6">
+
+      <img
+        src="assets/muggle-06.jpg"
+        alt="Recuerdo de la excursión"
+      >
+
+    </div>
+
+
+    <!-- FOTO 7 -->
+
+    <div class="photo muggle-photo-7">
+
+      <img
+        src="assets/muggle-07.jpg"
+        alt="Grupo durante la excursión"
+      >
+
+      <span class="muggle-note">
+        proof we made it back
+      </span>
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     MÁS EXCURSIONES
+========================================================= -->
+
+<section
+  class="field-notes"
+  id="salidas"
+>
+
+
+  <div class="field-header">
+
+    <span class="kicker">
+      Field Notes · 2025–2026
+    </span>
+
+    <h2>
+      MORE
+      <br>
+      ADVENTURES
+    </h2>
+
+    <p>
+
+      No todos los viajes necesitaron una maleta.
+      Algunas de las mejores historias del curso
+      ocurrieron en salidas de apenas unas horas.
+
+    </p>
+
+  </div>
+
+
+  <div class="field-grid">
+
+
+    <!-- FOTO GRANDE -->
+
+    <div class="photo field-big">
+
+      <img
+        src="assets/field-trip-01.jpg"
+        alt="Excursión escolar"
+      >
+
+    </div>
+
+
+    <!-- FOTO ALTA -->
+
+    <div class="photo field-tall">
+
+      <img
+        src="assets/field-trip-02.jpg"
+        alt="Estudiantes durante una salida"
+      >
+
+    </div>
+
+
+    <!-- TEXTO -->
+
+    <article class="field-text">
+
+      <span class="kicker">
+        Outside Hogwarts
+      </span>
+
+      <h3>
+        Field Trip Diaries
+      </h3>
+
+      <p>
+
+        Visitas académicas, actividades especiales,
+        recorridos y pequeños viajes que hicieron
+        que una jornada normal de clases terminara
+        convirtiéndose en otra cosa.
+
+      </p>
+
+    </article>
+
+
+    <!-- FOTO -->
+
+    <div class="photo">
+
+      <img
+        src="assets/field-trip-03.jpg"
+        alt="Actividad escolar"
+      >
+
+    </div>
+
+
+    <!-- FOTO -->
+
+    <div class="photo">
+
+      <img
+        src="assets/field-trip-04.jpg"
+        alt="Estudiantes de Hogwarts"
+      >
+
+    </div>
+
+
+    <!-- FOTO HORIZONTAL -->
+
+    <div class="photo field-bottom">
+
+      <img
+        src="assets/field-trip-05.jpg"
+        alt="Grupo de estudiantes"
+      >
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     POSTALES
+
+     4 FOTOS TIPO POLAROID
+========================================================= -->
+
+<section class="postcards">
+
+
+  <span
+    class="kicker"
+    style="text-align:center;"
+  >
+    Collected Memories
+  </span>
+
+
+  <h2>
+    POSTCARDS
+    <br>
+    FROM THE YEAR
+  </h2>
+
+
+  <div class="postcard-row">
+
+
+    <article class="postcard">
+
+      <div class="photo">
+
+        <img
+          src="assets/postcard-01.jpg"
+          alt="Recuerdo de excursión"
+        >
+
+      </div>
+
+      <p class="handwritten">
+        wish you were here ♡
+      </p>
+
+    </article>
+
+
+    <article class="postcard">
+
+      <div class="photo">
+
+        <img
+          src="assets/postcard-02.jpg"
+          alt="Recuerdo de campamento"
+        >
+
+      </div>
+
+      <p class="handwritten">
+        probably should've packed better
+      </p>
+
+    </article>
+
+
+    <article class="postcard">
+
+      <div class="photo">
+
+        <img
+          src="assets/postcard-03.jpg"
+          alt="Estudiantes de viaje"
+        >
+
+      </div>
+
+      <p class="handwritten">
+        best people, questionable plans
+      </p>
+
+    </article>
+
+
+    <article class="postcard">
+
+      <div class="photo">
+
+        <img
+          src="assets/postcard-04.jpg"
+          alt="Recuerdo del año"
+        >
+
+      </div>
+
+      <p class="handwritten">
+        Hogwarts can wait
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     COLLAGE FINAL
+
+     AQUÍ TIENES 15 ESPACIOS PARA FOTOS.
+
+     Puedes agregar más copiando:
+
+     <div class="photo">
+       <img src="assets/foto.jpg" alt="">
+     </div>
+========================================================= -->
+
+<section class="final-collage">
+
+
+  <div class="final-title">
+
+    <span>
+      Hogwarts · 2025–2026
+    </span>
+
+    <h2>
+      WISH YOU
+      <br>
+      WERE HERE
+    </h2>
+
+  </div>
+
+
+  <div class="final-grid">
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-01.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-02.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-03.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-04.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-05.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-06.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-07.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-08.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-09.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-10.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-11.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-12.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-13.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-14.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+    <div class="photo">
+      <img
+        src="assets/travel-15.jpg"
+        alt="Recuerdo de excursión"
+      >
+    </div>
+
+
+  </div>
+
+
+  <div class="final-quote">
+
+    “Al final, no fueron solamente los lugares.
+    Fueron las personas con las que llegamos hasta ellos.”
+
+  </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+  Anuario Escolar de Hogwarts
+  <br>
+  Excursiones · Campamentos · Field Trips
+  <br>
+  2025 – 2026
+
+</footer>
+
+
+</div>
+
+
+</body>
+
+</html>
