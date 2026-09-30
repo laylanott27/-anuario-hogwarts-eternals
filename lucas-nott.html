@@ -1,0 +1,4063 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>Lucas Nott · Hogwarts 2025–2026</title>
+
+
+<style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+
+  --black:#101113;
+  --black-2:#181a1e;
+
+  --navy:#18293c;
+  --blue:#294967;
+  --blue-light:#8fa9bf;
+
+  --silver:#b9bec5;
+  --silver-dark:#737b84;
+
+  --paper:#e9e2d7;
+  --paper-light:#f4eee5;
+  --paper-old:#d8cdbc;
+
+  --ink:#171719;
+  --muted:#68666a;
+
+  --white:#f5f2eb;
+
+  --tape:
+    rgba(215,205,180,.72);
+
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+body{
+
+  margin:0;
+
+  color:var(--ink);
+
+  background:#0d0e10;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+}
+
+
+img{
+
+  display:block;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+
+.page{
+
+  width:min(1450px,100%);
+
+  margin:auto;
+
+  overflow:hidden;
+
+  background:var(--paper);
+
+}
+
+
+.handwritten{
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.nav{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:1000;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+
+  padding:14px 28px;
+
+  color:#ddd;
+
+  background:
+    rgba(12,13,15,.95);
+
+  border-bottom:
+    1px solid #34383e;
+
+  backdrop-filter:
+    blur(10px);
+
+}
+
+
+.nav-brand{
+
+  font-size:10px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-links{
+
+  display:flex;
+
+  gap:18px;
+
+  align-items:center;
+
+  font-size:8px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.nav-links a{
+
+  color:#aeb7c0;
+
+}
+
+
+.nav-links a:hover{
+  color:white;
+}
+
+
+.back{
+
+  padding:8px 13px;
+
+  color:white !important;
+
+  border:
+    1px solid #68727d;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+  min-height:850px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  color:white;
+
+  background:
+    var(--black);
+
+}
+
+
+.hero-bg{
+
+  position:absolute;
+
+  inset:0;
+
+}
+
+
+.hero-bg img{
+
+  opacity:.55;
+
+  filter:
+    grayscale(25%)
+    contrast(1.05);
+
+}
+
+
+.hero-bg::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      rgba(5,6,8,.96) 0%,
+      rgba(5,6,8,.73) 43%,
+      rgba(5,6,8,.18) 76%,
+      rgba(5,6,8,.55)
+    );
+
+}
+
+
+.hero-content{
+
+  min-height:850px;
+
+  position:relative;
+
+  z-index:5;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  padding:
+    70px 60px;
+
+}
+
+
+.hero-small{
+
+  margin-bottom:10px;
+
+  color:var(--blue-light);
+
+  font-size:10px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.hero h1{
+
+  margin:0;
+
+  font-family:
+    Arial Black,
+    Impact,
+    sans-serif;
+
+  font-size:
+    clamp(80px,13vw,190px);
+
+  line-height:.72;
+
+  letter-spacing:-8px;
+
+  text-transform:uppercase;
+
+}
+
+
+.hero h1 span{
+
+  display:block;
+
+  margin-left:8%;
+
+  color:transparent;
+
+  -webkit-text-stroke:
+    2px var(--silver);
+
+}
+
+
+.hero-info{
+
+  margin-top:34px;
+
+  color:#b5bdc6;
+
+  font-size:10px;
+
+  line-height:1.9;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.hero-quote{
+
+  max-width:440px;
+
+  margin-top:24px;
+
+  color:#e4e0da;
+
+  font-size:16px;
+
+  line-height:1.8;
+
+  font-style:italic;
+
+}
+
+
+.hero-number{
+
+  position:absolute;
+
+  right:5%;
+  bottom:4%;
+
+  color:
+    rgba(255,255,255,.08);
+
+  font-family:
+    Arial Black,
+    sans-serif;
+
+  font-size:
+    clamp(140px,22vw,320px);
+
+  line-height:.7;
+
+}
+
+
+/* =========================================================
+   INTRO COLLAGE
+========================================================= */
+
+.intro{
+
+  padding:
+    80px 50px;
+
+  position:relative;
+
+  background:
+    var(--paper);
+
+}
+
+
+.intro-grid{
+
+  max-width:1250px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    .85fr 1.15fr;
+
+  gap:55px;
+
+  align-items:center;
+
+}
+
+
+.intro-copy h2{
+
+  margin:
+    0 0 25px;
+
+  color:var(--navy);
+
+  font-size:
+    clamp(55px,7vw,105px);
+
+  line-height:.78;
+
+  font-weight:400;
+
+  letter-spacing:-4px;
+
+}
+
+
+.intro-copy p{
+
+  max-width:530px;
+
+  margin:
+    0 0 18px;
+
+  font-size:14px;
+
+  line-height:1.9;
+
+}
+
+
+.intro-copy .big-line{
+
+  margin:
+    30px 0;
+
+  padding-left:20px;
+
+  color:var(--blue);
+
+  border-left:
+    3px solid var(--blue);
+
+  font-size:20px;
+
+  line-height:1.6;
+
+  font-style:italic;
+
+}
+
+
+.intro-collage{
+
+  min-height:620px;
+
+  position:relative;
+
+}
+
+
+.polaroid{
+
+  position:absolute;
+
+  padding:
+    9px 9px 35px;
+
+  background:#f6f3ed;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.18);
+
+}
+
+
+.polaroid .photo{
+
+  width:100%;
+  height:100%;
+
+  overflow:hidden;
+
+  background:#aaa;
+
+}
+
+
+.polaroid p{
+
+  position:absolute;
+
+  left:10px;
+  right:10px;
+  bottom:8px;
+
+  margin:0;
+
+  text-align:center;
+
+  font-size:9px;
+
+}
+
+
+.intro-p1{
+
+  width:53%;
+  height:440px;
+
+  top:20px;
+  left:5%;
+
+  transform:
+    rotate(-5deg);
+
+}
+
+
+.intro-p2{
+
+  width:45%;
+  height:350px;
+
+  top:70px;
+  right:2%;
+
+  transform:
+    rotate(5deg);
+
+}
+
+
+.intro-p3{
+
+  width:43%;
+  height:290px;
+
+  left:29%;
+  bottom:0;
+
+  transform:
+    rotate(2deg);
+
+  z-index:5;
+
+}
+
+
+/* =========================================================
+   PROFILE / THIS WAS LUCAS
+========================================================= */
+
+.profile{
+
+  padding:
+    80px 50px;
+
+  color:white;
+
+  background:
+    var(--navy);
+
+}
+
+
+.profile-header{
+
+  max-width:1150px;
+
+  margin:
+    0 auto 45px;
+
+}
+
+
+.profile-header span{
+
+  color:#8fa9bf;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.profile-header h2{
+
+  margin:
+    5px 0 0;
+
+  font-size:
+    clamp(65px,9vw,135px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+
+.profile-grid{
+
+  max-width:1150px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    1.1fr .9fr;
+
+  gap:18px;
+
+}
+
+
+.profile-photo{
+
+  min-height:650px;
+
+  overflow:hidden;
+
+}
+
+
+.profile-details{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:10px;
+
+}
+
+
+.detail{
+
+  padding:23px;
+
+  color:#172333;
+
+  background:#d7dfe5;
+
+}
+
+
+.detail.dark{
+
+  color:white;
+
+  background:#101820;
+
+}
+
+
+.detail span{
+
+  display:block;
+
+  margin-bottom:8px;
+
+  color:#6b7d8d;
+
+  font-size:8px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+.detail.dark span{
+  color:#8ea8bc;
+}
+
+
+.detail h3{
+
+  margin:0;
+
+  font-size:22px;
+
+  font-weight:400;
+
+}
+
+
+.detail p{
+
+  margin:
+    8px 0 0;
+
+  font-size:11px;
+
+  line-height:1.7;
+
+}
+
+
+/* =========================================================
+   ROCK
+========================================================= */
+
+.rock{
+
+  min-height:850px;
+
+  padding:
+    75px 50px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  color:white;
+
+  background:#101010;
+
+}
+
+
+.rock::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  opacity:.15;
+
+  background:
+
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      #fff 3px
+    );
+
+  pointer-events:none;
+
+}
+
+
+.rock-header{
+
+  position:relative;
+
+  z-index:5;
+
+  max-width:1150px;
+
+  margin:auto;
+
+}
+
+
+.rock-header h2{
+
+  margin:0;
+
+  font-family:
+    Arial Black,
+    Impact,
+    sans-serif;
+
+  font-size:
+    clamp(70px,11vw,155px);
+
+  line-height:.73;
+
+  letter-spacing:-7px;
+
+  text-transform:uppercase;
+
+}
+
+
+.rock-header h2 em{
+
+  display:block;
+
+  margin-left:15%;
+
+  color:transparent;
+
+  -webkit-text-stroke:
+    2px #aaa;
+
+  font-style:normal;
+
+}
+
+
+.rock-layout{
+
+  max-width:1150px;
+
+  margin:
+    45px auto 0;
+
+  display:grid;
+
+  grid-template-columns:
+    1.3fr .7fr;
+
+  gap:15px;
+
+}
+
+
+.rock-main{
+
+  min-height:510px;
+
+  overflow:hidden;
+
+}
+
+
+.rock-side{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:10px;
+
+}
+
+
+.rock-side .photo{
+
+  min-height:220px;
+
+  overflow:hidden;
+
+}
+
+
+.rock-note{
+
+  grid-column:
+    1 / 3;
+
+  padding:25px;
+
+  color:#121212;
+
+  background:#d8d4ca;
+
+  transform:
+    rotate(-1deg);
+
+}
+
+
+.rock-note h3{
+
+  margin:
+    0 0 10px;
+
+  font-size:26px;
+
+  font-weight:400;
+
+}
+
+
+.rock-note p{
+
+  margin:0;
+
+  font-size:12px;
+
+  line-height:1.8;
+
+}
+
+
+/* =========================================================
+   QUIDDITCH
+========================================================= */
+
+.quidditch{
+
+  padding:
+    80px 50px;
+
+  background:
+    #d8e0e5;
+
+}
+
+
+.quidditch-title{
+
+  max-width:1200px;
+
+  margin:
+    0 auto 40px;
+
+  display:flex;
+
+  align-items:flex-end;
+  justify-content:space-between;
+
+  gap:40px;
+
+}
+
+
+.quidditch-title h2{
+
+  margin:0;
+
+  color:var(--navy);
+
+  font-family:
+    Arial Black,
+    Impact,
+    sans-serif;
+
+  font-size:
+    clamp(75px,12vw,170px);
+
+  line-height:.68;
+
+  letter-spacing:-7px;
+
+}
+
+
+.quidditch-title h2 span{
+
+  display:block;
+
+  color:var(--blue);
+
+  font-size:.45em;
+
+  letter-spacing:1px;
+
+}
+
+
+.quidditch-title p{
+
+  max-width:420px;
+
+  margin:0;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+
+.quidditch-grid{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  grid-auto-rows:
+    190px;
+
+  gap:8px;
+
+}
+
+
+.q-photo{
+
+  position:relative;
+
+  overflow:hidden;
+
+  background:#aaa;
+
+}
+
+
+.q-photo:nth-child(1){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.q-photo:nth-child(4){
+
+  grid-row:span 2;
+
+}
+
+
+.q-photo:nth-child(6){
+
+  grid-column:span 2;
+
+}
+
+
+.q-caption{
+
+  position:absolute;
+
+  left:10px;
+  bottom:10px;
+
+  padding:
+    6px 9px;
+
+  color:white;
+
+  background:
+    rgba(10,15,20,.76);
+
+  font-size:8px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+.captain-note{
+
+  max-width:850px;
+
+  margin:
+    35px auto 0;
+
+  padding:
+    28px 35px;
+
+  color:white;
+
+  background:
+    var(--navy);
+
+  transform:
+    rotate(-1deg);
+
+}
+
+
+.captain-note h3{
+
+  margin:
+    0 0 10px;
+
+  color:#b9cad8;
+
+  font-size:28px;
+
+  font-weight:400;
+
+}
+
+
+.captain-note p{
+
+  margin:0;
+
+  font-size:13px;
+
+  line-height:1.85;
+
+}
+
+
+/* =========================================================
+   FUTURE AUROR
+========================================================= */
+
+.auror{
+
+  padding:
+    90px 50px;
+
+  color:#e5e5e5;
+
+  background:#16181b;
+
+}
+
+
+.auror-wrap{
+
+  max-width:1150px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    .8fr 1.2fr;
+
+  gap:55px;
+
+  align-items:center;
+
+}
+
+
+.auror-copy span{
+
+  color:#8298aa;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.auror-copy h2{
+
+  margin:
+    7px 0 25px;
+
+  font-size:
+    clamp(60px,8vw,110px);
+
+  line-height:.78;
+
+  font-weight:400;
+
+}
+
+
+.auror-copy p{
+
+  margin:
+    0 0 17px;
+
+  color:#c0c3c6;
+
+  font-size:14px;
+
+  line-height:1.9;
+
+}
+
+
+.subjects{
+
+  margin-top:28px;
+
+  border-top:
+    1px solid #555b62;
+
+}
+
+
+.subject{
+
+  padding:
+    14px 0;
+
+  border-bottom:
+    1px solid #3c4248;
+
+  color:#a9b9c6;
+
+  font-size:11px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
+
+.auror-collage{
+
+  min-height:650px;
+
+  position:relative;
+
+}
+
+
+.auror-photo-1{
+
+  width:65%;
+  height:500px;
+
+  position:absolute;
+
+  top:0;
+  right:0;
+
+  overflow:hidden;
+
+}
+
+
+.auror-photo-2{
+
+  width:46%;
+  height:340px;
+
+  position:absolute;
+
+  left:0;
+  bottom:0;
+
+  padding:8px;
+
+  background:white;
+
+  transform:
+    rotate(-5deg);
+
+}
+
+
+.auror-paper{
+
+  width:50%;
+
+  position:absolute;
+
+  right:3%;
+  bottom:20px;
+
+  z-index:6;
+
+  padding:
+    25px;
+
+  color:#1b1b1b;
+
+  background:#d7d0c4;
+
+  transform:
+    rotate(3deg);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.3);
+
+}
+
+
+.auror-paper strong{
+
+  display:block;
+
+  margin-bottom:8px;
+
+  font-size:18px;
+
+}
+
+
+.auror-paper p{
+
+  margin:0;
+
+  font-size:11px;
+
+  line-height:1.7;
+
+}
+
+
+/* =========================================================
+   HIS PEOPLE
+========================================================= */
+
+.people{
+
+  padding:
+    90px 50px;
+
+  background:
+    #eee7dc;
+
+}
+
+
+.people-title{
+
+  max-width:1150px;
+
+  margin:
+    0 auto 45px;
+
+  text-align:center;
+
+}
+
+
+.people-title span{
+
+  color:#65788a;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.people-title h2{
+
+  margin:
+    5px 0;
+
+  color:var(--navy);
+
+  font-size:
+    clamp(65px,9vw,130px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+
+.people-title p{
+
+  max-width:600px;
+
+  margin:
+    20px auto 0;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+
+.people-grid{
+
+  max-width:1150px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:20px;
+
+}
+
+
+.person{
+
+  position:relative;
+
+  min-height:650px;
+
+  overflow:hidden;
+
+  background:#111;
+
+}
+
+
+.person img{
+
+  opacity:.84;
+
+}
+
+
+.person::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      transparent 40%,
+      rgba(0,0,0,.9)
+    );
+
+}
+
+
+.person-copy{
+
+  position:absolute;
+
+  z-index:5;
+
+  left:30px;
+  right:30px;
+  bottom:30px;
+
+  color:white;
+
+}
+
+
+.person-copy span{
+
+  color:#aebdca;
+
+  font-size:9px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.person-copy h3{
+
+  margin:
+    5px 0 12px;
+
+  font-size:40px;
+
+  font-weight:400;
+
+}
+
+
+.person-copy p{
+
+  max-width:430px;
+
+  margin:0;
+
+  color:#e3dfd9;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+
+/* =========================================================
+   RAVENCLAW FAMILY
+========================================================= */
+
+.ravenclaw-family{
+
+  padding:
+    85px 50px;
+
+  color:white;
+
+  background:
+    var(--blue);
+
+}
+
+
+.family-header{
+
+  max-width:1200px;
+
+  margin:
+    0 auto 40px;
+
+  display:grid;
+
+  grid-template-columns:
+    1.2fr .8fr;
+
+  gap:45px;
+
+  align-items:end;
+
+}
+
+
+.family-header h2{
+
+  margin:0;
+
+  font-size:
+    clamp(65px,9vw,135px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+}
+
+
+.family-header p{
+
+  margin:0;
+
+  color:#d2dce5;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+
+.family-grid{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(5,1fr);
+
+  grid-auto-rows:
+    170px;
+
+  gap:7px;
+
+}
+
+
+.family-grid .photo{
+
+  overflow:hidden;
+
+}
+
+
+.family-grid .photo:nth-child(1){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.family-grid .photo:nth-child(4){
+
+  grid-column:span 2;
+
+}
+
+
+.family-grid .photo:nth-child(7){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.family-note{
+
+  max-width:700px;
+
+  margin:
+    35px auto 0;
+
+  text-align:center;
+
+  font-size:16px;
+
+  line-height:1.8;
+
+  font-style:italic;
+
+}
+
+
+/* =========================================================
+   MEMORIES FROM PEOPLE
+========================================================= */
+
+.memories{
+
+  padding:
+    90px 50px;
+
+  background:
+    var(--paper-old);
+
+}
+
+
+.memories-header{
+
+  max-width:1100px;
+
+  margin:
+    0 auto 45px;
+
+}
+
+
+.memories-header h2{
+
+  margin:0;
+
+  color:var(--navy);
+
+  font-size:
+    clamp(60px,8vw,115px);
+
+  line-height:.78;
+
+  font-weight:400;
+
+}
+
+
+.memories-header p{
+
+  max-width:600px;
+
+  margin:
+    25px 0 0;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+
+.notes-wall{
+
+  max-width:1100px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:25px;
+
+}
+
+
+.memory-note{
+
+  min-height:270px;
+
+  position:relative;
+
+  padding:
+    35px 28px 28px;
+
+  background:
+    #f4efe5;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.09);
+
+}
+
+
+.memory-note:nth-child(2n){
+  transform:rotate(1.2deg);
+}
+
+
+.memory-note:nth-child(3n){
+  transform:rotate(-1.5deg);
+}
+
+
+.memory-note::before{
+
+  content:"";
+
+  width:85px;
+  height:24px;
+
+  position:absolute;
+
+  top:-10px;
+  left:50%;
+
+  transform:
+    translateX(-50%)
+    rotate(-2deg);
+
+  background:
+    var(--tape);
+
+}
+
+
+.memory-note p{
+
+  margin:0;
+
+  font-size:14px;
+
+  line-height:1.8;
+
+  font-style:italic;
+
+}
+
+
+.memory-note strong{
+
+  display:block;
+
+  margin-top:25px;
+
+  color:#52677a;
+
+  font-size:9px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   SMALL THINGS
+========================================================= */
+
+.small-things{
+
+  padding:
+    85px 50px;
+
+  color:white;
+
+  background:#121315;
+
+}
+
+
+.small-title{
+
+  max-width:1150px;
+
+  margin:
+    0 auto 45px;
+
+}
+
+
+.small-title h2{
+
+  margin:0;
+
+  font-size:
+    clamp(60px,9vw,130px);
+
+  line-height:.78;
+
+  font-weight:400;
+
+}
+
+
+.small-title span{
+
+  display:block;
+
+  margin-top:15px;
+
+  color:#8ea2b4;
+
+  font-size:10px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+.things-grid{
+
+  max-width:1150px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:9px;
+
+}
+
+
+.thing{
+
+  min-height:290px;
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+
+.thing img{
+  opacity:.82;
+}
+
+
+.thing::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      transparent 45%,
+      rgba(0,0,0,.85)
+    );
+
+}
+
+
+.thing p{
+
+  position:absolute;
+
+  z-index:5;
+
+  left:16px;
+  right:16px;
+  bottom:15px;
+
+  margin:0;
+
+  font-size:10px;
+
+  line-height:1.5;
+
+}
+
+
+/* =========================================================
+   FINAL COLLAGE
+========================================================= */
+
+.final{
+
+  padding:
+    80px 35px 100px;
+
+  background:
+    #e7e0d5;
+
+}
+
+
+.final-title{
+
+  margin-bottom:40px;
+
+  text-align:center;
+
+}
+
+
+.final-title span{
+
+  color:#64778a;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+.final-title h2{
+
+  margin:
+    5px 0 0;
+
+  color:var(--navy);
+
+  font-size:
+    clamp(60px,9vw,130px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+
+.final-grid{
+
+  max-width:1250px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(6,1fr);
+
+  grid-auto-rows:
+    145px;
+
+  gap:7px;
+
+}
+
+
+.final-grid .photo{
+
+  overflow:hidden;
+
+}
+
+
+.final-grid .photo:nth-child(1){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.final-grid .photo:nth-child(3){
+
+  grid-column:span 2;
+
+}
+
+
+.final-grid .photo:nth-child(5){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.final-grid .photo:nth-child(8){
+
+  grid-column:span 2;
+
+}
+
+
+.final-grid .photo:nth-child(10){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+.final-message{
+
+  max-width:800px;
+
+  margin:
+    60px auto 0;
+
+  text-align:center;
+
+}
+
+
+.final-message p{
+
+  margin:0;
+
+  color:#4d5359;
+
+  font-size:17px;
+
+  line-height:1.9;
+
+}
+
+
+.final-message strong{
+
+  display:block;
+
+  margin-top:30px;
+
+  color:var(--navy);
+
+  font-size:26px;
+
+  font-weight:400;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  padding:
+    55px 20px;
+
+  color:#adb7c0;
+
+  background:#0b0c0e;
+
+  text-align:center;
+
+}
+
+
+footer strong{
+
+  display:block;
+
+  margin-bottom:12px;
+
+  color:white;
+
+  font-size:22px;
+
+  font-weight:400;
+
+}
+
+
+footer span{
+
+  font-size:9px;
+
+  line-height:1.8;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:750px){
+
+
+  .nav{
+
+    padding:
+      12px 15px;
+
+  }
+
+
+  .nav-links a:not(.back){
+    display:none;
+  }
+
+
+  /* HERO */
+
+  .hero,
+  .hero-content{
+
+    min-height:720px;
+
+  }
+
+
+  .hero-content{
+
+    padding:
+      50px 20px;
+
+  }
+
+
+  .hero h1{
+
+    font-size:76px;
+
+    letter-spacing:-5px;
+
+  }
+
+
+  .hero h1 span{
+
+    margin-left:5%;
+
+  }
+
+
+  .hero-quote{
+
+    max-width:70%;
+
+    font-size:13px;
+
+  }
+
+
+  .hero-number{
+
+    font-size:180px;
+
+  }
+
+
+  /* INTRO */
+
+  .intro{
+
+    padding:
+      55px 18px;
+
+  }
+
+
+  .intro-grid{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+  }
+
+
+  .intro-copy h2{
+
+    font-size:58px;
+
+  }
+
+
+  .intro-collage{
+
+    min-height:510px;
+
+  }
+
+
+  .intro-p1{
+
+    width:58%;
+    height:340px;
+
+  }
+
+
+  .intro-p2{
+
+    width:48%;
+    height:280px;
+
+  }
+
+
+  .intro-p3{
+
+    width:48%;
+    height:230px;
+
+  }
+
+
+  /* PROFILE */
+
+  .profile{
+
+    padding:
+      55px 15px;
+
+  }
+
+
+  .profile-header h2{
+
+    font-size:60px;
+
+  }
+
+
+  .profile-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .profile-photo{
+
+    min-height:470px;
+
+  }
+
+
+  .detail{
+
+    padding:17px;
+
+  }
+
+
+  .detail h3{
+
+    font-size:17px;
+
+  }
+
+
+  /* ROCK */
+
+  .rock{
+
+    padding:
+      55px 15px;
+
+  }
+
+
+  .rock-header h2{
+
+    font-size:61px;
+
+  }
+
+
+  .rock-layout{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .rock-main{
+
+    min-height:380px;
+
+  }
+
+
+  /* QUIDDITCH */
+
+  .quidditch{
+
+    padding:
+      55px 10px;
+
+  }
+
+
+  .quidditch-title{
+
+    display:block;
+
+  }
+
+
+  .quidditch-title h2{
+
+    margin-bottom:25px;
+
+    font-size:70px;
+
+  }
+
+
+  .quidditch-grid{
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+    grid-auto-rows:
+      140px;
+
+  }
+
+
+  .q-photo:nth-child(1){
+
+    grid-column:span 2;
+
+  }
+
+
+  /* AUROR */
+
+  .auror{
+
+    padding:
+      60px 18px;
+
+  }
+
+
+  .auror-wrap{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .auror-copy h2{
+
+    font-size:62px;
+
+  }
+
+
+  .auror-collage{
+
+    min-height:520px;
+
+  }
+
+
+  /* PEOPLE */
+
+  .people{
+
+    padding:
+      60px 12px;
+
+  }
+
+
+  .people-title h2{
+
+    font-size:61px;
+
+  }
+
+
+  .people-grid{
+
+    grid-template-columns:1fr;
+
+    gap:10px;
+
+  }
+
+
+  .person{
+
+    min-height:520px;
+
+  }
+
+
+  /* RAVENCLAW */
+
+  .ravenclaw-family{
+
+    padding:
+      60px 10px;
+
+  }
+
+
+  .family-header{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .family-header h2{
+
+    font-size:59px;
+
+  }
+
+
+  .family-grid{
+
+    grid-template-columns:
+      repeat(3,1fr);
+
+    grid-auto-rows:
+      110px;
+
+  }
+
+
+  /* MEMORIES */
+
+  .memories{
+
+    padding:
+      60px 15px;
+
+  }
+
+
+  .memories-header h2{
+
+    font-size:55px;
+
+  }
+
+
+  .notes-wall{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap:12px;
+
+  }
+
+
+  .memory-note{
+
+    min-height:250px;
+
+    padding:
+      28px 17px 20px;
+
+  }
+
+
+  .memory-note p{
+
+    font-size:12px;
+
+  }
+
+
+  /* SMALL THINGS */
+
+  .small-things{
+
+    padding:
+      60px 10px;
+
+  }
+
+
+  .small-title h2{
+
+    font-size:55px;
+
+  }
+
+
+  .things-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+  }
+
+
+  .thing{
+
+    min-height:230px;
+
+  }
+
+
+  /* FINAL */
+
+  .final{
+
+    padding:
+      60px 8px 80px;
+
+  }
+
+
+  .final-title h2{
+
+    font-size:55px;
+
+  }
+
+
+  .final-grid{
+
+    grid-template-columns:
+      repeat(4,1fr);
+
+    grid-auto-rows:
+      100px;
+
+    gap:4px;
+
+  }
+
+
+  .final-message{
+
+    padding:
+      0 20px;
+
+  }
+
+
+  .final-message p{
+
+    font-size:14px;
+
+  }
+
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- =========================================================
+     NAV
+========================================================= -->
+
+<nav class="nav">
+
+
+  <div class="nav-brand">
+
+    Lucas Nott · Hogwarts
+
+  </div>
+
+
+  <div class="nav-links">
+
+    <a href="#lucas">
+      Lucas
+    </a>
+
+    <a href="#rock">
+      Rock
+    </a>
+
+    <a href="#quidditch">
+      Quidditch
+    </a>
+
+    <a href="#auror">
+      Auror
+    </a>
+
+    <a href="#personas">
+      Sus Personas
+    </a>
+
+    <a href="#recuerdos">
+      Recuerdos
+    </a>
+
+    <a
+      href="index.html#lucas"
+      class="back"
+    >
+      ← Anuario
+    </a>
+
+  </div>
+
+
+</nav>
+
+
+
+<!-- =========================================================
+     HERO
+
+     FOTO PRINCIPAL:
+     pon aquí una foto muy Lucas.
+     Puede ser con uniforme Ravenclaw,
+     ropa casual rock o Quidditch.
+========================================================= -->
+
+<header
+  class="hero"
+  id="lucas"
+>
+
+
+  <div class="hero-bg">
+
+    <img
+      src="assets/lucas-hero.jpg"
+      alt="Lucas Nott"
+    >
+
+  </div>
+
+
+  <div class="hero-content">
+
+
+    <span class="hero-small">
+      In Memory Of
+    </span>
+
+
+    <h1>
+
+      LUCAS
+
+      <span>
+        NOTT
+      </span>
+
+    </h1>
+
+
+    <div class="hero-info">
+
+      Ravenclaw
+      ·
+      Prefecto
+      ·
+      Capitán de Quidditch
+      <br>
+
+      #16
+      ·
+      Cofundador del Anuario Hogwarts
+
+    </div>
+
+
+    <p class="hero-quote">
+
+      Algunas personas dejan Hogwarts al terminar
+      sus años en el castillo. Otras terminan
+      convirtiéndose en parte de él.
+
+    </p>
+
+
+    <div class="hero-number">
+      16
+    </div>
+
+
+  </div>
+
+
+</header>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="intro">
+
+
+  <div class="intro-grid">
+
+
+    <div class="intro-copy">
+
+
+      <h2>
+        THIS WAS
+        <br>
+        LUCAS.
+      </h2>
+
+
+      <p>
+
+        Lucas Nott era muchas cosas al mismo tiempo.
+
+        Era Ravenclaw. Prefecto. Capitán.
+        Hermano. Novio. Amigo.
+
+      </p>
+
+
+      <p>
+
+        Podía pasar de hablar de una banda durante
+        demasiado tiempo a discutir una jugada de
+        Quidditch, estudiar un hechizo de Defensa
+        Contra las Artes Oscuras o preocuparse
+        porque alguien de su casa no estuviera bien.
+
+      </p>
+
+
+      <div class="big-line">
+
+        Ravenclaw no era solamente la casa
+        a la que pertenecía.
+
+        Era su familia.
+
+      </div>
+
+
+      <p>
+
+        Estas páginas no intentan resumirlo.
+
+        Son solamente pedazos de la vida que dejó
+        en las personas que lo conocieron.
+
+      </p>
+
+
+    </div>
+
+
+    <div class="intro-collage">
+
+
+      <div class="polaroid intro-p1">
+
+        <div class="photo">
+
+          <img
+            src="assets/lucas-intro-01.jpg"
+            alt="Lucas Nott"
+          >
+
+        </div>
+
+        <p class="handwritten">
+          probably talking about Quidditch
+        </p>
+
+      </div>
+
+
+      <div class="polaroid intro-p2">
+
+        <div class="photo">
+
+          <img
+            src="assets/lucas-intro-02.jpg"
+            alt="Lucas con amigos"
+          >
+
+        </div>
+
+        <p class="handwritten">
+          one of those days
+        </p>
+
+      </div>
+
+
+      <div class="polaroid intro-p3">
+
+        <div class="photo">
+
+          <img
+            src="assets/lucas-intro-03.jpg"
+            alt="Lucas en Hogwarts"
+          >
+
+        </div>
+
+        <p class="handwritten">
+          Hogwarts, 2005
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     THIS WAS LUCAS
+========================================================= -->
+
+<section class="profile">
+
+
+  <div class="profile-header">
+
+    <span>
+      Things About Him
+    </span>
+
+    <h2>
+      KNOWING LUCAS
+    </h2>
+
+  </div>
+
+
+  <div class="profile-grid">
+
+
+    <div class="profile-photo">
+
+      <img
+        src="assets/lucas-profile.jpg"
+        alt="Lucas Nott"
+      >
+
+    </div>
+
+
+    <div class="profile-details">
+
+
+      <article class="detail">
+
+        <span>
+          House
+        </span>
+
+        <h3>
+          Ravenclaw
+        </h3>
+
+        <p>
+          La casa que cuidaba como si fuera su propia familia.
+        </p>
+
+      </article>
+
+
+      <article class="detail dark">
+
+        <span>
+          Quidditch
+        </span>
+
+        <h3>
+          Captain · #16
+        </h3>
+
+        <p>
+          Una de las partes más importantes de su vida en Hogwarts.
+        </p>
+
+      </article>
+
+
+      <article class="detail dark">
+
+        <span>
+          Dream
+        </span>
+
+        <h3>
+          Become an Auror
+        </h3>
+
+        <p>
+          Su futuro siempre estuvo orientado hacia la defensa mágica.
+        </p>
+
+      </article>
+
+
+      <article class="detail">
+
+        <span>
+          Music
+        </span>
+
+        <h3>
+          Rock
+        </h3>
+
+        <p>
+          Bandas, discos, canciones repetidas demasiadas veces.
+        </p>
+
+      </article>
+
+
+      <article class="detail">
+
+        <span>
+          Favorite Classes
+        </span>
+
+        <h3>
+          DCAO
+        </h3>
+
+        <p>
+          Aunque definitivamente no era la única materia que disfrutaba.
+        </p>
+
+      </article>
+
+
+      <article class="detail dark">
+
+        <span>
+          Most Important
+        </span>
+
+        <h3>
+          His People
+        </h3>
+
+        <p>
+          Rhea, su hermana, sus amigos, Ravenclaw y su equipo.
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     ROCK
+========================================================= -->
+
+<section
+  class="rock"
+  id="rock"
+>
+
+
+  <div class="rock-header">
+
+
+    <h2>
+
+      TURN IT
+
+      <em>
+        LOUDER.
+      </em>
+
+    </h2>
+
+
+  </div>
+
+
+  <div class="rock-layout">
+
+
+    <div class="rock-main">
+
+      <img
+        src="assets/lucas-rock-main.jpg"
+        alt="Lucas y la música"
+      >
+
+    </div>
+
+
+    <div class="rock-side">
+
+
+      <div class="photo">
+
+        <img
+          src="assets/lucas-rock-01.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <div class="photo">
+
+        <img
+          src="assets/lucas-rock-02.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <article class="rock-note">
+
+
+        <h3>
+          If Lucas had the aux...
+        </h3>
+
+
+        <p>
+
+          Probablemente todos terminarían escuchando
+          rock, quisieran o no.
+
+          La música formaba parte de su estilo,
+          de su habitación, de su ropa y de esos
+          pequeños detalles que hacían imposible
+          confundir sus cosas con las de otra persona.
+
+        </p>
+
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     QUIDDITCH
+========================================================= -->
+
+<section
+  class="quidditch"
+  id="quidditch"
+>
+
+
+  <div class="quidditch-title">
+
+
+    <h2>
+
+      16
+
+      <span>
+        CAPTAIN
+      </span>
+
+    </h2>
+
+
+    <p>
+
+      Si había un lugar donde Lucas parecía
+      completamente en casa, era en el campo.
+
+      Quidditch significaba competir, entrenar,
+      discutir estrategias y, sobre todo,
+      cuidar al equipo que terminó convirtiéndose
+      en otra parte de su familia.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="quidditch-grid">
+
+
+    <div class="q-photo">
+
+      <img
+        src="assets/lucas-quidditch-01.jpg"
+        alt=""
+      >
+
+      <span class="q-caption">
+        Captain #16
+      </span>
+
+    </div>
+
+
+    <div class="q-photo">
+
+      <img
+        src="assets/lucas-quidditch-02.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="q-photo">
+
+      <img
+        src="assets/lucas-quidditch-03.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="q-photo">
+
+      <img
+        src="assets/lucas-quidditch-04.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="q-photo">
+
+      <img
+        src="assets/lucas-quidditch-05.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="q-photo">
+
+      <img
+        src="assets/lucas-quidditch-06.jpg"
+        alt=""
+      >
+
+      <span class="q-caption">
+        Ravenclaw
+      </span>
+
+    </div>
+
+
+    <div class="q-photo">
+
+      <img
+        src="assets/lucas-quidditch-07.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="q-photo">
+
+      <img
+        src="assets/lucas-quidditch-08.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+  </div>
+
+
+  <article class="captain-note">
+
+
+    <h3>
+      More than a captain.
+    </h3>
+
+
+    <p>
+
+      Para Lucas, ser capitán nunca fue solamente
+      llevar un título. El equipo era suyo para
+      proteger, apoyar y mantener unido.
+
+      Ganaran o perdieran, seguían siendo Ravenclaw.
+
+    </p>
+
+
+  </article>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     FUTURE AUROR
+========================================================= -->
+
+<section
+  class="auror"
+  id="auror"
+>
+
+
+  <div class="auror-wrap">
+
+
+    <div class="auror-copy">
+
+
+      <span>
+        What Came Next
+      </span>
+
+
+      <h2>
+        FUTURE
+        <br>
+        AUROR.
+      </h2>
+
+
+      <p>
+
+        Lucas tenía claro qué quería hacer
+        después de Hogwarts.
+
+        Quería convertirse en Auror.
+
+      </p>
+
+
+      <p>
+
+        No sorprende que algunas de sus materias
+        favoritas fueran precisamente aquellas
+        que más podían acercarlo a ese futuro.
+
+      </p>
+
+
+      <div class="subjects">
+
+
+        <div class="subject">
+          Defensa Contra las Artes Oscuras
+        </div>
+
+
+        <div class="subject">
+          Encantamientos
+        </div>
+
+
+        <div class="subject">
+          Leyes Mágicas
+        </div>
+
+
+        <div class="subject">
+          Pociones
+        </div>
+
+
+        <div class="subject">
+          Transformaciones
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+    <div class="auror-collage">
+
+
+      <div class="auror-photo-1">
+
+        <img
+          src="assets/lucas-class-01.jpg"
+          alt="Lucas estudiando"
+        >
+
+      </div>
+
+
+      <div class="auror-photo-2">
+
+        <img
+          src="assets/lucas-class-02.jpg"
+          alt=""
+        >
+
+      </div>
+
+
+      <article class="auror-paper">
+
+        <strong>
+          Career Plan:
+        </strong>
+
+        <p>
+
+          Graduate Hogwarts.
+          <br>
+          Auror training.
+          <br>
+          Try not to get killed.
+          <br>
+          Apparently important.
+
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     HIS PEOPLE
+========================================================= -->
+
+<section
+  class="people"
+  id="personas"
+>
+
+
+  <div class="people-title">
+
+
+    <span>
+      Above Everything Else
+    </span>
+
+
+    <h2>
+      HIS PEOPLE
+    </h2>
+
+
+    <p>
+
+      Había muchas cosas que Lucas quería.
+      Pero había personas que siempre estuvieron
+      por encima de cualquiera de ellas.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="people-grid">
+
+
+    <!-- RHEA -->
+
+    <article class="person">
+
+
+      <img
+        src="assets/lucas-rhea.jpg"
+        alt="Lucas y Rhea"
+      >
+
+
+      <div class="person-copy">
+
+
+        <span>
+          The Girl He Loved
+        </span>
+
+
+        <h3>
+          Rhea
+        </h3>
+
+
+        <p>
+
+          Rhea fue una de las personas que Lucas
+          amó profundamente.
+
+          Aquí puedes escribir su historia juntos,
+          cómo se conocieron, recuerdos de ambos
+          y aquellos pequeños momentos que eran
+          solamente de ellos.
+
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+    <!-- HERMANA -->
+
+    <article class="person">
+
+
+      <img
+        src="assets/lucas-layla.jpg"
+        alt="Lucas con su hermana"
+      >
+
+
+      <div class="person-copy">
+
+
+        <span>
+          His Person
+        </span>
+
+
+        <h3>
+          His Sister
+        </h3>
+
+
+        <p>
+
+          De todas las personas que formaron parte
+          de su vida, su hermana ocupaba un lugar
+          que nadie más podía ocupar.
+
+          Era su persona más preciada,
+          alguien a quien quería cuidar
+          incluso cuando probablemente ella
+          insistía en que no necesitaba que lo hiciera.
+
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     RAVENCLAW
+========================================================= -->
+
+<section class="ravenclaw-family">
+
+
+  <div class="family-header">
+
+
+    <h2>
+
+      RAVENCLAW
+      <br>
+      WAS HOME.
+
+    </h2>
+
+
+    <p>
+
+      Para Lucas, Ravenclaw nunca fue solamente
+      azul, plata y un dormitorio dentro del castillo.
+
+      Eran las personas.
+
+      Como prefecto y capitán, sentía una enorme
+      responsabilidad por su casa y especialmente
+      por quienes formaban parte del equipo.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="family-grid">
+
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-01.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-02.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-03.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-04.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-05.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-06.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-07.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-08.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-ravenclaw-09.jpg" alt="">
+    </div>
+
+
+  </div>
+
+
+  <p class="family-note">
+
+    “No importaba si eras nuevo,
+    si habías perdido un partido
+    o si simplemente estabas teniendo un mal día.
+    Para Lucas seguías siendo uno de los suyos.”
+
+  </p>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     RECUERDOS ESCRITOS
+
+     AQUÍ PUEDES CAMBIAR TODO EL TEXTO Y LOS NOMBRES.
+========================================================= -->
+
+<section
+  class="memories"
+  id="recuerdos"
+>
+
+
+  <div class="memories-header">
+
+
+    <h2>
+      THE WAY
+      <br>
+      WE REMEMBER HIM
+    </h2>
+
+
+    <p>
+
+      No existe una sola versión de una persona.
+
+      Estos son algunos de los Lucas que quedaron
+      guardados en la memoria de quienes lo conocieron.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="notes-wall">
+
+
+    <!-- RECUERDO 1 -->
+
+    <article class="memory-note">
+
+      <p>
+
+        “Aquí puedes escribir el recuerdo
+        que quiera dejar Rhea sobre Lucas.
+        Puede ser largo, sentimental o incluso
+        una anécdota graciosa de ambos.”
+
+      </p>
+
+      <strong>
+        — Rhea
+      </strong>
+
+    </article>
+
+
+    <!-- RECUERDO 2 -->
+
+    <article class="memory-note">
+
+      <p>
+
+        “Aquí irá el recuerdo de Layla.
+        Puede ser algo que solamente ella recuerde:
+        una costumbre de Lucas, una pelea absurda,
+        algo que él siempre le decía o simplemente
+        cómo era tenerlo como hermano.”
+
+      </p>
+
+      <strong>
+        — Layla Nott
+      </strong>
+
+    </article>
+
+
+    <!-- RECUERDO 3 -->
+
+    <article class="memory-note">
+
+      <p>
+
+        “Aquí puede hablar uno de sus compañeros
+        de Quidditch sobre cómo era Lucas como capitán,
+        dentro y fuera del campo.”
+
+      </p>
+
+      <strong>
+        — Compañero de Quidditch
+      </strong>
+
+    </article>
+
+
+    <!-- RECUERDO 4 -->
+
+    <article class="memory-note">
+
+      <p>
+
+        “No todos los recuerdos tienen que ser tristes.
+        Este puede ser literalmente una historia
+        ridícula que haya ocurrido en Ravenclaw.”
+
+      </p>
+
+      <strong>
+        — Amigo/a
+      </strong>
+
+    </article>
+
+
+    <!-- RECUERDO 5 -->
+
+    <article class="memory-note">
+
+      <p>
+
+        “Aquí puede ir un recuerdo de algún profesor:
+        cómo era en clase, algo que hacía constantemente
+        o incluso qué esperaba de él en el futuro.”
+
+      </p>
+
+      <strong>
+        — Profesor/a
+      </strong>
+
+    </article>
+
+
+    <!-- RECUERDO 6 -->
+
+    <article class="memory-note">
+
+      <p>
+
+        “Y aquí otro recuerdo de alguien de Ravenclaw.
+        Puedes agregar tantas tarjetas como quieras
+        copiando este mismo bloque.”
+
+      </p>
+
+      <strong>
+        — Ravenclaw
+      </strong>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     LITTLE THINGS
+========================================================= -->
+
+<section class="small-things">
+
+
+  <div class="small-title">
+
+
+    <h2>
+      LITTLE THINGS
+    </h2>
+
+
+    <span>
+      The things people still remember
+    </span>
+
+
+  </div>
+
+
+  <div class="things-grid">
+
+
+    <article class="thing">
+
+      <img
+        src="assets/lucas-memory-01.jpg"
+        alt=""
+      >
+
+      <p>
+        La música sonando demasiado alto.
+      </p>
+
+    </article>
+
+
+    <article class="thing">
+
+      <img
+        src="assets/lucas-memory-02.jpg"
+        alt=""
+      >
+
+      <p>
+        El uniforme de Quidditch con el #16.
+      </p>
+
+    </article>
+
+
+    <article class="thing">
+
+      <img
+        src="assets/lucas-memory-03.jpg"
+        alt=""
+      >
+
+      <p>
+        Discutir estrategias como si cada partido fuera una final.
+      </p>
+
+    </article>
+
+
+    <article class="thing">
+
+      <img
+        src="assets/lucas-memory-04.jpg"
+        alt=""
+      >
+
+      <p>
+        Encontrarlo con Rhea cuando se suponía que debía estar haciendo otra cosa.
+      </p>
+
+    </article>
+
+
+    <article class="thing">
+
+      <img
+        src="assets/lucas-memory-05.jpg"
+        alt=""
+      >
+
+      <p>
+        Estar pendiente de su hermana aunque fingiera que no.
+      </p>
+
+    </article>
+
+
+    <article class="thing">
+
+      <img
+        src="assets/lucas-memory-06.jpg"
+        alt=""
+      >
+
+      <p>
+        Defender Ravenclaw incluso cuando nadie se lo pedía.
+      </p>
+
+    </article>
+
+
+    <article class="thing">
+
+      <img
+        src="assets/lucas-memory-07.jpg"
+        alt=""
+      >
+
+      <p>
+        Hablar de convertirse en Auror como si ya pudiera verlo.
+      </p>
+
+    </article>
+
+
+    <article class="thing">
+
+      <img
+        src="assets/lucas-memory-08.jpg"
+        alt=""
+      >
+
+      <p>
+        Y demasiados momentos que nunca llegaron a una fotografía.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     COLLAGE FINAL
+========================================================= -->
+
+<section class="final">
+
+
+  <div class="final-title">
+
+
+    <span>
+      One Last Page
+    </span>
+
+
+    <h2>
+      FOR LUCAS.
+    </h2>
+
+
+  </div>
+
+
+  <div class="final-grid">
+
+
+    <div class="photo">
+      <img src="assets/lucas-final-01.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-02.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-03.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-04.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-05.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-06.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-07.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-08.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-09.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-10.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-11.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/lucas-final-12.jpg" alt="">
+    </div>
+
+
+  </div>
+
+
+  <div class="final-message">
+
+
+    <p>
+
+      Hogwarts siguió teniendo partidos.
+      Ravenclaw siguió entrando al Gran Comedor.
+      Las clases continuaron y los pasillos
+      siguieron llenándose de estudiantes.
+
+      Pero algunos lugares nunca volvieron
+      a sentirse exactamente iguales.
+
+    </p>
+
+
+    <strong>
+      Once a Ravenclaw, always a Ravenclaw.
+    </strong>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+  <strong>
+    Lucas Nott
+  </strong>
+
+
+  <span>
+
+    Ravenclaw · Prefecto · Capitán #16
+    <br>
+
+    Cofundador del Anuario Hogwarts
+
+  </span>
+
+
+</footer>
+
+
+</div>
+
+
+</body>
+
+</html>
