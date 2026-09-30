@@ -10,8 +10,7 @@
   content="width=device-width, initial-scale=1.0"
 >
 
-<title>Anuario Hogwarts 2026–2027</title>
-
+<title>Anuario Hogwarts 2025–2026</title>
 
 <style>
 
@@ -46,8 +45,6 @@
   --memorial-dark:#4b5868;
   --memorial-light:#d7dbe0;
 
-  --gold:#9d8351;
-
   --white:#fbf8f2;
 
   --shadow:
@@ -64,11 +61,9 @@
   box-sizing:border-box;
 }
 
-
 html{
   scroll-behavior:smooth;
 }
-
 
 body{
 
@@ -97,35 +92,28 @@ body{
   background-size:
     22px 22px,
     31px 31px;
-
 }
-
 
 a{
   color:inherit;
   text-decoration:none;
 }
 
-
 button{
   font:inherit;
 }
-
 
 img{
   display:block;
   width:100%;
 }
 
-
 .page{
 
   width:min(1220px,96%);
-
   margin:20px auto;
 
   position:relative;
-
   overflow:hidden;
 
   background:var(--paper-2);
@@ -134,7 +122,6 @@ img{
 
   box-shadow:
     0 24px 60px rgba(0,0,0,.12);
-
 }
 
 
@@ -145,13 +132,10 @@ img{
 .nav{
 
   position:sticky;
-
   top:0;
-
   z-index:100;
 
   display:flex;
-
   align-items:center;
   justify-content:space-between;
 
@@ -167,22 +151,17 @@ img{
 
   backdrop-filter:
     blur(10px);
-
 }
-
 
 .brand{
 
   display:flex;
-
   align-items:center;
 
   gap:12px;
 
   min-width:max-content;
-
 }
-
 
 .brand-mark{
 
@@ -190,7 +169,6 @@ img{
   height:42px;
 
   display:grid;
-
   place-items:center;
 
   border:
@@ -199,48 +177,33 @@ img{
   border-radius:50%;
 
   font-size:18px;
-
   font-weight:bold;
-
 }
-
 
 .brand-text{
 
   font-size:12px;
-
   letter-spacing:2px;
-
   text-transform:uppercase;
-
 }
-
 
 .nav-links{
 
   display:flex;
-
   align-items:center;
 
   gap:13px;
 
   font-size:8px;
-
   text-transform:uppercase;
-
   letter-spacing:.9px;
-
 }
-
 
 .nav-links a{
 
   position:relative;
-
   padding:7px 0;
-
 }
-
 
 .nav-links a::after{
 
@@ -257,14 +220,11 @@ img{
   background:var(--ink);
 
   transition:.25s ease;
-
 }
-
 
 .nav-links a:hover::after{
   width:100%;
 }
-
 
 .menu-button{
 
@@ -281,11 +241,8 @@ img{
   text-transform:uppercase;
 
   font-size:9px;
-
   letter-spacing:1px;
-
 }
-
 
 .mobile-menu{
 
@@ -298,14 +255,11 @@ img{
 
   background:
     var(--paper-2);
-
 }
-
 
 .mobile-menu.open{
   display:block;
 }
-
 
 .mobile-menu a{
 
@@ -317,11 +271,8 @@ img{
     1px solid #dfd6ca;
 
   font-size:10px;
-
   letter-spacing:1px;
-
   text-transform:uppercase;
-
 }
 
 
@@ -347,31 +298,22 @@ img{
 
   border-bottom:
     1px solid var(--line);
-
 }
-
 
 .hero-copy{
 
   position:relative;
-
   z-index:2;
-
 }
-
 
 .eyebrow{
 
   margin-bottom:8px;
 
   font-size:18px;
-
   letter-spacing:2.5px;
-
   text-transform:uppercase;
-
 }
-
 
 .hero h1{
 
@@ -384,9 +326,7 @@ img{
   font-weight:400;
 
   letter-spacing:-2px;
-
 }
-
 
 .year{
 
@@ -396,11 +336,8 @@ img{
   color:var(--red);
 
   font-size:34px;
-
   letter-spacing:2px;
-
 }
-
 
 .flourish{
 
@@ -409,29 +346,24 @@ img{
   color:#665b4d;
 
   font-size:27px;
-
   letter-spacing:9px;
-
 }
-
 
 .hero-quote{
 
   max-width:410px;
 
   font-size:15px;
-
   line-height:1.75;
 
   letter-spacing:1px;
 
   text-transform:uppercase;
-
 }
 
 
 /* =========================================================
-   HOMENAJE PORTADA
+   MEMORIAL PORTADA
 ========================================================= */
 
 .memorial-dedication{
@@ -452,9 +384,7 @@ img{
 
   border-bottom:
     1px solid var(--memorial-light);
-
 }
-
 
 .memorial-dedication::before{
 
@@ -476,9 +406,7 @@ img{
 
   color:
     var(--memorial);
-
 }
-
 
 .memorial-label{
 
@@ -494,9 +422,7 @@ img{
   letter-spacing:3px;
 
   text-transform:uppercase;
-
 }
-
 
 .memorial-name{
 
@@ -510,9 +436,7 @@ img{
   font-size:21px;
 
   letter-spacing:1px;
-
 }
-
 
 .memorial-info{
 
@@ -525,9 +449,7 @@ img{
   letter-spacing:1px;
 
   text-transform:uppercase;
-
 }
-
 
 .memorial-founders{
 
@@ -544,14 +466,11 @@ img{
   letter-spacing:1.2px;
 
   text-transform:uppercase;
-
 }
-
 
 .castle{
 
   width:100%;
-
   min-height:620px;
 
   display:flex;
@@ -562,9 +481,7 @@ img{
   overflow:hidden;
 
   background:var(--paper);
-
 }
-
 
 .castle-image{
 
@@ -575,21 +492,16 @@ img{
 
   object-fit:cover;
   object-position:center;
-
 }
 
 
 /* =========================================================
-   SECCIONES GENERALES
+   SECCIONES
 ========================================================= */
 
 section{
-
-  padding:
-    54px 48px;
-
+  padding:54px 48px;
 }
-
 
 .section-title{
 
@@ -603,9 +515,7 @@ section{
   margin-bottom:35px;
 
   text-align:center;
-
 }
-
 
 .section-title::before,
 .section-title::after{
@@ -616,9 +526,7 @@ section{
   height:1px;
 
   background:var(--line);
-
 }
-
 
 .section-title h2{
 
@@ -631,9 +539,7 @@ section{
   letter-spacing:1.8px;
 
   text-transform:uppercase;
-
 }
-
 
 .section-subtitle{
 
@@ -649,9 +555,7 @@ section{
   font-size:14px;
 
   line-height:1.75;
-
 }
-
 
 .btn{
 
@@ -674,16 +578,13 @@ section{
   transition:.22s ease;
 
   cursor:pointer;
-
 }
-
 
 .btn:hover{
 
   color:white;
 
   background:var(--ink);
-
 }
 
 
@@ -695,9 +596,7 @@ section{
 
   border-bottom:
     1px solid var(--line);
-
 }
-
 
 .direction-grid{
 
@@ -711,9 +610,7 @@ section{
     repeat(2,1fr);
 
   gap:38px;
-
 }
-
 
 .direction-card{
 
@@ -731,9 +628,7 @@ section{
   cursor:pointer;
 
   transition:.25s ease;
-
 }
-
 
 .direction-card:hover{
 
@@ -742,9 +637,10 @@ section{
 
   box-shadow:
     var(--shadow);
-
 }
 
+
+/* FOTO DIRECTOR / SUBDIRECTORA */
 
 .direction-photo{
 
@@ -763,9 +659,7 @@ section{
   color:#726b62;
 
   font-size:11px;
-
 }
-
 
 .direction-photo img{
 
@@ -774,8 +668,8 @@ section{
 
   object-fit:cover;
 
+  object-position:center 20%;
 }
-
 
 .direction-role{
 
@@ -790,9 +684,7 @@ section{
   letter-spacing:2px;
 
   text-transform:uppercase;
-
 }
-
 
 .direction-card h3{
 
@@ -806,9 +698,7 @@ section{
   letter-spacing:1px;
 
   text-transform:uppercase;
-
 }
-
 
 .direction-card p{
 
@@ -821,9 +711,7 @@ section{
   letter-spacing:1px;
 
   text-transform:uppercase;
-
 }
-
 
 .click-hint{
 
@@ -838,7 +726,6 @@ section{
   letter-spacing:1.4px;
 
   text-transform:uppercase;
-
 }
 
 
@@ -850,9 +737,7 @@ section{
 
   border-bottom:
     1px solid var(--line);
-
 }
-
 
 .houses-grid{
 
@@ -866,9 +751,7 @@ section{
     repeat(2,1fr);
 
   gap:28px;
-
 }
-
 
 .house-card{
 
@@ -886,9 +769,7 @@ section{
     1px solid var(--line);
 
   transition:.28s ease;
-
 }
-
 
 .house-card:hover{
 
@@ -897,9 +778,7 @@ section{
 
   box-shadow:
     var(--shadow);
-
 }
-
 
 .house-card h3{
 
@@ -908,9 +787,7 @@ section{
   font-size:24px;
 
   font-weight:400;
-
 }
-
 
 .house-symbol{
 
@@ -924,9 +801,7 @@ section{
 
   align-items:center;
   justify-content:center;
-
 }
-
 
 .house-symbol img{
 
@@ -934,9 +809,7 @@ section{
   height:100%;
 
   object-fit:contain;
-
 }
-
 
 .house-card p{
 
@@ -952,24 +825,19 @@ section{
   letter-spacing:.8px;
 
   text-transform:uppercase;
-
 }
-
 
 .gryffindor h3{
   color:var(--red);
 }
 
-
 .slytherin h3{
   color:var(--green);
 }
 
-
 .hufflepuff h3{
   color:var(--yellow-dark);
 }
-
 
 .ravenclaw h3{
   color:var(--blue);
@@ -986,7 +854,6 @@ section{
 
   border-bottom:
     1px solid var(--line);
-
 }
 
 
@@ -1010,9 +877,7 @@ section{
       rgba(45,77,112,.07),
       rgba(255,255,255,.1)
     );
-
 }
-
 
 .lucas-section::before{
 
@@ -1029,9 +894,7 @@ section{
   background:var(--blue);
 
   opacity:.75;
-
 }
-
 
 .lucas-wrap{
 
@@ -1047,9 +910,7 @@ section{
   align-items:center;
 
   gap:48px;
-
 }
-
 
 .lucas-photo-frame{
 
@@ -1064,9 +925,7 @@ section{
 
   box-shadow:
     0 16px 34px rgba(39,48,60,.12);
-
 }
-
 
 .lucas-photo-frame::before{
 
@@ -1092,9 +951,7 @@ section{
   letter-spacing:2px;
 
   text-transform:uppercase;
-
 }
-
 
 .lucas-photo{
 
@@ -1102,18 +959,8 @@ section{
 
   overflow:hidden;
 
-  display:grid;
-
-  place-items:center;
-
   background:#d7d9dc;
-
-  color:#68717a;
-
-  font-size:11px;
-
 }
-
 
 .lucas-photo img{
 
@@ -1123,9 +970,7 @@ section{
   object-fit:cover;
 
   object-position:center 20%;
-
 }
-
 
 .lucas-small-title{
 
@@ -1140,9 +985,7 @@ section{
   letter-spacing:3px;
 
   text-transform:uppercase;
-
 }
-
 
 .lucas-copy h2{
 
@@ -1155,9 +998,7 @@ section{
   font-size:42px;
 
   font-weight:400;
-
 }
-
 
 .lucas-roles{
 
@@ -1172,9 +1013,7 @@ section{
   letter-spacing:1.3px;
 
   text-transform:uppercase;
-
 }
-
 
 .lucas-divider{
 
@@ -1185,9 +1024,7 @@ section{
 
   background:
     var(--memorial);
-
 }
-
 
 .lucas-copy p{
 
@@ -1201,9 +1038,7 @@ section{
   font-size:15px;
 
   line-height:1.9;
-
 }
-
 
 .lucas-quote{
 
@@ -1222,25 +1057,20 @@ section{
   line-height:1.75;
 
   font-style:italic;
-
 }
-
 
 .lucas-btn{
 
   color:var(--blue);
 
   border-color:var(--blue);
-
 }
-
 
 .lucas-btn:hover{
 
   color:white;
 
   background:var(--blue);
-
 }
 
 
@@ -1252,9 +1082,7 @@ section{
 
   border-bottom:
     1px solid var(--line);
-
 }
-
 
 .history-box{
 
@@ -1272,9 +1100,7 @@ section{
 
   background:
     rgba(255,255,255,.13);
-
 }
-
 
 .history-symbol{
 
@@ -1283,9 +1109,7 @@ section{
   color:#8c795b;
 
   font-size:28px;
-
 }
-
 
 .history-box h3{
 
@@ -1299,9 +1123,7 @@ section{
   letter-spacing:1.5px;
 
   text-transform:uppercase;
-
 }
-
 
 .history-box p{
 
@@ -1315,9 +1137,7 @@ section{
   font-size:15px;
 
   line-height:1.9;
-
 }
-
 
 .founders{
 
@@ -1332,21 +1152,18 @@ section{
   letter-spacing:1.4px;
 
   text-transform:uppercase;
-
 }
 
 
 /* =========================================================
-   MOMENTOS IMPORTANTES
+   MOMENTOS
 ========================================================= */
 
 .moments{
 
   border-bottom:
     1px solid var(--line);
-
 }
-
 
 .moments-grid{
 
@@ -1356,9 +1173,7 @@ section{
     repeat(3,1fr);
 
   gap:18px;
-
 }
-
 
 .moment-card{
 
@@ -1378,9 +1193,7 @@ section{
   transition:.25s ease;
 
   cursor:pointer;
-
 }
-
 
 .moment-card:hover{
 
@@ -1389,9 +1202,7 @@ section{
 
   box-shadow:
     0 12px 28px rgba(0,0,0,.09);
-
 }
-
 
 .moment-photo{
 
@@ -1412,9 +1223,7 @@ section{
   text-align:center;
 
   font-size:10px;
-
 }
-
 
 .moment-photo img{
 
@@ -1422,9 +1231,7 @@ section{
   height:100%;
 
   object-fit:cover;
-
 }
-
 
 .moment-overlay{
 
@@ -1451,14 +1258,11 @@ section{
   text-transform:uppercase;
 
   transition:.25s ease;
-
 }
-
 
 .moment-card:hover .moment-overlay{
   opacity:1;
 }
-
 
 .moment-card h3{
 
@@ -1474,9 +1278,7 @@ section{
   letter-spacing:1px;
 
   text-transform:uppercase;
-
 }
-
 
 .moment-card p{
 
@@ -1490,9 +1292,7 @@ section{
   font-size:9px;
 
   line-height:1.6;
-
 }
-
 
 .moment-arrow{
 
@@ -1505,103 +1305,42 @@ section{
   color:#8d7e68;
 
   font-size:16px;
-
 }
 
 
-/* =========================================================
-   GRADUACIÓN DESTACADA
-========================================================= */
+/* GRADUACIÓN */
 
 .graduation-card{
 
-  grid-column:1 / -1;
-
-  display:grid;
-
-  grid-template-columns:
-    1.45fr .75fr;
-
-  grid-template-rows:
-    auto auto 1fr;
-
-  column-gap:30px;
-
-  align-items:center;
-
-  padding:12px;
-
-  border-top:
-    4px solid var(--gold);
+  border:
+    1px solid #b49a61;
 
   background:
     linear-gradient(
-      135deg,
-      #f8f3e9,
-      #eee3cf
+      145deg,
+      #fbf7ef,
+      #eee5d7
     );
-
 }
-
-
-.graduation-card .moment-photo{
-
-  grid-column:1;
-
-  grid-row:1 / 4;
-
-  aspect-ratio:16/7;
-
-}
-
 
 .graduation-card h3{
-
-  grid-column:2;
-
-  grid-row:1;
-
-  margin:
-    20px 15px 8px;
-
-  text-align:left;
-
-  font-size:23px;
-
+  color:#7c632f;
 }
 
 
-.graduation-card p{
+/* TORNEO */
 
-  grid-column:2;
+.tournament-card{
 
-  grid-row:2;
+  border:
+    1px solid #8e7b5c;
 
-  margin:
-    0 15px;
-
-  text-align:left;
-
-  font-size:10px;
-
-  line-height:1.8;
-
-}
-
-
-.graduation-card .moment-arrow{
-
-  grid-column:2;
-
-  grid-row:3;
-
-  margin:
-    5px 15px 15px;
-
-  text-align:left;
-
-  font-size:25px;
-
+  background:
+    linear-gradient(
+      145deg,
+      #f8f2e8,
+      #ece3d5
+    );
 }
 
 
@@ -1613,9 +1352,7 @@ section{
 
   border-bottom:
     1px solid var(--line);
-
 }
-
 
 .honor-grid{
 
@@ -1629,69 +1366,105 @@ section{
     repeat(4,1fr);
 
   gap:18px;
-
 }
-
 
 .honor-card{
 
+  position:relative;
+
   padding:
-    28px 17px 24px;
+    9px 9px 24px;
 
   text-align:center;
 
   background:
-    rgba(255,255,255,.18);
+    rgba(255,255,255,.22);
 
   border:
     1px solid var(--line);
 
+  overflow:hidden;
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.honor-card:hover{
+
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 14px 30px rgba(0,0,0,.10);
 }
 
 
-.honor-card::before{
+/* FOTO DEL ESTUDIANTE */
 
-  content:"✦";
+.honor-photo{
 
-  display:block;
+  width:100%;
 
-  margin-bottom:13px;
+  aspect-ratio:4/5;
 
-  font-size:17px;
+  overflow:hidden;
 
+  display:grid;
+
+  place-items:center;
+
+  margin-bottom:17px;
+
+  background:#d8d1c7;
+
+  color:#756d63;
+
+  font-size:9px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
 }
 
+.honor-photo img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center 20%;
+}
 
 .honor-house{
 
   display:block;
 
-  margin-bottom:13px;
+  margin-bottom:9px;
 
-  font-size:9px;
+  font-size:8px;
 
-  letter-spacing:1.6px;
+  letter-spacing:2px;
 
   text-transform:uppercase;
-
 }
-
 
 .honor-card h3{
 
   margin:
-    0 0 8px;
+    0 5px 8px;
 
-  font-size:16px;
+  font-size:15px;
+
+  line-height:1.35;
 
   font-weight:400;
 
-  letter-spacing:1px;
+  letter-spacing:.7px;
 
   text-transform:uppercase;
-
 }
-
 
 .honor-card p{
 
@@ -1699,22 +1472,33 @@ section{
 
   color:var(--muted);
 
-  font-size:10px;
+  font-size:9px;
 
   line-height:1.6;
 
-  text-transform:uppercase;
+  letter-spacing:.5px;
 
+  text-transform:uppercase;
 }
 
+.honor-star{
+
+  display:block;
+
+  margin-top:12px;
+
+  font-size:14px;
+}
+
+
+/* COLORES */
 
 .honor-gryffindor{
   border-top:4px solid var(--red);
 }
 
-
-.honor-gryffindor::before,
-.honor-gryffindor .honor-house{
+.honor-gryffindor .honor-house,
+.honor-gryffindor .honor-star{
   color:var(--red);
 }
 
@@ -1723,9 +1507,8 @@ section{
   border-top:4px solid var(--green);
 }
 
-
-.honor-slytherin::before,
-.honor-slytherin .honor-house{
+.honor-slytherin .honor-house,
+.honor-slytherin .honor-star{
   color:var(--green);
 }
 
@@ -1734,9 +1517,8 @@ section{
   border-top:4px solid var(--yellow);
 }
 
-
-.honor-hufflepuff::before,
-.honor-hufflepuff .honor-house{
+.honor-hufflepuff .honor-house,
+.honor-hufflepuff .honor-star{
   color:var(--yellow-dark);
 }
 
@@ -1745,9 +1527,8 @@ section{
   border-top:4px solid var(--blue);
 }
 
-
-.honor-ravenclaw::before,
-.honor-ravenclaw .honor-house{
+.honor-ravenclaw .honor-house,
+.honor-ravenclaw .honor-star{
   color:var(--blue);
 }
 
@@ -1760,9 +1541,7 @@ section{
 
   border-bottom:
     1px solid var(--line);
-
 }
-
 
 .awards-list{
 
@@ -1772,9 +1551,7 @@ section{
 
   border-top:
     1px solid var(--line);
-
 }
-
 
 .award-button{
 
@@ -1808,9 +1585,7 @@ section{
   transition:
     background .2s ease,
     padding .2s ease;
-
 }
-
 
 .award-button:hover{
 
@@ -1818,9 +1593,7 @@ section{
 
   background:
     rgba(255,255,255,.28);
-
 }
-
 
 .award-number{
 
@@ -1830,8 +1603,8 @@ section{
 
   font-size:10px;
 
+  letter-spacing:1px;
 }
-
 
 .award-name{
 
@@ -1840,9 +1613,7 @@ section{
   letter-spacing:.7px;
 
   text-transform:uppercase;
-
 }
-
 
 .award-arrow{
 
@@ -1851,7 +1622,6 @@ section{
   color:#8e7c62;
 
   font-size:22px;
-
 }
 
 
@@ -1863,9 +1633,7 @@ section{
 
   border-bottom:
     1px solid var(--line);
-
 }
-
 
 .gallery-preview{
 
@@ -1879,9 +1647,7 @@ section{
     repeat(4,1fr);
 
   gap:14px;
-
 }
-
 
 .gallery-photo{
 
@@ -1904,25 +1670,15 @@ section{
   color:#7b736a;
 
   font-size:10px;
-
 }
-
 
 .gallery-photo:nth-child(odd){
-
-  transform:
-    rotate(-1deg);
-
+  transform:rotate(-1deg);
 }
-
 
 .gallery-photo:nth-child(even){
-
-  transform:
-    rotate(1deg);
-
+  transform:rotate(1deg);
 }
-
 
 .gallery-photo img{
 
@@ -1930,16 +1686,13 @@ section{
   height:100%;
 
   object-fit:cover;
-
 }
-
 
 .gallery-action{
 
   margin-top:32px;
 
   text-align:center;
-
 }
 
 
@@ -1961,14 +1714,11 @@ section{
   justify-content:center;
 
   padding:20px;
-
 }
-
 
 .modal.active{
   display:flex;
 }
-
 
 .modal-overlay{
 
@@ -1981,9 +1731,7 @@ section{
 
   backdrop-filter:
     blur(5px);
-
 }
-
 
 .modal-card{
 
@@ -2007,9 +1755,7 @@ section{
 
   box-shadow:
     0 25px 70px rgba(0,0,0,.30);
-
 }
-
 
 .modal-close{
 
@@ -2025,12 +1771,12 @@ section{
 
   background:transparent;
 
+  color:var(--ink);
+
   font-size:28px;
 
   cursor:pointer;
-
 }
-
 
 .modal-symbol{
 
@@ -2041,9 +1787,7 @@ section{
   text-align:center;
 
   font-size:23px;
-
 }
-
 
 .modal-card h2{
 
@@ -2055,9 +1799,7 @@ section{
   font-size:27px;
 
   font-weight:400;
-
 }
-
 
 .modal-role{
 
@@ -2074,9 +1816,7 @@ section{
   letter-spacing:1.7px;
 
   text-transform:uppercase;
-
 }
-
 
 .modal-divider{
 
@@ -2087,9 +1827,7 @@ section{
     22px auto;
 
   background:var(--line);
-
 }
-
 
 .message-text{
 
@@ -2102,20 +1840,17 @@ section{
   line-height:1.9;
 
   white-space:pre-line;
-
 }
 
 
 /* =========================================================
-   PREMIACIONES · 2 ARRIBA + 2 ABAJO
+   GANADORES PREMIACIONES
 ========================================================= */
 
 .award-modal-card{
 
   width:min(720px,96%);
-
 }
-
 
 .award-modal-intro{
 
@@ -2131,9 +1866,7 @@ section{
   font-size:13px;
 
   line-height:1.7;
-
 }
-
 
 .award-winners{
 
@@ -2147,9 +1880,7 @@ section{
     repeat(2,minmax(0,1fr));
 
   gap:20px;
-
 }
-
 
 .winner-card{
 
@@ -2165,11 +1896,7 @@ section{
 
   border:
     1px solid var(--line);
-
-  transition:.25s ease;
-
 }
-
 
 .winner-photo{
 
@@ -2189,8 +1916,8 @@ section{
 
   font-size:9px;
 
+  text-transform:uppercase;
 }
-
 
 .winner-photo img{
 
@@ -2200,9 +1927,7 @@ section{
   object-fit:cover;
 
   object-position:center 20%;
-
 }
-
 
 .winner-house{
 
@@ -2215,9 +1940,7 @@ section{
   letter-spacing:1.8px;
 
   text-transform:uppercase;
-
 }
-
 
 .winner-card h3{
 
@@ -2228,12 +1951,8 @@ section{
 
   font-weight:400;
 
-  line-height:1.4;
-
   text-transform:uppercase;
-
 }
-
 
 .winner-card p{
 
@@ -2242,44 +1961,35 @@ section{
   color:var(--muted);
 
   font-size:9px;
-
 }
-
 
 .winner-gryffindor{
   border-top:4px solid var(--red);
 }
 
-
 .winner-gryffindor .winner-house{
   color:var(--red);
 }
-
 
 .winner-slytherin{
   border-top:4px solid var(--green);
 }
 
-
 .winner-slytherin .winner-house{
   color:var(--green);
 }
-
 
 .winner-hufflepuff{
   border-top:4px solid var(--yellow);
 }
 
-
 .winner-hufflepuff .winner-house{
   color:var(--yellow-dark);
 }
 
-
 .winner-ravenclaw{
   border-top:4px solid var(--blue);
 }
-
 
 .winner-ravenclaw .winner-house{
   color:var(--blue);
@@ -2309,14 +2019,11 @@ footer{
   letter-spacing:2px;
 
   text-transform:uppercase;
-
 }
-
 
 footer .silver{
   color:var(--silver);
 }
-
 
 .footer-memorial{
 
@@ -2331,12 +2038,11 @@ footer .silver{
   line-height:1.8;
 
   letter-spacing:1.5px;
-
 }
 
 
 /* =========================================================
-   TABLET
+   RESPONSIVE
 ========================================================= */
 
 @media(max-width:1050px){
@@ -2345,30 +2051,20 @@ footer .silver{
     display:none;
   }
 
-
   .menu-button{
     display:block;
   }
-
 
   .hero h1{
     font-size:64px;
   }
 
-
   .honor-grid{
-
-    grid-template-columns:
-      repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
   }
 
 }
 
-
-/* =========================================================
-   MÓVIL
-========================================================= */
 
 @media(max-width:780px){
 
@@ -2380,17 +2076,11 @@ footer .silver{
 
     border-left:none;
     border-right:none;
-
   }
-
 
   .nav{
-
-    padding:
-      14px 18px;
-
+    padding:14px 18px;
   }
-
 
   .hero{
 
@@ -2400,28 +2090,22 @@ footer .silver{
 
     padding:
       44px 24px 20px;
-
   }
-
 
   .hero h1{
     font-size:53px;
   }
 
-
   .year{
     font-size:27px;
   }
-
 
   .castle{
 
     min-height:0;
 
     height:auto;
-
   }
-
 
   .castle-image{
 
@@ -2430,17 +2114,11 @@ footer .silver{
     height:auto;
 
     object-fit:contain;
-
   }
-
 
   section{
-
-    padding:
-      44px 22px;
-
+    padding:44px 22px;
   }
-
 
   .direction-grid{
 
@@ -2448,9 +2126,7 @@ footer .silver{
       repeat(2,1fr);
 
     gap:14px;
-
   }
-
 
   .houses-grid{
 
@@ -2458,17 +2134,13 @@ footer .silver{
       repeat(2,1fr);
 
     gap:14px;
-
   }
-
 
   .house-symbol{
 
     width:130px;
     height:150px;
-
   }
-
 
   .lucas-wrap{
 
@@ -2477,116 +2149,46 @@ footer .silver{
     grid-template-columns:1fr;
 
     gap:30px;
-
   }
-
 
   .lucas-photo-frame{
 
     width:min(330px,100%);
 
     margin:auto;
-
   }
-
 
   .lucas-copy{
-
     text-align:center;
-
   }
-
 
   .lucas-divider{
-
-    margin:
-      0 auto 22px;
-
+    margin:0 auto 22px;
   }
 
+  .lucas-quote{
+    text-align:left;
+  }
 
   .moments-grid{
-
-    grid-template-columns:
-      repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
   }
-
-
-  .graduation-card{
-
-    display:block;
-
-  }
-
-
-  .graduation-card .moment-photo{
-
-    aspect-ratio:16/9;
-
-  }
-
-
-  .graduation-card h3{
-
-    margin:
-      15px 5px 7px;
-
-    text-align:center;
-
-    font-size:16px;
-
-  }
-
-
-  .graduation-card p{
-
-    margin:
-      0 8px 8px;
-
-    text-align:center;
-
-  }
-
-
-  .graduation-card .moment-arrow{
-
-    margin:0 0 5px;
-
-    text-align:center;
-
-  }
-
 
   .gallery-preview{
-
-    grid-template-columns:
-      repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
   }
-
 
   .section-title::before,
   .section-title::after{
-
     width:70px;
-
   }
 
-
   .history-box{
-
-    padding:
-      30px 24px;
-
+    padding:30px 24px;
   }
 
 }
 
-
-/* =========================================================
-   TELÉFONO
-========================================================= */
 
 @media(max-width:520px){
 
@@ -2594,93 +2196,57 @@ footer .silver{
     font-size:10px;
   }
 
-
   .brand-mark{
 
     width:38px;
     height:38px;
-
   }
-
 
   .hero h1{
     font-size:43px;
   }
 
-
   .eyebrow{
     font-size:14px;
   }
-
 
   .year{
     font-size:23px;
   }
 
-
   .hero-quote{
     font-size:12px;
   }
-
-
-  .memorial-name{
-    font-size:18px;
-  }
-
 
   .direction-card{
 
     padding:
       7px 7px 17px;
-
   }
-
 
   .direction-card h3{
     font-size:13px;
   }
 
-
-  .direction-card p{
-    font-size:8px;
+  .houses-grid{
+    gap:10px;
   }
-
 
   .house-card{
 
     padding:
       20px 12px;
-
   }
-
 
   .house-card h3{
     font-size:18px;
   }
 
-
   .house-symbol{
 
     width:110px;
     height:130px;
-
   }
-
-
-  .house-card p{
-    font-size:9px;
-  }
-
-
-  .lucas-copy h2{
-    font-size:32px;
-  }
-
-
-  .lucas-copy p{
-    font-size:14px;
-  }
-
 
   .moments-grid{
 
@@ -2688,68 +2254,63 @@ footer .silver{
       1fr 1fr;
 
     gap:10px;
-
   }
-
 
   .moment-card h3{
     font-size:11px;
   }
 
-
   .moment-card p{
     font-size:8px;
   }
 
-
   .honor-grid{
 
     grid-template-columns:
-      1fr 1fr;
+      repeat(2,minmax(0,1fr));
 
     gap:10px;
-
   }
-
 
   .honor-card{
 
     padding:
-      22px 10px 20px;
-
+      6px 6px 18px;
   }
-
 
   .honor-card h3{
-    font-size:12px;
+    font-size:11px;
   }
 
+  .honor-house{
+
+    font-size:7px;
+
+    letter-spacing:1.2px;
+  }
+
+  .honor-card p{
+    font-size:8px;
+  }
 
   .section-title h2{
     font-size:20px;
   }
 
-
   .section-title::before,
   .section-title::after{
-
     width:32px;
-
   }
-
 
   .award-button{
 
     grid-template-columns:
       30px 1fr 30px;
-
   }
-
 
   .award-name{
     font-size:12px;
   }
-
 
   .award-winners{
 
@@ -2757,44 +2318,17 @@ footer .silver{
       repeat(2,minmax(0,1fr));
 
     gap:10px;
-
   }
-
-
-  .winner-card{
-
-    padding:
-      7px 7px 14px;
-
-  }
-
 
   .winner-card h3{
     font-size:11px;
   }
 
-
-  .winner-house{
-
-    font-size:7px;
-
-    letter-spacing:1.2px;
-
-  }
-
-
-  .winner-card p{
-    font-size:8px;
-  }
-
-
   .modal-card{
 
     padding:
       39px 20px 25px;
-
   }
-
 
   .modal-card h2{
     font-size:22px;
@@ -2809,7 +2343,6 @@ footer .silver{
 
 <body>
 
-
 <div class="page">
 
 
@@ -2818,7 +2351,6 @@ footer .silver{
 ========================================================= -->
 
 <nav class="nav">
-
 
   <div class="brand">
 
@@ -2836,23 +2368,14 @@ footer .silver{
   <div class="nav-links">
 
     <a href="#inicio">Inicio</a>
-
     <a href="#direccion">Dirección</a>
-
     <a href="#casas">Casas</a>
-
     <a href="#profesores">Profesores</a>
-
     <a href="#lucas">Lucas Nott</a>
-
     <a href="#historia">Hogwarts</a>
-
     <a href="#momentos">Momentos</a>
-
     <a href="#honor">Honor</a>
-
     <a href="#premiaciones">Premiaciones</a>
-
     <a href="#galeria">Galería</a>
 
   </div>
@@ -2866,58 +2389,24 @@ footer .silver{
     Menú
   </button>
 
-
 </nav>
 
-
-<!-- =========================================================
-     MENÚ MÓVIL
-========================================================= -->
 
 <div
   class="mobile-menu"
   id="mobileMenu"
 >
 
-  <a href="#inicio" onclick="closeMobileMenu()">
-    Inicio
-  </a>
-
-  <a href="#direccion" onclick="closeMobileMenu()">
-    Dirección
-  </a>
-
-  <a href="#casas" onclick="closeMobileMenu()">
-    Casas
-  </a>
-
-  <a href="#profesores" onclick="closeMobileMenu()">
-    Profesores
-  </a>
-
-  <a href="#lucas" onclick="closeMobileMenu()">
-    Lucas Nott
-  </a>
-
-  <a href="#historia" onclick="closeMobileMenu()">
-    Hogwarts
-  </a>
-
-  <a href="#momentos" onclick="closeMobileMenu()">
-    Momentos
-  </a>
-
-  <a href="#honor" onclick="closeMobileMenu()">
-    Cuadro de Honor
-  </a>
-
-  <a href="#premiaciones" onclick="closeMobileMenu()">
-    Premiaciones
-  </a>
-
-  <a href="#galeria" onclick="closeMobileMenu()">
-    Galería
-  </a>
+  <a href="#inicio" onclick="closeMobileMenu()">Inicio</a>
+  <a href="#direccion" onclick="closeMobileMenu()">Dirección</a>
+  <a href="#casas" onclick="closeMobileMenu()">Casas</a>
+  <a href="#profesores" onclick="closeMobileMenu()">Profesores</a>
+  <a href="#lucas" onclick="closeMobileMenu()">Lucas Nott</a>
+  <a href="#historia" onclick="closeMobileMenu()">Hogwarts</a>
+  <a href="#momentos" onclick="closeMobileMenu()">Momentos</a>
+  <a href="#honor" onclick="closeMobileMenu()">Cuadro de Honor</a>
+  <a href="#premiaciones" onclick="closeMobileMenu()">Premiaciones</a>
+  <a href="#galeria" onclick="closeMobileMenu()">Galería</a>
 
 </div>
 
@@ -2931,71 +2420,53 @@ footer .silver{
   id="inicio"
 >
 
-
   <div class="hero-copy">
-
 
     <div class="eyebrow">
       Anuario Escolar
     </div>
 
-
     <h1>
       HOGWARTS
     </h1>
 
-
     <div class="year">
-      2026 – 2027
+      2025 – 2026
     </div>
-
 
     <div class="flourish">
       ✦ ─ ✧ ─ ✦
     </div>
 
-
     <div class="hero-quote">
-
       Memorias que ni Obliviate podrá borrar.
-
     </div>
 
 
     <div class="memorial-dedication">
 
-
       <span class="memorial-label">
         En honor a
       </span>
-
 
       <strong class="memorial-name">
         Lucas Nott
       </strong>
 
-
       <span class="memorial-info">
-
         Alumno de Ravenclaw
         ·
         Prefecto
         ·
         Capitán de Quidditch
-
       </span>
-
 
       <span class="memorial-founders">
-
         Cofundador del Anuario Hogwarts
         junto a Layla Nott
-
       </span>
 
-
     </div>
-
 
   </div>
 
@@ -3010,7 +2481,6 @@ footer .silver{
 
   </div>
 
-
 </header>
 
 
@@ -3023,7 +2493,6 @@ footer .silver{
   id="direccion"
 >
 
-
   <div class="section-title">
 
     <h2>
@@ -3034,94 +2503,114 @@ footer .silver{
 
 
   <p class="section-subtitle">
-
     Quienes estuvieron al frente de Hogwarts
-    durante el curso 2026–2027.
-
+    durante el curso 2025–2026.
   </p>
 
 
   <div class="direction-grid">
 
 
+    <!-- =====================================================
+         DIRECTOR
+
+         CAMBIA:
+         assets/director.jpg
+         Nombre del Director
+         Mensaje
+    ====================================================== -->
+
     <article
       class="direction-card"
       onclick="openMessage(
         'Nombre del Director',
         'Director de Hogwarts',
-        'Aquí irá el mensaje del Director para los estudiantes del curso 2026–2027.'
+        'No permitan que el nombre de su casa se convierta en el límite de lo que pueden llegar a ser. Ser valiente no pertenece únicamente a Gryffindor. La inteligencia no es patrimonio exclusivo de Ravenclaw. La lealtad no tiene dueño en Hufflepuff, y la ambición no convierte automáticamente a un Slytherin en alguien digno de desprecio.
+
+Sean mejores que sus prejuicios. Más disciplinados que sus impulsos. Y, sobre todo, suficientemente firmes para decidir quiénes serán cuando nadie más esté observando.
+
+El mundo no será amable con ustedes, habrá fracasos, pérdidas, decisiones difíciles y personas que intentarán convencerlos de que deben ser menos de lo que son. No les crean.
+
+Conserven aquello que los hace únicos. Aprendan de sus errores. Y cuando caigan, tengan la dignidad de levantarse sin esperar que alguien lo haga por ustedes.
+
+Si alguna vez vuelven a estas paredes, espero que lo hagan siendo personas de las que ustedes mismos puedan sentirse orgullosos.'
       )"
     >
 
-
       <div class="direction-photo">
-        Foto del Director
-      </div>
 
+        <img
+          src="assets/IMG_7493.jpeg"
+          alt="Director de Hogwarts"
+        >
+
+      </div>
 
       <span class="direction-role">
         Director
       </span>
 
-
       <h3>
         Nombre del Director
       </h3>
-
 
       <p>
         Director de Hogwarts
       </p>
 
-
       <span class="click-hint">
         Tocar para leer mensaje
       </span>
 
-
     </article>
 
+
+    <!-- =====================================================
+         SUBDIRECTORA
+
+         CAMBIA:
+         assets/subdirectora.jpg
+         Nombre
+         Mensaje
+    ====================================================== -->
 
     <article
       class="direction-card"
       onclick="openMessage(
         'Nombre de la Subdirectora',
         'Subdirectora de Hogwarts',
-        'Aquí irá el mensaje de la Subdirectora para los estudiantes del curso 2026–2027.'
+        'Que nunca les falten sueños por cumplir, caminos por descubrir y un corazón dispuesto a seguir aprendiendo. 🫀'
       )"
     >
 
-
       <div class="direction-photo">
-        Foto de la Subdirectora
-      </div>
 
+        <img
+          src="assets/subdirectora.jpg"
+          alt="Subdirectora de Hogwarts"
+        >
+
+      </div>
 
       <span class="direction-role">
         Subdirectora
       </span>
 
-
       <h3>
         Nombre de la Subdirectora
       </h3>
-
 
       <p>
         Subdirectora de Hogwarts
       </p>
 
-
       <span class="click-hint">
         Tocar para leer mensaje
       </span>
 
-
     </article>
 
-
   </div>
-
 
 </section>
 
@@ -3134,7 +2623,6 @@ footer .silver{
   class="houses"
   id="casas"
 >
-
 
   <div class="section-title">
 
@@ -3158,11 +2646,9 @@ footer .silver{
 
     <article class="house-card gryffindor">
 
-
       <h3>
         Gryffindor
       </h3>
-
 
       <div class="house-symbol">
 
@@ -3173,11 +2659,9 @@ footer .silver{
 
       </div>
 
-
       <p>
         Valor, determinación y coraje
       </p>
-
 
       <a
         href="gryffindor.html"
@@ -3186,17 +2670,14 @@ footer .silver{
         Explorar
       </a>
 
-
     </article>
 
 
     <article class="house-card slytherin">
 
-
       <h3>
         Slytherin
       </h3>
-
 
       <div class="house-symbol">
 
@@ -3207,11 +2688,9 @@ footer .silver{
 
       </div>
 
-
       <p>
         Ambición, astucia y liderazgo
       </p>
-
 
       <a
         href="slytherin.html"
@@ -3220,17 +2699,14 @@ footer .silver{
         Explorar
       </a>
 
-
     </article>
 
 
     <article class="house-card hufflepuff">
 
-
       <h3>
         Hufflepuff
       </h3>
-
 
       <div class="house-symbol">
 
@@ -3241,11 +2717,9 @@ footer .silver{
 
       </div>
 
-
       <p>
         Lealtad, paciencia y dedicación
       </p>
-
 
       <a
         href="hufflepuff.html"
@@ -3254,17 +2728,14 @@ footer .silver{
         Explorar
       </a>
 
-
     </article>
 
 
     <article class="house-card ravenclaw">
 
-
       <h3>
         Ravenclaw
       </h3>
-
 
       <div class="house-symbol">
 
@@ -3275,11 +2746,9 @@ footer .silver{
 
       </div>
 
-
       <p>
         Ingenio, sabiduría y creatividad
       </p>
-
 
       <a
         href="ravenclaw.html"
@@ -3288,12 +2757,9 @@ footer .silver{
         Explorar
       </a>
 
-
     </article>
 
-
   </div>
-
 
 </section>
 
@@ -3307,7 +2773,6 @@ footer .silver{
   id="profesores"
 >
 
-
   <div class="section-title">
 
     <h2>
@@ -3316,14 +2781,10 @@ footer .silver{
 
   </div>
 
-
   <p class="section-subtitle">
-
-    Conoce a los profesores que acompañaron
-    a los estudiantes durante el curso 2026–2027.
-
+    Quienes convirtieron las aulas de Hogwarts
+    en una parte inolvidable de este curso.
   </p>
-
 
   <a
     href="profesores.html"
@@ -3331,7 +2792,6 @@ footer .silver{
   >
     Ver Profesores
   </a>
-
 
 </section>
 
@@ -3345,40 +2805,32 @@ footer .silver{
   id="lucas"
 >
 
-
   <div class="lucas-wrap">
 
 
     <div class="lucas-photo-frame">
 
-
       <div class="lucas-photo">
-
 
         <img
           src="assets/lucas-nott-memorial.png"
           alt="Lucas Nott"
         >
 
-
       </div>
-
 
     </div>
 
 
     <div class="lucas-copy">
 
-
       <span class="lucas-small-title">
         En memoria de
       </span>
 
-
       <h2>
         Lucas Nott
       </h2>
-
 
       <div class="lucas-roles">
 
@@ -3392,9 +2844,7 @@ footer .silver{
 
       </div>
 
-
       <div class="lucas-divider"></div>
-
 
       <p>
 
@@ -3403,7 +2853,6 @@ footer .silver{
 
       </p>
 
-
       <p>
 
         Lucas Nott fue alumno de Ravenclaw, prefecto,
@@ -3411,7 +2860,6 @@ footer .silver{
         que, junto a Layla Nott, ayudó a dar origen a este anuario.
 
       </p>
-
 
       <p>
 
@@ -3422,14 +2870,12 @@ footer .silver{
 
       </p>
 
-
       <div class="lucas-quote">
 
         Hay personas cuya ausencia cambia un lugar,
         pero cuyos recuerdos hacen imposible que desaparezcan del todo.
 
       </div>
-
 
       <a
         href="lucas-nott.html"
@@ -3438,12 +2884,9 @@ footer .silver{
         Conocer su historia
       </a>
 
-
     </div>
 
-
   </div>
-
 
 </section>
 
@@ -3457,7 +2900,6 @@ footer .silver{
   id="historia"
 >
 
-
   <div class="section-title">
 
     <h2>
@@ -3469,16 +2911,13 @@ footer .silver{
 
   <div class="history-box">
 
-
     <div class="history-symbol">
       ✦
     </div>
 
-
     <h3>
       Hogwarts y sus Fundadores
     </h3>
-
 
     <p>
 
@@ -3489,7 +2928,6 @@ footer .silver{
 
     </p>
 
-
     <p>
 
       Entre sus torres, pasillos, aulas y terrenos han crecido
@@ -3497,7 +2935,6 @@ footer .silver{
       a un castillo cuya memoria parece ser tan extensa como sus secretos.
 
     </p>
-
 
     <div class="founders">
 
@@ -3511,9 +2948,7 @@ footer .silver{
 
     </div>
 
-
   </div>
-
 
 </section>
 
@@ -3527,7 +2962,6 @@ footer .silver{
   id="momentos"
 >
 
-
   <div class="section-title">
 
     <h2>
@@ -3540,10 +2974,8 @@ footer .silver{
   <p class="section-subtitle">
 
     Partidos, torneos, presentaciones, excursiones,
-    celebraciones y despedidas que marcaron el curso 2026–2027.
-
-    Toca cualquier sección para descubrir
-    todos los recuerdos de este año.
+    celebraciones y momentos que marcaron
+    el curso 2025–2026.
 
   </p>
 
@@ -3558,7 +2990,6 @@ footer .silver{
       class="moment-card"
     >
 
-
       <div class="moment-photo">
 
         Foto de Quidditch
@@ -3569,25 +3000,18 @@ footer .silver{
 
       </div>
 
-
       <h3>
         Quidditch
       </h3>
 
-
       <p>
-
-        Los siete partidos de cada equipo,
-        entrenamientos, gradas, victorias,
-        derrotas y recuerdos de la temporada.
-
+        Partidos, equipos, entrenamientos,
+        resultados y recuerdos de la temporada.
       </p>
-
 
       <span class="moment-arrow">
         ›
       </span>
-
 
     </a>
 
@@ -3599,7 +3023,6 @@ footer .silver{
       class="moment-card"
     >
 
-
       <div class="moment-photo">
 
         Foto de Porristas
@@ -3610,25 +3033,18 @@ footer .silver{
 
       </div>
 
-
       <h3>
         Porristas
       </h3>
 
-
       <p>
-
         Presentaciones, prácticas,
-        partidos y momentos detrás de escena
-        de los cuatro equipos de Hogwarts.
-
+        partidos y momentos detrás de escena.
       </p>
-
 
       <span class="moment-arrow">
         ›
       </span>
-
 
     </a>
 
@@ -3637,39 +3053,31 @@ footer .silver{
 
     <a
       href="torneo-tres-magos.html"
-      class="moment-card"
+      class="moment-card tournament-card"
     >
-
 
       <div class="moment-photo">
 
-        Foto del Torneo de los Tres Magos
+        Foto del Torneo
 
         <div class="moment-overlay">
-          Ver el Torneo
+          Abrir torneo
         </div>
 
       </div>
-
 
       <h3>
         Torneo de los Tres Magos
       </h3>
 
-
       <p>
-
         Campeones, pruebas, espectadores,
-        celebraciones y los momentos que hicieron
-        historia durante el torneo.
-
+        desafíos y momentos inolvidables del torneo.
       </p>
-
 
       <span class="moment-arrow">
         ›
       </span>
-
 
     </a>
 
@@ -3681,7 +3089,6 @@ footer .silver{
       class="moment-card"
     >
 
-
       <div class="moment-photo">
 
         Foto de Actividades
@@ -3692,25 +3099,18 @@ footer .silver{
 
       </div>
 
-
       <h3>
         Actividades
       </h3>
 
-
       <p>
-
-        Competencias, proyectos,
-        actividades escolares y momentos
-        especiales vividos durante el curso.
-
+        Actividades escolares,
+        competencias y momentos especiales.
       </p>
-
 
       <span class="moment-arrow">
         ›
       </span>
-
 
     </a>
 
@@ -3722,7 +3122,6 @@ footer .silver{
       class="moment-card"
     >
 
-
       <div class="moment-photo">
 
         Foto de Excursiones
@@ -3733,25 +3132,18 @@ footer .silver{
 
       </div>
 
-
       <h3>
         Excursiones
       </h3>
 
-
       <p>
-
-        Visitas, viajes, trabajos de campo,
-        salidas y aventuras fuera
-        de las aulas de Hogwarts.
-
+        Visitas, viajes,
+        salidas y aventuras fuera de las aulas.
       </p>
-
 
       <span class="moment-arrow">
         ›
       </span>
-
 
     </a>
 
@@ -3763,7 +3155,6 @@ footer .silver{
       class="moment-card"
     >
 
-
       <div class="moment-photo">
 
         Foto de Eventos
@@ -3774,42 +3165,32 @@ footer .silver{
 
       </div>
 
-
       <h3>
         Eventos Especiales
       </h3>
 
-
       <p>
-
-        Bailes, fiestas, ceremonias,
-        celebraciones y acontecimientos
-        inolvidables del año.
-
+        Bailes, ceremonias,
+        celebraciones y acontecimientos del año.
       </p>
-
 
       <span class="moment-arrow">
         ›
       </span>
 
-
     </a>
 
 
-    <!-- =====================================================
-         GRADUACIÓN
-    ====================================================== -->
+    <!-- GRADUACIÓN -->
 
     <a
-      href="graduacion.html"
+      href="graduacion-2026.html"
       class="moment-card graduation-card"
     >
 
-
       <div class="moment-photo">
 
-        Foto de Graduación 2027
+        Foto de Graduación
 
         <div class="moment-overlay">
           Ver Graduación
@@ -3817,44 +3198,40 @@ footer .silver{
 
       </div>
 
-
       <h3>
-        Graduación 2027
+        Graduación 2026
       </h3>
 
-
       <p>
-
-        La última noche como estudiantes de Hogwarts.
-        Séptimo año, discursos, familias, amistades
-        y una despedida después de siete años de magia.
-
+        El último capítulo en Hogwarts:
+        graduados, ceremonia, familias,
+        despedidas y recuerdos de séptimo año.
       </p>
-
 
       <span class="moment-arrow">
         ›
       </span>
-
 
     </a>
 
 
   </div>
 
-
 </section>
 
 
 <!-- =========================================================
      CUADRO DE HONOR
+
+     AQUÍ PUEDES CAMBIAR:
+     1. FOTO
+     2. NOMBRE
 ========================================================= -->
 
 <section
   class="honor-section"
   id="honor"
 >
-
 
   <div class="section-title">
 
@@ -3868,7 +3245,7 @@ footer .silver{
   <p class="section-subtitle">
 
     Un estudiante destacado de cada casa
-    durante el curso 2026–2027.
+    durante el curso 2025–2026.
 
   </p>
 
@@ -3876,84 +3253,151 @@ footer .silver{
   <div class="honor-grid">
 
 
+    <!-- =====================================================
+         GRYFFINDOR
+    ====================================================== -->
+
     <article
       class="honor-card honor-gryffindor"
     >
+
+      <div class="honor-photo">
+
+        <img
+          src="assets/honor-gryffindor.jpg"
+          alt="Estudiante destacado de Gryffindor"
+        >
+
+      </div>
 
       <span class="honor-house">
         Gryffindor
       </span>
 
       <h3>
-        Estudiante Gryffindor
+        Nombre del Estudiante
       </h3>
 
       <p>
         Estudiante destacado del año
       </p>
 
+      <span class="honor-star">
+        ✦
+      </span>
+
     </article>
 
+
+    <!-- =====================================================
+         SLYTHERIN
+    ====================================================== -->
 
     <article
       class="honor-card honor-slytherin"
     >
+
+      <div class="honor-photo">
+
+        <img
+          src="assets/honor-slytherin.jpg"
+          alt="Estudiante destacado de Slytherin"
+        >
+
+      </div>
 
       <span class="honor-house">
         Slytherin
       </span>
 
       <h3>
-        Estudiante Slytherin
+        Nombre del Estudiante
       </h3>
 
       <p>
         Estudiante destacado del año
       </p>
 
+      <span class="honor-star">
+        ✦
+      </span>
+
     </article>
 
+
+    <!-- =====================================================
+         HUFFLEPUFF
+    ====================================================== -->
 
     <article
       class="honor-card honor-hufflepuff"
     >
+
+      <div class="honor-photo">
+
+        <img
+          src="assets/honor-hufflepuff.jpg"
+          alt="Estudiante destacado de Hufflepuff"
+        >
+
+      </div>
 
       <span class="honor-house">
         Hufflepuff
       </span>
 
       <h3>
-        Estudiante Hufflepuff
+        Nombre del Estudiante
       </h3>
 
       <p>
         Estudiante destacado del año
       </p>
 
+      <span class="honor-star">
+        ✦
+      </span>
+
     </article>
 
+
+    <!-- =====================================================
+         RAVENCLAW
+    ====================================================== -->
 
     <article
       class="honor-card honor-ravenclaw"
     >
+
+      <div class="honor-photo">
+
+        <img
+          src="assets/honor-ravenclaw.jpg"
+          alt="Estudiante destacado de Ravenclaw"
+        >
+
+      </div>
 
       <span class="honor-house">
         Ravenclaw
       </span>
 
       <h3>
-        Estudiante Ravenclaw
+        Nombre del Estudiante
       </h3>
 
       <p>
         Estudiante destacado del año
       </p>
 
+      <span class="honor-star">
+        ✦
+      </span>
+
     </article>
 
 
   </div>
-
 
 </section>
 
@@ -3966,7 +3410,6 @@ footer .silver{
   class="awards-section"
   id="premiaciones"
 >
-
 
   <div class="section-title">
 
@@ -3983,8 +3426,7 @@ footer .silver{
     porque claramente siete años de magia no eran suficientes
     sin convertir también la reputación de los estudiantes en competencia.
 
-    Toca cada premio para descubrir a los ganadores
-    de Gryffindor, Slytherin, Hufflepuff y Ravenclaw.
+    Toca cada premio para descubrir a los ganadores.
 
   </p>
 
@@ -4113,7 +3555,6 @@ footer .silver{
 
   </div>
 
-
 </section>
 
 
@@ -4125,7 +3566,6 @@ footer .silver{
   class="gallery-section"
   id="galeria"
 >
-
 
   <div class="section-title">
 
@@ -4146,26 +3586,21 @@ footer .silver{
 
   <div class="gallery-preview">
 
+    <div class="gallery-photo">
+      Foto
+    </div>
 
     <div class="gallery-photo">
       Foto
     </div>
 
-
     <div class="gallery-photo">
       Foto
     </div>
 
-
     <div class="gallery-photo">
       Foto
     </div>
-
-
-    <div class="gallery-photo">
-      Foto
-    </div>
-
 
   </div>
 
@@ -4181,7 +3616,6 @@ footer .silver{
 
   </div>
 
-
 </section>
 
 
@@ -4191,17 +3625,13 @@ footer .silver{
 
 <footer>
 
-
   Anuario Escolar de Hogwarts
-
 
   <br><br>
 
-
   <span class="silver">
-    Curso 2026 – 2027
+    Curso 2025 – 2026
   </span>
-
 
   <span class="footer-memorial">
 
@@ -4215,9 +3645,7 @@ footer .silver{
 
   </span>
 
-
 </footer>
-
 
 </div>
 
@@ -4231,7 +3659,6 @@ footer .silver{
   id="messageModal"
 >
 
-
   <div
     class="modal-overlay"
     onclick="closeMessage()"
@@ -4240,42 +3667,33 @@ footer .silver{
 
   <div class="modal-card">
 
-
     <button
       class="modal-close"
       type="button"
       onclick="closeMessage()"
-      aria-label="Cerrar"
     >
       ×
     </button>
-
 
     <div class="modal-symbol">
       ✦
     </div>
 
-
     <h2 id="messageName"></h2>
-
 
     <p
       class="modal-role"
       id="messageRole"
     ></p>
 
-
     <div class="modal-divider"></div>
-
 
     <p
       class="message-text"
       id="messageText"
     ></p>
 
-
   </div>
-
 
 </div>
 
@@ -4289,7 +3707,6 @@ footer .silver{
   id="awardModal"
 >
 
-
   <div
     class="modal-overlay"
     onclick="closeAward()"
@@ -4298,49 +3715,39 @@ footer .silver{
 
   <div class="modal-card award-modal-card">
 
-
     <button
       class="modal-close"
       type="button"
       onclick="closeAward()"
-      aria-label="Cerrar"
     >
       ×
     </button>
-
 
     <div class="modal-symbol">
       ✦
     </div>
 
-
     <p class="modal-role">
-      Premiaciones del Año · 2026–2027
+      Premiaciones del Año · 2025–2026
     </p>
-
 
     <h2 id="awardTitle">
       Premio
     </h2>
 
-
     <div class="modal-divider"></div>
-
 
     <p
       class="award-modal-intro"
       id="awardDescription"
     ></p>
 
-
     <div
       class="award-winners"
       id="awardWinners"
     ></div>
 
-
   </div>
-
 
 </div>
 
@@ -4386,24 +3793,20 @@ function openMessage(
     .textContent =
     name;
 
-
   document
     .getElementById("messageRole")
     .textContent =
     role;
-
 
   document
     .getElementById("messageText")
     .textContent =
     message;
 
-
   document
     .getElementById("messageModal")
     .classList
     .add("active");
-
 
   document.body.style.overflow =
     "hidden";
@@ -4418,7 +3821,6 @@ function closeMessage(){
     .classList
     .remove("active");
 
-
   document.body.style.overflow =
     "";
 
@@ -4427,6 +3829,8 @@ function closeMessage(){
 
 /* =========================================================
    PREMIACIONES
+
+   AQUÍ EDITAS LOS NOMBRES Y FOTOS.
 ========================================================= */
 
 const awardsData = {
@@ -4439,24 +3843,20 @@ const awardsData = {
     description:
       "Estilo, presencia y suficiente dedicación como para no aparecer en el Gran Comedor vestido de cualquier manera.",
 
-
     gryffindor:{
       name:"Ganador/a Gryffindor",
       image:""
     },
-
 
     slytherin:{
       name:"Aster Snape",
       image:"assets/Aster Snape.jpg"
     },
 
-
     hufflepuff:{
       name:"Gianna Rosier",
       image:"assets/Gianna Rosier.jpeg"
     },
-
 
     ravenclaw:{
       name:"Colette Black",
@@ -4473,24 +3873,20 @@ const awardsData = {
     description:
       "Porque incluso Hogwarts necesita a alguien capaz de hacer reír al resto cuando todo parece demasiado serio.",
 
-
     gryffindor:{
       name:"Ganador/a Gryffindor",
       image:""
     },
-
 
     slytherin:{
       name:"Draco Malfoy",
       image:"assets/Draco Malfoy premios.jpg"
     },
 
-
     hufflepuff:{
       name:"Minho Everden",
       image:"assets/Minho Everden.jpeg"
     },
-
 
     ravenclaw:{
       name:"Anna Berenice Crouch Selwyn",
@@ -4507,24 +3903,20 @@ const awardsData = {
     description:
       "Dos estudiantes cuya existencia individual aparentemente dejó de ser una opción durante este curso.",
 
-
     gryffindor:{
       name:"Dúo ganador Gryffindor",
       image:""
     },
-
 
     slytherin:{
       name:"Adrian Rosier y Nicol Velthougar",
       image:"assets/Adrian Rosier y Nicol Velthougar.jpg"
     },
 
-
     hufflepuff:{
       name:"Stelian Loren y Gianna Rosier",
       image:"assets/Stelian Loren y Gianna Rosier.jpeg"
     },
-
 
     ravenclaw:{
       name:"Minho Black y Mallory Grimshaw",
@@ -4541,24 +3933,20 @@ const awardsData = {
     description:
       "Reconocimiento a quienes dejaron una impresión especial durante la temporada de Quidditch.",
 
-
     gryffindor:{
       name:"Ganador/a Gryffindor",
       image:""
     },
-
 
     slytherin:{
       name:"Ellodie Cullen",
       image:"assets/Ellodie Cullen premios.jpg"
     },
 
-
     hufflepuff:{
       name:"Honey Diggory",
       image:"assets/Honey Diggory.jpeg"
     },
-
 
     ravenclaw:{
       name:"Willow Blackthorn",
@@ -4575,24 +3963,20 @@ const awardsData = {
     description:
       "Para quienes parecían saber la respuesta incluso antes de que el profesor terminara de formular la pregunta.",
 
-
     gryffindor:{
       name:"Ganador/a Gryffindor",
       image:""
     },
-
 
     slytherin:{
       name:"Cas Snape",
       image:"assets/Cas Snape.jpg"
     },
 
-
     hufflepuff:{
       name:"Alexandra Delacoure",
       image:"assets/Alexandra Delacoure.jpeg"
     },
-
 
     ravenclaw:{
       name:"Layla Nott Rosier",
@@ -4609,24 +3993,20 @@ const awardsData = {
     description:
       "Para quienes representaron especialmente la amistad, participación y vida de la escuela durante este curso.",
 
-
     gryffindor:{
       name:"Ganador/a Gryffindor",
       image:""
     },
-
 
     slytherin:{
       name:"Altair Nott",
       image:"assets/Altair Nott.jpg"
     },
 
-
     hufflepuff:{
       name:"Rose Scamander",
       image:"assets/Rose Scamander.jpeg"
     },
-
 
     ravenclaw:{
       name:"Minho Black",
@@ -4643,24 +4023,20 @@ const awardsData = {
     description:
       "Porque conformarse con migajas también terminó siendo, inexplicablemente, una disciplina competitiva en Hogwarts.",
 
-
     gryffindor:{
       name:"Ganador/a Gryffindor",
       image:""
     },
-
 
     slytherin:{
       name:"Adrian Rosier",
       image:"assets/Adrian Rosier.jpg"
     },
 
-
     hufflepuff:{
       name:"Ganador/a Hufflepuff",
       image:""
     },
-
 
     ravenclaw:{
       name:"Logan Carter Burke",
@@ -4673,7 +4049,7 @@ const awardsData = {
 
 
 /* =========================================================
-   TARJETA GANADOR
+   CREAR TARJETA GANADOR
 ========================================================= */
 
 function createWinnerCard(
@@ -4707,13 +4083,11 @@ function createWinnerCard(
       class="winner-card winner-${house}"
     >
 
-
       <div class="winner-photo">
 
         ${imageContent}
 
       </div>
-
 
       <span class="winner-house">
 
@@ -4721,20 +4095,17 @@ function createWinnerCard(
 
       </span>
 
-
       <h3>
 
         ${winner.name}
 
       </h3>
 
-
       <p>
 
         Ganador/a de ${houseLabel}
 
       </p>
-
 
     </article>
 
@@ -4771,6 +4142,13 @@ function openAward(
     .textContent =
     award.description;
 
+
+  /*
+    ORDEN:
+
+    GRYFFINDOR | SLYTHERIN
+    HUFFLEPUFF | RAVENCLAW
+  */
 
   const winnersHTML =
 
