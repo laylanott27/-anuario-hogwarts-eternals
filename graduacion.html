@@ -1,0 +1,3096 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Graduación 2026 · Hogwarts</title>
+
+<style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+
+  --paper:#f1e8da;
+  --paper-light:#f8f3ea;
+  --ink:#171717;
+  --muted:#6c665e;
+
+  /* GRYFFINDOR */
+  --gryffindor:#740001;
+  --gryffindor-gold:#d3a625;
+
+  /* SLYTHERIN */
+  --slytherin:#1a472a;
+  --slytherin-silver:#aaaaaa;
+
+  /* RAVENCLAW */
+  --ravenclaw:#0e3a5d;
+  --ravenclaw-bronze:#946b2d;
+
+  /* HUFFLEPUFF */
+  --hufflepuff:#ecb939;
+  --hufflepuff-black:#171717;
+
+  --gold:#b89b5e;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  margin:0;
+
+  background:#151515;
+  color:var(--ink);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+}
+
+img{
+
+  width:100%;
+  height:100%;
+
+  display:block;
+
+  object-fit:cover;
+
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.page{
+
+  width:min(1500px,100%);
+  margin:auto;
+
+  background:var(--paper);
+
+  overflow:hidden;
+
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.nav{
+
+  position:sticky;
+  top:0;
+
+  z-index:100;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:15px 30px;
+
+  color:#eee;
+
+  background:rgba(15,15,15,.96);
+
+  border-bottom:1px solid #3a3a3a;
+
+}
+
+.nav-brand{
+
+  font-size:10px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+.nav-links{
+
+  display:flex;
+
+  gap:22px;
+
+  align-items:center;
+
+  font-size:8px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
+.nav-links a{
+  color:#c7c7c7;
+}
+
+.nav-links a:hover{
+  color:white;
+}
+
+.nav-back{
+
+  padding:8px 13px;
+
+  border:1px solid #777;
+
+  color:white !important;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+  min-height:850px;
+
+  position:relative;
+
+  display:flex;
+
+  align-items:flex-end;
+
+  overflow:hidden;
+
+  color:white;
+
+  background:#111;
+
+}
+
+.hero-image{
+
+  position:absolute;
+
+  inset:0;
+
+}
+
+.hero-image img{
+
+  filter:
+    contrast(1.04)
+    saturate(.9);
+
+}
+
+.hero-image::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    linear-gradient(
+      transparent 35%,
+      rgba(0,0,0,.22) 55%,
+      rgba(0,0,0,.9) 100%
+    );
+
+}
+
+.hero-content{
+
+  width:100%;
+
+  position:relative;
+
+  z-index:5;
+
+  padding:
+    70px 55px 55px;
+
+}
+
+.hero-small{
+
+  display:block;
+
+  margin-bottom:8px;
+
+  font-size:10px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+.hero h1{
+
+  margin:0;
+
+  font-size:
+    clamp(75px,13vw,190px);
+
+  line-height:.72;
+
+  font-weight:400;
+
+  letter-spacing:-7px;
+
+}
+
+.hero h1 span{
+
+  display:block;
+
+  margin-left:13%;
+
+  font-style:italic;
+
+}
+
+.hero-subtitle{
+
+  max-width:560px;
+
+  margin-top:30px;
+
+  font-size:15px;
+
+  line-height:1.8;
+
+}
+
+.hero-year{
+
+  position:absolute;
+
+  right:4%;
+  top:6%;
+
+  color:
+    rgba(255,255,255,.16);
+
+  font-family:
+    Arial Black,
+    sans-serif;
+
+  font-size:
+    clamp(80px,15vw,220px);
+
+}
+
+
+/* =========================================================
+   FOUR HOUSE STRIPE
+========================================================= */
+
+.house-stripe{
+
+  height:17px;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+}
+
+.house-stripe div:nth-child(1){
+  background:var(--gryffindor);
+}
+
+.house-stripe div:nth-child(2){
+  background:var(--slytherin);
+}
+
+.house-stripe div:nth-child(3){
+  background:var(--ravenclaw);
+}
+
+.house-stripe div:nth-child(4){
+  background:var(--hufflepuff);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro{
+
+  padding:
+    90px 45px;
+
+  background:
+    var(--paper-light);
+
+}
+
+.intro-wrap{
+
+  max-width:1150px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    .8fr 1.2fr;
+
+  gap:70px;
+
+  align-items:center;
+
+}
+
+.intro-title span{
+
+  display:block;
+
+  color:var(--gold);
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+.intro-title h2{
+
+  margin:
+    7px 0 0;
+
+  font-size:
+    clamp(65px,9vw,130px);
+
+  line-height:.78;
+
+  font-weight:400;
+
+}
+
+.intro-text{
+
+  columns:2;
+
+  column-gap:35px;
+
+  font-size:13px;
+
+  line-height:1.9;
+
+}
+
+.intro-text p{
+  margin-top:0;
+}
+
+
+/* =========================================================
+   BEFORE CEREMONY
+========================================================= */
+
+.before{
+
+  padding:
+    80px 35px;
+
+  background:#ded7cc;
+
+}
+
+.section-header{
+
+  max-width:1200px;
+
+  margin:
+    0 auto 40px;
+
+}
+
+.section-header span{
+
+  color:#806f52;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+.section-header h2{
+
+  margin:
+    5px 0 15px;
+
+  font-size:
+    clamp(60px,9vw,130px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+.section-header p{
+
+  max-width:620px;
+
+  margin:0;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+.before-grid{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(5,1fr);
+
+  grid-auto-rows:170px;
+
+  gap:7px;
+
+}
+
+.before-photo{
+
+  position:relative;
+
+  overflow:hidden;
+
+  background:#aaa;
+
+}
+
+.before-photo:nth-child(1){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+.before-photo:nth-child(4){
+
+  grid-column:span 2;
+
+}
+
+.before-photo:nth-child(7){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+.caption{
+
+  position:absolute;
+
+  left:10px;
+  bottom:10px;
+
+  padding:6px 9px;
+
+  color:white;
+
+  background:rgba(0,0,0,.65);
+
+  font-size:8px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   CEREMONY
+========================================================= */
+
+.ceremony{
+
+  padding:
+    90px 45px;
+
+  color:white;
+
+  background:#151515;
+
+}
+
+.ceremony-header{
+
+  max-width:1150px;
+
+  margin:
+    0 auto 50px;
+
+  text-align:center;
+
+}
+
+.ceremony-header span{
+
+  color:#bda46c;
+
+  font-size:9px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+.ceremony-header h2{
+
+  margin:
+    8px 0 20px;
+
+  font-size:
+    clamp(65px,10vw,145px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+}
+
+.ceremony-header p{
+
+  max-width:600px;
+
+  margin:auto;
+
+  color:#c9c9c9;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+.ceremony-main{
+
+  max-width:1200px;
+
+  height:650px;
+
+  margin:auto;
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+.ceremony-main img{
+
+  opacity:.9;
+
+}
+
+.ceremony-main::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    linear-gradient(
+      transparent 55%,
+      rgba(0,0,0,.8)
+    );
+
+}
+
+.ceremony-caption{
+
+  position:absolute;
+
+  z-index:5;
+
+  left:35px;
+  bottom:30px;
+
+  max-width:600px;
+
+}
+
+.ceremony-caption h3{
+
+  margin:
+    0 0 10px;
+
+  font-size:38px;
+
+  font-weight:400;
+
+}
+
+.ceremony-caption p{
+
+  margin:0;
+
+  color:#ddd;
+
+  font-size:12px;
+
+  line-height:1.8;
+
+}
+
+
+/* =========================================================
+   HOUSES
+========================================================= */
+
+.houses{
+
+  background:#ece5d9;
+
+}
+
+.house{
+
+  min-height:720px;
+
+  display:grid;
+
+  grid-template-columns:
+    .65fr 1.35fr;
+
+}
+
+.house:nth-child(even){
+
+  grid-template-columns:
+    1.35fr .65fr;
+
+}
+
+.house:nth-child(even) .house-info{
+  order:2;
+}
+
+.house-info{
+
+  padding:55px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+}
+
+.house-number{
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+.house-info h2{
+
+  margin:
+    8px 0 20px;
+
+  font-size:
+    clamp(48px,6vw,85px);
+
+  line-height:.85;
+
+  font-weight:400;
+
+}
+
+.house-info p{
+
+  max-width:390px;
+
+  margin:
+    0 0 25px;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+.house-tag{
+
+  width:max-content;
+
+  padding:
+    8px 13px;
+
+  font-size:8px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  border:1px solid currentColor;
+
+}
+
+.house-gallery{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  grid-template-rows:
+    repeat(2,1fr);
+
+  gap:5px;
+
+  padding:5px;
+
+}
+
+.house-gallery .photo{
+
+  min-height:300px;
+
+  overflow:hidden;
+
+}
+
+
+/* GRYFFINDOR */
+
+.gryffindor .house-info{
+
+  color:white;
+
+  background:var(--gryffindor);
+
+}
+
+.gryffindor .house-number{
+  color:var(--gryffindor-gold);
+}
+
+
+/* SLYTHERIN */
+
+.slytherin .house-info{
+
+  color:white;
+
+  background:var(--slytherin);
+
+}
+
+.slytherin .house-number{
+  color:var(--slytherin-silver);
+}
+
+
+/* RAVENCLAW */
+
+.ravenclaw .house-info{
+
+  color:white;
+
+  background:var(--ravenclaw);
+
+}
+
+.ravenclaw .house-number{
+  color:#c39b60;
+}
+
+
+/* HUFFLEPUFF */
+
+.hufflepuff .house-info{
+
+  color:#171717;
+
+  background:var(--hufflepuff);
+
+}
+
+.hufflepuff .house-number{
+  color:#493b17;
+}
+
+
+/* =========================================================
+   DIPLOMAS
+========================================================= */
+
+.diplomas{
+
+  padding:
+    90px 35px;
+
+  background:#f5efe5;
+
+}
+
+.diploma-title{
+
+  max-width:1150px;
+
+  margin:
+    0 auto 45px;
+
+  text-align:center;
+
+}
+
+.diploma-title span{
+
+  color:#8e7650;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+.diploma-title h2{
+
+  margin:
+    6px 0;
+
+  font-size:
+    clamp(60px,9vw,130px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+.diploma-title p{
+
+  max-width:560px;
+
+  margin:
+    20px auto 0;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+.diploma-grid{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:10px;
+
+}
+
+.diploma-card{
+
+  min-height:390px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  background:#aaa;
+
+}
+
+.diploma-card::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    linear-gradient(
+      transparent 45%,
+      rgba(0,0,0,.82)
+    );
+
+}
+
+.diploma-card span{
+
+  position:absolute;
+
+  z-index:5;
+
+  left:15px;
+  right:15px;
+  bottom:15px;
+
+  color:white;
+
+  font-size:9px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   SENIOR STORIES
+========================================================= */
+
+.stories{
+
+  padding:
+    90px 45px;
+
+  background:#ddd5c8;
+
+}
+
+.stories-title{
+
+  max-width:1150px;
+
+  margin:
+    0 auto 45px;
+
+}
+
+.stories-title h2{
+
+  margin:0;
+
+  font-size:
+    clamp(60px,9vw,125px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+.stories-title p{
+
+  max-width:600px;
+
+  margin:
+    20px 0 0;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+.story-grid{
+
+  max-width:1150px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:15px;
+
+}
+
+.story{
+
+  background:#f4eee5;
+
+}
+
+.story-photo{
+
+  height:330px;
+
+  overflow:hidden;
+
+}
+
+.story-copy{
+
+  padding:25px;
+
+}
+
+.story-copy span{
+
+  font-size:8px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  color:#887658;
+
+}
+
+.story-copy h3{
+
+  margin:
+    8px 0 12px;
+
+  font-size:27px;
+
+  font-weight:400;
+
+}
+
+.story-copy p{
+
+  margin:0;
+
+  font-size:12px;
+
+  line-height:1.8;
+
+}
+
+
+/* =========================================================
+   FAMILY / FRIENDS
+========================================================= */
+
+.people{
+
+  padding:
+    90px 35px;
+
+  color:white;
+
+  background:#191919;
+
+}
+
+.people-header{
+
+  max-width:1150px;
+
+  margin:
+    0 auto 40px;
+
+}
+
+.people-header span{
+
+  color:#b89b65;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+.people-header h2{
+
+  margin:
+    5px 0 15px;
+
+  font-size:
+    clamp(60px,9vw,125px);
+
+  line-height:.8;
+
+  font-weight:400;
+
+}
+
+.people-header p{
+
+  max-width:550px;
+
+  margin:0;
+
+  color:#c9c9c9;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+.people-grid{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(5,1fr);
+
+  grid-auto-rows:180px;
+
+  gap:7px;
+
+}
+
+.people-grid .photo{
+
+  overflow:hidden;
+
+}
+
+.people-grid .photo:nth-child(1){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+.people-grid .photo:nth-child(5){
+
+  grid-column:span 2;
+
+}
+
+.people-grid .photo:nth-child(8){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+/* =========================================================
+   FOUR HOUSES TOGETHER
+========================================================= */
+
+.together{
+
+  padding:
+    100px 35px;
+
+  background:#eee7dc;
+
+}
+
+.together-header{
+
+  max-width:1100px;
+
+  margin:
+    0 auto 50px;
+
+  text-align:center;
+
+}
+
+.together-header span{
+
+  font-size:9px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+  color:#7a6d58;
+
+}
+
+.together-header h2{
+
+  margin:
+    8px 0 20px;
+
+  font-size:
+    clamp(65px,10vw,145px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+}
+
+.together-header p{
+
+  max-width:650px;
+
+  margin:auto;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+}
+
+.house-names{
+
+  max-width:1000px;
+
+  margin:
+    0 auto 30px;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  text-align:center;
+
+  color:white;
+
+  font-size:9px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+.house-names div{
+  padding:12px 5px;
+}
+
+.house-names .g{
+  background:var(--gryffindor);
+}
+
+.house-names .s{
+  background:var(--slytherin);
+}
+
+.house-names .r{
+  background:var(--ravenclaw);
+}
+
+.house-names .h{
+
+  background:var(--hufflepuff);
+  color:#111;
+
+}
+
+.together-photo{
+
+  max-width:1200px;
+  height:680px;
+
+  margin:auto;
+
+  overflow:hidden;
+
+}
+
+
+/* =========================================================
+   CAPS
+========================================================= */
+
+.caps{
+
+  min-height:800px;
+
+  position:relative;
+
+  display:flex;
+
+  align-items:flex-end;
+
+  overflow:hidden;
+
+  color:white;
+
+  background:#111;
+
+}
+
+.caps-bg{
+
+  position:absolute;
+
+  inset:0;
+
+}
+
+.caps-bg::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    linear-gradient(
+      transparent 40%,
+      rgba(0,0,0,.8)
+    );
+
+}
+
+.caps-content{
+
+  width:100%;
+
+  position:relative;
+
+  z-index:5;
+
+  padding:
+    65px 50px;
+
+}
+
+.caps-content span{
+
+  font-size:9px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+}
+
+.caps-content h2{
+
+  max-width:850px;
+
+  margin:
+    8px 0 20px;
+
+  font-size:
+    clamp(65px,10vw,145px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+}
+
+.caps-content p{
+
+  max-width:580px;
+
+  margin:0;
+
+  font-size:14px;
+
+  line-height:1.8;
+
+}
+
+
+/* =========================================================
+   FINAL COLLAGE
+========================================================= */
+
+.final{
+
+  padding:
+    90px 25px;
+
+  background:#f1e8da;
+
+}
+
+.final-header{
+
+  margin-bottom:40px;
+
+  text-align:center;
+
+}
+
+.final-header span{
+
+  color:#8a7554;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+.final-header h2{
+
+  margin:
+    5px 0;
+
+  font-size:
+    clamp(70px,11vw,155px);
+
+  line-height:.75;
+
+  font-weight:400;
+
+}
+
+.final-grid{
+
+  max-width:1250px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(6,1fr);
+
+  grid-auto-rows:150px;
+
+  gap:6px;
+
+}
+
+.final-grid .photo{
+
+  overflow:hidden;
+
+}
+
+.final-grid .photo:nth-child(1){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+.final-grid .photo:nth-child(3){
+
+  grid-column:span 2;
+
+}
+
+.final-grid .photo:nth-child(5){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+.final-grid .photo:nth-child(8){
+
+  grid-column:span 2;
+
+}
+
+.final-grid .photo:nth-child(10){
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+.final-message{
+
+  max-width:760px;
+
+  margin:
+    60px auto 0;
+
+  text-align:center;
+
+}
+
+.final-message p{
+
+  margin:0;
+
+  font-size:17px;
+
+  line-height:1.9;
+
+  color:#59534b;
+
+}
+
+.final-message strong{
+
+  display:block;
+
+  margin-top:28px;
+
+  font-size:28px;
+
+  font-weight:400;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  padding:
+    55px 20px;
+
+  color:#ccc;
+
+  background:#111;
+
+  text-align:center;
+
+}
+
+footer strong{
+
+  display:block;
+
+  margin-bottom:12px;
+
+  color:white;
+
+  font-size:24px;
+
+  font-weight:400;
+
+}
+
+footer span{
+
+  font-size:9px;
+
+  line-height:1.8;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:750px){
+
+  .nav{
+    padding:12px 15px;
+  }
+
+  .nav-links a:not(.nav-back){
+    display:none;
+  }
+
+
+  /* HERO */
+
+  .hero{
+    min-height:720px;
+  }
+
+  .hero-content{
+    padding:45px 20px;
+  }
+
+  .hero h1{
+
+    font-size:70px;
+
+    letter-spacing:-4px;
+
+  }
+
+  .hero-year{
+    font-size:100px;
+  }
+
+
+  /* INTRO */
+
+  .intro{
+    padding:60px 20px;
+  }
+
+  .intro-wrap{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+  }
+
+  .intro-title h2{
+    font-size:58px;
+  }
+
+  .intro-text{
+    columns:1;
+  }
+
+
+  /* BEFORE */
+
+  .before{
+    padding:60px 10px;
+  }
+
+  .section-header h2{
+    font-size:58px;
+  }
+
+  .before-grid{
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+    grid-auto-rows:130px;
+
+  }
+
+  .before-photo:nth-child(1){
+    grid-column:span 2;
+  }
+
+
+  /* CEREMONY */
+
+  .ceremony{
+    padding:60px 10px;
+  }
+
+  .ceremony-header h2{
+    font-size:60px;
+  }
+
+  .ceremony-main{
+    height:520px;
+  }
+
+  .ceremony-caption{
+
+    left:20px;
+    right:20px;
+    bottom:20px;
+
+  }
+
+
+  /* HOUSES */
+
+  .house,
+  .house:nth-child(even){
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:auto;
+
+  }
+
+  .house:nth-child(even) .house-info{
+    order:0;
+  }
+
+  .house-info{
+    padding:45px 25px;
+  }
+
+  .house-info h2{
+    font-size:49px;
+  }
+
+  .house-gallery{
+
+    grid-template-columns:
+      1fr 1fr;
+
+  }
+
+  .house-gallery .photo{
+    min-height:220px;
+  }
+
+
+  /* DIPLOMAS */
+
+  .diplomas{
+    padding:60px 10px;
+  }
+
+  .diploma-title h2{
+    font-size:57px;
+  }
+
+  .diploma-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap:5px;
+
+  }
+
+  .diploma-card{
+    min-height:280px;
+  }
+
+
+  /* STORIES */
+
+  .stories{
+    padding:60px 12px;
+  }
+
+  .stories-title h2{
+    font-size:55px;
+  }
+
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  /* PEOPLE */
+
+  .people{
+    padding:60px 10px;
+  }
+
+  .people-header h2{
+    font-size:55px;
+  }
+
+  .people-grid{
+
+    grid-template-columns:
+      repeat(3,1fr);
+
+    grid-auto-rows:110px;
+
+  }
+
+
+  /* TOGETHER */
+
+  .together{
+    padding:60px 10px;
+  }
+
+  .together-header h2{
+    font-size:58px;
+  }
+
+  .house-names{
+
+    grid-template-columns:
+      1fr 1fr;
+
+  }
+
+  .together-photo{
+    height:480px;
+  }
+
+
+  /* CAPS */
+
+  .caps{
+    min-height:650px;
+  }
+
+  .caps-content{
+    padding:45px 20px;
+  }
+
+  .caps-content h2{
+    font-size:60px;
+  }
+
+
+  /* FINAL */
+
+  .final{
+    padding:60px 8px;
+  }
+
+  .final-header h2{
+    font-size:62px;
+  }
+
+  .final-grid{
+
+    grid-template-columns:
+      repeat(4,1fr);
+
+    grid-auto-rows:100px;
+
+    gap:4px;
+
+  }
+
+  .final-message{
+    padding:0 18px;
+  }
+
+  .final-message p{
+    font-size:14px;
+  }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+========================================================= */
+
+@media(max-width:420px){
+
+  .hero h1{
+    font-size:61px;
+  }
+
+  .profile{
+    font-size:12px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- =========================================================
+     NAVEGACIÓN
+========================================================= -->
+
+<nav class="nav">
+
+  <div class="nav-brand">
+    Hogwarts · Graduation 2026
+  </div>
+
+  <div class="nav-links">
+
+    <a href="#ceremonia">
+      Ceremonia
+    </a>
+
+    <a href="#casas">
+      Casas
+    </a>
+
+    <a href="#diplomas">
+      Diplomas
+    </a>
+
+    <a href="#final">
+      Class of 2026
+    </a>
+
+    <!-- CAMBIA index.html SI TU PRINCIPAL TIENE OTRO NOMBRE -->
+
+    <a
+      href="index.html"
+      class="nav-back"
+    >
+      ← Anuario
+    </a>
+
+  </div>
+
+</nav>
+
+
+<!-- =========================================================
+     PORTADA
+
+     CAMBIA:
+     assets/graduacion-portada.jpg
+========================================================= -->
+
+<header class="hero">
+
+  <div class="hero-image">
+
+    <img
+      src="assets/graduacion-portada.jpg"
+      alt="Graduación Hogwarts 2026"
+    >
+
+  </div>
+
+  <div class="hero-year">
+    2026
+  </div>
+
+  <div class="hero-content">
+
+    <span class="hero-small">
+      Hogwarts School of Witchcraft and Wizardry
+    </span>
+
+    <h1>
+
+      CLASS
+
+      <span>
+        OF 2026
+      </span>
+
+    </h1>
+
+    <p class="hero-subtitle">
+
+      Una última ceremonia.
+      Una última noche dentro del castillo
+      como estudiantes.
+
+      Cuatro casas.
+      Una generación.
+
+    </p>
+
+  </div>
+
+</header>
+
+
+<!-- COLORES DE LAS 4 CASAS -->
+
+<div class="house-stripe">
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</div>
+
+
+<!-- =========================================================
+     INTRODUCCIÓN
+========================================================= -->
+
+<section class="intro">
+
+  <div class="intro-wrap">
+
+    <div class="intro-title">
+
+      <span>
+        The Final Chapter
+      </span>
+
+      <h2>
+        ONE
+        <br>
+        LAST
+        <br>
+        TIME.
+      </h2>
+
+    </div>
+
+    <div class="intro-text">
+
+      <p>
+
+        Después de años recorriendo los mismos
+        pasillos, entrando a las mismas aulas
+        y regresando cada noche a sus salas comunes,
+        llegó el momento que durante tanto tiempo
+        pareció estar demasiado lejos.
+
+      </p>
+
+      <p>
+
+        La generación de 2026 se reunió por última
+        vez como estudiantes de Hogwarts.
+
+      </p>
+
+      <p>
+
+        Gryffindor, Slytherin, Ravenclaw y Hufflepuff
+        dejaron a un lado sus colores durante unas
+        horas para celebrar algo que compartían:
+        haber llegado juntos hasta aquí.
+
+      </p>
+
+      <p>
+
+        Entre fotografías, abrazos, discursos,
+        diplomas y despedidas, Hogwarts celebró
+        a quienes estaban preparados para comenzar
+        su siguiente historia.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ANTES DE LA CEREMONIA
+========================================================= -->
+
+<section class="before">
+
+  <div class="section-header">
+
+    <span>
+      Before Everything Started
+    </span>
+
+    <h2>
+      BEFORE THE CEREMONY
+    </h2>
+
+    <p>
+
+      Los momentos antes de entrar:
+      uniformes acomodados por última vez,
+      fotografías con amigos, nervios,
+      familias llegando y graduados intentando
+      actuar como si no estuvieran a punto de llorar.
+
+    </p>
+
+  </div>
+
+
+  <div class="before-grid">
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-01.jpg"
+        alt=""
+      >
+
+      <span class="caption">
+        Almost ready
+      </span>
+
+    </div>
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-02.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-03.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-04.jpg"
+        alt=""
+      >
+
+      <span class="caption">
+        One last photo
+      </span>
+
+    </div>
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-05.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-06.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-07.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-08.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+    <div class="before-photo">
+
+      <img
+        src="assets/grad-before-09.jpg"
+        alt=""
+      >
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CEREMONIA
+========================================================= -->
+
+<section
+  class="ceremony"
+  id="ceremonia"
+>
+
+  <div class="ceremony-header">
+
+    <span>
+      Hogwarts · 2026
+    </span>
+
+    <h2>
+      THE CEREMONY
+    </h2>
+
+    <p>
+
+      Profesores, estudiantes, familiares
+      y amigos se reunieron para despedir
+      oficialmente a la generación de 2026.
+
+    </p>
+
+  </div>
+
+
+  <div class="ceremony-main">
+
+    <img
+      src="assets/grad-ceremonia.jpg"
+      alt="Ceremonia de graduación"
+    >
+
+    <div class="ceremony-caption">
+
+      <h3>
+        The Class of 2026
+      </h3>
+
+      <p>
+
+        Aquí puedes escribir quién dio el discurso,
+        dónde se realizó la ceremonia y cualquier
+        momento importante que haya ocurrido.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     LAS 4 CASAS
+========================================================= -->
+
+<section
+  class="houses"
+  id="casas"
+>
+
+
+<!-- ===================== GRYFFINDOR ====================== -->
+
+  <article class="house gryffindor">
+
+    <div class="house-info">
+
+      <span class="house-number">
+        House 01
+      </span>
+
+      <h2>
+        GRYFFINDOR
+      </h2>
+
+      <p>
+
+        Aquí puedes escribir unas palabras sobre
+        los graduados de Gryffindor, sus años
+        juntos y lo que dejó esta generación
+        dentro de la casa.
+
+      </p>
+
+      <span class="house-tag">
+        Courage · Nerve · Chivalry
+      </span>
+
+    </div>
+
+
+    <div class="house-gallery">
+
+      <div class="photo">
+        <img src="assets/grad-gryffindor-01.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-gryffindor-02.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-gryffindor-03.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-gryffindor-04.jpg" alt="">
+      </div>
+
+    </div>
+
+  </article>
+
+
+<!-- ===================== SLYTHERIN ====================== -->
+
+  <article class="house slytherin">
+
+    <div class="house-info">
+
+      <span class="house-number">
+        House 02
+      </span>
+
+      <h2>
+        SLYTHERIN
+      </h2>
+
+      <p>
+
+        Fotografías de los graduados,
+        entrega de diplomas, abrazos,
+        amistades y recuerdos de Slytherin.
+
+      </p>
+
+      <span class="house-tag">
+        Ambition · Pride · Cunning
+      </span>
+
+    </div>
+
+
+    <div class="house-gallery">
+
+      <div class="photo">
+        <img src="assets/grad-slytherin-01.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-slytherin-02.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-slytherin-03.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-slytherin-04.jpg" alt="">
+      </div>
+
+    </div>
+
+  </article>
+
+
+<!-- ===================== RAVENCLAW ====================== -->
+
+  <article class="house ravenclaw">
+
+    <div class="house-info">
+
+      <span class="house-number">
+        House 03
+      </span>
+
+      <h2>
+        RAVENCLAW
+      </h2>
+
+      <p>
+
+        Una última página azul para quienes
+        durante años llamaron a Ravenclaw
+        su hogar dentro del castillo.
+
+      </p>
+
+      <span class="house-tag">
+        Wit · Learning · Wisdom
+      </span>
+
+    </div>
+
+
+    <div class="house-gallery">
+
+      <div class="photo">
+        <img src="assets/grad-ravenclaw-01.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-ravenclaw-02.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-ravenclaw-03.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-ravenclaw-04.jpg" alt="">
+      </div>
+
+    </div>
+
+  </article>
+
+
+<!-- ===================== HUFFLEPUFF ====================== -->
+
+  <article class="house hufflepuff">
+
+    <div class="house-info">
+
+      <span class="house-number">
+        House 04
+      </span>
+
+      <h2>
+        HUFFLEPUFF
+      </h2>
+
+      <p>
+
+        Fotografías y recuerdos de los estudiantes
+        de Hufflepuff que cerraron su etapa
+        en Hogwarts con la generación de 2026.
+
+      </p>
+
+      <span class="house-tag">
+        Loyalty · Patience · Dedication
+      </span>
+
+    </div>
+
+
+    <div class="house-gallery">
+
+      <div class="photo">
+        <img src="assets/grad-hufflepuff-01.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-hufflepuff-02.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-hufflepuff-03.jpg" alt="">
+      </div>
+
+      <div class="photo">
+        <img src="assets/grad-hufflepuff-04.jpg" alt="">
+      </div>
+
+    </div>
+
+  </article>
+
+
+</section>
+
+
+<!-- =========================================================
+     DIPLOMAS
+========================================================= -->
+
+<section
+  class="diplomas"
+  id="diplomas"
+>
+
+  <div class="diploma-title">
+
+    <span>
+      Officially Graduated
+    </span>
+
+    <h2>
+      THE DIPLOMAS
+    </h2>
+
+    <p>
+
+      El momento por el que esperaron durante años.
+      Aquí puedes colocar todas las fotografías
+      individuales recibiendo el diploma.
+
+    </p>
+
+  </div>
+
+
+  <div class="diploma-grid">
+
+
+    <div class="diploma-card">
+
+      <img
+        src="assets/diploma-01.jpg"
+        alt=""
+      >
+
+      <span>
+        Nombre del graduado · Gryffindor
+      </span>
+
+    </div>
+
+
+    <div class="diploma-card">
+
+      <img
+        src="assets/diploma-02.jpg"
+        alt=""
+      >
+
+      <span>
+        Nombre del graduado · Slytherin
+      </span>
+
+    </div>
+
+
+    <div class="diploma-card">
+
+      <img
+        src="assets/diploma-03.jpg"
+        alt=""
+      >
+
+      <span>
+        Nombre del graduado · Ravenclaw
+      </span>
+
+    </div>
+
+
+    <div class="diploma-card">
+
+      <img
+        src="assets/diploma-04.jpg"
+        alt=""
+      >
+
+      <span>
+        Nombre del graduado · Hufflepuff
+      </span>
+
+    </div>
+
+
+    <div class="diploma-card">
+
+      <img
+        src="assets/diploma-05.jpg"
+        alt=""
+      >
+
+      <span>
+        Nombre del graduado
+      </span>
+
+    </div>
+
+
+    <div class="diploma-card">
+
+      <img
+        src="assets/diploma-06.jpg"
+        alt=""
+      >
+
+      <span>
+        Nombre del graduado
+      </span>
+
+    </div>
+
+
+    <div class="diploma-card">
+
+      <img
+        src="assets/diploma-07.jpg"
+        alt=""
+      >
+
+      <span>
+        Nombre del graduado
+      </span>
+
+    </div>
+
+
+    <div class="diploma-card">
+
+      <img
+        src="assets/diploma-08.jpg"
+        alt=""
+      >
+
+      <span>
+        Nombre del graduado
+      </span>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HISTORIAS / MOMENTOS DE GRADUADOS
+========================================================= -->
+
+<section class="stories">
+
+  <div class="stories-title">
+
+    <h2>
+      SENIOR STORIES
+    </h2>
+
+    <p>
+
+      Pequeñas historias de quienes se graduaron:
+      lo que más van a extrañar, sus mejores
+      recuerdos y qué esperan hacer después
+      de Hogwarts.
+
+    </p>
+
+  </div>
+
+
+  <div class="story-grid">
+
+
+    <article class="story">
+
+      <div class="story-photo">
+
+        <img
+          src="assets/senior-story-01.jpg"
+          alt=""
+        >
+
+      </div>
+
+      <div class="story-copy">
+
+        <span>
+          Class of 2026
+        </span>
+
+        <h3>
+          Nombre del estudiante
+        </h3>
+
+        <p>
+
+          Aquí puedes poner una pequeña historia,
+          recuerdo, frase o planes después de Hogwarts.
+
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="story">
+
+      <div class="story-photo">
+
+        <img
+          src="assets/senior-story-02.jpg"
+          alt=""
+        >
+
+      </div>
+
+      <div class="story-copy">
+
+        <span>
+          Class of 2026
+        </span>
+
+        <h3>
+          Nombre del estudiante
+        </h3>
+
+        <p>
+
+          “Lo que más voy a extrañar de Hogwarts es…”
+
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="story">
+
+      <div class="story-photo">
+
+        <img
+          src="assets/senior-story-03.jpg"
+          alt=""
+        >
+
+      </div>
+
+      <div class="story-copy">
+
+        <span>
+          Class of 2026
+        </span>
+
+        <h3>
+          Nombre del estudiante
+        </h3>
+
+        <p>
+
+          Aquí puedes poner otra historia o
+          recuerdo especial de un graduado.
+
+        </p>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAMILIA + AMIGOS
+========================================================= -->
+
+<section class="people">
+
+  <div class="people-header">
+
+    <span>
+      The People Who Came With Them
+    </span>
+
+    <h2>
+      FAMILY & FRIENDS
+    </h2>
+
+    <p>
+
+      Porque ninguna graduación estaría completa
+      sin las personas que estuvieron ahí
+      para celebrarla.
+
+    </p>
+
+  </div>
+
+
+  <div class="people-grid">
+
+    <div class="photo">
+      <img src="assets/grad-family-01.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-family-02.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-family-03.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-family-04.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-family-05.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-family-06.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-family-07.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-family-08.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-family-09.jpg" alt="">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     LAS CUATRO CASAS JUNTAS
+========================================================= -->
+
+<section class="together">
+
+  <div class="together-header">
+
+    <span>
+      Four Houses · One Class
+    </span>
+
+    <h2>
+      TOGETHER,
+      <br>
+      ONE LAST TIME.
+    </h2>
+
+    <p>
+
+      Durante años llevaron colores diferentes.
+
+      Esta vez, la fotografía era de todos.
+
+    </p>
+
+  </div>
+
+
+  <div class="house-names">
+
+    <div class="g">
+      Gryffindor
+    </div>
+
+    <div class="s">
+      Slytherin
+    </div>
+
+    <div class="r">
+      Ravenclaw
+    </div>
+
+    <div class="h">
+      Hufflepuff
+    </div>
+
+  </div>
+
+
+  <div class="together-photo">
+
+    <img
+      src="assets/graduados-cuatro-casas.jpg"
+      alt="Graduados de las cuatro casas"
+    >
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     LANZAMIENTO DE BIRRETES
+========================================================= -->
+
+<section class="caps">
+
+  <div class="caps-bg">
+
+    <img
+      src="assets/grad-birretes.jpg"
+      alt="Graduados celebrando"
+    >
+
+  </div>
+
+
+  <div class="caps-content">
+
+    <span>
+      And Just Like That...
+    </span>
+
+    <h2>
+      THEY GRADUATED.
+    </h2>
+
+    <p>
+
+      Los últimos segundos de la ceremonia
+      y el primer momento en el que dejaron
+      de ser estudiantes de Hogwarts.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     COLLAGE FINAL
+========================================================= -->
+
+<section
+  class="final"
+  id="final"
+>
+
+  <div class="final-header">
+
+    <span>
+      Hogwarts · 2025–2026
+    </span>
+
+    <h2>
+      CLASS OF 2026
+    </h2>
+
+  </div>
+
+
+  <div class="final-grid">
+
+    <div class="photo">
+      <img src="assets/grad-final-01.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-02.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-03.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-04.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-05.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-06.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-07.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-08.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-09.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-10.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-11.jpg" alt="">
+    </div>
+
+    <div class="photo">
+      <img src="assets/grad-final-12.jpg" alt="">
+    </div>
+
+  </div>
+
+
+  <div class="final-message">
+
+    <p>
+
+      Entraron a Hogwarts perteneciendo
+      a cuatro casas diferentes.
+
+      Se marcharon perteneciendo
+      a una misma historia.
+
+    </p>
+
+    <strong>
+      Congratulations, Class of 2026.
+    </strong>
+
+  </div>
+
+</section>
+
+
+<!-- CUATRO COLORES AL CERRAR -->
+
+<div class="house-stripe">
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</div>
+
+
+<footer>
+
+  <strong>
+    Hogwarts Class of 2026
+  </strong>
+
+  <span>
+
+    Hogwarts Yearbook
+    <br>
+    Academic Year 2025–2026
+
+  </span>
+
+</footer>
+
+
+</div>
+
+
+</body>
+
+</html>
