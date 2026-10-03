@@ -310,9 +310,7 @@ a{
 
 
 .cover-title .kicker{
-
   color:#c5bbaa;
-
 }
 
 
@@ -842,9 +840,7 @@ a{
 
 
 .autumn-main{
-
   height:610px;
-
 }
 
 
@@ -920,9 +916,7 @@ a{
 
 
 .autumn-mini-grid .photo{
-
   height:170px;
-
 }
 
 
@@ -1244,15 +1238,12 @@ a{
 
 
 .graduate-strip .photo{
-
   height:160px;
-
 }
 
 
 /* =========================================================
    REYES DEL BAILE
-   PÁGINA COMPLETA PROPIA
 ========================================================= */
 
 .court{
@@ -1280,9 +1271,7 @@ a{
 
 
 .court-bg img{
-
   opacity:.73;
-
 }
 
 
@@ -1321,9 +1310,7 @@ a{
 
 
 .court-heading{
-
   max-width:600px;
-
 }
 
 
@@ -1437,8 +1424,6 @@ a{
 }
 
 
-/* CORTE LATERAL */
-
 .court-side{
 
   width:31%;
@@ -1492,9 +1477,7 @@ a{
 
 
 .candidate .photo{
-
   height:130px;
-
 }
 
 
@@ -1567,9 +1550,7 @@ a{
 
 
 .court-moments .photo{
-
   height:140px;
-
 }
 
 
@@ -1634,9 +1615,7 @@ a{
 
 
 .year-moments-grid .photo:nth-child(2){
-
   grid-column:span 2;
-
 }
 
 
@@ -1657,16 +1636,12 @@ a{
 
 
 .year-moments-grid .photo:nth-child(9){
-
   grid-column:span 2;
-
 }
 
 
 .year-moments-grid .photo:nth-child(10){
-
   grid-column:span 2;
-
 }
 
 
@@ -1745,13 +1720,13 @@ footer{
 
 
   .nav-links a:not(.back){
-
     display:none;
-
   }
 
 
-  /* COVER */
+  /* =====================================================
+     COVER MOBILE
+  ===================================================== */
 
   .events-cover{
 
@@ -1764,9 +1739,7 @@ footer{
 
 
   .cover-title{
-
     width:100%;
-
   }
 
 
@@ -1780,9 +1753,7 @@ footer{
 
 
   .cover-title h1 em{
-
     margin-left:25px;
-
   }
 
 
@@ -1829,13 +1800,13 @@ footer{
 
 
   .cover-year{
-
     display:none;
-
   }
 
 
-  /* INDEX */
+  /* =====================================================
+     INDEX MOBILE
+  ===================================================== */
 
   .events-index{
 
@@ -1846,9 +1817,7 @@ footer{
 
 
   .index-header{
-
     display:block;
-
   }
 
 
@@ -1872,9 +1841,7 @@ footer{
 
 
   .index-card{
-
     min-height:270px;
-
   }
 
 
@@ -1888,25 +1855,86 @@ footer{
 
 
   .index-card-text h3{
-
     font-size:18px;
+  }
+
+
+  /* =====================================================
+     BAILE DE BIENVENIDA — MOBILE ARREGLADO
+  ===================================================== */
+
+  .welcome-dance{
+
+    min-height:auto;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:0;
+
+    background:var(--night);
 
   }
 
 
-  /* WELCOME */
+  .welcome-bg{
 
-  .welcome-dance{
+    position:absolute;
 
-    min-height:850px;
+    inset:0;
+
+    z-index:0;
+
+  }
+
+
+  .welcome-bg img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center center;
+
+    opacity:.43;
+
+  }
+
+
+  .welcome-bg::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0,0,0,.52) 0%,
+        rgba(0,0,0,.30) 25%,
+        rgba(0,0,0,.60) 58%,
+        rgba(0,0,0,.90) 100%
+      );
 
   }
 
 
   .welcome-content{
 
+    position:relative;
+
+    z-index:5;
+
+    display:flex;
+
+    flex-direction:column;
+
     padding:
-      50px 18px;
+      46px 14px 25px;
 
   }
 
@@ -1915,61 +1943,234 @@ footer{
 
     width:100%;
 
+    position:relative;
+
+    z-index:10;
+
+  }
+
+
+  .welcome-title .kicker{
+
+    margin-bottom:8px;
+
+    font-size:8px;
+
+    letter-spacing:3px;
+
   }
 
 
   .welcome-title h2{
 
-    font-size:61px;
+    margin:0;
+
+    max-width:100%;
+
+    font-size:
+      clamp(52px,16.5vw,70px);
+
+    line-height:.76;
+
+    letter-spacing:-4px;
+
+  }
+
+
+  .welcome-title h2 em{
+
+    display:inline;
+
+    color:#a8caec;
 
   }
 
 
   .welcome-copy{
 
-    width:65%;
+    width:100%;
+    max-width:360px;
+
+    margin:
+      25px 0 0;
+
+    padding:
+      13px 14px;
+
+    color:#e3e7ed;
+
+    background:
+      rgba(10,16,27,.78);
+
+    border-left:
+      2px solid rgba(168,202,236,.65);
+
+    backdrop-filter:
+      blur(3px);
 
     font-size:11px;
+
+    line-height:1.65;
 
   }
 
 
+  /* CUATRO FOTOS SUPERIORES */
+
   .welcome-strip{
 
-    width:92%;
+    width:100%;
+
+    position:relative;
 
     top:auto;
-    right:4%;
-    bottom:300px;
+    right:auto;
+    bottom:auto;
+    left:auto;
+
+    display:grid;
+
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+
+    gap:6px;
+
+    margin-top:24px;
+
+    padding:7px;
+
+    background:
+      rgba(13,18,28,.90);
 
   }
 
 
   .welcome-strip .photo{
 
-    height:100px;
+    width:100%;
+
+    height:auto;
+
+    aspect-ratio:4 / 3;
+
+    overflow:hidden;
+
+    background:#111722;
 
   }
 
 
+  .welcome-strip .photo img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center center;
+
+  }
+
+
+  .welcome-strip p{
+
+    grid-column:
+      1 / -1;
+
+    margin:0;
+
+    padding:
+      8px 5px 4px;
+
+    color:#d7dfe8;
+
+    font-size:10px;
+
+    line-height:1.55;
+
+  }
+
+
+  /* FOTOS GRANDES INFERIORES */
+
   .welcome-bottom{
 
-    width:92%;
+    width:100%;
 
-    right:4%;
-    bottom:30px;
+    position:relative;
+
+    top:auto;
+    right:auto;
+    bottom:auto;
+    left:auto;
+
+    display:grid;
+
+    grid-template-columns:
+      minmax(0,1.25fr)
+      minmax(0,.75fr);
+
+    align-items:stretch;
+
+    gap:7px;
+
+    margin-top:8px;
 
   }
 
 
   .welcome-bottom .photo{
 
-    height:220px;
+    width:100%;
+
+    height:auto;
+
+    min-height:0;
+
+    aspect-ratio:3 / 4;
+
+    overflow:hidden;
+
+    background:#111722;
 
   }
 
 
-  /* AUTUMN */
+  .welcome-bottom .photo img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center center;
+
+  }
+
+
+  /* Primera foto:
+     evita cortar demasiado a la persona */
+
+  .welcome-bottom .photo:first-child img{
+
+    object-position:center top;
+
+  }
+
+
+  /* Segunda foto:
+     centra el Gran Comedor */
+
+  .welcome-bottom .photo:nth-child(2) img{
+
+    object-position:center center;
+
+  }
+
+
+  /* =====================================================
+     AUTUMN MOBILE
+  ===================================================== */
 
   .autumn{
 
@@ -1980,9 +2181,7 @@ footer{
 
 
   .autumn-header{
-
     display:block;
-
   }
 
 
@@ -1996,16 +2195,12 @@ footer{
 
 
   .autumn-layout{
-
     grid-template-columns:1fr;
-
   }
 
 
   .autumn-main{
-
     height:390px;
-
   }
 
 
@@ -2026,13 +2221,13 @@ footer{
 
 
   .autumn-mini-grid .photo{
-
     height:130px;
-
   }
 
 
-  /* TEAMS */
+  /* =====================================================
+     TEAMS MOBILE
+  ===================================================== */
 
   .teams{
 
@@ -2043,9 +2238,7 @@ footer{
 
 
   .teams-header{
-
     display:block;
-
   }
 
 
@@ -2076,8 +2269,7 @@ footer{
     grid-column:
       1 / 3;
 
-    grid-row:
-      2;
+    grid-row:2;
 
   }
 
@@ -2090,7 +2282,9 @@ footer{
   }
 
 
-  /* GRADUATES */
+  /* =====================================================
+     GRADUATES MOBILE
+  ===================================================== */
 
   .graduates{
 
@@ -2101,16 +2295,12 @@ footer{
 
 
   .graduate-title h2{
-
     font-size:66px;
-
   }
 
 
   .graduate-title em{
-
     margin-left:10%;
-
   }
 
 
@@ -2129,16 +2319,12 @@ footer{
 
 
   .graduate-layout{
-
     grid-template-columns:1fr;
-
   }
 
 
   .graduate-copy{
-
     padding:23px;
-
   }
 
 
@@ -2162,18 +2348,16 @@ footer{
 
 
   .graduate-strip .photo{
-
     height:120px;
-
   }
 
 
-  /* COURT */
+  /* =====================================================
+     COURT MOBILE
+  ===================================================== */
 
   .court{
-
     min-height:1050px;
-
   }
 
 
@@ -2188,16 +2372,12 @@ footer{
 
 
   .court-heading{
-
     width:67%;
-
   }
 
 
   .court-heading h2{
-
     font-size:60px;
-
   }
 
 
@@ -2222,9 +2402,7 @@ footer{
 
 
   .candidate .photo{
-
     height:95px;
-
   }
 
 
@@ -2239,13 +2417,13 @@ footer{
 
 
   .royal strong{
-
     font-size:16px;
-
   }
 
 
-  /* FINAL */
+  /* =====================================================
+     FINAL MOBILE
+  ===================================================== */
 
   .year-moments{
 
@@ -2256,9 +2434,7 @@ footer{
 
 
   .year-moments-title h2{
-
     font-size:55px;
-
   }
 
 
@@ -2277,7 +2453,6 @@ footer{
 }
 
 </style>
-
 </head>
 
 
@@ -2449,10 +2624,7 @@ footer{
   <div class="index-grid">
 
 
-    <a
-      href="#bienvenida"
-      class="index-card"
-    >
+    <a href="#bienvenida" class="index-card">
 
       <img
         src="assets/index-bienvenida.JPG"
@@ -2474,10 +2646,7 @@ footer{
     </a>
 
 
-    <a
-      href="#otono"
-      class="index-card"
-    >
+    <a href="#otono" class="index-card">
 
       <img
         src="assets/index-otono.JPG"
@@ -2499,10 +2668,7 @@ footer{
     </a>
 
 
-    <a
-      href="#quidditch"
-      class="index-card"
-    >
+    <a href="#quidditch" class="index-card">
 
       <img
         src="assets/index-quidditch.JPG"
@@ -2524,10 +2690,7 @@ footer{
     </a>
 
 
-    <a
-      href="#graduados"
-      class="index-card"
-    >
+    <a href="#graduados" class="index-card">
 
       <img
         src="assets/index-graduados.JPG"
@@ -2713,11 +2876,9 @@ footer{
       </span>
 
       <h2>
-
         FALL
         <br>
         FORMAL
-
       </h2>
 
     </div>
@@ -2754,42 +2915,22 @@ footer{
 
 
       <div class="photo">
-
-        <img
-          src="assets/otoño-01.JPG"
-          alt=""
-        >
-
+        <img src="assets/otoño-01.JPG" alt="">
       </div>
 
 
       <div class="photo">
-
-        <img
-          src="assets/otoño-02.JPG"
-          alt=""
-        >
-
+        <img src="assets/otoño-02.JPG" alt="">
       </div>
 
 
       <div class="photo">
-
-        <img
-          src="assets/otoño-03.JPG"
-          alt=""
-        >
-
+        <img src="assets/otoño-03.JPG" alt="">
       </div>
 
 
       <div class="photo">
-
-        <img
-          src="assets/otoño-04.JPG"
-          alt=""
-        >
-
+        <img src="assets/otoño-04.JPG" alt="">
       </div>
 
 
@@ -2854,9 +2995,7 @@ footer{
 
 
 <!-- =========================================================
-     ACTIVIDADES ENTRE EQUIPOS DE QUIDDITCH
-
-     NO SE LLAMAN SENIOR PRANKS.
+     QUIDDITCH
 ========================================================= -->
 
 <section
@@ -2875,11 +3014,9 @@ footer{
       </span>
 
       <h2>
-
         TEAM
         <br>
         CHAOS
-
       </h2>
 
       <span class="team-label">
@@ -2952,32 +3089,17 @@ footer{
 
 
     <div class="photo">
-
-      <img
-        src="assets/team-chaos-02.JPG"
-        alt=""
-      >
-
+      <img src="assets/team-chaos-02.JPG" alt="">
     </div>
 
 
     <div class="photo teams-bottom">
-
-      <img
-        src="assets/team-chaos-03.JPG"
-        alt=""
-      >
-
+      <img src="assets/team-chaos-03.JPG" alt="">
     </div>
 
 
     <div class="photo">
-
-      <img
-        src="assets/team-chaos-04.JPG"
-        alt=""
-      >
-
+      <img src="assets/team-chaos-04.JPG" alt="">
     </div>
 
 
@@ -2989,7 +3111,7 @@ footer{
 
 
 <!-- =========================================================
-     ACTIVIDAD ESPECIAL DE GRADUADOS
+     GRADUADOS
 ========================================================= -->
 
 <section
@@ -3085,22 +3207,12 @@ footer{
 
 
       <div class="photo">
-
-        <img
-          src="assets/seniors-01.JPG"
-          alt=""
-        >
-
+        <img src="assets/seniors-01.JPG" alt="">
       </div>
 
 
       <div class="photo">
-
-        <img
-          src="assets/seniors-02.JPG"
-          alt=""
-        >
-
+        <img src="assets/seniors-02.JPG" alt="">
       </div>
 
 
@@ -3147,8 +3259,6 @@ footer{
 
 <!-- =========================================================
      REYES DEL BAILE
-
-     ESTA ES SU PROPIA "PÁGINA" VISUAL.
 ========================================================= -->
 
 <section
@@ -3156,11 +3266,6 @@ footer{
   id="reyes"
 >
 
-
-  <!--
-    ESTA FOTO DEBE SER LA FOTO GRANDE
-    DEL REY Y LA REINA JUNTOS
-  -->
 
   <div class="court-bg">
 
@@ -3207,10 +3312,6 @@ footer{
     </div>
 
 
-    <!--
-      CAMBIA AQUÍ LOS NOMBRES
-    -->
-
     <div class="royals">
 
 
@@ -3242,8 +3343,6 @@ footer{
 
     </div>
 
-
-    <!-- CORTE / NOMINADOS -->
 
     <aside class="court-side">
 
@@ -3427,37 +3526,46 @@ footer{
       <img src="assets/foto grande.jpg" alt="">
     </div>
 
+
     <div class="photo">
       <img src="assets/bailarina.jpg" alt="">
     </div>
+
 
     <div class="photo">
       <img src="assets/minho bateria.png" alt="">
     </div>
 
+
     <div class="photo">
       <img src="assets/raven broma.png" alt="">
     </div>
+
 
     <div class="photo">
       <img src="assets/alicia 2.png" alt="">
     </div>
 
+
     <div class="photo">
       <img src="assets/foto grande 3.png" alt="">
     </div>
+
 
     <div class="photo">
       <img src="assets/noah y snape llorando.png" alt="">
     </div>
 
+
     <div class="photo">
       <img src="assets/gianna cantando.png" alt="">
     </div>
 
+
     <div class="photo">
       <img src="assets/cuack.jpg" alt="">
     </div>
+
 
     <div class="photo">
       <img src="assets/broma gryf.png" alt="">
